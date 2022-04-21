@@ -1,0 +1,79 @@
+{
+  "id": "home",
+  "label": "Home",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "titleTag": {
+        "type": "Text",
+        "config": {
+          "label": "Title Tag",
+          "placeholder": ""
+        }
+      },
+      "metaDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      }
+    },
+    "Hero": {
+      "heroGreetingTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Hero Greeting Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "heroNameTitle": {
+        "config": {
+          "label": "Hero Name Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,heading1,strong,em,hyperlink"
+        },
+        "type": "StructuredText"
+      },
+      "heroDescription": {
+        "config": {
+          "label": "Hero Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em"
+        },
+        "type": "StructuredText"
+      }
+    },
+    "Skills": {
+      "skills": {
+        "type": "Group",
+        "config": {
+          "label": "Skills",
+          "fields": {
+            "skill": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Skill",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,heading2,heading3,heading4,heading5,heading6,strong,em"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "work",
+  "label": "Work",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "titleTag": {
+        "type": "Text",
+        "config": {
+          "label": "Title Tag",
+          "placeholder": ""
+        }
+      },
+      "metaDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      }
+    },
+    "Intro": {
+      "introTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Intro Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1,strong,em"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "casestudy",
+  "label": "Case Study",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      }
+    },
+    "Content": {
+      "contentPrefix": {
+        "type": "Text",
+        "config": {
+          "label": "Content Prefix",
+          "placeholder": ""
+        }
+      },
+      "contentTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Content Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "callout": {
+              "type": "SharedSlice"
+            },
+            "content": {
+              "type": "SharedSlice"
+            },
+            "fullwidthimage": {
+              "type": "SharedSlice"
+            },
+            "masonrygrid": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

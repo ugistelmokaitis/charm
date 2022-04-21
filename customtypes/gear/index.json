@@ -1,0 +1,240 @@
+{
+  "id": "gear",
+  "label": "Gear",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "titleTag": {
+        "type": "Text",
+        "config": {
+          "label": "Title Tag",
+          "placeholder": ""
+        }
+      },
+      "metaDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      }
+    },
+    "Intro": {
+      "introTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Intro Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "preformatted,paragraph,strong,rtl,o-list-item,heading1,hyperlink,em"
+        }
+      },
+      "introTitleDescription": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Intro Title Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      }
+    },
+    "Devices": {
+      "deviceTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Device Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,heading3,heading4,heading5,heading6,strong,hyperlink,em"
+        }
+      },
+      "deviceDescription": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Device Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "strong,rtl,hyperlink,em,paragraph,preformatted"
+        }
+      },
+      "devices": {
+        "type": "Group",
+        "config": {
+          "label": "Devices",
+          "fields": {
+            "deviceDetails": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Device Details",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,strong,rtl,hyperlink,em"
+              }
+            },
+            "deviceImage": {
+              "type": "Image",
+              "config": {
+                "label": "Device Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            }
+          }
+        }
+      }
+    },
+    "Setup": {
+      "setupTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Setup Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading3,heading4,heading5,heading6,strong,rtl,hyperlink,em"
+        }
+      },
+      "setupDescription": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Setup Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "strong,rtl,hyperlink,em,paragraph,preformatted"
+        }
+      },
+      "setup": {
+        "type": "Group",
+        "config": {
+          "label": "Setup",
+          "fields": {
+            "setupImage": {
+              "type": "Image",
+              "config": {
+                "label": "Setup Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "setupDetails": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Setup Details",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "preformatted,paragraph,em,hyperlink,rtl,strong"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Peripheral": {
+      "peripheralTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Peripheral Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading3,heading4,heading5,heading6,strong,rtl,hyperlink,em"
+        }
+      },
+      "peripheralDescription": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Peripheral Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "strong,paragraph,em,hyperlink,rtl"
+        }
+      },
+      "peripherals": {
+        "type": "Group",
+        "config": {
+          "label": "Peripherals",
+          "fields": {
+            "peripheralImage": {
+              "type": "Image",
+              "config": {
+                "label": "Peripheral Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "peripheralDetails": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Peripheral Details",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "strong,rtl,hyperlink,em,paragraph,preformatted"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Software": {
+      "softwareTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Software Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading3,heading4,heading5,heading6,strong,hyperlink,em,rtl,preformatted,paragraph"
+        }
+      },
+      "softwareDescription": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Software Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em,hyperlink,rtl,preformatted"
+        }
+      },
+      "software": {
+        "type": "Group",
+        "config": {
+          "label": "Software",
+          "fields": {
+            "softwareIcon": {
+              "type": "Image",
+              "config": {
+                "label": "Software Icon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "softwareTitle": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Software Title",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "heading4,heading5,heading6,strong,heading3,hyperlink,em,paragraph,preformatted"
+              }
+            },
+            "softwareDescription": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Software Description",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,strong,hyperlink,em"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

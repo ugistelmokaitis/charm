@@ -1,0 +1,141 @@
+{
+  "id": "extensions",
+  "label": "Extensions",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "titleTag": {
+        "type": "Text",
+        "config": {
+          "label": "Title Tag",
+          "placeholder": ""
+        }
+      },
+      "metaDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      }
+    },
+    "Intro": {
+      "introTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Intro Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "introDescription": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Intro Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em,hyperlink"
+        }
+      }
+    },
+    "Extensions": {
+      "ExtensionsTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Extensions Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,heading3,heading4,heading5,strong,hyperlink,em,rtl"
+        }
+      },
+      "extentions": {
+        "type": "Group",
+        "config": {
+          "label": "Extentions",
+          "fields": {
+            "extentionTitle": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Extention Title",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "heading3,heading4,heading5,strong,heading6,em,hyperlink,paragraph,rtl"
+              }
+            },
+            "extentionDescription": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Extention Description",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "strong,rtl,em,hyperlink,paragraph"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Socials": {
+      "socialTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Social Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading3,heading4,strong,rtl,em,paragraph,preformatted,hyperlink"
+        }
+      },
+      "socialDescription": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Social Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,hyperlink,em,rtl"
+        }
+      },
+      "socialProfile": {
+        "type": "Group",
+        "config": {
+          "label": "Social Profile",
+          "fields": {
+            "socialProfileIcon": {
+              "type": "Image",
+              "config": {
+                "label": "Social Profile Icon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "socialProfileTitle": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Social Profile Title",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,em,strong,rtl,hyperlink"
+              }
+            },
+            "socialProfileLink": {
+              "type": "Link",
+              "config": {
+                "label": "Social Profile Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

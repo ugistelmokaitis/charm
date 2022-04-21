@@ -1,0 +1,209 @@
+{
+  "id": "about",
+  "label": "About",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "titleTag": {
+        "type": "Text",
+        "config": {
+          "label": "Title Tag",
+          "placeholder": ""
+        }
+      },
+      "metaDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      }
+    },
+    "Intro": {
+      "introTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Intro Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,heading1,strong,em,heading2"
+        }
+      },
+      "introDescription": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Intro Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,strong,em,hyperlink,image,embed,rtl,o-list-item,list-item"
+        }
+      },
+      "introParagprah": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Intro Paragprah",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em,hyperlink"
+        }
+      }
+    },
+    "More": {
+      "moreThings": {
+        "type": "Group",
+        "config": {
+          "label": "More Things",
+          "fields": {
+            "moreThingsTitle": {
+              "type": "StructuredText",
+              "config": {
+                "label": "More Things Title",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,heading2,heading3,strong,em,hyperlink,heading4"
+              }
+            },
+            "moreThingsDescription": {
+              "type": "StructuredText",
+              "config": {
+                "label": "More Things Description",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,strong,em,hyperlink,image"
+              }
+            }
+          }
+        }
+      },
+      "mygoToolsTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Mygo Tools Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,strong,em,hyperlink"
+        }
+      },
+      "moreTools": {
+        "type": "Group",
+        "config": {
+          "label": "More Tools",
+          "fields": {
+            "moreToolsAbout": {
+              "type": "StructuredText",
+              "config": {
+                "label": "More Tools About",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,strong,em,hyperlink"
+              }
+            },
+            "moreToolsTitle": {
+              "type": "StructuredText",
+              "config": {
+                "label": "More Tools Title",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,strong,em,hyperlink"
+              }
+            },
+            "moreToolsDescription": {
+              "type": "StructuredText",
+              "config": {
+                "label": "More Tools Description",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "multi": "paragraph,strong,em,hyperlink"
+              }
+            },
+            "moreToolsImage": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "More Tools Image"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Profile": {
+      "profileImage": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Profile Image"
+        }
+      },
+      "profileName": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Profile Name",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading5,heading6,strong,hyperlink,em,paragraph"
+        }
+      },
+      "profileLocation": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Profile Location",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "profileSocials": {
+        "type": "Group",
+        "config": {
+          "label": "Profile Socials",
+          "fields": {
+            "profileSocialsIcon": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "Profile Socials Icon"
+              }
+            },
+            "profileSocialsCategory": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Profile Socials Category",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "profileSocialsCategoryLink": {
+              "type": "Link",
+              "config": {
+                "label": "Profile Socials Category Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "profileSocialsArrowLinkIcon": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Profile Socials Arrow Link Icon"
+        }
+      }
+    }
+  }
+}
