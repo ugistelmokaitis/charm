@@ -1,16 +1,48 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'ABCWhyteEdu-Heavy';
+  src: url('/fonts/ABCWhyteEdu-Heavy.woff') format('woff'),
+    url('/fonts/ABCWhyteEdu-Heavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: 'ABCWhyteEdu-Medium';
+  src: url('/fonts/ABCWhyteEdu-Medium.woff') format('woff'),
+    url('/fonts/ABCWhyteEdu-Medium.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: 'ABCWhyteEdu-Regular';
+  src: url('/fonts/ABCWhyteEdu-Regular.woff') format('woff'),
+    url('/fonts/ABCWhyteEdu-Regular.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiraCode-SemiBold';
+  src: url('/fonts/FiraCode-SemiBold.woff') format('woff'),
+    url('/fonts/FiraCode-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'FiraCode-Regular';
+  src: url('/fonts/FiraCode-Regular.woff') format('woff'),
+    url('/fonts/FiraCode-Regular.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
