@@ -1,0 +1,205 @@
+{
+  "id": "5a6720bc-a1d2-418a-8ae2-66ace5538df7",
+  "uid": "sunt-quam-repellat",
+  "type": "settings",
+  "data": {
+    "headerHeroLink": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    },
+    "githubSourceLink": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "headerPrimaryButtonLabel": [
+      {
+        "type": "paragraph",
+        "text": "Eiusmod consequat ut adipisicing ullamco consequat et quis ea amet dolor amet.",
+        "spans": []
+      }
+    ],
+    "headerPrimaryButtonLink": {
+      "link_type": "Web",
+      "url": "http://google.com"
+    },
+    "headerSiteMap": [
+      {
+        "headerPageLabel": [
+          {
+            "type": "paragraph",
+            "text": "Occaecat reprehenderit commodo veniam anim nisi anim cillum culpa duis mollit adipisicing magna consectetur voluptate incididunt. Culpa occaecat dolor sint commodo ex labore commodo. Officia ea proident ullamco sunt exercitation eu quis excepteur Lorem nisi.",
+            "spans": []
+          }
+        ],
+        "headerPageLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "headerPageLabel": [
+          {
+            "type": "paragraph",
+            "text": "Ipsum magna voluptate cupidatat mollit dolor et fugiat cillum.",
+            "spans": []
+          }
+        ],
+        "headerPageLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "headerPageLabel": [
+          {
+            "type": "paragraph",
+            "text": "Fugiat commodo duis nisi est exercitation. Nisi minim mollit anim dolore sunt. Anim deserunt non proident Lorem.",
+            "spans": []
+          }
+        ],
+        "headerPageLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "headerPageLabel": [
+          {
+            "type": "paragraph",
+            "text": "Dolor irure quis laboris aliqua.",
+            "spans": []
+          }
+        ],
+        "headerPageLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "headerPageLabel": [
+          {
+            "type": "paragraph",
+            "text": "Mollit Lorem laboris aliquip do consequat proident laborum. Reprehenderit aute officia aliqua laboris pariatur reprehenderit deserunt. Minim velit aliqua sint ex consequat.",
+            "spans": []
+          }
+        ],
+        "headerPageLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ],
+    "siteCredit": [
+      {
+        "type": "paragraph",
+        "text": "Cillum officia voluptate incididunt magna enim veniam amet reprehenderit qui dolor. Id labore qui velit aute.",
+        "spans": []
+      }
+    ],
+    "footerSitemap": [
+      {
+        "pageLabel": [
+          {
+            "type": "paragraph",
+            "text": "Qui cillum consectetur excepteur velit sunt ipsum elit id.",
+            "spans": []
+          }
+        ],
+        "pageLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "pageLabel": [
+          {
+            "type": "paragraph",
+            "text": "Minim sit deserunt ullamco eu labore adipisicing occaecat minim eiusmod. Aute tempor veniam nisi esse eu elit fugiat.",
+            "spans": []
+          }
+        ],
+        "pageLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ],
+    "footerSocialMedia": [
+      {
+        "socialMediaIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "socialMediaLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "socialMediaIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+        },
+        "socialMediaLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "socialMediaIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=900&h=500&fit=crop"
+        },
+        "socialMediaLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "socialMediaIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+        },
+        "socialMediaLink": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "socialMediaIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=900&h=500&fit=crop"
+        },
+        "socialMediaLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      }
+    ]
+  }
+}
