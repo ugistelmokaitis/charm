@@ -1,10 +1,19 @@
 module.exports = {
   mode: 'jit',
+  darkMode: 'class',
   purge: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './templates/**/*.{js,ts,jsx,tsx}',
+    './slices/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
     colors: {
       transparent: 'transparent',
       purple: {
@@ -40,9 +49,10 @@ module.exports = {
       primary: {
         5: '#FAFCFF',
         25: '#E1EAFF',
-        50: '#93ADE9',
+        50: '#C7D8FF',
         75: '#5D83DE',
         100: '#1A56DB',
+        200: '#1E40AF',
       },
       error: {
         5: '#FFF7F8',
