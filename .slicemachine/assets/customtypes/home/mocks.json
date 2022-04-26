@@ -1,0 +1,66 @@
+{
+  "id": "87664a94-0c89-49ea-8b1c-e1071d9e0598",
+  "uid": "esse-repudiandae-occaecati",
+  "type": "home",
+  "data": {
+    "titleTag": "integrate web-enabled paradigms",
+    "metaDescription": "syndicate magnetic action-items",
+    "heroGreetingTitle": [
+      {
+        "type": "paragraph",
+        "text": "Labore duis occaecat officia veniam voluptate anim reprehenderit ullamco nulla ullamco Lorem. Incididunt do culpa voluptate sint reprehenderit incididunt fugiat cupidatat nulla ullamco. Incididunt velit proident irure deserunt et officia ullamco nulla.",
+        "spans": []
+      }
+    ],
+    "heroNameTitle": [
+      {
+        "type": "paragraph",
+        "text": "Aute elit sint ipsum. Irure et laborum reprehenderit consequat nisi.",
+        "spans": []
+      }
+    ],
+    "heroDescription": [
+      {
+        "type": "paragraph",
+        "text": "Dolor qui ad labore amet duis elit cupidatat tempor nisi. Est duis elit consectetur ut minim minim ipsum deserunt.",
+        "spans": []
+      }
+    ],
+    "skillsTitle": [
+      {
+        "type": "paragraph",
+        "text": "Ipsum deserunt ad fugiat nisi enim commodo qui cillum deserunt.",
+        "spans": []
+      }
+    ],
+    "skills": [
+      {
+        "skill": [
+          {
+            "type": "paragraph",
+            "text": "Exercitation adipisicing elit sint voluptate ipsum sit. Deserunt irure ipsum commodo esse occaecat. Occaecat proident in ex.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "skill": [
+          {
+            "type": "paragraph",
+            "text": "Voluptate commodo consequat irure officia incididunt commodo sunt sunt id excepteur cupidatat proident. Aliquip Lorem ullamco minim.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "skill": [
+          {
+            "type": "paragraph",
+            "text": "Anim ut sunt magna.",
+            "spans": []
+          }
+        ]
+      }
+    ]
+  }
+}

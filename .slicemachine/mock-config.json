@@ -1,5 +1,9 @@
 {
   "_cts": {
-    "settings": {}
+    "settings": {},
+    "home": {},
+    "experience": {
+      "company": {}
+    }
   }
 }
