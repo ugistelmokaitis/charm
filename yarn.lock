@@ -1288,6 +1288,18 @@
   resolved "https://registry.yarnpkg.com/@prismicio/types/-/types-0.1.27.tgz#7f2fd91f1781a6da62630438b828230df72ae2b3"
   integrity sha512-+Oc7EFcp6RGVMvFKQl9y9D4HtBhHeOtE0asfYhedCflQDf3OOzjE8POIu1bXTkk8i1kEWM3oYvz6yLN4yAyGWQ==
 
+"@react-hookz/deep-equal@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@react-hookz/deep-equal/-/deep-equal-1.0.1.tgz#1e9aad97b964879b54a3909f36f0727befa13e1f"
+  integrity sha512-6k/pU2jNlgYvKOy84vpCAZ8MGVwybvAdjzrh4UicCVOCPxz0LSBws1OE6O5TO4sPHaSw+yLfNzNK8RicGFc1Kw==
+
+"@react-hookz/web@^13.3.0":
+  version "13.3.0"
+  resolved "https://registry.yarnpkg.com/@react-hookz/web/-/web-13.3.0.tgz#257e31049e92a121912fe1e67bdd01dbec5a203b"
+  integrity sha512-KswgkmqBVVDo6UnBFfssrojmDisogxC4jGZmd976R8YHoS3zdQJxjqICpOBSRohbRyYhYS9Cprw7BuV/CZcMaw==
+  dependencies:
+    "@react-hookz/deep-equal" "^1.0.1"
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz#04bc0608f4aa4b2e4b1aebf284344d0f68fda283"
