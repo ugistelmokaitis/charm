@@ -43,7 +43,7 @@
           "label": "Intro Description",
           "placeholder": "",
           "allowTargetBlank": true,
-          "multi": "paragraph,preformatted,strong,em,hyperlink,image,embed,rtl,o-list-item,list-item"
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "introParagprah": {
@@ -52,7 +52,7 @@
           "label": "Intro Paragprah",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,strong,em,hyperlink"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       }
     },
@@ -68,7 +68,7 @@
                 "label": "More Things Title",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,heading2,heading3,strong,em,hyperlink,heading4"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             },
             "moreThingsDescription": {
@@ -77,7 +77,7 @@
                 "label": "More Things Description",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "multi": "paragraph,strong,em,hyperlink,image"
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             }
           }
@@ -89,7 +89,7 @@
           "label": "Mygo Tools Title",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,strong,em,hyperlink"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "moreTools": {
@@ -103,7 +103,7 @@
                 "label": "More Tools About",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,strong,em,hyperlink"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             },
             "moreToolsTitle": {
@@ -112,7 +112,7 @@
                 "label": "More Tools Title",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,strong,em,hyperlink"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             },
             "moreToolsDescription": {
@@ -121,7 +121,7 @@
                 "label": "More Tools Description",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "multi": "paragraph,strong,em,hyperlink"
+                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             },
             "moreToolsImage": {
@@ -151,7 +151,7 @@
           "label": "Profile Name",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "heading5,heading6,strong,hyperlink,em,paragraph"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "profileLocation": {

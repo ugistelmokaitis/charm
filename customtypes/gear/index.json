@@ -34,7 +34,7 @@
           "label": "Intro Title",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "preformatted,paragraph,strong,rtl,o-list-item,heading1,hyperlink,em"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "introTitleDescription": {
@@ -54,7 +54,7 @@
           "label": "Device Title",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,heading3,heading4,heading5,heading6,strong,hyperlink,em"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "deviceDescription": {
@@ -63,7 +63,7 @@
           "label": "Device Description",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "strong,rtl,hyperlink,em,paragraph,preformatted"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "devices": {
@@ -77,7 +77,7 @@
                 "label": "Device Details",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,strong,rtl,hyperlink,em"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             },
             "deviceImage": {
@@ -99,7 +99,7 @@
           "label": "Setup Title",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading3,heading4,heading5,heading6,strong,rtl,hyperlink,em"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "setupDescription": {
@@ -108,7 +108,7 @@
           "label": "Setup Description",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "strong,rtl,hyperlink,em,paragraph,preformatted"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "setup": {
@@ -130,7 +130,7 @@
                 "label": "Setup Details",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "preformatted,paragraph,em,hyperlink,rtl,strong"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             }
           }
@@ -144,7 +144,7 @@
           "label": "Peripheral Title",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading3,heading4,heading5,heading6,strong,rtl,hyperlink,em"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "peripheralDescription": {
@@ -153,7 +153,7 @@
           "label": "Peripheral Description",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "strong,paragraph,em,hyperlink,rtl"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "peripherals": {
@@ -175,7 +175,7 @@
                 "label": "Peripheral Details",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "strong,rtl,hyperlink,em,paragraph,preformatted"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             }
           }
@@ -189,7 +189,7 @@
           "label": "Software Title",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "heading3,heading4,heading5,heading6,strong,hyperlink,em,rtl,preformatted,paragraph"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "softwareDescription": {
@@ -198,7 +198,7 @@
           "label": "Software Description",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,strong,em,hyperlink,rtl,preformatted"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "software": {
@@ -220,7 +220,7 @@
                 "label": "Software Title",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "heading4,heading5,heading6,strong,heading3,hyperlink,em,paragraph,preformatted"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             },
             "softwareDescription": {
@@ -229,7 +229,7 @@
                 "label": "Software Description",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,preformatted,strong,hyperlink,em"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             }
           }

@@ -34,7 +34,7 @@
           "label": "Intro Title",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "heading1"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "introDescription": {
@@ -43,7 +43,7 @@
           "label": "Intro Description",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,strong,em,hyperlink"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       }
     },
@@ -54,7 +54,7 @@
           "label": "Extensions Title",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,heading3,heading4,heading5,strong,hyperlink,em,rtl"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "extentions": {
@@ -68,7 +68,7 @@
                 "label": "Extention Title",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "heading3,heading4,heading5,strong,heading6,em,hyperlink,paragraph,rtl"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             },
             "extentionDescription": {
@@ -77,7 +77,7 @@
                 "label": "Extention Description",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "strong,rtl,em,hyperlink,paragraph"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             }
           }
@@ -91,7 +91,7 @@
           "label": "Social Title",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "heading3,heading4,strong,rtl,em,paragraph,preformatted,hyperlink"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "socialDescription": {
@@ -100,7 +100,7 @@
           "label": "Social Description",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,strong,hyperlink,em,rtl"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "socialProfile": {
@@ -122,7 +122,7 @@
                 "label": "Social Profile Title",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,preformatted,em,strong,rtl,hyperlink"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             },
             "socialProfileLink": {

@@ -14,18 +14,18 @@
       }
     },
     "Header": {
-      "headerHeroLogo": {
-        "config": {
-          "label": "Header Hero Logo",
-          "constraint": {},
-          "thumbnails": []
-        },
-        "type": "Image"
-      },
       "headerHeroLink": {
         "type": "Link",
         "config": {
           "label": "Header Hero Link",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "githubSourceLink": {
+        "type": "Link",
+        "config": {
+          "label": "Github Source Link",
           "placeholder": "",
           "select": null
         }
@@ -39,7 +39,7 @@
                 "label": "Header Page Label",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,strong,em"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               },
               "type": "StructuredText"
             },
@@ -61,7 +61,7 @@
           "label": "Header Primary Button Label",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,strong,em"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         },
         "type": "StructuredText"
       },
@@ -80,7 +80,7 @@
           "label": "Site Credit",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,strong,em,hyperlink,preformatted"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         },
         "type": "StructuredText"
       },
@@ -93,7 +93,7 @@
                 "label": "Page Label",
                 "placeholder": "",
                 "allowTargetBlank": true,
-                "single": "paragraph,strong,em,hyperlink"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               },
               "type": "StructuredText"
             },
