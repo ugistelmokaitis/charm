@@ -13,9 +13,20 @@ export type HomeProps = PrismicDocumentWithUID<{
   heroNameTitle: RichTextField;
   heroGreetingTitle: RichTextField;
   heroDescription: RichTextField;
+  experienceTitle: RichTextField;
+  skillsTitle: RichTextField;
+  company: companyProps;
   skills: skillsProps;
 }>;
 
 type skillsProps = GroupField<{
   skill: RichTextField;
+}>;
+
+type companyProps = GroupField<{
+  companyTitle: RichTextField;
+  companyRole: RichTextField;
+  companyYear: RichTextField;
+  companyResponsibilities: RichTextField;
+  companyToolsUsed: RichTextField;
 }>;
