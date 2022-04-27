@@ -6,5 +6,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.esbenp.prettier-vscode": true,
     "source.fixAll.eslint": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
