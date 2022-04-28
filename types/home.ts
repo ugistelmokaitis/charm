@@ -24,9 +24,9 @@ type skillsProps = GroupField<{
 }>;
 
 type companyProps = GroupField<{
-  companyTitle: RichTextField;
-  companyRole: RichTextField;
-  companyYear: RichTextField;
-  companyResponsibilities: RichTextField;
-  companyToolsUsed: RichTextField;
+  companyName: KeyTextField;
+  companyRole: KeyTextField;
+  companyYear: KeyTextField;
+  companyResponsibilities: KeyTextField;
+  companyTools: KeyTextField;
 }>;

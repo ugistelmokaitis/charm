@@ -12,13 +12,11 @@ import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
 import BadgeButton from '../components/badgeButton';
 import Window from '../components/window';
-import type { ExperienceProps } from '../types/experience';
 import richTextComponents from '../components/richTextComponents';
 
 type IHome = {
   data: HomeProps['data'];
   settings: SettingsProps;
-  experience: ExperienceProps['data'];
 };
 
 const sliderComponents: JSXMapSerializer = {
@@ -33,12 +31,15 @@ const sliderComponents: JSXMapSerializer = {
   ),
 };
 
-const Home: FC<IHome> = ({ data, settings, experience }) => {
+const Home: FC<IHome> = ({ data, settings }) => {
   const firstHalf = [...data.skills];
   const half = Math.ceil(firstHalf.length / 2);
   const secondHalf = firstHalf.splice(0, half);
+  const [activeExperience, setActiveExperience] = useState(0);
 
   const { y: scrollY } = useWindowScroll();
+
+  console.log(activeExperience, 'ac');
 
   return (
     <Layout title="" description="" settings={settings}>
@@ -51,7 +52,7 @@ const Home: FC<IHome> = ({ data, settings, experience }) => {
               <div className="mx-auto items-center pt-12 font-ABCWhyteEdu_Heavy text-display font-extrabold text-neutral-100">
                 {asText(data.heroGreetingTitle)}
               </div>
-              <div className="mx-auto max-w-[60rem] items-center pb-12 font-ABCWhyteEdu_Heavy text-display font-extrabold text-neutral-100">
+              <div className="mx-auto mt-4 max-w-[60rem] items-center pb-12 font-ABCWhyteEdu_Heavy text-display font-extrabold text-neutral-100">
                 {asText(data.heroNameTitle)}
               </div>
               <div className="mx-auto max-w-[39rem] pb-12 font-ABCWhyteEdu_Medium text-pMDSemiBold font-semibold tracking-[0.02em] text-neutral-50">
@@ -64,34 +65,49 @@ const Home: FC<IHome> = ({ data, settings, experience }) => {
           <div className="mt-52">
             <PrismicRichText field={data.experienceTitle} />
           </div>
-          <div className="mt-20 flex">
-            {/* {data.company.map(
-              (
-                {
-                  companyResponsibilities,
-                  companyRole,
-                  companyTitle,
-                  companyToolsUsed,
-                  companyYear,
-                },
-                index
-              ) => (
-                <div className="block" key={index}>
-                  <div className="">
-                    <PrismicRichText field={companyTitle} />
-                    <PrismicRichText field={companyRole} />
+          <div className="mt-20 grid ">
+            <div className="font-ABCWhyteEdu_Heavy text-header1 font-extrabold text-neutral-100">
+              Experience
+            </div>
+            <div className="mt-20 grid grid-cols-12 gap-16">
+              <div className="col-span-4 col-start-1 block">
+                {data.company.map(({ companyRole, companyName }, index) => (
+                  <div
+                    key={index}
+                    onClick={() => setActiveExperience(index)}
+                    onKeyDown={() => setActiveExperience(index)}
+                    role="button"
+                    tabIndex={0}
+                    className={` ${
+                      activeExperience === index
+                        ? 'bg-primary-5'
+                        : 'bg-neutral-0'
+                    }`}
+                  >
+                    <div className="font-FiraCode_SemiBold text-codeLGSemiBold font-semibold text-neutral-100">
+                      {companyName}
+                    </div>
+                    <div className="font-codeRegular text-neutral-100-Code font-FiraCode_Regular text-codeMDRegular text-neutral-100">
+                      {companyRole}
+                    </div>
                   </div>
-                  <PrismicRichText field={companyYear} />
-                  <PrismicRichText field={companyResponsibilities} />
-                  <PrismicRichText field={companyToolsUsed} />
+                ))}
+              </div>
+              <div className="col-span-6 col-start-7">
+                <div className="text-neutral-100-Code mb-5 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-neutral-100">
+                  {data.company[activeExperience].companyYear}
                 </div>
-              )
-            )} */}
+                <div className="font-ABCWhyteEdu_Medium text-header4 font-semibold tracking-[0.02em] text-neutral-100">
+                  {data.company[activeExperience].companyResponsibilities}
+                </div>{' '}
+                <div>{data.company[activeExperience].companyTools}</div>
+              </div>
+            </div>
           </div>
         </Container>
       </div>
 
-      <div className="block overflow-hidden bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 ">
+      <div className="mt-72 block overflow-hidden bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 ">
         <div>
           <div className="mb-28 flex items-center justify-center">
             <PrismicRichText field={data.skillsTitle} />
@@ -132,13 +148,11 @@ const Home: FC<IHome> = ({ data, settings, experience }) => {
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = (await getPage('home')) as HomeProps;
   const settings = (await getPage('settings')) as SettingsProps;
-  const experience = (await getPages('experience')) as ExperienceProps[];
 
   return {
     props: {
       data,
       settings,
-      experience,
     },
   };
 };
