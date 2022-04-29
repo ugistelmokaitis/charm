@@ -8,10 +8,10 @@ import type {
 } from '@prismicio/types';
 
 export type SettingsProps = PrismicDocumentWithUID<{
-  siteCredit: RichTextField;
+  siteCredit: KeyTextField;
   headerHeroLogo: ImageField;
   headerHeroLink: LinkField;
-  headerPrimaryButtonLabel: RichTextField;
+  headerPrimaryButtonLabel: KeyTextField;
   headerPrimaryButtonLink: LinkField;
   headerSiteMap: HeaderNavigation;
   footerSitemap: FooterNavigation;
@@ -19,7 +19,7 @@ export type SettingsProps = PrismicDocumentWithUID<{
 }>;
 
 type FooterNavigation = GroupField<{
-  pageLabel: RichTextField;
+  pageLabel: KeyTextField;
   pageLink: LinkField;
 }>;
 
@@ -29,6 +29,6 @@ type footerSocialMediaProps = GroupField<{
 }>;
 
 type HeaderNavigation = GroupField<{
-  headerPageLabel: RichTextField;
+  headerPageLabel: KeyTextField;
   headerPageLink: LinkField;
 }>;

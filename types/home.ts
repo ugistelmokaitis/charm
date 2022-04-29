@@ -10,11 +10,14 @@ import type {
 export type HomeProps = PrismicDocumentWithUID<{
   titleTag: KeyTextField;
   metaDescription: KeyTextField;
-  heroNameTitle: RichTextField;
-  heroGreetingTitle: RichTextField;
-  heroDescription: RichTextField;
+  heroNameTitle: KeyTextField;
+  heroGreetingTitle: KeyTextField;
+  heroDescription: KeyTextField;
   experienceTitle: RichTextField;
   skillsTitle: RichTextField;
+  badgeButtonPrefix: KeyTextField;
+  badgeButtonLabel: KeyTextField;
+  badgeButtonLink: LinkField;
   company: companyProps;
   skills: skillsProps;
 }>;
