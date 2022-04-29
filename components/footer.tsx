@@ -1,7 +1,6 @@
 import type { FC } from 'react';
 import { PrismicLink, PrismicRichText } from '@prismicio/react';
 import Image from 'next/image';
-import { asText } from '@prismicio/helpers';
 import type { SettingsProps } from '../types/settings';
 import { docResolver } from '../utils/prismic';
 import Container from './container';
@@ -12,19 +11,19 @@ type ISettings = {
 };
 
 const Footer: FC<ISettings> = ({ settings }) => (
-  <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100">
+  <div className="flex bg-neutral-0 pt-[8.25rem] selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
     <Container>
       <Divider />
       <div className="flex items-center justify-between pt-6 pb-20">
-        <div className="font-charmRegular text-lightGrey-100 text-pSMRegular font-normal  tracking-[0.02em]">
-          {asText(settings.data.siteCredit)}
+        <div className="font-charmRegular text-pSMRegular font-normal tracking-[0.02em]  text-neutral-30 dark:text-neutral-15">
+          {settings.data.siteCredit}
         </div>
         <div className="flex">
           {settings.data.footerSitemap.map(({ pageLabel, pageLink }, index) => (
             <div key={index} className="mr-8">
               <PrismicLink field={pageLink}>
-                <div className="text-lightGrey-100">
-                  <PrismicRichText field={pageLabel} />
+                <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em] text-neutral-30 dark:text-neutral-15">
+                  {pageLabel}
                 </div>
               </PrismicLink>
             </div>
