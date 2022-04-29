@@ -82,15 +82,15 @@ const Home: FC<IHome> = ({ data, settings }) => {
                     tabIndex={0}
                     className={` ${
                       activeExperience === index
-                        ? 'rounded-lg bg-primary-5'
-                        : 'bg-neutral-0'
+                        ? 'rounded-lg bg-primary-5 dark:bg-neutral-80'
+                        : 'bg-neutral-0 dark:bg-neutral-100'
                     }`}
                   >
                     <div className="px-8 py-8">
-                      <div className="font-FiraCode_SemiBold text-codeLGSemiBold font-semibold text-neutral-100">
+                      <div className="font-FiraCode_SemiBold text-codeLGSemiBold font-semibold text-neutral-100 dark:text-neutral-0">
                         {companyName}
                       </div>
-                      <div className="font-codeRegular mt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-100">
+                      <div className="font-codeRegular mt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-100 dark:text-neutral-0">
                         {companyRole}
                       </div>
                     </div>
@@ -98,14 +98,14 @@ const Home: FC<IHome> = ({ data, settings }) => {
                 ))}
               </div>
               <div className="col-span-6 col-start-7">
-                <div className="pb-4 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100">
+                <div className="pb-4 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
                   {data.company[activeExperience].companyYear}
                 </div>
                 <div className="inline-block">
-                  <span className="font-ABCWhyteEdu_Medium text-header4 font-semibold tracking-[0.02em] text-neutral-100">
+                  <span className="font-ABCWhyteEdu_Medium text-header4 font-semibold tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
                     {data.company[activeExperience].companyResponsibilities}
 
-                    <span className="ml-2 font-ABCWhyteEdu_Medium text-header4 font-semibold tracking-[0.02em] text-neutral-30">
+                    <span className="ml-2 font-ABCWhyteEdu_Medium text-header4 font-semibold tracking-[0.02em] text-neutral-30 dark:text-neutral-30">
                       {data.company[activeExperience].companyTools}
                     </span>
                   </span>
