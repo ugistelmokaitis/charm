@@ -5,12 +5,13 @@ import type { JSXMapSerializer } from '@prismicio/react';
 import { asText } from '@prismicio/helpers';
 import Image from 'next/image';
 import Layout from '../components/layout';
-import { getPage } from '../utils/prismic';
+import { docResolver, getPage } from '../utils/prismic';
 import type { AboutProps } from '../types/about';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
 import richTextComponents from '../components/richTextComponents';
-import ArrowIcon from '../public/icons/arrowIcon.svg';
+import SocialLinkIcon from '../public/icons/socialLinkIcon.svg';
+import Divider from '../components/divider';
 
 type IAbout = {
   data: AboutProps['data'];
@@ -22,11 +23,21 @@ const introComponents: JSXMapSerializer = {
   paragraph: ({ children, key, ...props }) => (
     <p
       key={key}
-      className="font-charmRegular inline align-bottom text-pLGRegular font-normal  tracking-[0.02em] text-white-100"
+      className="inline font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15"
       {...props}
     >
       {children}
     </p>
+  ),
+  hyperlink: ({ children, key, node }) => (
+    <PrismicLink key={key} href={docResolver(node.data)}>
+      <div
+        key={key}
+        className="inline font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 underline dark:text-neutral-0 dark:hover:text-neutral-30"
+      >
+        {children}
+      </div>
+    </PrismicLink>
   ),
   image: ({ key, node }) => (
     <Image
@@ -42,9 +53,9 @@ const introComponents: JSXMapSerializer = {
 
 const About: FC<IAbout> = ({ data, settings }) => (
   <Layout title="" description="" settings={settings}>
-    <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 lg:grid-cols-12">
+    <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100 lg:grid-cols-12">
       <Container>
-        <div className="grid grid-cols-1 gap-16 pb-28 pt-32 text-white-100 md:grid-cols-12 md:gap-8">
+        <div className="text-white-100 grid grid-cols-1 gap-16 pb-28 pt-32 md:grid-cols-12 md:gap-8">
           <div className="col-span-1 md:col-span-7 md:text-left xl:col-span-7">
             <PrismicRichText
               field={data.introTitle}
@@ -52,18 +63,16 @@ const About: FC<IAbout> = ({ data, settings }) => (
             />
           </div>
         </div>
-      </Container>
-      <Container>
-        <div className="grid grid-cols-1 gap-16 pb-28  text-white-100 md:grid-cols-12 md:gap-8">
-          <div className="mx-autocol-span-1 sticky top-20 max-w-[41rem] md:col-span-6 md:text-left xl:col-span-6">
-            <div className="font-charmRegular text-pLGRegular font-normal tracking-[0.02em] text-white-100">
+        <div className="text-white-100 grid grid-cols-1 gap-16  pb-28 md:grid-cols-12 md:gap-8">
+          <div className="sticky top-20  col-span-6 col-start-1 mx-auto">
+            <div className="max-w-[35rem] font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-65">
               <PrismicRichText
                 field={data.introDescription}
                 components={introComponents}
               />
             </div>
 
-            <div className=" font-charmRegular pt-20 pb-28 text-pLGRegular font-normal tracking-[0.02em]  text-white-100">
+            <div className="pt-20 pb-28">
               <PrismicRichText
                 field={data.introParagprah}
                 components={introComponents}
@@ -74,11 +83,11 @@ const About: FC<IAbout> = ({ data, settings }) => (
                 <>
                   <div
                     key={index}
-                    className="font-charmSemiBold mb-6 text-pSMSemiBold font-semibold tracking-[0.02em] text-purple-100 "
+                    className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100"
                   >
-                    <PrismicRichText field={moreThingsTitle} />
+                    {moreThingsTitle}
                   </div>
-                  <div className="font-charmRegular mb-28 text-pLGRegular font-normal tracking-[0.02em] text-white-100">
+                  <div className="pt-6 pb-28">
                     <PrismicRichText
                       field={moreThingsDescription}
                       components={introComponents}
@@ -87,9 +96,9 @@ const About: FC<IAbout> = ({ data, settings }) => (
                 </>
               )
             )}
-            <div className="pb-32">
-              <div className="font-charmSemiBold mb-6 text-pMDSemiBold font-semibold tracking-[0.02em] text-purple-100">
-                <PrismicRichText field={data.mygoToolsTitle} />
+            <div>
+              <div className="pb-6 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100">
+                {data.mygoToolsTitle}
               </div>
               {data.moreTools.map(
                 (
@@ -101,12 +110,12 @@ const About: FC<IAbout> = ({ data, settings }) => (
                   },
                   index
                 ) => (
-                  <div key={index} className="">
-                    <div className="font-charmRegular mb-8 text-pLGRegular font-normal tracking-[0.02em] text-white-100">
-                      {asText(moreToolsAbout)}
+                  <div key={index}>
+                    <div className="font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+                      {moreToolsAbout}
                     </div>
-                    <div className="mb-20 flex items-center">
-                      <div className="bg-darkestGrey-100 flex rounded-[0.5rem] py-8 px-8">
+                    <div className="flex items-center pb-20 pt-8">
+                      <div className="flex rounded-[0.5rem] border-[0.03125rem] border-neutral-50 bg-primary-5 py-8 px-8 dark:bg-neutral-80">
                         <Image
                           src={moreToolsImage.url ?? ''}
                           alt={moreToolsImage.alt ?? ''}
@@ -117,11 +126,11 @@ const About: FC<IAbout> = ({ data, settings }) => (
                         />
 
                         <div className="pl-8">
-                          <div className="font-charmSemiBold text-pSMSemiBold font-semibold tracking-[0.02em] text-white-100">
-                            <PrismicRichText field={moreToolsTitle} />
+                          <div className="font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+                            {moreToolsTitle}
                           </div>
-                          <div className="font-regular font-codeRegular text-lightestGrey-100 text-codeMDRegular">
-                            {asText(moreToolsDescription)}
+                          <div className="font-codeRegular pt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-100 dark:text-neutral-15">
+                            {moreToolsDescription}
                           </div>
                         </div>
                       </div>
@@ -132,9 +141,9 @@ const About: FC<IAbout> = ({ data, settings }) => (
             </div>
           </div>
           <div className="relative col-span-3 col-start-10">
-            <div className="border-darkGrey-100 bg-darkestGrey-100 sticky top-10 rounded-[1.25rem]  border-[0.0625rem] py-8 px-8">
+            <div className="sticky top-10 rounded-[1.25rem] border-[0.03125rem] border-neutral-30 bg-primary-5 py-8 px-8 dark:border-neutral-15 dark:bg-neutral-80">
               <div>
-                <div>
+                <div className="flex items-center justify-center">
                   <Image
                     src={data.profileImage.url ?? ''}
                     alt={data.profileImage.alt ?? ''}
@@ -143,45 +152,48 @@ const About: FC<IAbout> = ({ data, settings }) => (
                     layout="fixed"
                     quality={100}
                   />
-                  <div className="font-charmSemiBold pt-8 pb-2 text-pLGSemiBold font-normal tracking-[0.02em] text-white-100">
-                    <PrismicRichText field={data.profileName} />
-                  </div>
-                  <div className="font-charmSemiBold text-lightGrey-100 pb-8 text-pLGSemiBold font-normal tracking-[0.02em]">
-                    <PrismicRichText field={data.profileLocation} />
-                  </div>
-                  <div className="border-mediumGrey-100 border-t pb-8" />
-                  {data.profileSocials.map(
-                    (
-                      {
-                        profileSocialsCategory,
-                        profileSocialsCategoryLink,
-                        profileSocialsIcon,
-                      },
-                      index
-                    ) => (
-                      <div key={index} className="mb-4 flex">
-                        <div className="flex">
-                          <Image
-                            src={profileSocialsIcon.url ?? ''}
-                            alt={profileSocialsIcon.alt ?? ''}
-                            width={24}
-                            height={24}
-                            layout="fixed"
-                            quality={100}
-                          />
-
-                          <PrismicLink field={profileSocialsCategoryLink}>
-                            <div className="font-charmSemiBold text-lightGrey-100  flex items-center pl-4 text-pSMSemiBold font-semibold tracking-[0.02em] hover:text-white-100">
-                              <PrismicRichText field={profileSocialsCategory} />
-
-                              <ArrowIcon />
-                            </div>
-                          </PrismicLink>
-                        </div>
-                      </div>
-                    )
-                  )}
                 </div>
+                <div className="flex items-center justify-center pt-8 pb-2 font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+                  {data.profileName}
+                </div>
+                <div className="flex items-center justify-center font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
+                  {data.profileLocation}
+                </div>
+                <div className="pb-8 pt-8">
+                  <Divider />
+                </div>
+                {data.profileSocials.map(
+                  (
+                    {
+                      profileSocialsCategory,
+                      profileSocialsCategoryLink,
+                      profileSocialsIcon,
+                    },
+                    index
+                  ) => (
+                    <div key={index} className="pt-4">
+                      <PrismicLink field={profileSocialsCategoryLink}>
+                        <div className="flex justify-between text-neutral-100 hover:animate-pulse hover:text-neutral-50 dark:text-neutral-0 dark:hover:text-neutral-30">
+                          <div className="flex pr-4 ">
+                            <Image
+                              src={profileSocialsIcon.url ?? ''}
+                              alt={profileSocialsIcon.alt ?? ''}
+                              width={24}
+                              height={24}
+                              layout="fixed"
+                              quality={100}
+                            />
+
+                            <div className="flex pl-4 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
+                              {profileSocialsCategory}
+                            </div>
+                          </div>
+                          <SocialLinkIcon />
+                        </div>
+                      </PrismicLink>
+                    </div>
+                  )
+                )}
               </div>
             </div>
           </div>
