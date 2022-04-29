@@ -116,98 +116,10 @@
           "blocks": 1
         }
       },
-      "introTitleDescription": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "deviceTitle": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "deviceDescription": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "devices": {
-        "deviceDetails": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        }
-      },
-      "setupTitle": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "setupDescription": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "setup": {
-        "setupDetails": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        }
-      },
-      "peripheralTitle": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "peripheralDescription": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "peripherals": {
-        "peripheralDetails": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        }
-      },
-      "softwareTitle": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "softwareDescription": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "software": {
-        "softwareTitle": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        },
-        "softwareDescription": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        }
-      }
+      "devices": {},
+      "setup": {},
+      "peripherals": {},
+      "software": {}
     },
     "work": {
       "introTitle": {
