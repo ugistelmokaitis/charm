@@ -10,6 +10,7 @@ import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
 import richTextComponents from '../components/richTextComponents';
 import ArrowIcon from '../public/icons/arrowIcon.svg';
+import Divider from '../components/divider';
 
 type IExtensions = {
   data: ExtensionsProps['data'];
@@ -18,66 +19,67 @@ type IExtensions = {
 
 const Extensions: FC<IExtensions> = ({ data, settings }) => (
   <Layout title="" description="" settings={settings}>
-    <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 lg:grid-cols-12">
+    <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
       <Container>
-        <div className="grid-starts-1 grid grid-cols-12 gap-16 pt-32 text-white-100 md:grid-cols-12 md:gap-8">
-          <div className=" col-span-4 ">
+        <div className="grid-starts-1 text-white-100 grid grid-cols-12 gap-16 pt-32 md:grid-cols-12 md:gap-8">
+          <div className="col-span-6">
             <PrismicRichText field={data.introTitle} />
-            <div className="mb-28 mt-28">
-              <PrismicRichText field={data.introDescription} />
+            <div className="mt-28 mb-28 font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+              {data.introDescription}
             </div>
-            <div className=" font-charmRegular pt-20 pb-28 text-pLGRegular font-normal tracking-[0.02em]  text-purple-100">
-              <PrismicRichText field={data.extensionsTitle} />
+            <div className="font-codeRegular font-FiraCode_Regular text-codeMDRegular text-primary-100 dark:text-blue-100">
+              {data.extensionsTitle}
             </div>
             {data.extentions.map(
               ({ extentionDescription, extentionTitle }, index) => (
                 <>
                   <div
                     key={index}
-                    className="font-charmSemiBold mb-6 text-pSMSemiBold font-semibold tracking-[0.02em] text-white-100 "
+                    className="pt-6 pb-4 font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
                   >
-                    <PrismicRichText field={extentionTitle} />
+                    {extentionTitle}
                   </div>
-                  <div className="font-charmRegular mb-28 text-pLGRegular font-normal tracking-[0.02em] text-white-100">
-                    <PrismicRichText field={extentionDescription} />
+                  <div className="pb-12 font-ABCWhyteEdu_Regular text-pMDRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15">
+                    {extentionDescription}
                   </div>
                 </>
               )
             )}
           </div>
           <div className="relative col-span-3 col-start-10">
-            <div className="border-darkGrey-100 bg-darkestGrey-100 sticky top-10 rounded-[1.25rem]  border-[0.0625rem] py-8 px-8">
-              <div className="font-charmSemiBold pt-8 pb-2 text-pLGSemiBold font-normal tracking-[0.02em] text-white-100">
-                <PrismicRichText field={data.socialTitle} />
+            <div className="border-darkGrey-100 bg-darkestGrey-100 sticky top-10 rounded-[1.25rem] border-[0.0625rem] bg-primary-5  py-8 px-8 dark:bg-neutral-80">
+              <div className="flex items-center justify-center font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+                {data.socialTitle}
               </div>
-              <div className="font-charmSemiBold pt-8 pb-2 text-pLGSemiBold font-normal tracking-[0.02em] text-white-100">
-                <PrismicRichText field={data.socialDescription} />
+              <div className="flex items-center justify-center pt-2 pb-8 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-50 dark:text-neutral-15">
+                {data.socialDescription}
               </div>
-              <div className="border-mediumGrey-100 border-t pb-8" />
+              <Divider />
               {data.socialProfile.map(
                 (
                   { socialProfileIcon, socialProfileLink, socialProfileTitle },
                   index
                 ) => (
-                  <div key={index} className="mb-4 flex">
-                    <div className="flex">
-                      <Image
-                        src={socialProfileIcon.url ?? ''}
-                        alt={socialProfileIcon.alt ?? ''}
-                        width={24}
-                        height={24}
-                        layout="fixed"
-                        quality={100}
-                      />
+                  <div key={index} className="pt-8">
+                    <PrismicLink field={socialProfileLink}>
+                      <div className="flex items-center justify-between text-neutral-100 hover:animate-pulse hover:text-neutral-50 dark:text-neutral-0 dark:hover:text-neutral-30">
+                        <div className="flex">
+                          <Image
+                            src={socialProfileIcon.url ?? ''}
+                            alt={socialProfileIcon.alt ?? ''}
+                            width={24}
+                            height={24}
+                            layout="fixed"
+                            quality={100}
+                          />
 
-                      <PrismicLink field={socialProfileLink}>
-                        <div className="font-charmSemiBold text-lightGrey-100  flex items-center pl-4 text-pSMSemiBold font-semibold tracking-[0.02em] hover:text-white-100">
-                          <PrismicRichText field={socialProfileTitle} />
-
-                          <ArrowIcon />
+                          <div className="flex pl-4 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
+                            {socialProfileTitle}
+                          </div>
                         </div>
-                      </PrismicLink>
-                    </div>
+                        <ArrowIcon />
+                      </div>
+                    </PrismicLink>
                   </div>
                 )
               )}

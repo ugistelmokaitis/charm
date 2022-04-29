@@ -4,25 +4,26 @@ import type {
   LinkField,
   GroupField,
   ImageField,
+  KeyTextField,
 } from '@prismicio/types';
 
 export type ExtensionsProps = PrismicDocumentWithUID<{
   introTitle: RichTextField;
-  introDescription: RichTextField;
-  extensionsTitle: RichTextField;
-  socialTitle: RichTextField;
-  socialDescription: RichTextField;
+  introDescription: KeyTextField;
+  extensionsTitle: KeyTextField;
+  socialTitle: KeyTextField;
+  socialDescription: KeyTextField;
   socialProfile: socialProfileProps;
   extentions: ExtensionProps;
 }>;
 
 type ExtensionProps = GroupField<{
-  extentionDescription: RichTextField;
-  extentionTitle: RichTextField;
+  extentionDescription: KeyTextField;
+  extentionTitle: KeyTextField;
 }>;
 
 type socialProfileProps = GroupField<{
   socialProfileIcon: ImageField;
-  socialProfileTitle: RichTextField;
+  socialProfileTitle: KeyTextField;
   socialProfileLink: LinkField;
 }>;
