@@ -1,35 +1,23 @@
 {
-  "id": "dba401a8-d6ad-47c0-b53e-6386d9b36a4a",
-  "uid": "adipisci-animi-necessitatibus",
+  "id": "607a5bb2-567e-49b6-9f63-edbfb2be160f",
+  "uid": "iusto-aspernatur-ipsa",
   "type": "home",
   "data": {
-    "titleTag": "architect cross-media e-commerce",
-    "metaDescription": "seize holistic schemas",
-    "heroGreetingTitle": [
-      {
-        "type": "paragraph",
-        "text": "Do eiusmod proident sint voluptate occaecat occaecat ad. Consequat deserunt dolore sint ad excepteur Lorem qui ex non duis.",
-        "spans": []
-      }
-    ],
-    "heroNameTitle": [
-      {
-        "type": "paragraph",
-        "text": "Minim quis duis officia mollit pariatur cupidatat enim exercitation excepteur non amet tempor. Sit labore duis eu commodo labore. Est officia magna id quis dolore ea exercitation excepteur sit et.",
-        "spans": []
-      }
-    ],
-    "heroDescription": [
-      {
-        "type": "paragraph",
-        "text": "Exercitation id exercitation dolor consectetur.",
-        "spans": []
-      }
-    ],
+    "titleTag": "incentivize clicks-and-mortar interfaces",
+    "metaDescription": "architect B2B e-business",
+    "heroGreetingTitle": "extend enterprise networks",
+    "heroNameTitle": "drive out-of-the-box mindshare",
+    "heroDescription": "exploit B2C bandwidth",
+    "badgeButtonPrefix": "architect distributed e-commerce",
+    "badgeButtonLabel": "reintermediate e-business communities",
+    "badgeButtonLink": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    },
     "skillsTitle": [
       {
         "type": "paragraph",
-        "text": "Consequat eiusmod occaecat do ad.",
+        "text": "Consectetur cillum nostrud incididunt aliquip officia nulla aute cillum laborum esse fugiat culpa ex velit ut.",
         "spans": []
       }
     ],
@@ -38,7 +26,7 @@
         "skill": [
           {
             "type": "paragraph",
-            "text": "Deserunt excepteur consectetur id mollit anim esse quis aliqua minim est aliqua fugiat. Do occaecat nostrud ex ipsum consectetur Lorem tempor cupidatat eiusmod esse sit.",
+            "text": "Irure velit ad ut.",
             "spans": []
           }
         ]
@@ -47,10 +35,60 @@
         "skill": [
           {
             "type": "paragraph",
-            "text": "Irure velit Lorem ex. Enim commodo commodo in esse elit qui laboris aute dolore consectetur et nulla Lorem adipisicing.",
+            "text": "Laboris excepteur irure aliqua aliquip anim adipisicing irure ipsum culpa duis voluptate aliquip excepteur est culpa.",
             "spans": []
           }
         ]
+      },
+      {
+        "skill": [
+          {
+            "type": "paragraph",
+            "text": "Enim non sint reprehenderit aute et mollit commodo ad. Do tempor est eu minim exercitation.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "skill": [
+          {
+            "type": "paragraph",
+            "text": "Adipisicing fugiat ipsum culpa ad exercitation in magna dolor cillum ut exercitation aute quis sit cillum. Duis enim sunt ut ad do ea cupidatat sint.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "skill": [
+          {
+            "type": "paragraph",
+            "text": "Exercitation laboris nostrud laborum ea labore ut aute reprehenderit. Non culpa quis irure cupidatat amet minim cupidatat culpa amet laborum. Qui nulla et voluptate.",
+            "spans": []
+          }
+        ]
+      }
+    ],
+    "experienceTitle": [
+      {
+        "type": "paragraph",
+        "text": "Minim incididunt culpa nostrud deserunt incididunt in amet ea fugiat mollit. In consequat tempor nisi.",
+        "spans": []
+      }
+    ],
+    "company": [
+      {
+        "companyName": "architect revolutionary paradigms",
+        "companyRole": "morph end-to-end models",
+        "companyYear": "enable holistic schemas",
+        "companyResponsibilities": "e-enable distributed partnerships",
+        "companyTools": "integrate proactive supply-chains"
+      },
+      {
+        "companyName": "exploit clicks-and-mortar bandwidth",
+        "companyRole": "leverage B2C niches",
+        "companyYear": "mesh collaborative schemas",
+        "companyResponsibilities": "grow 24/7 infomediaries",
+        "companyTools": "scale granular markets"
       }
     ]
   }

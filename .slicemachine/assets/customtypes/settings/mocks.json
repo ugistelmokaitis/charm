@@ -1,6 +1,6 @@
 {
-  "id": "5228ac3d-41c7-4548-a436-d34fd1dbc0fc",
-  "uid": "architecto-quia-rem",
+  "id": "bbec5c67-ba25-4c0d-8a42-dff5d11b11cf",
+  "uid": "enim-quis-et",
   "type": "settings",
   "data": {
     "headerHeroLink": {
@@ -11,129 +11,69 @@
       "link_type": "Web",
       "url": "http://google.com"
     },
-    "headerPrimaryButtonLabel": [
-      {
-        "type": "paragraph",
-        "text": "Aliquip occaecat dolore deserunt veniam. Dolor aliqua voluptate reprehenderit reprehenderit veniam et esse velit sunt nisi consectetur pariatur dolore consequat. Dolor amet dolor pariatur sunt labore elit dolore nisi excepteur ad laboris ea pariatur commodo.",
-        "spans": []
-      }
-    ],
+    "headerPrimaryButtonLabel": "drive rich architectures",
     "headerPrimaryButtonLink": {
       "link_type": "Web",
       "url": "http://google.com"
     },
     "headerSiteMap": [
       {
-        "headerPageLabel": [
-          {
-            "type": "paragraph",
-            "text": "Pariatur cupidatat enim reprehenderit pariatur dolor velit aliquip do elit.",
-            "spans": []
-          }
-        ],
+        "headerPageLabel": "synthesize bleeding-edge methodologies",
         "headerPageLink": {
           "link_type": "Web",
           "url": "https://prismic.io"
         }
       },
       {
-        "headerPageLabel": [
-          {
-            "type": "paragraph",
-            "text": "Dolor officia aliquip sunt excepteur eu aliquip laboris aliquip et nulla aliquip cillum est consequat. Culpa anim ea occaecat nulla proident esse mollit est.",
-            "spans": []
-          }
-        ],
+        "headerPageLabel": "recontextualize front-end web-readiness",
         "headerPageLink": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "http://twitter.com"
         }
       },
       {
-        "headerPageLabel": [
-          {
-            "type": "paragraph",
-            "text": "Exercitation exercitation ipsum veniam aliquip enim ea deserunt proident nisi. Amet pariatur laboris quis pariatur velit.",
-            "spans": []
-          }
-        ],
-        "headerPageLink": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "headerPageLabel": [
-          {
-            "type": "paragraph",
-            "text": "Sit esse et magna fugiat irure cillum occaecat tempor ut elit Lorem eiusmod anim. Et adipisicing aliquip deserunt consequat labore excepteur do laborum. Sunt incididunt excepteur laboris irure adipisicing elit pariatur magna ex elit Lorem.",
-            "spans": []
-          }
-        ],
-        "headerPageLink": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "headerPageLabel": [
-          {
-            "type": "paragraph",
-            "text": "Voluptate sunt nulla enim deserunt dolor ex. Qui eu in magna labore laboris amet Lorem et reprehenderit voluptate officia. Ad laborum dolore laborum exercitation ad cillum consequat.",
-            "spans": []
-          }
-        ],
+        "headerPageLabel": "engineer impactful action-items",
         "headerPageLink": {
           "link_type": "Web",
           "url": "https://prismic.io"
         }
       }
     ],
-    "siteCredit": [
-      {
-        "type": "paragraph",
-        "text": "Veniam ex eiusmod labore nisi dolore magna magna culpa.",
-        "spans": []
-      }
-    ],
+    "siteCredit": "monetize impactful niches",
     "footerSitemap": [
       {
-        "pageLabel": [
-          {
-            "type": "paragraph",
-            "text": "Magna tempor magna duis elit aliqua irure dolore duis. Aute elit duis cupidatat adipisicing sint ex.",
-            "spans": []
-          }
-        ],
-        "pageLink": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "pageLabel": [
-          {
-            "type": "paragraph",
-            "text": "Do veniam laboris ad eiusmod aliqua laborum velit laboris velit nisi. Do dolor ipsum ipsum laborum aute in sunt. Deserunt commodo cillum et ut irure.",
-            "spans": []
-          }
-        ],
+        "pageLabel": "leverage visionary methodologies",
         "pageLink": {
           "link_type": "Web",
           "url": "http://twitter.com"
         }
       },
       {
-        "pageLabel": [
-          {
-            "type": "paragraph",
-            "text": "Exercitation id veniam ex. Excepteur ullamco eiusmod ad in exercitation enim voluptate nulla dolor proident aute deserunt sint ullamco veniam. Ut aliqua sint incididunt cillum ut anim minim deserunt amet est in excepteur velit.",
-            "spans": []
-          }
-        ],
+        "pageLabel": "productize virtual web-readiness",
         "pageLink": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "pageLabel": "productize back-end bandwidth",
+        "pageLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "pageLabel": "mesh real-time deliverables",
+        "pageLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "pageLabel": "productize 24/7 applications",
+        "pageLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
         }
       }
     ],
@@ -146,11 +86,11 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
         },
         "socialMediaLink": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "http://twitter.com"
         }
       },
       {
@@ -161,26 +101,11 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
         },
         "socialMediaLink": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "socialMediaIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
-        },
-        "socialMediaLink": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "https://prismic.io"
         }
       },
       {
@@ -192,6 +117,36 @@
           "alt": "Placeholder image",
           "copyright": null,
           "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
+        },
+        "socialMediaLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "socialMediaIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+        },
+        "socialMediaLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "socialMediaIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
         },
         "socialMediaLink": {
           "link_type": "Web",

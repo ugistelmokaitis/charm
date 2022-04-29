@@ -1,92 +1,24 @@
 {
   "_cts": {
     "settings": {
-      "headerSiteMap": {
-        "headerPageLabel": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        }
-      },
-      "headerPrimaryButtonLabel": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "siteCredit": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "footerSitemap": {
-        "pageLabel": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        }
-      }
+      "headerSiteMap": {},
+      "footerSitemap": {}
     },
     "home": {
-      "heroGreetingTitle": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "heroNameTitle": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "heroDescription": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
       "skillsTitle": {
         "config": {
           "patternType": "PARAGRAPH",
           "blocks": 1
         }
       },
-      "skills": {
-        "skill": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        }
-      }
+      "skills": {},
+      "company": {}
     },
     "experience": {
       "company": {}
     },
     "about": {
-      "introDescription": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "introParagprah": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
       "moreThings": {
-        "moreThingsTitle": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        },
         "moreThingsDescription": {
           "config": {
             "patternType": "PARAGRAPH",
@@ -94,44 +26,8 @@
           }
         }
       },
-      "mygoToolsTitle": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "moreTools": {
-        "moreToolsAbout": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        },
-        "moreToolsTitle": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        },
-        "moreToolsDescription": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        }
-      },
-      "profileName": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "profileLocation": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      }
+      "moreTools": {},
+      "profileSocials": {}
     },
     "contact": {
       "introTitle": {
