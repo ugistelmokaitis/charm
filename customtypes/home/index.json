@@ -29,31 +29,47 @@
     },
     "Hero": {
       "heroGreetingTitle": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Hero Greeting Title",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "heroNameTitle": {
+        "type": "Text",
         "config": {
           "label": "Hero Name Title",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-        },
-        "type": "StructuredText"
+          "placeholder": ""
+        }
       },
       "heroDescription": {
+        "type": "Text",
         "config": {
           "label": "Hero Description",
+          "placeholder": ""
+        }
+      },
+      "badgeButtonPrefix": {
+        "type": "Text",
+        "config": {
+          "label": "Badge Button Prefix",
+          "placeholder": ""
+        }
+      },
+      "badgeButtonLabel": {
+        "type": "Text",
+        "config": {
+          "label": "Badge Button Label",
+          "placeholder": ""
+        }
+      },
+      "badgeButtonLink": {
+        "type": "Link",
+        "config": {
+          "label": "Badge Button Link",
           "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-        },
-        "type": "StructuredText"
+          "select": null
+        }
       }
     },
     "Skills": {
@@ -78,6 +94,60 @@
                 "placeholder": "",
                 "allowTargetBlank": true,
                 "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Experience": {
+      "experienceTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Experience Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "company": {
+        "type": "Group",
+        "config": {
+          "label": "Company",
+          "fields": {
+            "companyName": {
+              "type": "Text",
+              "config": {
+                "label": "Company Name",
+                "placeholder": ""
+              }
+            },
+            "companyRole": {
+              "type": "Text",
+              "config": {
+                "label": "Company Role",
+                "placeholder": ""
+              }
+            },
+            "companyYear": {
+              "type": "Text",
+              "config": {
+                "label": "Company Year",
+                "placeholder": ""
+              }
+            },
+            "companyResponsibilities": {
+              "type": "Text",
+              "config": {
+                "label": "Company Responsibilities",
+                "placeholder": ""
+              }
+            },
+            "companyTools": {
+              "type": "Text",
+              "config": {
+                "label": "Company Tools",
+                "placeholder": ""
               }
             }
           }

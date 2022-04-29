@@ -43,7 +43,7 @@
           "label": "Intro Description",
           "placeholder": "",
           "allowTargetBlank": true,
-          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "introParagprah": {
@@ -63,12 +63,10 @@
           "label": "More Things",
           "fields": {
             "moreThingsTitle": {
-              "type": "StructuredText",
+              "type": "Text",
               "config": {
                 "label": "More Things Title",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "placeholder": ""
               }
             },
             "moreThingsDescription": {
@@ -84,12 +82,10 @@
         }
       },
       "mygoToolsTitle": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Mygo Tools Title",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "moreTools": {
@@ -97,31 +93,25 @@
         "config": {
           "label": "More Tools",
           "fields": {
-            "moreToolsAbout": {
-              "type": "StructuredText",
-              "config": {
-                "label": "More Tools About",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-              }
-            },
             "moreToolsTitle": {
-              "type": "StructuredText",
+              "type": "Text",
               "config": {
                 "label": "More Tools Title",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "placeholder": ""
+              }
+            },
+            "moreToolsAbout": {
+              "type": "Text",
+              "config": {
+                "label": "More Tools About",
+                "placeholder": ""
               }
             },
             "moreToolsDescription": {
-              "type": "StructuredText",
+              "type": "Text",
               "config": {
                 "label": "More Tools Description",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "placeholder": ""
               }
             },
             "moreToolsImage": {
@@ -146,21 +136,17 @@
         }
       },
       "profileName": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Profile Name",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "profileLocation": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Profile Location",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "profileSocials": {
@@ -177,12 +163,10 @@
               }
             },
             "profileSocialsCategory": {
-              "type": "StructuredText",
+              "type": "Text",
               "config": {
                 "label": "Profile Socials Category",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "placeholder": ""
               }
             },
             "profileSocialsCategoryLink": {

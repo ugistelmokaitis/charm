@@ -35,13 +35,11 @@
           "label": "Header Site Map",
           "fields": {
             "headerPageLabel": {
+              "type": "Text",
               "config": {
                 "label": "Header Page Label",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-              },
-              "type": "StructuredText"
+                "placeholder": ""
+              }
             },
             "headerPageLink": {
               "config": {
@@ -57,13 +55,11 @@
         "type": "Group"
       },
       "headerPrimaryButtonLabel": {
+        "type": "Text",
         "config": {
           "label": "Header Primary Button Label",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-        },
-        "type": "StructuredText"
+          "placeholder": ""
+        }
       },
       "headerPrimaryButtonLink": {
         "type": "Link",
@@ -76,26 +72,22 @@
     },
     "Footer": {
       "siteCredit": {
+        "type": "Text",
         "config": {
           "label": "Site Credit",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-        },
-        "type": "StructuredText"
+          "placeholder": ""
+        }
       },
       "footerSitemap": {
         "config": {
           "label": "Footer Sitemap",
           "fields": {
             "pageLabel": {
+              "type": "Text",
               "config": {
                 "label": "Page Label",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
-              },
-              "type": "StructuredText"
+                "placeholder": ""
+              }
             },
             "pageLink": {
               "config": {
