@@ -37,33 +37,27 @@
           "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
-      "introTitleDescription": {
-        "type": "StructuredText",
+      "introDescription": {
+        "type": "Text",
         "config": {
-          "label": "Intro Title Description",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "label": "Intro Description",
+          "placeholder": ""
         }
       }
     },
     "Devices": {
       "deviceTitle": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Device Title",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "deviceDescription": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Device Description",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "devices": {
@@ -72,12 +66,10 @@
           "label": "Devices",
           "fields": {
             "deviceDetails": {
-              "type": "StructuredText",
+              "type": "Text",
               "config": {
                 "label": "Device Details",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "placeholder": ""
               }
             },
             "deviceImage": {
@@ -94,21 +86,17 @@
     },
     "Setup": {
       "setupTitle": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Setup Title",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "setupDescription": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Setup Description",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "setup": {
@@ -125,12 +113,10 @@
               }
             },
             "setupDetails": {
-              "type": "StructuredText",
+              "type": "Text",
               "config": {
                 "label": "Setup Details",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "placeholder": ""
               }
             }
           }
@@ -139,21 +125,17 @@
     },
     "Peripheral": {
       "peripheralTitle": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Peripheral Title",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "peripheralDescription": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Peripheral Description",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "peripherals": {
@@ -170,12 +152,10 @@
               }
             },
             "peripheralDetails": {
-              "type": "StructuredText",
+              "type": "Text",
               "config": {
                 "label": "Peripheral Details",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "placeholder": ""
               }
             }
           }
@@ -184,21 +164,17 @@
     },
     "Software": {
       "softwareTitle": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Software Title",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "softwareDescription": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Software Description",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "software": {
@@ -215,21 +191,17 @@
               }
             },
             "softwareTitle": {
-              "type": "StructuredText",
+              "type": "Text",
               "config": {
                 "label": "Software Title",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "placeholder": ""
               }
             },
             "softwareDescription": {
-              "type": "StructuredText",
+              "type": "Text",
               "config": {
                 "label": "Software Description",
-                "placeholder": "",
-                "allowTargetBlank": true,
-                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                "placeholder": ""
               }
             }
           }
