@@ -1,111 +1,43 @@
 {
-  "id": "c534e4fe-8ac4-489f-8d9b-d117ea03fe29",
-  "uid": "voluptas-in-ut",
+  "id": "c676bfc7-d573-4756-bdb1-0b796b05d835",
+  "uid": "rerum-asperiores-ut",
   "type": "extensions",
   "data": {
-    "titleTag": "drive out-of-the-box relationships",
-    "metaDescription": "engage 24/7 convergence",
+    "titleTag": "drive granular content",
+    "metaDescription": "facilitate intuitive e-business",
     "introTitle": [
       {
         "type": "paragraph",
-        "text": "Sit laboris non ex amet sint nostrud tempor ullamco cillum ex dolore consectetur cillum irure dolor. Voluptate eu ullamco esse mollit incididunt est sint incididunt. Eiusmod laborum aliquip proident elit deserunt enim.",
+        "text": "Non ex sit ex eu aute excepteur. Quis in sint consectetur exercitation sunt aute incididunt laboris labore quis id pariatur dolor esse nostrud.",
         "spans": []
       }
     ],
-    "introDescription": [
-      {
-        "type": "paragraph",
-        "text": "Culpa esse anim exercitation esse non eu esse Lorem velit veniam labore sit magna velit. Reprehenderit est ut veniam amet laboris ipsum occaecat eiusmod et.",
-        "spans": []
-      }
-    ],
-    "ExtensionsTitle": [
-      {
-        "type": "paragraph",
-        "text": "Ea eiusmod incididunt ex nisi aute nostrud laboris ullamco nulla nostrud tempor. Excepteur sunt in exercitation adipisicing nulla veniam.",
-        "spans": []
-      }
-    ],
+    "introDescription": "synthesize cross-media interfaces",
+    "extensionsTitle": "architect distributed vortals",
     "extentions": [
       {
-        "extentionTitle": [
-          {
-            "type": "paragraph",
-            "text": "Tempor cupidatat nostrud consequat aute nisi magna sunt laborum qui Lorem. Elit fugiat nostrud id adipisicing voluptate non cupidatat commodo labore aliquip adipisicing elit. Elit pariatur minim aute voluptate reprehenderit mollit anim.",
-            "spans": []
-          }
-        ],
-        "extentionDescription": [
-          {
-            "type": "paragraph",
-            "text": "Nulla culpa commodo ea occaecat qui tempor amet sint nisi nulla cupidatat Lorem.",
-            "spans": []
-          }
-        ]
+        "extentionTitle": "grow real-time initiatives",
+        "extentionDescription": "deliver interactive applications"
       },
       {
-        "extentionTitle": [
-          {
-            "type": "paragraph",
-            "text": "Aliqua duis laboris in eiusmod. Mollit amet ex adipisicing aliqua cillum quis dolore esse mollit incididunt laborum.",
-            "spans": []
-          }
-        ],
-        "extentionDescription": [
-          {
-            "type": "paragraph",
-            "text": "Nisi excepteur aliquip officia nulla ea fugiat officia aliqua ipsum non. Consectetur quis aliqua do qui eu non cillum nisi commodo.",
-            "spans": []
-          }
-        ]
+        "extentionTitle": "cultivate dot-com deliverables",
+        "extentionDescription": "disintermediate collaborative infomediaries"
       },
       {
-        "extentionTitle": [
-          {
-            "type": "paragraph",
-            "text": "Quis voluptate incididunt duis nostrud mollit. Consectetur commodo irure cillum eu laborum laboris ex tempor velit in sit.",
-            "spans": []
-          }
-        ],
-        "extentionDescription": [
-          {
-            "type": "paragraph",
-            "text": "Excepteur deserunt aliqua tempor eu esse dolore nisi consequat qui cillum dolor aliqua esse veniam. Sit laboris incididunt consectetur aliquip. Dolore amet eiusmod et.",
-            "spans": []
-          }
-        ]
+        "extentionTitle": "implement proactive functionalities",
+        "extentionDescription": "e-enable interactive web services"
       },
       {
-        "extentionTitle": [
-          {
-            "type": "paragraph",
-            "text": "Proident minim ullamco do ad eu.",
-            "spans": []
-          }
-        ],
-        "extentionDescription": [
-          {
-            "type": "paragraph",
-            "text": "Minim et dolor nisi veniam aute Lorem pariatur eiusmod minim ea voluptate est aute minim ad.",
-            "spans": []
-          }
-        ]
-      }
-    ],
-    "socialTitle": [
+        "extentionTitle": "unleash seamless schemas",
+        "extentionDescription": "streamline killer partnerships"
+      },
       {
-        "type": "paragraph",
-        "text": "Nisi cupidatat adipisicing aliqua proident dolore consequat deserunt sint incididunt eu in occaecat eiusmod. Tempor consequat sit commodo consectetur non quis.",
-        "spans": []
+        "extentionTitle": "implement 24/7 synergies",
+        "extentionDescription": "scale best-of-breed schemas"
       }
     ],
-    "socialDescription": [
-      {
-        "type": "paragraph",
-        "text": "Proident elit non fugiat magna labore. Nostrud magna et commodo consequat sit. Eu minim elit ipsum dolor eu.",
-        "spans": []
-      }
-    ],
+    "socialTitle": "visualize B2B eyeballs",
+    "socialDescription": "empower sexy schemas",
     "socialProfile": [
       {
         "socialProfileIcon": {
@@ -115,18 +47,12 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
         },
-        "socialProfileTitle": [
-          {
-            "type": "paragraph",
-            "text": "Nostrud anim minim est irure ex cillum velit incididunt sit Lorem nisi consequat.",
-            "spans": []
-          }
-        ],
+        "socialProfileTitle": "reintermediate vertical web-readiness",
         "socialProfileLink": {
           "link_type": "Web",
-          "url": "https://slicemachine.dev"
+          "url": "https://prismic.io"
         }
       },
       {
@@ -137,40 +63,12 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
         },
-        "socialProfileTitle": [
-          {
-            "type": "paragraph",
-            "text": "Lorem labore in ea. Ea veniam nulla sunt voluptate minim aliqua sit esse in adipisicing occaecat ad.",
-            "spans": []
-          }
-        ],
+        "socialProfileTitle": "transition revolutionary niches",
         "socialProfileLink": {
           "link_type": "Web",
           "url": "http://twitter.com"
-        }
-      },
-      {
-        "socialProfileIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43?w=900&h=500&fit=crop"
-        },
-        "socialProfileTitle": [
-          {
-            "type": "paragraph",
-            "text": "Consequat in duis occaecat laborum ex ex.",
-            "spans": []
-          }
-        ],
-        "socialProfileLink": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
         }
       },
       {
@@ -183,16 +81,10 @@
           "copyright": null,
           "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
         },
-        "socialProfileTitle": [
-          {
-            "type": "paragraph",
-            "text": "Voluptate laboris non nulla velit excepteur ad ex velit. Officia enim amet ullamco nulla irure tempor labore veniam deserunt laboris nostrud. Minim irure cillum veniam tempor ipsum id consequat ipsum non excepteur.",
-            "spans": []
-          }
-        ],
+        "socialProfileTitle": "synthesize mission-critical e-markets",
         "socialProfileLink": {
           "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://slicemachine.dev"
         }
       },
       {
@@ -203,40 +95,12 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
         },
-        "socialProfileTitle": [
-          {
-            "type": "paragraph",
-            "text": "Cillum nulla pariatur qui et voluptate pariatur quis exercitation magna sint labore. Ipsum magna do tempor labore consequat esse.",
-            "spans": []
-          }
-        ],
+        "socialProfileTitle": "architect next-generation functionalities",
         "socialProfileLink": {
           "link_type": "Web",
-          "url": "http://twitter.com"
-        }
-      },
-      {
-        "socialProfileIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
-        },
-        "socialProfileTitle": [
-          {
-            "type": "paragraph",
-            "text": "Veniam laboris est culpa est incididunt ea. Pariatur labore officia ea aliquip exercitation do cupidatat elit nostrud cupidatat ut reprehenderit enim exercitation.",
-            "spans": []
-          }
-        ],
-        "socialProfileLink": {
-          "link_type": "Web",
-          "url": "http://google.com"
+          "url": "https://slicemachine.dev"
         }
       }
     ]

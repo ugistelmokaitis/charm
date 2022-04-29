@@ -62,52 +62,8 @@
           "blocks": 1
         }
       },
-      "introDescription": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "extentions": {
-        "extentionTitle": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        },
-        "extentionDescription": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        }
-      },
-      "ExtensionsTitle": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "socialTitle": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "socialDescription": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "socialProfile": {
-        "socialProfileTitle": {
-          "config": {
-            "patternType": "PARAGRAPH",
-            "blocks": 1
-          }
-        }
-      }
+      "extentions": {},
+      "socialProfile": {}
     },
     "gear": {
       "introTitle": {

@@ -1,23 +1,23 @@
 {
-  "id": "7f75257a-882c-40ea-b73e-941924b86fac",
-  "uid": "aut-ut-aut",
+  "id": "dcf3eeeb-2046-4b62-81f8-ee5dae4d9446",
+  "uid": "facere-ad-natus",
   "type": "gear",
   "data": {
-    "titleTag": "scale viral solutions",
-    "metaDescription": "grow front-end architectures",
+    "titleTag": "incubate efficient deliverables",
+    "metaDescription": "envisioneer enterprise functionalities",
     "introTitle": [
       {
         "type": "paragraph",
-        "text": "Aute sunt officia et reprehenderit sint esse aliquip elit ipsum laboris.",
+        "text": "Anim reprehenderit quis irure adipisicing nisi Lorem incididunt eu sunt occaecat excepteur velit nisi dolor deserunt. Cupidatat nulla aliquip occaecat quis proident esse enim.",
         "spans": []
       }
     ],
-    "introDescription": "e-enable virtual models",
-    "deviceTitle": "transition 24/7 e-tailers",
-    "deviceDescription": "engage collaborative ROI",
+    "introDescription": "strategize sexy synergies",
+    "deviceTitle": "monetize customized infrastructures",
+    "deviceDescription": "disintermediate value-added users",
     "devices": [
       {
-        "deviceDetails": "seize leading-edge web-readiness",
+        "deviceDetails": "transform proactive interfaces",
         "deviceImage": {
           "dimensions": {
             "width": 900,
@@ -25,11 +25,11 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
         }
       },
       {
-        "deviceDetails": "visualize value-added schemas",
+        "deviceDetails": "grow 24/365 e-business",
         "deviceImage": {
           "dimensions": {
             "width": 900,
@@ -37,12 +37,36 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "deviceDetails": "utilize scalable mindshare",
+        "deviceImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "deviceDetails": "brand value-added channels",
+        "deviceImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=900&h=500&fit=crop"
         }
       }
     ],
-    "setupTitle": "extend ubiquitous e-commerce",
-    "setupDescription": "strategize turn-key supply-chains",
+    "setupTitle": "cultivate innovative synergies",
+    "setupDescription": "leverage one-to-one relationships",
     "setup": [
       {
         "setupImage": {
@@ -52,9 +76,9 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
         },
-        "setupDetails": "grow dot-com channels"
+        "setupDetails": "monetize user-centric functionalities"
       },
       {
         "setupImage": {
@@ -64,50 +88,14 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
         },
-        "setupDetails": "utilize B2B bandwidth"
-      },
-      {
-        "setupImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
-        },
-        "setupDetails": "revolutionize plug-and-play eyeballs"
+        "setupDetails": "revolutionize B2C experiences"
       }
     ],
-    "peripheralTitle": "enhance granular solutions",
-    "peripheralDescription": "orchestrate B2C infomediaries",
+    "peripheralTitle": "envisioneer back-end e-services",
+    "peripheralDescription": "mesh cross-media communities",
     "peripherals": [
-      {
-        "peripheralImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
-        },
-        "peripheralDetails": "aggregate wireless synergies"
-      },
-      {
-        "peripheralImage": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb?w=900&h=500&fit=crop"
-        },
-        "peripheralDetails": "evolve enterprise deliverables"
-      },
       {
         "peripheralImage": {
           "dimensions": {
@@ -118,7 +106,7 @@
           "copyright": null,
           "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
         },
-        "peripheralDetails": "e-enable value-added eyeballs"
+        "peripheralDetails": "deliver back-end e-business"
       },
       {
         "peripheralImage": {
@@ -128,9 +116,9 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
         },
-        "peripheralDetails": "harness impactful convergence"
+        "peripheralDetails": "expedite B2B technologies"
       },
       {
         "peripheralImage": {
@@ -140,13 +128,37 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
         },
-        "peripheralDetails": "iterate e-business functionalities"
+        "peripheralDetails": "benchmark front-end relationships"
+      },
+      {
+        "peripheralImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+        },
+        "peripheralDetails": "visualize wireless e-services"
+      },
+      {
+        "peripheralImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+        },
+        "peripheralDetails": "productize bleeding-edge systems"
       }
     ],
-    "softwareTitle": "matrix front-end paradigms",
-    "softwareDescription": "syndicate out-of-the-box users",
+    "softwareTitle": "embrace innovative ROI",
+    "softwareDescription": "grow best-of-breed web-readiness",
     "software": [
       {
         "softwareIcon": {
@@ -156,10 +168,16 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
         },
-        "softwareTitle": "deliver one-to-one functionalities",
-        "softwareDescription": "drive real-time markets"
+        "softwareTitle": "strategize next-generation e-tailers",
+        "softwareDescription": [
+          {
+            "type": "paragraph",
+            "text": "Ipsum laborum commodo exercitation pariatur Lorem qui pariatur tempor elit consectetur mollit. Velit commodo voluptate commodo excepteur consectetur est qui consequat laboris consectetur.",
+            "spans": []
+          }
+        ]
       },
       {
         "softwareIcon": {
@@ -169,10 +187,16 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
         },
-        "softwareTitle": "streamline seamless channels",
-        "softwareDescription": "harness collaborative models"
+        "softwareTitle": "harness compelling technologies",
+        "softwareDescription": [
+          {
+            "type": "paragraph",
+            "text": "Proident est esse quis aliquip magna ut reprehenderit esse excepteur nostrud in proident quis exercitation laboris. Ut consequat eu qui voluptate non do veniam ut nulla tempor. Dolore nulla est anim cupidatat tempor consequat.",
+            "spans": []
+          }
+        ]
       },
       {
         "softwareIcon": {
@@ -182,10 +206,16 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
         },
-        "softwareTitle": "facilitate next-generation deliverables",
-        "softwareDescription": "target real-time supply-chains"
+        "softwareTitle": "facilitate seamless convergence",
+        "softwareDescription": [
+          {
+            "type": "paragraph",
+            "text": "Occaecat cillum anim pariatur voluptate.",
+            "spans": []
+          }
+        ]
       },
       {
         "softwareIcon": {
@@ -195,10 +225,16 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1589652717521-10c0d092dea9?w=900&h=500&fit=crop"
         },
-        "softwareTitle": "incentivize compelling synergies",
-        "softwareDescription": "deploy next-generation experiences"
+        "softwareTitle": "integrate integrated networks",
+        "softwareDescription": [
+          {
+            "type": "paragraph",
+            "text": "Dolore nisi laborum ut sit voluptate do id labore do velit amet in. Dolor consectetur laborum aute eiusmod aute cupidatat nisi laborum qui occaecat labore pariatur adipisicing do. Pariatur tempor nostrud in aliquip fugiat ea.",
+            "spans": []
+          }
+        ]
       },
       {
         "softwareIcon": {
@@ -208,23 +244,16 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da?w=900&h=500&fit=crop"
         },
-        "softwareTitle": "harness integrated web-readiness",
-        "softwareDescription": "empower mission-critical supply-chains"
-      },
-      {
-        "softwareIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
-        },
-        "softwareTitle": "synergize robust content",
-        "softwareDescription": "iterate visionary technologies"
+        "softwareTitle": "synergize leading-edge ROI",
+        "softwareDescription": [
+          {
+            "type": "paragraph",
+            "text": "Incididunt tempor sunt officia. Labore Lorem elit consectetur tempor qui fugiat non. Commodo ipsum cillum labore eiusmod sint cupidatat ullamco labore ipsum aute.",
+            "spans": []
+          }
+        ]
       }
     ]
   }
