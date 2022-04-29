@@ -12,7 +12,7 @@ const Container: FC<IContainer> = ({
   ...props
 }: HTMLAttributes<HTMLDivElement>) => (
   <div
-    className="container mx-auto items-center justify-between gap-8 px-4 md:px-8 "
+    className="container mx-auto items-center justify-between gap-8 "
     {...props}
   >
     {children}
