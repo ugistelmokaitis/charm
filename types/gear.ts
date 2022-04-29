@@ -10,34 +10,34 @@ export type GearProps = PrismicDocumentWithUID<{
   titleTag: KeyTextField;
   metaDescription: KeyTextField;
   introTitle: RichTextField;
-  introDescription: RichTextField;
+  introDescription: KeyTextField;
   devices: DevicesProps;
-  deviceTitle: RichTextField;
-  deviceDescription: RichTextField;
+  deviceTitle: KeyTextField;
+  deviceDescription: KeyTextField;
   setup: SetupProps;
-  setupTitle: RichTextField;
-  setupDescription: RichTextField;
+  setupTitle: KeyTextField;
+  setupDescription: KeyTextField;
   peripherals: PeripheralProps;
-  peripheralTitle: RichTextField;
-  peripheralDescription: RichTextField;
+  peripheralTitle: KeyTextField;
+  peripheralDescription: KeyTextField;
   software: SoftwareProps;
-  softwareTitle: RichTextField;
-  softwareTitleDescription: RichTextField;
+  softwareTitle: KeyTextField;
+  softwareTitleDescription: KeyTextField;
 }>;
 
 type SetupProps = GroupField<{
   setupImage: ImageField;
-  setupDetails: RichTextField;
+  setupDetails: KeyTextField;
 }>;
 
 type DevicesProps = GroupField<{
   deviceImage: ImageField;
-  deviceDetails: RichTextField;
+  deviceDetails: KeyTextField;
 }>;
 
 type PeripheralProps = GroupField<{
   peripheralImage: ImageField;
-  peripheralDetails: RichTextField;
+  peripheralDetails: KeyTextField;
 }>;
 
 type SoftwareProps = GroupField<{
