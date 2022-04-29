@@ -33,8 +33,6 @@ const Header: FC<ISettings> = ({ settings }) => {
     }
   }, [theme]);
 
-  console.log(theme);
-
   return (
     <Headroom>
       <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
@@ -56,8 +54,8 @@ const Header: FC<ISettings> = ({ settings }) => {
                   <div key={index} className="ml-8">
                     <PrismicLink field={headerPageLink}>
                       <div className="text-neutral-50">
-                        <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em] text-neutral-50">
-                          {asText(headerPageLabel)}
+                        <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em] text-neutral-50 dark:text-neutral-30">
+                          {headerPageLabel}
                         </div>
                       </div>
                     </PrismicLink>
@@ -116,9 +114,9 @@ const Header: FC<ISettings> = ({ settings }) => {
               <div className="ml-12">
                 <Button
                   href={`${docResolver(settings.data.headerPrimaryButtonLink)}`}
-                  variant="secondary"
+                  variant="primary"
                 >
-                  {asText(settings.data.headerPrimaryButtonLabel)}
+                  {settings.data.headerPrimaryButtonLabel}
                   <ArrowIcon className="ml-2" />
                 </Button>
               </div>
