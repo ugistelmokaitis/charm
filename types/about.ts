@@ -13,30 +13,30 @@ export type AboutProps = PrismicDocumentWithUID<{
   introTitle: RichTextField;
   introDescription: RichTextField;
   introParagprah: RichTextField;
-  mygoToolsTitle: RichTextField;
+  mygoToolsTitle: KeyTextField;
   moreThings: moreAboutThings;
   moreTools: moreToolsProps;
   profileImage: ImageField;
-  profileName: RichTextField;
+  profileName: KeyTextField;
   profileSocialsArrowLinkIcon: ImageField;
-  profileLocation: RichTextField;
+  profileLocation: KeyTextField;
   profileSocials: profileSocialsProps;
 }>;
 
 type moreAboutThings = GroupField<{
-  moreThingsTitle: RichTextField;
+  moreThingsTitle: KeyTextField;
   moreThingsDescription: RichTextField;
 }>;
 
 type moreToolsProps = GroupField<{
-  moreToolsAbout: RichTextField;
-  moreToolsTitle: RichTextField;
-  moreToolsDescription: RichTextField;
+  moreToolsAbout: KeyTextField;
+  moreToolsTitle: KeyTextField;
+  moreToolsDescription: KeyTextField;
   moreToolsImage: ImageField;
 }>;
 
 type profileSocialsProps = GroupField<{
   profileSocialsIcon: ImageField;
-  profileSocialsCategory: RichTextField;
+  profileSocialsCategory: KeyTextField;
   profileSocialsCategoryLink: LinkField;
 }>;
