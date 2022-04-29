@@ -34,9 +34,6 @@ module.exports = {
       pink: {
         100: '#E279B5',
       },
-      white: {
-        100: '#FFFFFF',
-      },
       neutral: {
         0: '#FFFFFF',
         15: '#CBD1DA',
