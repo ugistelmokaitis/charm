@@ -83,7 +83,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                 <>
                   <div
                     key={index}
-                    className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100"
+                    className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100"
                   >
                     {moreThingsTitle}
                   </div>
@@ -97,7 +97,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
               )
             )}
             <div>
-              <div className="pb-6 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100">
+              <div className="pb-6 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
                 {data.mygoToolsTitle}
               </div>
               {data.moreTools.map(
@@ -129,7 +129,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                           <div className="font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
                             {moreToolsTitle}
                           </div>
-                          <div className="font-codeRegular pt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-100 dark:text-neutral-15">
+                          <div className="font-codeRegular pt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-100 dark:text-neutral-15 ">
                             {moreToolsDescription}
                           </div>
                         </div>
