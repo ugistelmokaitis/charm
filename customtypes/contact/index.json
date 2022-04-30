@@ -47,21 +47,42 @@
         }
       },
       "sharedIdeaSubtitle": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Shared Idea Subtitle",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "introPrimaryButtonLabel": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Intro Primary Button Label",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
+        }
+      }
+    },
+    "Profile": {
+      "profileFullName": {
+        "type": "Text",
+        "config": {
+          "label": "Profile Full Name",
+          "placeholder": ""
+        }
+      },
+      "profileImage": {
+        "type": "Image",
+        "config": {
+          "label": "Profile Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "botProfileImage": {
+        "type": "Image",
+        "config": {
+          "label": "Bot Profile Image",
+          "constraint": {},
+          "thumbnails": []
         }
       }
     }
