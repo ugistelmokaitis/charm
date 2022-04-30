@@ -173,7 +173,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="name"
                     name="name"
                     id="name"
-                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-2 bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="on"
@@ -194,7 +194,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="email"
                     name="email"
                     id="email"
-                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-2 bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="on"
@@ -215,7 +215,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="company"
                     name="company"
                     id="company"
-                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-2 bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     autoComplete="on"
                     maxLength={50}
@@ -235,7 +235,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="website"
                     name="website"
                     id="website"
-                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-2 bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="on"
@@ -262,7 +262,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="message"
                     name="message"
                     id="message"
-                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-2 bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="off"
