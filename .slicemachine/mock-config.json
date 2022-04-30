@@ -41,18 +41,6 @@
           "patternType": "PARAGRAPH",
           "blocks": 1
         }
-      },
-      "sharedIdeaSubtitle": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
-      },
-      "introPrimaryButtonLabel": {
-        "config": {
-          "patternType": "PARAGRAPH",
-          "blocks": 1
-        }
       }
     },
     "extensions": {
