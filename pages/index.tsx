@@ -82,7 +82,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
                     tabIndex={0}
                     className={` ${
                       activeExperience === index
-                        ? 'rounded-lg bg-primary-5 dark:bg-neutral-80'
+                        ? 'rounded-lg bg-primary-25 dark:bg-neutral-80'
                         : 'bg-neutral-0 dark:bg-neutral-100'
                     }`}
                   >
