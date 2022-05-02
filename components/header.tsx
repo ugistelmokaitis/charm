@@ -18,6 +18,7 @@ type ISettings = {
 };
 
 const Header: FC<ISettings> = ({ settings }) => {
+  const router = useRouter();
   const [theme, setTheme, removeTheme] = useLocalStorageValue<
     string | undefined
   >('theme', undefined);
@@ -52,13 +53,17 @@ const Header: FC<ISettings> = ({ settings }) => {
               {settings.data.headerSiteMap.map(
                 ({ headerPageLabel, headerPageLink }, index) => (
                   <div key={index} className="ml-8">
-                    <PrismicLink field={headerPageLink}>
-                      <div className="text-neutral-50">
-                        <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em] text-neutral-50 dark:text-neutral-30">
-                          {headerPageLabel}
-                        </div>
-                      </div>
-                    </PrismicLink>
+                    <Button
+                      href={docResolver(headerPageLink)}
+                      variant="neutral"
+                      className={` ${`py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em] text-neutral-50 hover:text-neutral-65 dark:text-neutral-30 dark:hover:text-neutral-15`} ${
+                        router.asPath === docResolver(headerPageLink)
+                          ? `bg-primary-25 text-[#111827] dark:bg-neutral-80 dark:text-[#FFFFFF]`
+                          : ''
+                      }`}
+                    >
+                      {headerPageLabel}
+                    </Button>
                   </div>
                 )
               )}
