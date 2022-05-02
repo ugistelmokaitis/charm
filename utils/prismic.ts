@@ -14,6 +14,7 @@ export const linkResolver: LinkResolverFunction = (document) => {
 
   const routes: Record<string, string> = {
     home: '/',
+    casestudy: `/work/${document.uid}`,
   };
 
   return routes[document.type] || `/${document.uid}`;
