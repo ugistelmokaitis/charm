@@ -56,9 +56,9 @@ const Header: FC<ISettings> = ({ settings }) => {
                     <Button
                       href={docResolver(headerPageLink)}
                       variant="neutral"
-                      className={` ${`py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em] text-neutral-50 hover:text-neutral-65 dark:text-neutral-30 dark:hover:text-neutral-15`} ${
+                      className={` ${`bg-primary-25dark:bg-neutral-80 py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em]  text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
                         router.asPath === docResolver(headerPageLink)
-                          ? `bg-primary-25 text-[#111827] dark:bg-neutral-80 dark:text-[#FFFFFF]`
+                          ? `text-[#111827]  dark:text-[#FFFFFF]`
                           : ''
                       }`}
                     >
