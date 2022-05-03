@@ -56,7 +56,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                     <Button
                       href={docResolver(headerPageLink)}
                       variant="neutral"
-                      className={` ${`bg-primary-25dark:bg-neutral-80 py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em]  text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
+                      className={` ${`bg-primary-25dark:bg-neutral-80 rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em]  text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
                         router.asPath === docResolver(headerPageLink)
                           ? `text-[#111827]  dark:text-[#FFFFFF]`
                           : ''
@@ -67,7 +67,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                   </div>
                 )
               )}
-              <div className="ml-8 hover:bg-primary-75">
+              <div className="ml-8 rounded-md py-[7px] px-[7px] hover:bg-primary-25 dark:hover:bg-neutral-80">
                 <PrismicLink
                   href={`${docResolver(settings.data.githubSourceLink)}`}
                 >
@@ -82,7 +82,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                 </PrismicLink>
               </div>
 
-              <div className="ml-8 hover:bg-primary-50">
+              <div className="ml-8 rounded-md py-[7px] px-[7px] hover:bg-primary-25 dark:hover:bg-neutral-80">
                 <div
                   className="hidden dark:block"
                   onClick={() => {

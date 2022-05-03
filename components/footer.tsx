@@ -30,7 +30,7 @@ const Footer: FC<ISettings> = ({ settings }) => {
                   <Button
                     href={docResolver(pageLink)}
                     variant="neutral"
-                    className={` ${`bg-primary-25dark:bg-neutral-80 py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em]  text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
+                    className={` ${`bg-primary-25dark:bg-neutral-80 rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em]  text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
                       router.asPath === docResolver(pageLink)
                         ? `text-[#111827]  dark:text-[#FFFFFF]`
                         : ''
