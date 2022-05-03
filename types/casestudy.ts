@@ -4,12 +4,18 @@ import type {
   RichTextField,
   SliceZone,
   GroupField,
+  ImageField,
 } from '@prismicio/types';
 
 export type CaseStudyProps = PrismicDocumentWithUID<{
+  workpagePrefix: KeyTextField;
+  workpageTitle: RichTextField;
+  workpageDescriptionBold: KeyTextField;
+  workpageDescriptionRegular: KeyTextField;
   contentPrefix: KeyTextField;
   contentTitle: RichTextField;
-  slices1: SliceZone;
+  contentImage: ImageField;
+  slices2: SliceZone;
   content: ContentProps;
 }>;
 
