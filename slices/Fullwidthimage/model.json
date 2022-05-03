@@ -11,7 +11,7 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "Fullwidthimage",
       "primary": {
-        "Image": {
+        "image": {
           "type": "Image",
           "config": {
             "label": "Image",
