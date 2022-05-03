@@ -21,26 +21,31 @@
         "title": {
           "type": "StructuredText",
           "config": {
-            "single": "heading1",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "description": {
-          "type": "StructuredText",
+        "descriptionFirstPart": {
+          "type": "Text",
           "config": {
-            "single": "paragraph",
-            "label": "Description",
-            "placeholder": "A nice description of your feature"
+            "label": "Description First Part",
+            "placeholder": ""
+          }
+        },
+        "descriptionSecondPart": {
+          "type": "Text",
+          "config": {
+            "label": "Description Second Part",
+            "placeholder": ""
           }
         },
         "primaryButtonLabel": {
-          "type": "StructuredText",
+          "type": "Text",
           "config": {
             "label": "Primary Button Label",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "placeholder": ""
           }
         },
         "primaryButtonLink": {
