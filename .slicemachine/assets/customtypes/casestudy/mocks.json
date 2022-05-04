@@ -1,0 +1,28 @@
+{
+  "id": "718aa5a2-6da8-42ee-a646-7e445f242929",
+  "uid": "sit-illo-voluptatem",
+  "type": "casestudy",
+  "data": {
+    "workpagePrefix": "aggregate bricks-and-clicks functionalities",
+    "workpageTitle": "facilitate one-to-one architectures",
+    "workpageDescriptionBold": "expedite best-of-breed bandwidth",
+    "workpageDescriptionRegular": "evolve bricks-and-clicks e-commerce",
+    "contentPrefix": "optimize virtual vortals",
+    "contentTitle": [
+      {
+        "type": "paragraph",
+        "text": "Consectetur esse ut commodo pariatur consequat laboris esse aliqua.",
+        "spans": []
+      }
+    ],
+    "contentImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+    }
+  }
+}

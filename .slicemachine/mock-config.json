@@ -72,6 +72,60 @@
           "blocks": 1
         }
       }
+    },
+    "casestudy": {}
+  },
+  "slices": {
+    "Content": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Fullwidthimage": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Callout": {
+      "default": {
+        "primary": {
+          "titleFirst": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Carousel": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Keywords": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Quote": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -13,7 +13,37 @@
         }
       }
     },
-    "Content": {
+    "Work Page": {
+      "workpagePrefix": {
+        "type": "Text",
+        "config": {
+          "label": "Workpage Prefix",
+          "placeholder": ""
+        }
+      },
+      "workpageTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Workpage Title",
+          "placeholder": ""
+        }
+      },
+      "workpageDescriptionBold": {
+        "type": "Text",
+        "config": {
+          "label": "Workpage Description Bold",
+          "placeholder": ""
+        }
+      },
+      "workpageDescriptionRegular": {
+        "type": "Text",
+        "config": {
+          "label": "Workpage Description Regular",
+          "placeholder": ""
+        }
+      }
+    },
+    "Case Study Content": {
       "contentPrefix": {
         "type": "Text",
         "config": {
@@ -30,7 +60,15 @@
           "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
-      "slices1": {
+      "contentImage": {
+        "type": "Image",
+        "config": {
+          "label": "Content Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices2": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
@@ -45,6 +83,15 @@
               "type": "SharedSlice"
             },
             "masonrygrid": {
+              "type": "SharedSlice"
+            },
+            "carousel": {
+              "type": "SharedSlice"
+            },
+            "keywords": {
+              "type": "SharedSlice"
+            },
+            "quote": {
               "type": "SharedSlice"
             }
           }
