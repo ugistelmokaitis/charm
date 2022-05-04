@@ -59,3 +59,37 @@
 .headroom--scrolled {
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
+
+@layer utilities {
+  @variants responsive {
+    .masonry {
+      column-gap: 2em;
+      column-count: 1;
+    }
+    .masonry-sm {
+      column-gap: 2em;
+      column-count: 1;
+    }
+    .masonry-md {
+      column-gap: 2em;
+      column-count: 2;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
+
+.card-zoom {
+  @apply relative  flex h-[728.34px] w-full items-center justify-center overflow-hidden rounded-2xl shadow-xl;
+}
+.card-zoom-image {
+  @apply absolute h-full w-full transform bg-cover bg-center transition-all duration-500 ease-in-out;
+}
+
+.card-zoom:hover .card-zoom-image {
+  @apply scale-110;
+}
+.card-zoom:hover {
+  @apply scale-100;
+}
