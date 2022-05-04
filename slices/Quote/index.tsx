@@ -15,7 +15,7 @@ const Quote: FC<
     };
   }>
 > = ({ slice }) => (
-  <div className="col-span-5 col-start-1">
+  <div className="col-span-5 col-start-1 mb-[4.5625rem]">
     <PrismicRichText field={slice.primary.title} />
   </div>
 );
