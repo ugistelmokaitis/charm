@@ -11,8 +11,12 @@ export type SettingsProps = PrismicDocumentWithUID<{
   siteCredit: KeyTextField;
   headerHeroLogo: ImageField;
   headerHeroLink: LinkField;
+  githubSourceIcon: ImageField;
+  githubSourceLink: LinkField;
   headerPrimaryButtonLabel: KeyTextField;
   headerPrimaryButtonLink: LinkField;
+  lightModeIcon: ImageField;
+  darkModeIcon: ImageField;
   headerSiteMap: HeaderNavigation;
   footerSitemap: FooterNavigation;
   footerSocialMedia: footerSocialMediaProps;

@@ -6,9 +6,12 @@ import { asText } from '@prismicio/helpers';
 import { useRouter } from 'next/router';
 import { useLocalStorageValue } from '@react-hookz/web';
 import Headroom from 'react-headroom';
+import Tippy from '@tippyjs/react';
 import type { SettingsProps } from '../types/settings';
 import { docResolver } from '../utils/prismic';
 import ArrowIcon from '../public/icons/arrowIcon.svg';
+import 'tippy.js/dist/tippy.css';
+import ToolTipComponent from './tooltip';
 
 import Container from './container';
 import Button from './button';
@@ -39,14 +42,15 @@ const Header: FC<ISettings> = ({ settings }) => {
       <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
         <Container>
           <div className="flex items-center justify-between pb-6 pt-6">
-            <PrismicLink href={`${docResolver(settings.data.headerHeroLink)}`}>
+            <PrismicLink document={settings.data.headerHeroLink}>
               <Image
-                src="/icons/logo.svg"
-                alt="logo"
+                src={settings.data.headerHeroLogo.url ?? ''}
+                alt={settings.data.headerHeroLogo.alt ?? ''}
                 width={196}
                 height={32}
                 layout="fixed"
                 quality={100}
+                className="dark:brightness-0 dark:invert-[1]"
               />
             </PrismicLink>
             <div className="flex items-center justify-center">
@@ -67,54 +71,71 @@ const Header: FC<ISettings> = ({ settings }) => {
                   </div>
                 )
               )}
-              <div className="ml-8 rounded-md py-[7px] px-[7px] hover:bg-primary-25 dark:hover:bg-neutral-80">
-                <PrismicLink
-                  href={`${docResolver(settings.data.githubSourceLink)}`}
+              <div className="ml-4 rounded-md py-[7px] px-[7px] hover:bg-primary-25 dark:hover:bg-neutral-80">
+                <Tippy
+                  content="View Github Profile"
+                  className="font-codeRegular mt-[0.375rem] bg-success-100 font-FiraCode_Regular text-codeMDRegular text-neutral-100"
                 >
-                  <Image
-                    src="/icons/github.svg"
-                    alt="github logo"
-                    width={24}
-                    height={24}
-                    layout="fixed"
-                    quality={100}
-                  />
-                </PrismicLink>
+                  <div>
+                    <PrismicLink document={settings.data.githubSourceLink}>
+                      <Image
+                        src={settings.data.githubSourceIcon.url ?? ''}
+                        alt={settings.data.githubSourceIcon.alt ?? ''}
+                        width={24}
+                        height={24}
+                        layout="fixed"
+                        quality={100}
+                        className="dark:brightness-0 dark:invert-[1]"
+                      />
+                    </PrismicLink>
+                  </div>
+                </Tippy>
               </div>
 
-              <div className="ml-8 rounded-md py-[7px] px-[7px] hover:bg-primary-25 dark:hover:bg-neutral-80">
-                <div
-                  className="hidden dark:block"
-                  onClick={() => {
-                    removeTheme();
-                    setTheme('light');
-                  }}
+              <div className=" ml-4 rounded-md border-2 border-[#FFF] py-[7px] px-[7px] hover:bg-primary-25 active:border-[#C7D8FF] dark:hover:bg-neutral-80">
+                <Tippy
+                  content="Appearance Light Mode"
+                  className="font-codeRegular mt-[0.375rem] font-FiraCode_Regular text-codeMDRegular text-neutral-100"
                 >
-                  <Image
-                    src="/icons/lightmode.svg"
-                    alt="github logo"
-                    width={24}
-                    height={24}
-                    layout="fixed"
-                    quality={100}
-                  />
-                </div>
-                <div
-                  className="block dark:hidden"
-                  onClick={() => {
-                    removeTheme();
-                    setTheme('dark');
-                  }}
+                  <div
+                    className="hidden dark:block"
+                    onClick={() => {
+                      removeTheme();
+                      setTheme('light');
+                    }}
+                  >
+                    <Image
+                      src={settings.data.lightModeIcon.url ?? ''}
+                      alt={settings.data.lightModeIcon.alt ?? ''}
+                      width={24}
+                      height={24}
+                      layout="fixed"
+                      quality={100}
+                    />
+                  </div>
+                </Tippy>
+
+                <Tippy
+                  content="Appearance Dark Mode"
+                  className="font-codeRegular mt-[0.375rem] font-FiraCode_Regular text-codeMDRegular text-neutral-100"
                 >
-                  <Image
-                    src="/icons/darkmode.svg"
-                    alt="github logo"
-                    width={24}
-                    height={24}
-                    layout="fixed"
-                    quality={100}
-                  />
-                </div>
+                  <div
+                    className="block dark:hidden"
+                    onClick={() => {
+                      removeTheme();
+                      setTheme('dark');
+                    }}
+                  >
+                    <Image
+                      src={settings.data.darkModeIcon.url ?? ''}
+                      alt={settings.data.darkModeIcon.alt ?? ''}
+                      width={24}
+                      height={24}
+                      layout="fixed"
+                      quality={100}
+                    />
+                  </div>
+                </Tippy>
               </div>
               <div className="ml-12">
                 <Button
