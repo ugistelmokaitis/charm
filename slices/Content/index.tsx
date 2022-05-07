@@ -40,7 +40,7 @@ const Content: FC<
     <div className="col-span-3 col-start-6 mb-[8.0625rem] max-w-[15.875rem]">
       <Button
         href={`${docResolver(slice.primary.primaryButtonLink)}`}
-        variant="primary"
+        variant="secondary"
       >
         {slice.primary.primaryButtonLabel}
         <ArrowIcon className="ml-2" />
