@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import { PrismicProvider } from '@prismicio/react';
 import type { FC } from 'react';
 import { Toaster } from 'react-hot-toast';
+import '../styles/tippy.css';
 
 import { client, linkResolver } from '../utils/prismic';
 import ExternalLinkComponent from '../components/externalLink';
