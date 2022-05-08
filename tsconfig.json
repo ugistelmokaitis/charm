@@ -20,7 +20,8 @@
     "**/*.ts",
     "**/*.tsx",
     "slices/Content/index.js",
-    "slices/Carousel/carousel.js"
+    "slices/Carousel/carousel.js",
+    "components/tooltip.js"
   ],
   "exclude": ["node_modules"]
 }

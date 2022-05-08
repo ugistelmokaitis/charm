@@ -93,3 +93,78 @@
 .card-zoom:hover {
   @apply scale-100;
 }
+
+:root {
+  --swiper-navigation-color: #fff;
+  --swiper-theme-color: #fff;
+  --swiper-pagination-color: #fff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0rem - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--swiper-navigation-color, var(--swiper-theme-color));
+  @apply rounded-full bg-neutral-50 px-[2.25rem] py-[2.25rem];
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 2rem !important;
+  right: auto;
+  border: 0.0625rem solid transparent;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: 'prev';
+}
+
+.swiper-button-prev:hover {
+  border: 0.0625rem solid #d0d0d0;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 2rem !important;
+  left: auto;
+  border: 0.0625rem solid transparent;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+}
+
+.swiper-button-next:hover {
+  border: 0.0625rem solid #d0d0d0;
+}
+
+.swiper-button-prev {
+  background-image: url('/icons/arrowLeft.svg');
+  background-repeat: no-repeat;
+  background-size: 1.75rem auto;
+  background-position: center;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next {
+  background-image: url('/icons/arrowRight.svg');
+  background-repeat: no-repeat;
+  background-size: 1.75rem auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}

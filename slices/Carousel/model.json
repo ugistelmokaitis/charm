@@ -10,41 +10,17 @@
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
       "description": "Carousel",
-      "primary": {
-        "carouselImageFirst": {
+      "primary": {},
+      "items": {
+        "carouselImage": {
           "type": "Image",
           "config": {
-            "label": "Carousel Image First",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "carouselImageSecond": {
-          "type": "Image",
-          "config": {
-            "label": "Carousel Image Second",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "carouselImageThird": {
-          "type": "Image",
-          "config": {
-            "label": "Carousel Image Third",
-            "constraint": {},
-            "thumbnails": []
-          }
-        },
-        "carouselImageFourth": {
-          "type": "Image",
-          "config": {
-            "label": "Carousel Image Fourth",
+            "label": "Carousel Image",
             "constraint": {},
             "thumbnails": []
           }
         }
       },
-      "items": {},
       "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
     }
   ]

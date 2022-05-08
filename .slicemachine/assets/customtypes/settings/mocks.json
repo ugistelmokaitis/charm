@@ -1,79 +1,115 @@
 {
-  "id": "bbec5c67-ba25-4c0d-8a42-dff5d11b11cf",
-  "uid": "enim-quis-et",
+  "id": "ddaed9d1-4fae-4c81-b8e9-d952575d0318",
+  "uid": "odio-error-commodi",
   "type": "settings",
   "data": {
+    "headerHeroLogo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+    },
     "headerHeroLink": {
       "link_type": "Web",
-      "url": "https://slicemachine.dev"
+      "url": "http://google.com"
+    },
+    "githubSourceIcon": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
     },
     "githubSourceLink": {
       "link_type": "Web",
       "url": "http://google.com"
     },
-    "headerPrimaryButtonLabel": "drive rich architectures",
+    "lightModeIcon": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+    },
+    "darkModeIcon": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+    },
+    "headerPrimaryButtonLabel": "synthesize virtual e-markets",
     "headerPrimaryButtonLink": {
       "link_type": "Web",
-      "url": "http://google.com"
+      "url": "http://twitter.com"
     },
     "headerSiteMap": [
       {
-        "headerPageLabel": "synthesize bleeding-edge methodologies",
+        "headerPageLabel": "recontextualize revolutionary content",
         "headerPageLink": {
           "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "https://slicemachine.dev"
         }
       },
       {
-        "headerPageLabel": "recontextualize front-end web-readiness",
+        "headerPageLabel": "architect customized applications",
         "headerPageLink": {
           "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "https://slicemachine.dev"
         }
       },
       {
-        "headerPageLabel": "engineer impactful action-items",
+        "headerPageLabel": "maximize integrated blockchains",
         "headerPageLink": {
           "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "https://slicemachine.dev"
         }
       }
     ],
-    "siteCredit": "monetize impactful niches",
+    "siteCredit": "implement one-to-one methodologies",
     "footerSitemap": [
       {
-        "pageLabel": "leverage visionary methodologies",
-        "pageLink": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
-        }
-      },
-      {
-        "pageLabel": "productize virtual web-readiness",
+        "pageLabel": "orchestrate cutting-edge applications",
         "pageLink": {
           "link_type": "Web",
           "url": "https://prismic.io"
         }
       },
       {
-        "pageLabel": "productize back-end bandwidth",
-        "pageLink": {
-          "link_type": "Web",
-          "url": "http://twitter.com"
-        }
-      },
-      {
-        "pageLabel": "mesh real-time deliverables",
+        "pageLabel": "enable back-end communities",
         "pageLink": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         }
       },
       {
-        "pageLabel": "productize 24/7 applications",
+        "pageLabel": "expedite viral vortals",
         "pageLink": {
           "link_type": "Web",
-          "url": "http://twitter.com"
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "pageLabel": "scale frictionless schemas",
+        "pageLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "pageLabel": "exploit virtual infrastructures",
+        "pageLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
         }
       }
     ],
@@ -86,7 +122,22 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
+        },
+        "socialMediaLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "socialMediaIcon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
         },
         "socialMediaLink": {
           "link_type": "Web",
@@ -101,56 +152,11 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1560762484-813fc97650a0?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
         },
         "socialMediaLink": {
           "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      },
-      {
-        "socialMediaIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1531771686035-25f47595c87a?w=900&h=500&fit=crop"
-        },
-        "socialMediaLink": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      },
-      {
-        "socialMediaIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6?w=900&h=500&fit=crop"
-        },
-        "socialMediaLink": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      },
-      {
-        "socialMediaIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
-        },
-        "socialMediaLink": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "https://slicemachine.dev"
         }
       }
     ]
