@@ -4,6 +4,7 @@ import { useRef, useState } from 'react';
 import type { JSXMapSerializer } from '@prismicio/react';
 import { PrismicRichText } from '@prismicio/react';
 import { useWindowScroll, useWindowSize } from 'react-use';
+import Image from 'next/image';
 import Layout from '../components/layout';
 import { docResolver, getPage } from '../utils/prismic';
 import type { HomeProps } from '../types/home';
@@ -73,29 +74,42 @@ const Home: FC<IHome> = ({ data, settings }) => {
           <div className="mt-28 grid ">
             <div className="grid grid-cols-12 gap-16">
               <div className="col-span-4 col-start-1 block">
-                {data.company.map(({ companyRole, companyName }, index) => (
-                  <div
-                    key={index}
-                    onClick={() => setActiveExperience(index)}
-                    onKeyDown={() => setActiveExperience(index)}
-                    role="button"
-                    tabIndex={0}
-                    className={` ${
-                      activeExperience === index
-                        ? 'rounded-lg bg-primary-25 dark:bg-neutral-80'
-                        : 'bg-neutral-0 dark:bg-neutral-100'
-                    }`}
-                  >
-                    <div className="px-8 py-8">
-                      <div className="font-FiraCode_SemiBold text-codeLGSemiBold font-semibold text-neutral-100 dark:text-neutral-0">
-                        {companyName}
-                      </div>
-                      <div className="font-codeRegular mt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-100 dark:text-neutral-0">
-                        {companyRole}
+                {data.company.map(
+                  ({ companyRole, companyName, companyLogo }, index) => (
+                    <div
+                      key={index}
+                      onClick={() => setActiveExperience(index)}
+                      onKeyDown={() => setActiveExperience(index)}
+                      role="button"
+                      tabIndex={0}
+                      className={` ${
+                        activeExperience === index
+                          ? 'rounded-lg bg-primary-25 dark:bg-neutral-80'
+                          : 'bg-neutral-0 dark:bg-neutral-100'
+                      }`}
+                    >
+                      <div className="flex items-center px-8">
+                        <Image
+                          src={companyLogo.url ?? ''}
+                          alt={companyLogo.alt ?? ''}
+                          width={62}
+                          height={62}
+                          layout="fixed"
+                          quality={100}
+                          className="dark:brightness-0 dark:invert-[1]"
+                        />
+                        <div className="ml-8 py-8">
+                          <div className="font-FiraCode_SemiBold text-codeLGSemiBold font-semibold text-neutral-100 dark:text-neutral-0">
+                            {companyName}
+                          </div>
+                          <div className="font-codeRegular mt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-100 dark:text-neutral-0">
+                            {companyRole}
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  )
+                )}
               </div>
               <div className="col-span-6 col-start-7">
                 <div className="pb-4 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">

@@ -9,7 +9,7 @@ import type { ExtensionsProps } from '../types/extensions';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
 import richTextComponents from '../components/richTextComponents';
-import ArrowIcon from '../public/icons/arrowIcon.svg';
+import SocialLinkIcon from '../public/icons/socialLinkIcon.svg';
 import Divider from '../components/divider';
 
 type IExtensions = {
@@ -47,7 +47,7 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
             )}
           </div>
           <div className="relative col-span-3 col-start-10">
-            <div className="border-darkGrey-100 bg-darkestGrey-100 sticky top-10 rounded-[1.25rem] border-[0.0625rem] bg-primary-5  py-8 px-8 dark:bg-neutral-80">
+            <div className="sticky top-10 rounded-[1.25rem] border-[0.03125rem] border-neutral-30 bg-primary-5 py-8 px-8 dark:border-neutral-15 dark:bg-neutral-80">
               <div className="flex items-center justify-center font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
                 {data.socialTitle}
               </div>
@@ -71,13 +71,14 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
                             height={24}
                             layout="fixed"
                             quality={100}
+                            className="dark:brightness-0 dark:invert-[1]"
                           />
 
                           <div className="flex pl-4 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
                             {socialProfileTitle}
                           </div>
                         </div>
-                        <ArrowIcon />
+                        <SocialLinkIcon />
                       </div>
                     </PrismicLink>
                   </div>

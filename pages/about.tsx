@@ -33,7 +33,7 @@ const introComponents: JSXMapSerializer = {
     <PrismicLink key={key} href={docResolver(node.data)}>
       <div
         key={key}
-        className="inline font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 underline dark:text-neutral-0 dark:hover:text-neutral-30"
+        className="inline font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 underline hover:text-neutral-50 dark:text-neutral-0 dark:hover:text-neutral-30"
       >
         {children}
       </div>
@@ -47,6 +47,7 @@ const introComponents: JSXMapSerializer = {
       width={24}
       height={24}
       quality={100}
+      className="dark:brightness-0 dark:invert-[1]"
     />
   ),
 };
@@ -123,6 +124,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                           height={52}
                           layout="fixed"
                           quality={100}
+                          className="dark:brightness-0 dark:invert-[1]"
                         />
 
                         <div className="pl-8">
@@ -182,6 +184,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                               height={24}
                               layout="fixed"
                               quality={100}
+                              className="dark:brightness-0 dark:invert-[1]"
                             />
 
                             <div className="flex pl-4 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">

@@ -31,7 +31,7 @@ const introComponents: JSXMapSerializer = {
     <PrismicLink key={key} href={docResolver(node.data)}>
       <div
         key={key}
-        className="inline font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 underline dark:text-neutral-0 dark:hover:text-neutral-30"
+        className="inline font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 underline hover:text-neutral-50 dark:text-neutral-0 dark:hover:text-neutral-30"
       >
         {children}
       </div>
@@ -76,6 +76,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                   height={80}
                   layout="fixed"
                   quality={100}
+                  className="dark:brightness-0 dark:invert-[1]"
                 />
                 <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
                   {deviceDetails}
@@ -107,6 +108,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                   height={80}
                   layout="fixed"
                   quality={100}
+                  className="dark:brightness-0 dark:invert-[1]"
                 />
                 <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
                   {setupDetails}
@@ -139,6 +141,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                     height={80}
                     layout="fixed"
                     quality={100}
+                    className="dark:brightness-0 dark:invert-[1]"
                   />
                   <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
                     {peripheralDetails}
@@ -172,6 +175,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                           height={24}
                           layout="fixed"
                           quality={100}
+                          className="dark:brightness-0 dark:invert-[1]"
                         />
 
                         <div className="pl-2 font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">

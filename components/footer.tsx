@@ -30,7 +30,7 @@ const Footer: FC<ISettings> = ({ settings }) => {
                   <Button
                     href={docResolver(pageLink)}
                     variant="neutral"
-                    className={` ${`bg-primary-25dark:bg-neutral-80 rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em]  text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
+                    className={` ${`rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em] text-neutral-50  hover:bg-primary-25  dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
                       router.asPath === docResolver(pageLink)
                         ? `text-[#111827]  dark:text-[#FFFFFF]`
                         : ''
@@ -46,7 +46,10 @@ const Footer: FC<ISettings> = ({ settings }) => {
           <div className="flex">
             {settings.data.footerSocialMedia.map(
               ({ socialMediaIcon, socialMediaLink }, index) => (
-                <div key={index} className="pr-6 hover:animate-pulse">
+                <div
+                  key={index}
+                  className="mr-6 rounded-md py-[7px] px-[7px] hover:animate-pulse hover:bg-primary-25 dark:hover:bg-neutral-80"
+                >
                   <PrismicLink href={`${docResolver(socialMediaLink)}`}>
                     <Image
                       src={socialMediaIcon.url ?? ''}
@@ -55,6 +58,7 @@ const Footer: FC<ISettings> = ({ settings }) => {
                       height={24}
                       layout="fixed"
                       quality={100}
+                      className="dark:brightness-0 dark:invert-[1]"
                     />
                   </PrismicLink>
                 </div>
