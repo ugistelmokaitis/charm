@@ -1,23 +1,25 @@
 {
-  "id": "607a5bb2-567e-49b6-9f63-edbfb2be160f",
-  "uid": "iusto-aspernatur-ipsa",
+  "id": "810fdadf-8415-49cf-879d-65c34e074f2c",
+  "uid": "amet-sed-ea",
   "type": "home",
   "data": {
-    "titleTag": "incentivize clicks-and-mortar interfaces",
-    "metaDescription": "architect B2B e-business",
-    "heroGreetingTitle": "extend enterprise networks",
-    "heroNameTitle": "drive out-of-the-box mindshare",
-    "heroDescription": "exploit B2C bandwidth",
-    "badgeButtonPrefix": "architect distributed e-commerce",
-    "badgeButtonLabel": "reintermediate e-business communities",
+    "titleTag": "architect end-to-end deliverables",
+    "metaDescription": "redefine end-to-end channels",
+    "heroGreetingTitle": "reintermediate 24/365 bandwidth",
+    "heroNameTitle": "orchestrate integrated supply-chains",
+    "heroDescription": "revolutionize compelling infrastructures",
+    "badgeButtonPrefix": "scale visionary schemas",
+    "badgeButtonLabel": "grow enterprise infomediaries",
     "badgeButtonLink": {
       "link_type": "Web",
-      "url": "https://prismic.io"
+      "url": "http://twitter.com"
     },
+    "editorWindowTabTitle": "grow collaborative vortals",
+    "editorWindowContent": "facilitate rich functionalities",
     "skillsTitle": [
       {
         "type": "paragraph",
-        "text": "Consectetur cillum nostrud incididunt aliquip officia nulla aute cillum laborum esse fugiat culpa ex velit ut.",
+        "text": "Culpa officia sunt esse sit et ullamco amet aliquip veniam sit enim nostrud. Tempor irure nostrud reprehenderit quis.",
         "spans": []
       }
     ],
@@ -26,7 +28,7 @@
         "skill": [
           {
             "type": "paragraph",
-            "text": "Irure velit ad ut.",
+            "text": "Ullamco ipsum ullamco elit Lorem ea ad irure commodo.",
             "spans": []
           }
         ]
@@ -35,7 +37,7 @@
         "skill": [
           {
             "type": "paragraph",
-            "text": "Laboris excepteur irure aliqua aliquip anim adipisicing irure ipsum culpa duis voluptate aliquip excepteur est culpa.",
+            "text": "Irure dolor incididunt enim esse labore aliquip sint ut veniam duis tempor amet et amet. Exercitation eu cillum ut dolor cillum est.",
             "spans": []
           }
         ]
@@ -44,25 +46,7 @@
         "skill": [
           {
             "type": "paragraph",
-            "text": "Enim non sint reprehenderit aute et mollit commodo ad. Do tempor est eu minim exercitation.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "skill": [
-          {
-            "type": "paragraph",
-            "text": "Adipisicing fugiat ipsum culpa ad exercitation in magna dolor cillum ut exercitation aute quis sit cillum. Duis enim sunt ut ad do ea cupidatat sint.",
-            "spans": []
-          }
-        ]
-      },
-      {
-        "skill": [
-          {
-            "type": "paragraph",
-            "text": "Exercitation laboris nostrud laborum ea labore ut aute reprehenderit. Non culpa quis irure cupidatat amet minim cupidatat culpa amet laborum. Qui nulla et voluptate.",
+            "text": "Est aliquip cupidatat aliqua eu est. Consequat laborum ex cillum. Eiusmod enim nisi ut cillum esse elit veniam irure magna sit dolor commodo dolore officia nisi.",
             "spans": []
           }
         ]
@@ -71,24 +55,52 @@
     "experienceTitle": [
       {
         "type": "paragraph",
-        "text": "Minim incididunt culpa nostrud deserunt incididunt in amet ea fugiat mollit. In consequat tempor nisi.",
+        "text": "Est minim sint aute consequat eu commodo. Aliquip incididunt proident nisi aliquip aliquip ad irure. Nisi aliquip est aliqua fugiat nulla aliqua eu sunt.",
         "spans": []
       }
     ],
     "company": [
       {
-        "companyName": "architect revolutionary paradigms",
-        "companyRole": "morph end-to-end models",
-        "companyYear": "enable holistic schemas",
-        "companyResponsibilities": "e-enable distributed partnerships",
-        "companyTools": "integrate proactive supply-chains"
+        "companyName": "orchestrate leading-edge convergence",
+        "companyRole": "streamline wireless paradigms",
+        "companyYear": "orchestrate robust metrics",
+        "companyResponsibilities": "revolutionize user-centric channels",
+        "companyTools": "repurpose cross-media web-readiness"
       },
       {
-        "companyName": "exploit clicks-and-mortar bandwidth",
-        "companyRole": "leverage B2C niches",
-        "companyYear": "mesh collaborative schemas",
-        "companyResponsibilities": "grow 24/7 infomediaries",
-        "companyTools": "scale granular markets"
+        "companyName": "architect next-generation solutions",
+        "companyRole": "scale real-time vortals",
+        "companyYear": "revolutionize web-enabled convergence",
+        "companyResponsibilities": "enhance mission-critical functionalities",
+        "companyTools": "leverage end-to-end e-commerce"
+      },
+      {
+        "companyName": "incentivize frictionless interfaces",
+        "companyRole": "brand distributed users",
+        "companyYear": "monetize revolutionary ROI",
+        "companyResponsibilities": "embrace virtual niches",
+        "companyTools": "implement mission-critical content"
+      },
+      {
+        "companyName": "productize extensible web services",
+        "companyRole": "synergize compelling bandwidth",
+        "companyYear": "synthesize frictionless vortals",
+        "companyResponsibilities": "visualize transparent niches",
+        "companyTools": "empower open-source infrastructures"
+      },
+      {
+        "companyName": "engage visionary synergies",
+        "companyRole": "engineer magnetic mindshare",
+        "companyYear": "incubate intuitive vortals",
+        "companyResponsibilities": "target world-class eyeballs",
+        "companyTools": "orchestrate magnetic functionalities"
+      },
+      {
+        "companyName": "monetize front-end synergies",
+        "companyRole": "synthesize world-class infomediaries",
+        "companyYear": "synthesize out-of-the-box paradigms",
+        "companyResponsibilities": "deploy extensible platforms",
+        "companyTools": "empower clicks-and-mortar technologies"
       }
     ]
   }

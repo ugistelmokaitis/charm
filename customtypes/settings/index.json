@@ -14,6 +14,14 @@
       }
     },
     "Header": {
+      "headerHeroLogo": {
+        "type": "Image",
+        "config": {
+          "label": "Header Hero Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "headerHeroLink": {
         "type": "Link",
         "config": {
@@ -22,12 +30,36 @@
           "select": null
         }
       },
+      "githubSourceIcon": {
+        "type": "Image",
+        "config": {
+          "label": "Github Source Icon",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "githubSourceLink": {
         "type": "Link",
         "config": {
           "label": "Github Source Link",
           "placeholder": "",
           "select": null
+        }
+      },
+      "lightModeIcon": {
+        "type": "Image",
+        "config": {
+          "label": "Light Mode Icon",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "darkModeIcon": {
+        "type": "Image",
+        "config": {
+          "label": "Dark Mode Icon",
+          "constraint": {},
+          "thumbnails": []
         }
       },
       "headerSiteMap": {

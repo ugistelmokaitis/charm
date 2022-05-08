@@ -70,6 +70,20 @@
           "placeholder": "",
           "select": null
         }
+      },
+      "editorWindowTabTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Editor Window Tab Title",
+          "placeholder": ""
+        }
+      },
+      "editorWindowContent": {
+        "type": "Text",
+        "config": {
+          "label": "Editor Window Content",
+          "placeholder": ""
+        }
       }
     },
     "Skills": {
