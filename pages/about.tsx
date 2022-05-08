@@ -158,7 +158,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                 <div className="flex items-center justify-center pt-8 pb-2 font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
                   {data.profileName}
                 </div>
-                <div className="flex items-center justify-center font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
+                <div className="flex items-center justify-center font-ABCWhyteEdu_Regular text-pSMRegular font-normal text-neutral-100 dark:text-neutral-15">
                   {data.profileLocation}
                 </div>
                 <div className="pb-8 pt-8">
@@ -187,7 +187,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                               className="dark:brightness-0 dark:invert-[1]"
                             />
 
-                            <div className="flex pl-4 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
+                            <div className="flex pl-4 font-ABCWhyteEdu_Regular text-pSMRegular font-normal text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
                               {profileSocialsCategory}
                             </div>
                           </div>

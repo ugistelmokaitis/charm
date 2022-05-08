@@ -39,7 +39,7 @@ const richTextComponents: JSXMapSerializer = {
   heading1: ({ children, key }) => (
     <h1
       key={key}
-      className="font-ABCWhyteEdu_Heavy text-header1 font-extrabold text-neutral-100 dark:text-neutral-0"
+      className="font-ABCWhyteEdu_Heavy text-header1 font-extrabold tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
     >
       {children}
     </h1>
@@ -47,7 +47,7 @@ const richTextComponents: JSXMapSerializer = {
   heading2: ({ children, key }) => (
     <h2
       key={key}
-      className="font-ABCWhyteEdu_Heavy text-header2 font-extrabold text-neutral-100 dark:text-neutral-0"
+      className="font-ABCWhyteEdu_Heavy text-header2 font-extrabold tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
     >
       {children}
     </h2>
@@ -55,7 +55,7 @@ const richTextComponents: JSXMapSerializer = {
   heading3: ({ children, key }) => (
     <h3
       key={key}
-      className="font-ABCWhyteEdu_Heavy text-header3 font-extrabold text-neutral-100 dark:text-neutral-0"
+      className="font-ABCWhyteEdu_Heavy text-header3 font-extrabold tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
     >
       {children}
     </h3>
@@ -63,7 +63,7 @@ const richTextComponents: JSXMapSerializer = {
   heading4: ({ children, key }) => (
     <h4
       key={key}
-      className="text-pXLSemiBold font-ABCWhyteEdu_Medium font-semibold tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="font-ABCWhyteEdu_Medium text-header4 font-semibold tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
     >
       {children}
     </h4>

@@ -20,7 +20,7 @@ const Footer: FC<ISettings> = ({ settings }) => {
       <Container>
         <Divider />
         <div className="flex items-center justify-between pt-6 pb-20">
-          <div className="font-charmRegular text-pSMRegular font-normal tracking-[0.02em]  text-neutral-30 dark:text-neutral-15">
+          <div className="font-charmRegular text-pSMRegular font-normal text-neutral-30 dark:text-neutral-15">
             {settings.data.siteCredit}
           </div>
           <div className="flex">
@@ -30,7 +30,7 @@ const Footer: FC<ISettings> = ({ settings }) => {
                   <Button
                     href={docResolver(pageLink)}
                     variant="neutral"
-                    className={` ${`rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em] text-neutral-50  hover:bg-primary-25  dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
+                    className={` ${`rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold text-neutral-50  hover:bg-primary-25  dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
                       router.asPath === docResolver(pageLink)
                         ? `text-[#111827]  dark:text-[#FFFFFF]`
                         : ''

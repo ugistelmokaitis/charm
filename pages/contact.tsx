@@ -283,7 +283,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     <div className="pr-2">
                       <IconAddFile />
                     </div>
-                    <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold tracking-[0.02em] text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30  dark:hover:animate-pulse dark:hover:text-neutral-15">
+                    <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30  dark:hover:animate-pulse dark:hover:text-neutral-15">
                       {files.length
                         ? files.map((file) => file.name).join(', ')
                         : 'Add attachment'}

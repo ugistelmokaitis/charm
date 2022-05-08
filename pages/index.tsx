@@ -58,7 +58,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
               <div className="mx-auto mt-4 max-w-[60rem] items-center pb-12 font-ABCWhyteEdu_Heavy text-display font-extrabold text-neutral-100 dark:text-neutral-0">
                 {data.heroNameTitle}
               </div>
-              <div className="mx-auto max-w-[39rem] font-ABCWhyteEdu_Medium text-pMDSemiBold font-semibold tracking-[0.02em] text-neutral-50 dark:text-neutral-15">
+              <div className="mx-auto max-w-[39rem] font-ABCWhyteEdu_Medium text-pMDSemiBold font-semibold text-neutral-50 dark:text-neutral-15">
                 {data.heroDescription}
               </div>
             </div>
@@ -99,7 +99,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
                           className="dark:brightness-0 dark:invert-[1]"
                         />
                         <div className="ml-8 py-8">
-                          <div className="font-FiraCode_SemiBold text-codeLGSemiBold font-semibold text-neutral-100 dark:text-neutral-0">
+                          <div className="font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em]  text-neutral-100 dark:text-neutral-0">
                             {companyName}
                           </div>
                           <div className="font-codeRegular mt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-100 dark:text-neutral-0">

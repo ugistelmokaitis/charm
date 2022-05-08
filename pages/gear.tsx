@@ -78,7 +78,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                   quality={100}
                   className="dark:brightness-0 dark:invert-[1]"
                 />
-                <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
+                <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal text-neutral-100 dark:text-neutral-15">
                   {deviceDetails}
                 </div>
               </div>
@@ -110,7 +110,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                   quality={100}
                   className="dark:brightness-0 dark:invert-[1]"
                 />
-                <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
+                <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal text-neutral-100 dark:text-neutral-15">
                   {setupDetails}
                 </div>
               </div>
@@ -143,7 +143,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                     quality={100}
                     className="dark:brightness-0 dark:invert-[1]"
                   />
-                  <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
+                  <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal text-neutral-100 dark:text-neutral-15">
                     {peripheralDetails}
                   </div>
                 </div>
@@ -156,7 +156,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
             <div className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
               {data.softwareTitle}
             </div>
-            <div className="font-charmSemiBold text-white-100 pb-20 text-pMDSemiBold font-semibold tracking-[0.02em]">
+            <div className="font-charmSemiBold text-white-100 pb-20 text-pMDSemiBold font-semibold ">
               {data.softwareTitleDescription}
             </div>
             <div>

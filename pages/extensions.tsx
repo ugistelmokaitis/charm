@@ -39,7 +39,7 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
                   >
                     {extentionTitle}
                   </div>
-                  <div className="pb-12 font-ABCWhyteEdu_Regular text-pMDRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15">
+                  <div className="pb-12 font-ABCWhyteEdu_Regular text-pMDRegular font-normal text-neutral-65 dark:text-neutral-15">
                     {extentionDescription}
                   </div>
                 </>
@@ -51,7 +51,7 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
               <div className="flex items-center justify-center font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
                 {data.socialTitle}
               </div>
-              <div className="flex items-center justify-center pt-2 pb-8 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-50 dark:text-neutral-15">
+              <div className="flex items-center justify-center pt-2 pb-8 font-ABCWhyteEdu_Regular text-pSMRegular font-normal text-neutral-50 dark:text-neutral-15">
                 {data.socialDescription}
               </div>
               <Divider />
@@ -74,7 +74,7 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
                             className="dark:brightness-0 dark:invert-[1]"
                           />
 
-                          <div className="flex pl-4 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
+                          <div className="flex pl-4 font-ABCWhyteEdu_Regular text-pSMRegular font-normal text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
                             {socialProfileTitle}
                           </div>
                         </div>
