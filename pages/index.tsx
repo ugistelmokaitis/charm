@@ -3,16 +3,14 @@ import type { FC } from 'react';
 import { useRef, useState } from 'react';
 import type { JSXMapSerializer } from '@prismicio/react';
 import { PrismicRichText } from '@prismicio/react';
-import { asText } from '@prismicio/helpers';
 import { useWindowScroll, useWindowSize } from 'react-use';
-import { useMeasure } from '@react-hookz/web';
 import Layout from '../components/layout';
-import { docResolver, getPage, getPages, linkResolver } from '../utils/prismic';
+import { docResolver, getPage } from '../utils/prismic';
 import type { HomeProps } from '../types/home';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
 import BadgeButton from '../components/badgeButton';
-import EditorWindow from '../components/editorWindow';
+import BrowserWindow from '../components/browserWindow';
 import richTextComponents from '../components/richTextComponents';
 
 type IHome = {
@@ -46,14 +44,13 @@ const Home: FC<IHome> = ({ data, settings }) => {
     <Layout title="" description="" settings={settings}>
       <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
         <Container>
-          <div className="grid-starts-1 grid grid-cols-12 gap-16">
+          <div>
             <div className="col-span-8 col-start-3 pt-32 text-center">
               <BadgeButton
                 href={`${docResolver(data.badgeButtonLink)}`}
                 child1={data.badgeButtonPrefix}
                 child2={data.badgeButtonLabel}
               />
-
               <div className="mx-auto items-center pt-12 font-ABCWhyteEdu_Heavy text-display font-extrabold text-neutral-100 dark:text-neutral-0">
                 {data.heroGreetingTitle}
               </div>
@@ -66,7 +63,10 @@ const Home: FC<IHome> = ({ data, settings }) => {
             </div>
           </div>
 
-          <EditorWindow />
+          <BrowserWindow
+            child1={data.editorWindowTabTitle}
+            child2={data.editorWindowContent}
+          />
           <div className="mt-52">
             <PrismicRichText field={data.experienceTitle} />
           </div>
@@ -125,7 +125,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
         </div>
         <div
           className="flex text-neutral-30"
-          style={{ transform: `translateX(${diff - windowSize.width / 7}px)` }}
+          style={{ transform: `translateX(${diff - windowSize.width / 9}px)` }}
         >
           {firstHalf.map(({ skill }, index) => (
             <div key={index} className="flex pr-4 pb-8">
@@ -136,7 +136,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
         <div
           className="text-neutral-40 flex"
           style={{
-            transform: `translateX(${-diff - windowSize.width / 7}px)`,
+            transform: `translateX(${-diff - windowSize.width / 9}px)`,
           }}
         >
           {secondHalf.map(({ skill }, index) => (
