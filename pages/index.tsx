@@ -52,10 +52,10 @@ const Home: FC<IHome> = ({ data, settings }) => {
                 child1={data.badgeButtonPrefix}
                 child2={data.badgeButtonLabel}
               />
-              <div className="mx-auto items-center pt-12 font-ABCWhyteEdu_Heavy text-display font-extrabold text-neutral-100 dark:text-neutral-0">
+              <div className="mx-auto items-center pt-12 font-ABCWhyteEdu_Heavy text-display font-extrabold tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
                 {data.heroGreetingTitle}
               </div>
-              <div className="mx-auto mt-4 max-w-[60rem] items-center pb-12 font-ABCWhyteEdu_Heavy text-display font-extrabold text-neutral-100 dark:text-neutral-0">
+              <div className="mx-auto mt-4 max-w-[60rem] items-center pb-12 font-ABCWhyteEdu_Heavy text-display font-extrabold tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
                 {data.heroNameTitle}
               </div>
               <div className="mx-auto max-w-[39rem] font-ABCWhyteEdu_Medium text-pMDSemiBold font-semibold text-neutral-50 dark:text-neutral-15">
@@ -72,7 +72,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
             <PrismicRichText field={data.experienceTitle} />
           </div>
           <div className="mt-28 grid ">
-            <div className="grid grid-cols-12 gap-16">
+            <div className="grid grid-cols-12 gap-8 lg:grid-cols-12 lg:pt-20">
               <div className="col-span-4 col-start-1 block">
                 {data.company.map(
                   ({ companyRole, companyName, companyLogo }, index) => (
@@ -88,7 +88,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
                           : 'bg-neutral-0 dark:bg-neutral-100'
                       }`}
                     >
-                      <div className="flex items-center px-8">
+                      <div className="flex  items-center px-8">
                         <Image
                           src={companyLogo.url ?? ''}
                           alt={companyLogo.alt ?? ''}
@@ -102,7 +102,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
                           <div className="font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em]  text-neutral-100 dark:text-neutral-0">
                             {companyName}
                           </div>
-                          <div className="font-codeRegular mt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-100 dark:text-neutral-0">
+                          <div className="font-codeRegular mt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-50 dark:text-neutral-15">
                             {companyRole}
                           </div>
                         </div>

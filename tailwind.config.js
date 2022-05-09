@@ -122,6 +122,7 @@ module.exports = {
     },
     fontFamily: {
       ABCWhyteEdu_Heavy: ['ABCWhyteEdu-Heavy'],
+      ABCWhyteEdu_Bold: ['ABCWhyteEdu-Bold'],
       ABCWhyteEdu_Medium: ['ABCWhyteEdu-Medium'],
       ABCWhyteEdu_Regular: ['ABCWhyteEdu-Regular'],
       FiraCode_SemiBold: ['FiraCode-SemiBold'],
