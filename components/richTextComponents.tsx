@@ -33,7 +33,7 @@ const richTextComponents: JSXMapSerializer = {
   ),
   hyperlink: ({ children, node, key }) => (
     <PrismicLink key={key} href={docResolver(node.data)}>
-      <span className="">{children}</span>
+      <span>{children}</span>
     </PrismicLink>
   ),
   heading1: ({ children, key }) => (
