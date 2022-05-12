@@ -27,7 +27,19 @@
         }
       },
       "moreTools": {},
-      "profileSocials": {}
+      "profileSocials": {},
+      "introDescription": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "introTitle": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
     },
     "contact": {
       "introTitle": {

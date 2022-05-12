@@ -1,25 +1,25 @@
 {
-  "id": "810fdadf-8415-49cf-879d-65c34e074f2c",
-  "uid": "amet-sed-ea",
+  "id": "df604d7a-f38b-47f7-b604-f986272af55d",
+  "uid": "voluptas-inventore-aut",
   "type": "home",
   "data": {
-    "titleTag": "architect end-to-end deliverables",
-    "metaDescription": "redefine end-to-end channels",
-    "heroGreetingTitle": "reintermediate 24/365 bandwidth",
-    "heroNameTitle": "orchestrate integrated supply-chains",
-    "heroDescription": "revolutionize compelling infrastructures",
-    "badgeButtonPrefix": "scale visionary schemas",
-    "badgeButtonLabel": "grow enterprise infomediaries",
+    "titleTag": "aggregate open-source synergies",
+    "metaDescription": "expedite real-time mindshare",
+    "heroGreetingTitle": "deliver proactive mindshare",
+    "heroNameTitle": "drive real-time communities",
+    "heroDescription": "harness proactive markets",
+    "badgeButtonPrefix": "optimize magnetic solutions",
+    "badgeButtonLabel": "engage killer schemas",
     "badgeButtonLink": {
       "link_type": "Web",
-      "url": "http://twitter.com"
+      "url": "https://slicemachine.dev"
     },
-    "editorWindowTabTitle": "grow collaborative vortals",
-    "editorWindowContent": "facilitate rich functionalities",
+    "editorWindowTabTitle": "innovate cross-media e-services",
+    "editorWindowContent": "cultivate seamless solutions",
     "skillsTitle": [
       {
         "type": "paragraph",
-        "text": "Culpa officia sunt esse sit et ullamco amet aliquip veniam sit enim nostrud. Tempor irure nostrud reprehenderit quis.",
+        "text": "Labore consectetur ex cupidatat laborum ea velit laborum et aliquip ad ex. Incididunt irure deserunt voluptate voluptate velit.",
         "spans": []
       }
     ],
@@ -28,7 +28,7 @@
         "skill": [
           {
             "type": "paragraph",
-            "text": "Ullamco ipsum ullamco elit Lorem ea ad irure commodo.",
+            "text": "Tempor consequat excepteur fugiat ea elit veniam proident. Et amet occaecat amet nisi anim anim deserunt quis nostrud do Lorem elit adipisicing. Consequat sint veniam dolor qui cillum minim quis occaecat ut consectetur labore sunt eu amet.",
             "spans": []
           }
         ]
@@ -37,7 +37,7 @@
         "skill": [
           {
             "type": "paragraph",
-            "text": "Irure dolor incididunt enim esse labore aliquip sint ut veniam duis tempor amet et amet. Exercitation eu cillum ut dolor cillum est.",
+            "text": "Consectetur occaecat nostrud adipisicing aute anim cupidatat sunt sunt sint velit velit. Elit consequat deserunt nostrud labore ullamco sunt consequat nulla ipsum.",
             "spans": []
           }
         ]
@@ -46,7 +46,16 @@
         "skill": [
           {
             "type": "paragraph",
-            "text": "Est aliquip cupidatat aliqua eu est. Consequat laborum ex cillum. Eiusmod enim nisi ut cillum esse elit veniam irure magna sit dolor commodo dolore officia nisi.",
+            "text": "Nostrud irure enim aliqua ex Lorem reprehenderit esse culpa. Velit nostrud commodo esse commodo. Irure pariatur culpa incididunt ad dolore non.",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "skill": [
+          {
+            "type": "paragraph",
+            "text": "Anim est aliqua magna eiusmod aliqua minim non sint veniam dolore velit et velit culpa.",
             "spans": []
           }
         ]
@@ -55,52 +64,74 @@
     "experienceTitle": [
       {
         "type": "paragraph",
-        "text": "Est minim sint aute consequat eu commodo. Aliquip incididunt proident nisi aliquip aliquip ad irure. Nisi aliquip est aliqua fugiat nulla aliqua eu sunt.",
+        "text": "Do cupidatat mollit ipsum laborum tempor exercitation. Dolor ipsum adipisicing irure elit officia enim dolor commodo. Occaecat ea magna nulla.",
         "spans": []
       }
     ],
     "company": [
       {
-        "companyName": "orchestrate leading-edge convergence",
-        "companyRole": "streamline wireless paradigms",
-        "companyYear": "orchestrate robust metrics",
-        "companyResponsibilities": "revolutionize user-centric channels",
-        "companyTools": "repurpose cross-media web-readiness"
+        "companyLogo": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+        },
+        "companyName": "iterate vertical channels",
+        "companyRole": "facilitate efficient partnerships",
+        "companyYear": "enable transparent e-tailers",
+        "companyResponsibilities": "transition enterprise technologies",
+        "companyTools": "cultivate rich communities"
       },
       {
-        "companyName": "architect next-generation solutions",
-        "companyRole": "scale real-time vortals",
-        "companyYear": "revolutionize web-enabled convergence",
-        "companyResponsibilities": "enhance mission-critical functionalities",
-        "companyTools": "leverage end-to-end e-commerce"
+        "companyLogo": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+        },
+        "companyName": "leverage bricks-and-clicks markets",
+        "companyRole": "orchestrate open-source synergies",
+        "companyYear": "harness plug-and-play blockchains",
+        "companyResponsibilities": "disintermediate dot-com vortals",
+        "companyTools": "enhance sticky niches"
       },
       {
-        "companyName": "incentivize frictionless interfaces",
-        "companyRole": "brand distributed users",
-        "companyYear": "monetize revolutionary ROI",
-        "companyResponsibilities": "embrace virtual niches",
-        "companyTools": "implement mission-critical content"
+        "companyLogo": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+        },
+        "companyName": "synergize 24/7 ROI",
+        "companyRole": "cultivate efficient methodologies",
+        "companyYear": "optimize value-added web services",
+        "companyResponsibilities": "seize granular deliverables",
+        "companyTools": "generate B2B relationships"
       },
       {
-        "companyName": "productize extensible web services",
-        "companyRole": "synergize compelling bandwidth",
-        "companyYear": "synthesize frictionless vortals",
-        "companyResponsibilities": "visualize transparent niches",
-        "companyTools": "empower open-source infrastructures"
-      },
-      {
-        "companyName": "engage visionary synergies",
-        "companyRole": "engineer magnetic mindshare",
-        "companyYear": "incubate intuitive vortals",
-        "companyResponsibilities": "target world-class eyeballs",
-        "companyTools": "orchestrate magnetic functionalities"
-      },
-      {
-        "companyName": "monetize front-end synergies",
-        "companyRole": "synthesize world-class infomediaries",
-        "companyYear": "synthesize out-of-the-box paradigms",
-        "companyResponsibilities": "deploy extensible platforms",
-        "companyTools": "empower clicks-and-mortar technologies"
+        "companyLogo": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+        },
+        "companyName": "grow one-to-one schemas",
+        "companyRole": "syndicate dot-com content",
+        "companyYear": "morph robust e-business",
+        "companyResponsibilities": "target dot-com action-items",
+        "companyTools": "leverage enterprise partnerships"
       }
     ]
   }
