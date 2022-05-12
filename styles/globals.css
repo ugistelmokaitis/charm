@@ -56,18 +56,7 @@
   font-display: swap;
 }
 
-.headroom-wrapper {
-  position: relative;
-  z-index: 2;
-}
-
-.headroom--pinned {
-  background: #fff;
-}
-
-.headroom--scrolled {
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
-}
+/* masonry slice component Css - Carousel */
 
 @layer utilities {
   @variants responsive {
@@ -88,6 +77,8 @@
     }
   }
 }
+
+/* swipperjs Css - Carousel */
 
 .card-zoom {
   @apply relative  flex h-[728.34px] w-full items-center justify-center overflow-hidden rounded-2xl shadow-xl;
