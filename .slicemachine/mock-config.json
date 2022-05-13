@@ -85,7 +85,11 @@
         }
       }
     },
-    "casestudy": {}
+    "casestudy": {},
+    "privacy": {},
+    "terms": {},
+    "notfound": {},
+    "servererror": {}
   },
   "slices": {
     "Content": {

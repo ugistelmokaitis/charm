@@ -1,6 +1,6 @@
 {
-  "id": "notfound",
-  "label": "Notfound",
+  "id": "servererror",
+  "label": "ServerError",
   "repeatable": false,
   "status": true,
   "json": {
