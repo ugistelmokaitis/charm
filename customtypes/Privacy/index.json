@@ -38,30 +38,24 @@
         }
       },
       "introDescription": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Intro Description",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "IntroDateTitle": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Intro Date Title",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       },
       "introLastUpdate": {
-        "type": "StructuredText",
+        "type": "Text",
         "config": {
           "label": "Intro Last Update",
-          "placeholder": "",
-          "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "placeholder": ""
         }
       }
     },

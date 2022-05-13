@@ -8,8 +8,8 @@ export type PrivacyProps = PrismicDocumentWithUID<{
   titleTag: KeyTextField;
   metaDescription: KeyTextField;
   introTitle: RichTextField;
-  introDescription: RichTextField;
-  IntroDateTitle: RichTextField;
-  introLastUpdate: RichTextField;
+  introDescription: KeyTextField;
+  IntroDateTitle: KeyTextField;
+  introLastUpdate: KeyTextField;
   contentDescription: RichTextField;
 }>;

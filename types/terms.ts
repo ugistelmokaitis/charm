@@ -8,7 +8,7 @@ export type TermsProps = PrismicDocumentWithUID<{
   titleTag: KeyTextField;
   metaDescription: KeyTextField;
   introTitle: RichTextField;
-  introDescription: RichTextField;
-  introDateTitle: RichTextField;
+  introDescription: KeyTextField;
+  IntroDateTitle: KeyTextField;
   contentDescription: RichTextField;
 }>;
