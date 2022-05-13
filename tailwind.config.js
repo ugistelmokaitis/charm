@@ -9,10 +9,13 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '480px',
+      '2xs': '357px',
+      xs: '457px',
+      sm: '640px',
       md: '768px',
-      lg: '976px',
-      xl: '1440px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
     },
     colors: {
       transparent: 'transparent',
@@ -74,19 +77,22 @@ module.exports = {
       }
     },
     fontSize: {
-      display: ['6rem', {
+      xl: ['6rem', {
         lineHeight: '5.7rem',
       }],
-      header1: ['4.5rem', {
+      '1xl': ['4.5rem', {
         lineHeight: '4.95rem',
       }],
-      header2: ['4rem', {
+      '2xl': ['4rem', {
         lineHeight: '4.4rem',
       }],
-      header3: ['3rem', {
+      '3xl': ['3rem', {
         lineHeight: '3.9rem',
       }],
-      header4: ['1.75rem', {
+      '4xl': ['2.25rem', {
+        lineHeight: '2.475rem',
+      }],
+      '5xl': ['1.75rem', {
         lineHeight: '2.1rem',
       }],
       pLGSemiBold: ['1.5rem', {
