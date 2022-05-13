@@ -21,10 +21,10 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
   <Layout title="" description="" settings={settings}>
     <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
       <Container>
-        <div className="grid-starts-1 text-white-100 grid grid-cols-12 gap-16 pt-32 md:grid-cols-12 md:gap-8">
+        <div className="grid-starts-1 text-white-100 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
           <div className="col-span-6">
             <PrismicRichText field={data.introTitle} />
-            <div className="mt-28 mb-28 font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+            <div className="mt-20 mb-20 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-pLGRegular xl:mt-28 xl:mb-28">
               {data.introDescription}
             </div>
             <div className="font-codeRegular font-FiraCode_Regular text-codeMDRegular text-primary-100 dark:text-blue-100">
@@ -35,20 +35,20 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
                 <>
                   <div
                     key={index}
-                    className="pt-6 pb-4 font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+                    className="mt-6 mb-4 font-ABCWhyteEdu_Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold"
                   >
                     {extentionTitle}
                   </div>
-                  <div className="pb-12 font-ABCWhyteEdu_Regular text-pMDRegular font-normal text-neutral-65 dark:text-neutral-15">
+                  <div className="pb-6 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pMDRegular">
                     {extentionDescription}
                   </div>
                 </>
               )
             )}
           </div>
-          <div className="relative col-span-3 col-start-10">
-            <div className="sticky top-10 rounded-[1.25rem] border-[0.03125rem] border-neutral-30 bg-primary-5 py-8 px-8 dark:border-neutral-15 dark:bg-neutral-80">
-              <div className="flex items-center justify-center font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+          <div className="col-span-4 col-start-10 max-w-[20rem] pt-14 md:relative md:col-start-9 lg:pt-0 xl:col-span-3 xl:col-start-10 xl:max-w-full">
+            <div className="top-[6.5625rem] rounded-[1.25rem] border-[0.03125rem] border-neutral-30 bg-primary-5 py-8 px-8 dark:border-neutral-15 dark:bg-neutral-80 md:sticky">
+              <div className="flex items-center justify-center font-ABCWhyteEdu_Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold">
                 {data.socialTitle}
               </div>
               <div className="flex items-center justify-center pt-2 pb-8 font-ABCWhyteEdu_Regular text-pSMRegular font-normal text-neutral-50 dark:text-neutral-15">
