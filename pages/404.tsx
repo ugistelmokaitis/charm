@@ -33,7 +33,7 @@ const Custom404: FC<INotFound> = ({ data, settings }) => (
               </p>
             </div>
             <div className="mb-12 mt-6 flex items-center justify-center text-center xl:mb-20">
-              <p className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold text-neutral-100 dark:text-neutral-0">
+              <p className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold text-neutral-100 dark:text-neutral-0 sm:text-pMDSemiBold">
                 {data.introDescription}
               </p>
             </div>

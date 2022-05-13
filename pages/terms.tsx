@@ -22,7 +22,7 @@ const Terms: FC<ITerms> = ({ data, settings }) => (
           <div className="col-span-4 pt-56 md:col-span-9 lg:col-span-7">
             <PrismicRichText field={data.introTitle} />
             <div className="mb-12 mt-12">
-              <p className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-pMDSemiBold">
+              <p className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pMDSemiBold">
                 {data.introDescription}
               </p>
             </div>
@@ -36,9 +36,7 @@ const Terms: FC<ITerms> = ({ data, settings }) => (
                 {data.introLastUpdate}
               </p>
             </div>
-            <div className="">
-              <PrismicRichText field={data.contentDescription} />
-            </div>
+            <PrismicRichText field={data.contentDescription} />
           </div>
         </div>
       </Container>

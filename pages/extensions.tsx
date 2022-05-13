@@ -24,7 +24,7 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
         <div className="grid-starts-1 text-white-100 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
           <div className="col-span-6">
             <PrismicRichText field={data.introTitle} />
-            <div className="mt-20 mb-20 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-pLGRegular xl:mt-28 xl:mb-28">
+            <div className="mt-20 mb-20 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGRegular xl:mt-28 xl:mb-28">
               {data.introDescription}
             </div>
             <div className="font-codeRegular font-FiraCode_Regular text-codeMDRegular text-primary-100 dark:text-blue-100">
@@ -39,7 +39,7 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
                   >
                     {extentionTitle}
                   </div>
-                  <div className="pb-6 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pMDRegular">
+                  <div className="pb-6 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 sm:text-pMDRegular">
                     {extentionDescription}
                   </div>
                 </>
