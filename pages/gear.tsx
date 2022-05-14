@@ -21,21 +21,11 @@ const introComponents: JSXMapSerializer = {
   paragraph: ({ children, key, ...props }) => (
     <p
       key={key}
-      className="inline font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15"
+      className="inline font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pLGRegular"
       {...props}
     >
       {children}
     </p>
-  ),
-  hyperlink: ({ children, key, node }) => (
-    <PrismicLink key={key} href={docResolver(node.data)}>
-      <div
-        key={key}
-        className="inline font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 underline hover:text-neutral-50 dark:text-neutral-0 dark:hover:text-neutral-30"
-      >
-        {children}
-      </div>
-    </PrismicLink>
   ),
 };
 
@@ -43,29 +33,29 @@ const Gear: FC<IGear> = ({ data, settings }) => (
   <Layout title="" description="" settings={settings}>
     <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
       <Container>
-        <div className="grid-starts-1 text-white-100 grid grid-cols-12 gap-16 pt-32 md:grid-cols-12 md:gap-8">
+        <div className="grid-starts-1 text-white-100 pt-32 md:grid-cols-12 md:gap-8 lg:grid">
           <div className=" col-span-6">
             <PrismicRichText field={data.introTitle} />
             <div className="mb-28 mt-28">
-              <div className="font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
+              <div className="font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100  dark:text-neutral-15 md:text-pLGRegular">
                 {data.introDescription}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="text-white-100 grid grid-cols-1 gap-16 md:grid-cols-12 md:gap-8">
+        <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
           <div className="col-span-3">
             <div className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
               {data.deviceTitle}
             </div>
-            <div className="pt-6 pb-20 font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
+            <div className="tracking-[0.02em]text-neutral-100 pt-6 pb-20 font-ABCWhyteEdu_Regular text-pSMRegular font-normal dark:text-neutral-15">
               {data.deviceDescription}
             </div>
           </div>
         </div>
 
-        <div className="col-span-10 grid grid-cols-12 gap-16">
+        <div className="col-span-10 grid-cols-12 gap-16 lg:grid">
           <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
             {data.devices.map(({ deviceDetails, deviceImage }, index) => (
               <div key={index} className="flex-1">
@@ -78,7 +68,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                   quality={100}
                   className="dark:brightness-0 dark:invert-[1]"
                 />
-                <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal text-neutral-100 dark:text-neutral-15">
+                <div className="pt-8 font-ABCWhyteEdu_Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15 md:text-pMDSemiBold">
                   {deviceDetails}
                 </div>
               </div>
@@ -86,18 +76,18 @@ const Gear: FC<IGear> = ({ data, settings }) => (
           </div>
         </div>
 
-        <div className="text-white-100 grid grid-cols-1 gap-16 md:grid-cols-12 md:gap-8">
+        <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
           <div className="col-span-4">
             <div className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
               {data.setupTitle}
             </div>
-            <div className="pt-6 pb-20 font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
+            <div className="pt-6 pb-20 font-ABCWhyteEdu_Regular text-pSMRegular font-normal text-neutral-100 dark:text-neutral-15 sm:text-pLGRegular">
               {data.setupDescription}
             </div>
           </div>
         </div>
 
-        <div className="col-span-10 grid grid-cols-12 gap-16">
+        <div className="col-span-10 grid-cols-12 gap-16 lg:grid">
           <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
             {data.setup.map(({ setupDetails, setupImage }, index) => (
               <div key={index} className="flex-1">
@@ -110,7 +100,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                   quality={100}
                   className="dark:brightness-0 dark:invert-[1]"
                 />
-                <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal text-neutral-100 dark:text-neutral-15">
+                <div className="pt-8 font-ABCWhyteEdu_Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15 md:text-pMDSemiBold">
                   {setupDetails}
                 </div>
               </div>
@@ -118,18 +108,18 @@ const Gear: FC<IGear> = ({ data, settings }) => (
           </div>
         </div>
 
-        <div className="text-white-100 grid grid-cols-1 gap-16 md:grid-cols-12 md:gap-8">
+        <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
           <div className="col-span-4">
             <div className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
               {data.peripheralTitle}
             </div>
-            <div className="pt-6 pb-20 font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
+            <div className="pt-6 pb-20 font-ABCWhyteEdu_Regular text-pSMRegular font-normal text-neutral-100 dark:text-neutral-15 sm:text-pLGRegular">
               {data.peripheralDescription}
             </div>
           </div>
         </div>
 
-        <div className="col-span-10 grid grid-cols-12 gap-16">
+        <div className="col-span-10 gap-16 md:grid-cols-12 lg:grid">
           <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
             {data.peripherals.map(
               ({ peripheralDetails, peripheralImage }, index) => (
@@ -143,7 +133,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                     quality={100}
                     className="dark:brightness-0 dark:invert-[1]"
                   />
-                  <div className="pt-8 font-ABCWhyteEdu_Regular text-pMDRegular font-normal text-neutral-100 dark:text-neutral-15">
+                  <div className="pt-8 font-ABCWhyteEdu_Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15 md:text-pMDSemiBold">
                     {peripheralDetails}
                   </div>
                 </div>
@@ -151,7 +141,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
             )}
           </div>
         </div>
-        <div className="grid grid-cols-12 gap-16">
+        <div className="gap-16 md:grid-cols-12 lg:grid">
           <div className="col-span-8 col-start-1">
             <div className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
               {data.softwareTitle}
@@ -178,7 +168,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                           className="dark:brightness-0 dark:invert-[1]"
                         />
 
-                        <div className="pl-2 font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+                        <div className="pl-2 font-ABCWhyteEdu_Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold">
                           {softwareTitle}
                         </div>
                       </div>
