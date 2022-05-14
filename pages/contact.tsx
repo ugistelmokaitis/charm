@@ -57,10 +57,10 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                 </div>
 
                 <div className="ml-3 flex-1">
-                  <p className="font-ABCWhyteEdu_Regular text-[14px] font-normal text-neutral-0">
+                  <p className="font-ABCWhyteEdu_Regular text-[0.75rem] font-normal text-neutral-0 sm:text-[0.875rem]">
                     Typing Error
                   </p>
-                  <p className="mt-1 font-ABCWhyteEdu_Regular text-[16px] font-normal text-neutral-15">
+                  <p className="mt-1 font-ABCWhyteEdu_Regular text-[0.875rem] font-normal text-neutral-15 sm:text-[1rem]">
                     Hey {capitalize(name.split(' ')[0])}, Please enter a valid
                     website 🚫
                   </p>
@@ -109,25 +109,23 @@ const Contact: FC<IContact> = ({ settings, data }) => {
               type.visible ? 'animate-enter' : 'animate-leave'
             }  border:bg-neutral-30 flex w-full max-w-sm rounded-[1rem] border-[0.03125rem] bg-neutral-100 shadow-lg `}
           >
-            <div className=" flex-1 rounded-[1rem] p-4 dark:bg-neutral-65 ">
+            <div className="flex-1 rounded-[1rem] p-4 dark:bg-neutral-65 ">
               <div className="flex items-start">
-                <div className="">
-                  <div>
-                    <Image
-                      src={data.profileImage.url ?? ''}
-                      alt={data.profileImage.alt ?? ''}
-                      width={24}
-                      height={24}
-                      layout="fixed"
-                      quality={100}
-                    />
-                  </div>
+                <div>
+                  <Image
+                    src={data.profileImage.url ?? ''}
+                    alt={data.profileImage.alt ?? ''}
+                    width={24}
+                    height={24}
+                    layout="fixed"
+                    quality={100}
+                  />
                 </div>
                 <div className="ml-3 flex-1">
-                  <p className="font-ABCWhyteEdu_Regular text-[14px] font-normal text-neutral-0">
+                  <p className="font-ABCWhyteEdu_Regular text-[14px] font-normal text-neutral-0 sm:text-pLGRegular">
                     {data.profileFullName}
                   </p>
-                  <p className="mt-1 font-ABCWhyteEdu_Regular text-[16px] font-normal text-neutral-15">
+                  <p className="mt-1 font-ABCWhyteEdu_Regular text-[16px] font-normal text-neutral-15 sm:text-pLGRegular">
                     Hi {capitalize(name.split(' ')[0])}, thank you for getting
                     in contact with me! ✨
                   </p>
@@ -158,15 +156,15 @@ const Contact: FC<IContact> = ({ settings, data }) => {
     <Layout title="" description="" settings={settings}>
       <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
         <Container>
-          <div className="grid-starts-1 grid grid-cols-12 gap-16">
-            <div className="col-span-4 col-start-1 pt-32">
+          <div className="grid-starts-1 grid gap-16 md:grid-cols-12">
+            <div className="col-start-1 pt-56 sm:col-span-5 md:col-span-10">
               <PrismicRichText field={data.introTitle} />
             </div>
           </div>
           <div className="grid grid-cols-1 gap-16 pt-32 text-neutral-65 dark:text-neutral-30 md:grid-cols-12 md:gap-8">
-            <div className="col-span-7">
+            <div className="md:col-span-7">
               <form onSubmit={sendEmail}>
-                <div className="group relative z-0 mb-6 w-full pb-12">
+                <div className="group relative z-0  w-full pb-12">
                   <input
                     value={name}
                     onChange={({ target }) => setName(target.value)}
@@ -187,7 +185,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   </label>
                 </div>
 
-                <div className="group relative z-0 mb-6 w-full pb-12">
+                <div className="group relative z-0  w-full pb-12">
                   <input
                     value={email}
                     onChange={({ target }) => setEmail(target.value)}
@@ -202,13 +200,13 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="email"
-                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="absolute top-1 -z-10 flex origin-[0] translate-y-6 scale-75 transform text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     Your fancy email *
                   </label>
                 </div>
 
-                <div className="group relative z-0 mb-6 w-full pb-12">
+                <div className="group relative z-0  w-full pb-12">
                   <input
                     value={company}
                     onChange={({ target }) => setCompany(target.value)}
@@ -228,7 +226,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   </label>
                 </div>
 
-                <div className="group relative z-0 mb-6 w-full">
+                <div className="group relative z-0  w-full">
                   <input
                     value={website}
                     onChange={({ target }) => setWebsite(target.value)}
@@ -251,11 +249,11 @@ const Contact: FC<IContact> = ({ settings, data }) => {
 
                 <div className="col-span-1 mb-20 pt-28 md:col-span-8 md:text-left xl:col-span-7">
                   <PrismicRichText field={data.sharedIdeaTitle} />
-                  <div className="pt-4 font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-30">
+                  <div className="pt-4 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-30 sm:text-pLGRegular md:text-pLGRegular">
                     {data.sharedIdeaSubtitle}
                   </div>
                 </div>
-                <div className="pt-group relative z-0 mb-6 w-full">
+                <div className="pt-group relative z-0  w-full">
                   <input
                     value={message}
                     onChange={({ target }) => setMessage(target.value)}
@@ -275,7 +273,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     Write a Message *
                   </label>
                 </div>
-                <div className="mb-4 flex pt-6 pb-28">
+                <div className="mb-28 mt-6 flex">
                   <label
                     className="flex text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30 dark:hover:animate-pulse dark:hover:text-neutral-15"
                     htmlFor="files"
