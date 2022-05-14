@@ -10,6 +10,8 @@ import type {
 export type HomeProps = PrismicDocumentWithUID<{
   titleTag: KeyTextField;
   metaDescription: KeyTextField;
+  editorWindowTabTitle: KeyTextField;
+  editorWindowContent: RichTextField;
   heroNameTitle: KeyTextField;
   heroGreetingTitle: KeyTextField;
   heroDescription: KeyTextField;
@@ -28,6 +30,7 @@ type skillsProps = GroupField<{
 
 type companyProps = GroupField<{
   companyName: KeyTextField;
+  companyLogo: ImageField;
   companyRole: KeyTextField;
   companyYear: KeyTextField;
   companyResponsibilities: KeyTextField;
