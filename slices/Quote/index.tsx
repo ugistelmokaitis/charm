@@ -1,11 +1,7 @@
 import type { FC } from 'react';
-import React, { Fragment } from 'react';
 import type { SliceComponentProps } from '@prismicio/react';
 import { PrismicRichText } from '@prismicio/react';
-import type { KeyTextField, LinkField, RichTextField } from '@prismicio/types';
-import Button from '../../components/button';
-import ArrowIcon from '../../public/icons/arrowIcon.svg';
-import { docResolver } from '../../utils/prismic';
+import type { RichTextField } from '@prismicio/types';
 
 const Quote: FC<
   SliceComponentProps<{
@@ -15,7 +11,7 @@ const Quote: FC<
     };
   }>
 > = ({ slice }) => (
-  <div className="col-span-5 col-start-1 mb-[4.5625rem]">
+  <div className="col-span-5 col-start-1 mt-20 lg:mt-32">
     <PrismicRichText field={slice.primary.title} />
   </div>
 );

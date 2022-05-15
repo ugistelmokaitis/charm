@@ -23,21 +23,21 @@ const Content: FC<
   <>
     <div className="col-span-3 col-start-1">
       <div className="inline-block">
-        <div className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
+        <div className="mb-6 mt-20 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100 lg:mt-32">
           {slice.primary.prefix}
         </div>
       </div>
     </div>
-    <div className="col-span-6 col-start-6">
+    <div className="col-span-6 col-start-6 lg:mt-32">
       <PrismicRichText field={slice.primary.title} />
-      <div className="mb-[3.375rem] mt-20 font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15">
+      <div className="mt-20 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pLGRegular">
         {slice.primary.descriptionFirstPart}
-        <div className="mt-8 font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15">
+        <div className="mt-8 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pLGRegular">
           {slice.primary.descriptionSecondPart}
         </div>
       </div>
     </div>
-    <div className="col-span-3 col-start-6 mb-[8.0625rem] max-w-[15.875rem]">
+    <div className="col-span-4 col-start-6 mt-20 max-w-[15.875rem] md:col-span-4 md:col-start-6">
       <Button
         href={`${docResolver(slice.primary.primaryButtonLink)}`}
         variant="secondary"

@@ -1,5 +1,4 @@
 import type { FC } from 'react';
-import React, { Fragment } from 'react';
 import type { SliceComponentProps } from '@prismicio/react';
 import type { ImageField } from '@prismicio/types';
 import Image from 'next/image';
@@ -12,7 +11,7 @@ const Fullwidthimage: FC<
     };
   }>
 > = ({ slice }) => (
-  <div className="col-span-12 col-start-2 mb-[8.0625rem]">
+  <div className="col-span-12 col-start-2 mt-20 lg:mt-32">
     <Image
       src={slice.primary.image.url ?? ''}
       alt={slice.primary.image.alt ?? ''}
