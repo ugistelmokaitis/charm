@@ -19,6 +19,7 @@
     "@prismicio/slice-simulator-react": "^0.2.2",
     "@react-hookz/web": "^13.3.0",
     "@sentry/nextjs": "^6.19.6",
+    "@svgr/webpack": "^6.2.1",
     "@tippyjs/react": "^4.2.6",
     "embla-carousel-react": "^6.2.0",
     "eslint-config-prettier": "^8.5.0",
