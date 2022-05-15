@@ -24,17 +24,17 @@ type ICaseStudy = {
 
 const CaseStudy: FC<ICaseStudy> = ({ data, settings }) => (
   <Layout title="" description="" settings={settings}>
-    <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
+    <div className="bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100 lg:flex">
       <Container>
-        <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
-          <div className="grid-starts-1 text-white-100 grid grid-cols-12 gap-16 pt-32 md:grid-cols-12 md:gap-8">
+        <div className="bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100 lg:flex">
+          <div className="grid-starts-1 text-white-100 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
             <div className="col-span-6">
               <div className="mb-8 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
                 {data.contentPrefix}
               </div>
               <PrismicRichText field={data.contentTitle} />
             </div>
-            <div className="col-span-12 mt-28 mb-[8rem]">
+            <div className="col-span-12 mt-20 lg:mt-20">
               <Image
                 src={data.contentImage.url ?? ''}
                 alt={data.contentImage.alt ?? ''}
