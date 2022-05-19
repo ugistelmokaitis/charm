@@ -36,3 +36,8 @@ tsconfig.tsbuildinfo
 public/robots.txt
 public/sitemap.xml
 
+# production JS files
+
+public/sitemap*.xml
+public/*.js
+
