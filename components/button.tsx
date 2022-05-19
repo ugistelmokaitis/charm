@@ -1,11 +1,12 @@
 import type { LinkProps } from 'next/link';
 import type { FC } from 'react';
 import type React from 'react';
-import type { SvgrComponent } from '..';
+import type { SvgrComponent } from '../index';
 
 type ButtonProps = LinkProps & {
-  href: string;
+  href?: string;
   className?: string;
+  onClick?: () => void;
   Icon?: SvgrComponent;
   children: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'neutral';

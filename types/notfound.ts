@@ -2,7 +2,6 @@ import type {
   KeyTextField,
   LinkField,
   PrismicDocumentWithUID,
-  RichTextField,
 } from '@prismicio/types';
 
 export type NotFoundProps = PrismicDocumentWithUID<{

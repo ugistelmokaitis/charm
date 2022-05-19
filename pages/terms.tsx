@@ -1,8 +1,6 @@
 import type { GetStaticProps } from 'next';
 import type { FC } from 'react';
 import { PrismicRichText } from '@prismicio/react';
-import { asText } from '@prismicio/helpers';
-import Image from 'next/image';
 import Layout from '../components/layout';
 import { getPage } from '../utils/prismic';
 import type { TermsProps } from '../types/terms';
@@ -26,14 +24,9 @@ const Terms: FC<ITerms> = ({ data, settings }) => (
                 {data.introDescription}
               </p>
             </div>
-            <div className="mb-2 mt-2">
+            <div className="mb-20 mt-2">
               <p className="font-codeRegular font-FiraCode_Regular text-codeMDRegular text-neutral-100 dark:text-neutral-0">
                 {data.IntroDateTitle}
-              </p>
-            </div>
-            <div className="mb-20">
-              <p className="font-codeRegular font-FiraCode_Regular text-codeMDRegular text-neutral-100 dark:text-neutral-0">
-                {data.introLastUpdate}
               </p>
             </div>
             <PrismicRichText field={data.contentDescription} />

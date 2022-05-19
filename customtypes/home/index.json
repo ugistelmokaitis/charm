@@ -129,6 +129,14 @@
         "config": {
           "label": "Company",
           "fields": {
+            "companyLogo": {
+              "type": "Image",
+              "config": {
+                "label": "Company Logo",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
             "companyName": {
               "type": "Text",
               "config": {

@@ -1,14 +1,12 @@
 import type { GetStaticProps } from 'next';
 import type { FC } from 'react';
 import { PrismicLink, PrismicRichText } from '@prismicio/react';
-import { asText } from '@prismicio/helpers';
 import Image from 'next/image';
 import Layout from '../components/layout';
 import { getPage } from '../utils/prismic';
 import type { ExtensionsProps } from '../types/extensions';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
-import richTextComponents from '../components/richTextComponents';
 import SocialLinkIcon from '../public/icons/socialLinkIcon.svg';
 import Divider from '../components/divider';
 

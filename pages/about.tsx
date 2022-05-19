@@ -2,7 +2,6 @@ import type { GetStaticProps } from 'next';
 import type { FC } from 'react';
 import { PrismicLink, PrismicRichText } from '@prismicio/react';
 import type { JSXMapSerializer } from '@prismicio/react';
-import { asText } from '@prismicio/helpers';
 import Image from 'next/image';
 import Layout from '../components/layout';
 import { docResolver, getPage } from '../utils/prismic';
@@ -23,7 +22,7 @@ const introComponents: JSXMapSerializer = {
   paragraph: ({ children, key, ...props }) => (
     <p
       key={key}
-      className="inline font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15  md:text-pLGRegular"
+      className="inline font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 sm:text-pLGRegular md:text-pLGRegular"
       {...props}
     >
       {children}
@@ -58,7 +57,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
     <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100 lg:grid-cols-12">
       <Container>
         <div className="text-white-100 grid-cols-1 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
-          <div className="col-span-1 mb-12 md:col-span-7 md:text-left xl:col-span-7">
+          <div className="col-span-1 mb-12 md:text-left lg:col-span-9">
             <PrismicRichText
               field={data.introTitle}
               components={introComponents}
@@ -67,14 +66,14 @@ const About: FC<IAbout> = ({ data, settings }) => (
         </div>
         <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid ">
           <div className="col-span-6 col-start-1 mx-auto">
-            <div className="max-w-[35rem] font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-65">
+            <div className="max-w-[35rem] font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-65 sm:text-pLGRegular md:text-pLGRegular">
               <PrismicRichText
                 field={data.introDescription}
                 components={introComponents}
               />
             </div>
 
-            <div className="mb-20 mt-20 md:mb-28">
+            <div className="mb-20 mt-20">
               <PrismicRichText
                 field={data.introParagprah}
                 components={introComponents}
@@ -85,11 +84,11 @@ const About: FC<IAbout> = ({ data, settings }) => (
                 <>
                   <div
                     key={index}
-                    className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100"
+                    className="mt-20 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100"
                   >
                     {moreThingsTitle}
                   </div>
-                  <div className="mb-20 pt-6 md:mb-28">
+                  <div className="pt-6">
                     <PrismicRichText
                       field={moreThingsDescription}
                       components={introComponents}
@@ -99,7 +98,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
               )
             )}
             <div>
-              <div className="mb-6 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
+              <div className="mt-20 mb-6 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
                 {data.mygoToolsTitle}
               </div>
               {data.moreTools.map(
@@ -113,7 +112,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                   index
                 ) => (
                   <div key={index}>
-                    <div className="font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-pLGRegular">
+                    <div className="font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGRegular md:text-pLGRegular">
                       {moreToolsAbout}
                     </div>
                     <div className="mt-8 mb-12 flex items-center">
@@ -143,7 +142,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
               )}
             </div>
           </div>
-          <div className="col-span-4 max-w-[20rem] pt-20 md:relative md:col-start-9 lg:pt-0 xl:col-span-3 xl:col-start-10 xl:max-w-full">
+          <div className="col-span-4 max-w-[20rem] pt-20 md:relative md:col-start-9 lg:pt-0  xl:col-span-3 xl:col-start-10 xl:max-w-full">
             <div className="top-[6.5625rem] rounded-[1.25rem] border-[0.03125rem] border-neutral-30 bg-primary-5 py-8 px-8 dark:border-neutral-15 dark:bg-neutral-80 md:sticky">
               <div>
                 <div className="flex justify-center">

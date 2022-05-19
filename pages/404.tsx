@@ -1,8 +1,5 @@
 import type { GetStaticProps } from 'next';
 import type { FC } from 'react';
-import { PrismicRichText } from '@prismicio/react';
-import { asText } from '@prismicio/helpers';
-import Image from 'next/image';
 import Layout from '../components/layout';
 import { docResolver, getPage } from '../utils/prismic';
 import type { NotFoundProps } from '../types/notfound';

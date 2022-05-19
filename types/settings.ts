@@ -3,7 +3,6 @@ import type {
   ImageField,
   LinkField,
   PrismicDocumentWithUID,
-  RichTextField,
   GroupField,
 } from '@prismicio/types';
 

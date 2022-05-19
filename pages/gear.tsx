@@ -1,15 +1,14 @@
 import type { GetStaticProps } from 'next';
 import type { FC } from 'react';
 import type { JSXMapSerializer } from '@prismicio/react';
-import { PrismicLink, PrismicRichText } from '@prismicio/react';
-import { asText } from '@prismicio/helpers';
+import { PrismicRichText } from '@prismicio/react';
 import Image from 'next/image';
 import Layout from '../components/layout';
-import { docResolver, getPage } from '../utils/prismic';
 import type { GearProps } from '../types/gear';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
 import richTextComponents from '../components/richTextComponents';
+import { getPage } from '../utils/prismic';
 
 type IGear = {
   data: GearProps['data'];

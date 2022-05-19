@@ -1,7 +1,6 @@
 import type { GetStaticProps } from 'next';
 import type { FC } from 'react';
 import { PrismicLink, PrismicRichText } from '@prismicio/react';
-import { asText } from '@prismicio/helpers';
 import Image from 'next/image';
 import Layout from '../../components/layout';
 import { getPage, getPages } from '../../utils/prismic';
@@ -9,7 +8,6 @@ import type { WorkProps } from '../../types/work';
 import type { CaseStudyProps } from '../../types/casestudy';
 import type { SettingsProps } from '../../types/settings';
 import Container from '../../components/container';
-import CaseStudy from './[uid]';
 
 type IWork = {
   data: WorkProps['data'];
@@ -35,6 +33,7 @@ const Work: FC<IWork> = ({ data, settings, casestudies }) => (
                 width={1248}
                 height={650}
                 layout="responsive"
+                priority
                 quality={100}
               />
             </PrismicLink>

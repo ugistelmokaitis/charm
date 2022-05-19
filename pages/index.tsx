@@ -24,7 +24,7 @@ const sliderComponents: JSXMapSerializer = {
   heading3: ({ children, key }) => (
     <h3
       key={key}
-      className="whitespace-nowrap font-ABCWhyteEdu_Heavy text-header3 font-extrabold text-neutral-30"
+      className="whitespace-nowrap font-ABCWhyteEdu_Heavy text-5xl font-extrabold text-neutral-30 sm:text-3xl"
     >
       {children}
     </h3>
@@ -52,13 +52,13 @@ const Home: FC<IHome> = ({ data, settings }) => {
                 child1={data.badgeButtonPrefix}
                 child2={data.badgeButtonLabel}
               />
-              <div className="mx-auto items-center pt-12 font-ABCWhyteEdu_Heavy text-display font-extrabold tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+              <div className="mx-auto items-center pt-12 font-ABCWhyteEdu_Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl">
                 {data.heroGreetingTitle}
               </div>
-              <div className="mx-auto mt-4 max-w-[60rem] items-center pb-12 font-ABCWhyteEdu_Heavy text-display font-extrabold tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+              <div className="mx-auto mt-4 items-center pb-12 font-ABCWhyteEdu_Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl">
                 {data.heroNameTitle}
               </div>
-              <div className="mx-auto max-w-[39rem] font-ABCWhyteEdu_Medium text-pMDSemiBold font-semibold text-neutral-50 dark:text-neutral-15">
+              <div className="mx-auto max-w-[39rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold text-neutral-50 dark:text-neutral-15 sm:text-pMDSemiBold">
                 {data.heroDescription}
               </div>
             </div>
@@ -71,8 +71,8 @@ const Home: FC<IHome> = ({ data, settings }) => {
           <div className="mt-52">
             <PrismicRichText field={data.experienceTitle} />
           </div>
-          <div className="mt-28 grid ">
-            <div className="grid grid-cols-12 gap-8 lg:grid-cols-12 lg:pt-20">
+          <div className="mt-12 lg:mt-28 lg:grid ">
+            <div className="gap-8 md:grid-cols-12 lg:grid lg:pt-20">
               <div className="col-span-4 col-start-1 block">
                 {data.company.map(
                   ({ companyRole, companyName, companyLogo }, index) => (
@@ -99,7 +99,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
                           className="dark:brightness-0 dark:invert-[1]"
                         />
                         <div className="ml-8 py-8">
-                          <div className="font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em]  text-neutral-100 dark:text-neutral-0">
+                          <div className="font-ABCWhyteEdu_Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100  dark:text-neutral-0 sm:text-pLGSemiBold">
                             {companyName}
                           </div>
                           <div className="font-codeRegular mt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-50 dark:text-neutral-15">
@@ -111,15 +111,15 @@ const Home: FC<IHome> = ({ data, settings }) => {
                   )
                 )}
               </div>
-              <div className="col-span-6 col-start-7">
+              <div className="col-span-6 col-start-7 mt-12">
                 <div className="pb-4 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
                   {data.company[activeExperience].companyYear}
                 </div>
                 <div className="inline-block">
-                  <span className="font-ABCWhyteEdu_Medium text-header4 font-semibold tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+                  <span className="font-ABCWhyteEdu_Medium text-pMDSemiBold font-semibold text-neutral-100 dark:text-neutral-0 sm:text-5xl">
                     {data.company[activeExperience].companyResponsibilities}
 
-                    <span className="ml-2 font-ABCWhyteEdu_Medium text-header4 font-semibold tracking-[0.02em] text-neutral-30 dark:text-neutral-30">
+                    <span className="ml-2 font-ABCWhyteEdu_Medium text-pMDSemiBold font-semibold text-neutral-30 dark:text-neutral-30 sm:text-5xl">
                       {data.company[activeExperience].companyTools}
                     </span>
                   </span>
@@ -134,34 +134,44 @@ const Home: FC<IHome> = ({ data, settings }) => {
         className="block overflow-hidden bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100"
         ref={slider}
       >
-        <div className="mx-auto mt-52 flex max-w-[35rem] items-center justify-center pb-28 text-center">
+        <div className="mx-auto mt-28 flex max-w-[35rem] items-center justify-center pb-28 text-center lg:mt-52">
           <PrismicRichText field={data.skillsTitle} />
         </div>
-        <div
-          className="flex text-neutral-30"
-          style={{ transform: `translateX(${diff - windowSize.width / 9}px)` }}
-        >
-          {firstHalf.map(({ skill }, index) => (
-            <div key={index} className="flex pr-4 pb-8">
-              <PrismicRichText field={skill} components={sliderComponents} />
-            </div>
-          ))}
-        </div>
-        <div
-          className="text-neutral-40 flex"
-          style={{
-            transform: `translateX(${-diff - windowSize.width / 9}px)`,
-          }}
-        >
-          {secondHalf.map(({ skill }, index) => (
-            <div key={index} className="pr-4">
-              <PrismicRichText
-                field={skill}
-                key={index}
-                components={sliderComponents}
-              />
-            </div>
-          ))}
+        <div className="flex max-w-full flex-row items-stretch overflow-x-auto md:flex-col md:overflow-x-visible">
+          <div
+            className="flex text-neutral-30"
+            style={{
+              transform:
+                windowSize.width < 768
+                  ? ''
+                  : `translateX(${diff - windowSize.width / 5}px)`,
+            }}
+          >
+            {firstHalf.map(({ skill }, index) => (
+              <div key={index} className="flex pr-4 pb-8">
+                <PrismicRichText field={skill} components={sliderComponents} />
+              </div>
+            ))}
+          </div>
+          <div
+            className="text-neutral-40 flex"
+            style={{
+              transform:
+                windowSize.width < 768
+                  ? ''
+                  : `translateX(${-diff - windowSize.width / 20}px)`,
+            }}
+          >
+            {secondHalf.map(({ skill }, index) => (
+              <div key={index} className="pr-4">
+                <PrismicRichText
+                  field={skill}
+                  key={index}
+                  components={sliderComponents}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </Layout>

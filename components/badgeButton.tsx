@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import type React from 'react';
 import type { LinkProps } from 'next/link';
-import RightArrowIcon from '../public/icons/rightArrowIcon.svg';
+import BadgeButtonArrow from '../public/icons/badgeButtonArrow.svg';
 
 type BadgeButtonProps = LinkProps & {
   href: string;
@@ -19,7 +19,7 @@ const TagButton: FC<BadgeButtonProps> = ({ child1, child2, ...props }) => (
     </span>
     <span className="text-neutral-100 dark:text-neutral-0">{child2}</span>
     <div className="ml-4">
-      <RightArrowIcon />
+      <BadgeButtonArrow className="text-neutral-100 dark:text-neutral-0" />
     </div>
   </a>
 );

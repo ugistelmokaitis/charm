@@ -1,13 +1,7 @@
 import type { GetStaticPaths, GetStaticProps } from 'next';
 import type { FC } from 'react';
-import type {
-  EmbedField,
-  ImageFieldImage,
-  KeyTextField,
-  PrismicDocumentWithUID,
-} from '@prismicio/types';
 import type { SliceZoneProps, SliceZoneComponents } from '@prismicio/react';
-import { PrismicImage, PrismicRichText, SliceZone } from '@prismicio/react';
+import { PrismicRichText, SliceZone } from '@prismicio/react';
 import Image from 'next/image';
 import Layout from '../../components/layout';
 import { getPage, getPages } from '../../utils/prismic';

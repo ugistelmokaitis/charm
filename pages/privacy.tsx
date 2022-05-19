@@ -1,8 +1,6 @@
 import type { GetStaticProps } from 'next';
 import type { FC } from 'react';
 import { PrismicRichText } from '@prismicio/react';
-import { asText } from '@prismicio/helpers';
-import Image from 'next/image';
 import type { JSXMapSerializer } from '@prismicio/react';
 import Layout from '../components/layout';
 import { getPage } from '../utils/prismic';
