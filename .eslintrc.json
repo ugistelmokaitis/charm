@@ -284,7 +284,7 @@
       "error",
       {
         "selector": "default",
-        "format": ["camelCase", "PascalCase", "snake_case"]
+        "format": ["camelCase", "PascalCase", "snake_case", "kebab-case"]
       }
     ],
     "@typescript-eslint/no-base-to-string": "error",
