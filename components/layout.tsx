@@ -31,7 +31,7 @@ const Layout: FC<LayoutProps> = ({
     {
       url: `${process.env.NEXT_PUBLIC_SITE_URL ?? ''}/cover.png`,
       width: 1200,
-      height: 670,
+      height: 630,
       alt: name,
     },
   ];
@@ -48,7 +48,7 @@ const Layout: FC<LayoutProps> = ({
   return (
     <>
       <NextSeo
-        titleTemplate={`%s - ${name} - Software Developer`}
+        titleTemplate={`%s | ${name} | Software Developer`}
         title={title ?? ''}
         description={description ?? ''}
         canonical={url}
@@ -58,7 +58,7 @@ const Layout: FC<LayoutProps> = ({
           description: description ?? '',
           images,
           site_name: name,
-          type: '- Software Developer',
+          type: '| Software Developer',
           profile: {
             username,
           },
@@ -69,28 +69,16 @@ const Layout: FC<LayoutProps> = ({
           cardType: 'summary_large_image',
         }}
       />
-      {/* <SocialProfileJsonLd
+      <SocialProfileJsonLd
         name={name}
         type="Organization"
         url={process.env.NEXT_PUBLIC_SITE_URL ?? ''}
-
-        sameAs={settings.social_header.map((social) =>
-          docResolver(social.social_media_link)
+        sameAs={settings.data.footerSocialMedia.map(({ socialMediaLink }) =>
+          docResolver(socialMediaLink)
         )}
-      /> */}
+      />
 
       <Header settings={settings} />
-      <div>
-        {/* <AnimatedCursor
-          innerSize={8}
-          outerSize={9}
-          color="21, 91, 226"
-          outerAlpha={0.2}
-          innerScale={0.7}
-          outerScale={9}
-          trailingSpeed={8}
-        /> */}
-      </div>
       {children}
       <Footer settings={settings} />
     </>
