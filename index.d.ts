@@ -1,5 +1,7 @@
-/* eslint-disable no-undef, import/unambiguous */
+import type { FC, SVGAttributes } from 'react';
+
+export type SvgrComponent = FC<SVGAttributes<SVGElement>>;
+
 declare module '*.svg' {
-  const content: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
-  export default content;
+  const value: SvgrComponent;
 }
