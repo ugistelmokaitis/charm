@@ -42,7 +42,6 @@ const Gear: FC<IGear> = ({ data, settings }) => (
             </div>
           </div>
         </div>
-
         <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
           <div className="col-span-3">
             <div className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
@@ -53,7 +52,6 @@ const Gear: FC<IGear> = ({ data, settings }) => (
             </div>
           </div>
         </div>
-
         <div className="col-span-10 grid-cols-12 gap-16 lg:grid">
           <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
             {data.devices.map(({ deviceDetails, deviceImage }, index) => (
@@ -85,7 +83,6 @@ const Gear: FC<IGear> = ({ data, settings }) => (
             </div>
           </div>
         </div>
-
         <div className="col-span-10 grid-cols-12 gap-16 lg:grid">
           <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
             {data.setup.map(({ setupDetails, setupImage }, index) => (
@@ -106,7 +103,6 @@ const Gear: FC<IGear> = ({ data, settings }) => (
             ))}
           </div>
         </div>
-
         <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
           <div className="col-span-4">
             <div className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
@@ -117,7 +113,6 @@ const Gear: FC<IGear> = ({ data, settings }) => (
             </div>
           </div>
         </div>
-
         <div className="col-span-10 gap-16 md:grid-cols-12 lg:grid">
           <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
             {data.peripherals.map(
@@ -166,7 +161,6 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                           quality={100}
                           className="dark:brightness-0 dark:invert-[1]"
                         />
-
                         <div className="pl-2 font-ABCWhyteEdu_Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold">
                           {softwareTitle}
                         </div>

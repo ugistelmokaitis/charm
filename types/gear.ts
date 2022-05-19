@@ -42,6 +42,6 @@ type PeripheralProps = GroupField<{
 
 type SoftwareProps = GroupField<{
   softwareIcon: ImageField;
-  softwareTitle: RichTextField;
+  softwareTitle: KeyTextField;
   softwareDescription: RichTextField;
 }>;
