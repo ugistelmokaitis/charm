@@ -104,3 +104,24 @@
   position: relative;
   flex: 0 0 100%;
 }
+
+.language-typescript {
+  position: relative;
+}
+
+.language-typescript > span {
+  min-height: 1.5rem;
+  padding-left: 3rem;
+
+  @apply flex md:block !important;
+}
+
+.language-typescript > span > span {
+  flex-shrink: 0;
+}
+
+.language-typescript .linenumber {
+  position: absolute;
+  left: 0;
+  opacity: 0.5;
+}
