@@ -14,9 +14,9 @@ const options = {
     return [{source: "/(.*)", headers: createSecureHeaders()}];
   },
 
-
   images: {
     domains: ['images.prismic.io', 'charm.cdn.prismic.io'],
+    dangerouslyAllowSVG: true,
     disableStaticImages: true,
   },
 
