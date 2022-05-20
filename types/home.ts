@@ -11,7 +11,7 @@ export type HomeProps = PrismicDocumentWithUID<{
   titleTag: KeyTextField;
   metaDescription: KeyTextField;
   editorWindowTabTitle: KeyTextField;
-  editorWindowContent: RichTextField;
+  editorWindowContent: KeyTextField;
   heroNameTitle: KeyTextField;
   heroGreetingTitle: KeyTextField;
   heroDescription: KeyTextField;
