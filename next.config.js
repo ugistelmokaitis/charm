@@ -1,7 +1,6 @@
 const {createSecureHeaders} = require('next-secure-headers');
 const withPlugins = require('next-compose-plugins');
 const withPWA = require('next-pwa');
-const {withSentryConfig} = require('@sentry/nextjs');
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 });
@@ -22,13 +21,14 @@ const options = {
 
   webpack(config) {
     config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"]
-    });
-    return config;
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack'],
+    })
 
-  }
-};
+    return config
+  },
+}
 
 const plugins = [
   [
@@ -42,12 +42,6 @@ const plugins = [
       },
     },
   ],
-  /* [
-      withSentryConfig,
-      {
-          silent: true,
-      },
-  ], */
   withBundleAnalyzer,
 ];
 
