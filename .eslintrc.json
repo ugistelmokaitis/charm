@@ -22,10 +22,9 @@
   "ignorePatterns": ["**/*.js"],
   "extends": [
     "plugin:react/jsx-runtime",
-    "plugin:@next/next/recommended",
-    "plugin:@next/next/core-web-vitals",
     "prettier",
-    "plugin:import/typescript"
+    "plugin:import/typescript",
+    "next/core-web-vitals"
   ],
   "settings": {
     "react": {
@@ -89,7 +88,6 @@
     "accessor-pairs": "error",
     "arrow-body-style": "error",
     "block-scoped-var": "error",
-    "camelcase": "off",
     "capitalized-comments": "off",
     "class-methods-use-this": "error",
     "complexity": "off",
@@ -225,6 +223,7 @@
 
     // ESLint Disabled for Typescript-ESLint
     "brace-style": "off",
+    "camelcase": "off",
     "comma-dangle": "off",
     "comma-spacing": "off",
     "default-param-last": "off",
@@ -284,7 +283,15 @@
       "error",
       {
         "selector": "default",
-        "format": ["camelCase", "PascalCase", "snake_case", "kebab-case"]
+        "format": [
+          "camelCase",
+          "PascalCase",
+          "snake_case",
+          "StrictPascalCase",
+          "StrictPascalCase",
+          "UPPER_CASE",
+          "strictCamelCase"
+        ]
       }
     ],
     "@typescript-eslint/no-base-to-string": "error",
@@ -517,23 +524,6 @@
     "jsx-a11y/role-supports-aria-props": "error",
     "jsx-a11y/scope": "error",
     "jsx-a11y/tabindex-no-positive": "error",
-
-    // Next
-    "@next/next/google-font-display": "error",
-    "@next/next/google-font-preconnect": "error",
-    "@next/next/link-passhref": "error",
-    "@next/next/no-css-tags": "error",
-    "@next/next/no-document-import-in-page": "error",
-    "@next/next/no-head-import-in-document": "error",
-    "@next/next/no-html-link-for-pages": "error",
-    "@next/next/no-img-element": "error",
-    "@next/next/no-page-custom-font": "error",
-    "@next/next/no-sync-scripts": "error",
-    "@next/next/no-title-in-document-head": "error",
-    "@next/next/no-unwanted-polyfillio": "error",
-    "@next/next/inline-script-id": "error",
-    "@next/next/no-typos": "error",
-    "@next/next/next-script-for-ga": "error",
 
     // ESLint-Import: Static analysis
     "import/no-unresolved": "off",
