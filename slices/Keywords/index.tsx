@@ -3,7 +3,6 @@ import React, { Fragment } from 'react';
 import type { SliceComponentProps } from '@prismicio/react';
 import { PrismicRichText } from '@prismicio/react';
 import type { KeyTextField, RichTextField } from '@prismicio/types';
-import ArrowIcon from '../../public/icons/arrowIcon.svg';
 
 const Keywords: FC<
   SliceComponentProps<{

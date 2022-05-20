@@ -7,7 +7,7 @@ import { getPage } from '../utils/prismic';
 import type { ExtensionsProps } from '../types/extensions';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
-import SocialLinkIcon from '../public/icons/socialLinkIcon.svg';
+import SocialLinkIcon from '../public/icons/sociallinkicon.svg';
 import Divider from '../components/divider';
 
 type IExtensions = {

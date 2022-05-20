@@ -6,7 +6,7 @@ import type { NotFoundProps } from '../types/notfound';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
 import Button from '../components/button';
-import ArrowIcon from '../public/icons/arrowIcon.svg';
+import ArrowIcon from '../public/icons/arrowicon.svg';
 
 type INotFound = {
   data: NotFoundProps['data'];

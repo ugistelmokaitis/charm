@@ -9,7 +9,7 @@ import type { AboutProps } from '../types/about';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
 import richTextComponents from '../components/richTextComponents';
-import SocialLinkIcon from '../public/icons/socialLinkIcon.svg';
+import SocialLinkIcon from '../public/icons/sociallinkicon.svg';
 import Divider from '../components/divider';
 
 type IAbout = {

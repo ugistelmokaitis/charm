@@ -4,7 +4,7 @@ import type { SliceComponentProps } from '@prismicio/react';
 import { PrismicRichText } from '@prismicio/react';
 import type { KeyTextField, LinkField, RichTextField } from '@prismicio/types';
 import Button from '../../components/button';
-import ArrowIcon from '../../public/icons/arrowIcon.svg';
+import ArrowIcon from '../../public/icons/arrowicon.svg';
 import { docResolver } from '../../utils/prismic';
 
 const Content: FC<

@@ -3,8 +3,8 @@ import type { SliceComponentProps } from '@prismicio/react';
 import type { ImageField } from '@prismicio/types';
 import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react';
-import ArrowLeft from '../../public/icons/carouselLeft.svg';
-import ArrowRight from '../../public/icons/carouselRight.svg';
+import ArrowLeft from '../../public/icons/carouselleft.svg';
+import ArrowRight from '../../public/icons/carouselright.svg';
 
 const Carousel: FC<
   SliceComponentProps<{

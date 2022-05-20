@@ -9,7 +9,7 @@ import Link from 'next/link';
 import { Spiral as Hamburger } from 'hamburger-react';
 import type { SettingsProps } from '../types/settings';
 import { docResolver } from '../utils/prismic';
-import ArrowIcon from '../public/icons/arrowIcon.svg';
+import ArrowIcon from '../public/icons/arrowicon.svg';
 
 import Container from './container';
 import Button from './button';

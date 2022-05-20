@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import type React from 'react';
 import type { LinkProps } from 'next/link';
-import BadgeButtonArrow from '../public/icons/badgeButtonArrow.svg';
+import BadgeButtonArrow from '../public/icons/badgebuttonarrow.svg';
 
 type BadgeButtonProps = LinkProps & {
   href: string;

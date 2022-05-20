@@ -9,7 +9,7 @@ import { getPage } from '../utils/prismic';
 import type { ContactProps } from '../types/contact';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
-import IconAddFile from '../public/icons/iconAddFile.svg';
+import IconAddFile from '../public/icons/iconaddfile.svg';
 import type { NodemailerResponse } from './api/nodemailer';
 
 type IContact = {
