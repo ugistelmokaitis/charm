@@ -20,12 +20,12 @@ const Terms: FC<ITerms> = ({ data, settings }) => (
           <div className="col-span-4 pt-56 md:col-span-9 lg:col-span-7">
             <PrismicRichText field={data.introTitle} />
             <div className="mb-12 mt-12">
-              <p className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pMDSemiBold">
+              <p className="font-ABCWhyteEdu-Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pMDSemiBold">
                 {data.introDescription}
               </p>
             </div>
             <div className="mb-20 mt-2">
-              <p className="font-codeRegular font-FiraCode_Regular text-codeMDRegular text-neutral-100 dark:text-neutral-0">
+              <p className="font-codeRegular font-FiraCode-Regular text-codeMDRegular text-neutral-100 dark:text-neutral-0">
                 {data.IntroDateTitle}
               </p>
             </div>

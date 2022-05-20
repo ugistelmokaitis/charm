@@ -64,7 +64,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                     <Button
                       href={docResolver(headerPageLink)}
                       variant="neutral"
-                      className={` ${`hidden rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80 md:flex`} ${
+                      className={` ${`hidden rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80 md:flex`} ${
                         router.asPath === docResolver(headerPageLink)
                           ? `text-[#111827]  dark:text-[#FFFFFF]`
                           : ''
@@ -78,7 +78,7 @@ const Header: FC<ISettings> = ({ settings }) => {
               <div className="inline-flex pr-[0.25rem]">
                 <Tippy
                   content="View Github Profile"
-                  className="font-codeRegular font-FiraCode_Regular text-codeMDRegular text-neutral-100"
+                  className="font-codeRegular font-FiraCode-Regular text-codeMDRegular text-neutral-100"
                 >
                   <div className="hidden rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 xs:flex md:ml-12 lg:mr-4">
                     <div>
@@ -110,7 +110,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                 <div className="hidden justify-evenly rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 2xs:flex ">
                   <Tippy
                     content="Appearance Light Mode"
-                    className="font-codeRegular mt-[0.4375rem] font-FiraCode_Regular text-codeMDRegular text-neutral-100"
+                    className="font-codeRegular mt-[0.4375rem] font-FiraCode-Regular text-codeMDRegular text-neutral-100"
                   >
                     <div
                       className="hidden dark:flex"
@@ -139,7 +139,7 @@ const Header: FC<ISettings> = ({ settings }) => {
 
                   <Tippy
                     content="Appearance Dark Mode"
-                    className="font-codeRegular mt-[0.4375rem] font-FiraCode_Regular text-codeMDRegular text-neutral-100 "
+                    className="font-codeRegular mt-[0.4375rem] font-FiraCode-Regular text-codeMDRegular text-neutral-100 "
                   >
                     <div
                       className="flex dark:hidden"
@@ -210,7 +210,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                       <Button
                         href={docResolver(pageLink)}
                         variant="neutral"
-                        className={` ${`grid grid-cols-2 rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold text-neutral-50  hover:bg-primary-25  dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
+                        className={` ${`grid grid-cols-2 rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50  hover:bg-primary-25  dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
                           router.asPath === docResolver(pageLink)
                             ? `text-[#111827]  dark:text-[#FFFFFF]`
                             : ''

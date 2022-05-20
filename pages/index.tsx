@@ -24,7 +24,7 @@ const sliderComponents: JSXMapSerializer = {
   heading3: ({ children, key }) => (
     <h3
       key={key}
-      className="whitespace-nowrap font-ABCWhyteEdu_Heavy text-5xl font-extrabold text-neutral-30 sm:text-3xl"
+      className="whitespace-nowrap font-ABCWhyteEdu-Heavy text-5xl font-extrabold text-neutral-30 sm:text-3xl"
     >
       {children}
     </h3>
@@ -52,13 +52,13 @@ const Home: FC<IHome> = ({ data, settings }) => {
                 child1={data.badgeButtonPrefix}
                 child2={data.badgeButtonLabel}
               />
-              <div className="mx-auto items-center pt-12 font-ABCWhyteEdu_Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl">
+              <div className="mx-auto items-center pt-12 font-ABCWhyteEdu-Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl">
                 {data.heroGreetingTitle}
               </div>
-              <div className="mx-auto mt-4 items-center pb-12 font-ABCWhyteEdu_Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl">
+              <div className="mx-auto mt-4 items-center pb-12 font-ABCWhyteEdu-Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl">
                 {data.heroNameTitle}
               </div>
-              <div className="mx-auto max-w-[39rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold text-neutral-50 dark:text-neutral-15 sm:text-pMDSemiBold">
+              <div className="mx-auto max-w-[39rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50 dark:text-neutral-15 sm:text-pMDSemiBold">
                 {data.heroDescription}
               </div>
             </div>
@@ -99,10 +99,10 @@ const Home: FC<IHome> = ({ data, settings }) => {
                           className="dark:brightness-0 dark:invert-[1]"
                         />
                         <div className="ml-8 py-8">
-                          <div className="font-ABCWhyteEdu_Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100  dark:text-neutral-0 sm:text-pLGSemiBold">
+                          <div className="font-ABCWhyteEdu-Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100  dark:text-neutral-0 sm:text-pLGSemiBold">
                             {companyName}
                           </div>
-                          <div className="font-codeRegular mt-2 font-FiraCode_Regular text-codeMDRegular text-neutral-50 dark:text-neutral-15">
+                          <div className="font-codeRegular mt-2 font-FiraCode-Regular text-codeMDRegular text-neutral-50 dark:text-neutral-15">
                             {companyRole}
                           </div>
                         </div>
@@ -112,14 +112,14 @@ const Home: FC<IHome> = ({ data, settings }) => {
                 )}
               </div>
               <div className="col-span-6 col-start-7 mt-12">
-                <div className="pb-4 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
+                <div className="pb-4 font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
                   {data.company[activeExperience].companyYear}
                 </div>
                 <div className="inline-block">
-                  <span className="font-ABCWhyteEdu_Medium text-pMDSemiBold font-semibold text-neutral-100 dark:text-neutral-0 sm:text-5xl">
+                  <span className="font-ABCWhyteEdu-Medium text-pMDSemiBold font-semibold text-neutral-100 dark:text-neutral-0 sm:text-5xl">
                     {data.company[activeExperience].companyResponsibilities}
 
-                    <span className="ml-2 font-ABCWhyteEdu_Medium text-pMDSemiBold font-semibold text-neutral-30 dark:text-neutral-30 sm:text-5xl">
+                    <span className="ml-2 font-ABCWhyteEdu-Medium text-pMDSemiBold font-semibold text-neutral-30 dark:text-neutral-30 sm:text-5xl">
                       {data.company[activeExperience].companyTools}
                     </span>
                   </span>

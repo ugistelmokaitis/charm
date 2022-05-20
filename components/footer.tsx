@@ -28,7 +28,7 @@ const Footer: FC<ISettings> = ({ settings }) => {
                   <Button
                     href={docResolver(pageLink)}
                     variant="neutral"
-                    className={` ${`grid grid-cols-1 rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold text-neutral-50 hover:bg-primary-25  dark:text-neutral-30  dark:hover:bg-neutral-80 xl:flex`} ${
+                    className={` ${`grid grid-cols-1 rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50 hover:bg-primary-25  dark:text-neutral-30  dark:hover:bg-neutral-80 xl:flex`} ${
                       router.asPath === docResolver(pageLink)
                         ? `text-[#111827]  dark:text-[#FFFFFF]`
                         : ''

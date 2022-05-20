@@ -57,10 +57,10 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                 </div>
 
                 <div className="ml-3 flex-1">
-                  <p className="font-ABCWhyteEdu_Regular text-[0.75rem] font-normal text-neutral-0 sm:text-[0.875rem]">
+                  <p className="font-ABCWhyteEdu-Regular text-[0.75rem] font-normal text-neutral-0 sm:text-[0.875rem]">
                     Typing Error
                   </p>
-                  <p className="mt-1 font-ABCWhyteEdu_Regular text-[0.875rem] font-normal text-neutral-15 sm:text-[1rem]">
+                  <p className="mt-1 font-ABCWhyteEdu-Regular text-[0.875rem] font-normal text-neutral-15 sm:text-[1rem]">
                     Hey {capitalize(name.split(' ')[0])}, Please enter a valid
                     website 🚫
                   </p>
@@ -122,10 +122,10 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                 </div>
                 <div className="ml-3 flex-1">
-                  <p className="font-ABCWhyteEdu_Regular text-[14px] font-normal text-neutral-0 sm:text-pLGRegular">
+                  <p className="font-ABCWhyteEdu-Regular text-[14px] font-normal text-neutral-0 sm:text-pLGRegular">
                     {data.profileFullName}
                   </p>
-                  <p className="mt-1 font-ABCWhyteEdu_Regular text-[16px] font-normal text-neutral-15 sm:text-pLGRegular">
+                  <p className="mt-1 font-ABCWhyteEdu-Regular text-[16px] font-normal text-neutral-15 sm:text-pLGRegular">
                     Hi {capitalize(name.split(' ')[0])}, thank you for getting
                     in contact with me! ✨
                   </p>
@@ -171,7 +171,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="name"
                     name="name"
                     id="name"
-                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="on"
@@ -192,7 +192,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="email"
                     name="email"
                     id="email"
-                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="on"
@@ -213,7 +213,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="company"
                     name="company"
                     id="company"
-                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     autoComplete="on"
                     maxLength={50}
@@ -233,7 +233,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="website"
                     name="website"
                     id="website"
-                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="on"
@@ -249,7 +249,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
 
                 <div className="col-span-1 mb-20 pt-28 md:col-span-8 md:text-left xl:col-span-7">
                   <PrismicRichText field={data.sharedIdeaTitle} />
-                  <div className="pt-4 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-30 sm:text-pLGRegular md:text-pLGRegular">
+                  <div className="pt-4 font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-30 sm:text-pLGRegular md:text-pLGRegular">
                     {data.sharedIdeaSubtitle}
                   </div>
                 </div>
@@ -260,7 +260,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="message"
                     name="message"
                     id="message"
-                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode_Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="font-codeRegular peer block w-full appearance-none  border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-codeMDRegular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="off"
@@ -281,7 +281,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     <div className="pr-2">
                       <IconAddFile />
                     </div>
-                    <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30  dark:hover:animate-pulse dark:hover:text-neutral-15">
+                    <div className="font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30  dark:hover:animate-pulse dark:hover:text-neutral-15">
                       {files.length
                         ? files.map((file) => file.name).join(', ')
                         : 'Add attachment'}

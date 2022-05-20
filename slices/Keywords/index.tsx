@@ -18,14 +18,14 @@ const Keywords: FC<
   <>
     <div className="col-span-3 col-start-1">
       <div className="inline-block">
-        <div className="mt-20 mb-6 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100 lg:mt-32">
+        <div className="mt-20 mb-6 font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100 lg:mt-32">
           {slice.primary.prefix}
         </div>
       </div>
     </div>
     <div className="col-span-6 col-start-6 lg:mt-32">
       <PrismicRichText field={slice.primary.title} />
-      <div className="mt-20 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pLGRegular">
+      <div className="mt-20 font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pLGRegular">
         {slice.primary.content}
       </div>
     </div>

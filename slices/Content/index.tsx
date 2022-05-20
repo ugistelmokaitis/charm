@@ -23,16 +23,16 @@ const Content: FC<
   <>
     <div className="col-span-3 col-start-1">
       <div className="inline-block">
-        <div className="mb-6 mt-20 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100 lg:mt-32">
+        <div className="mb-6 mt-20 font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100 lg:mt-32">
           {slice.primary.prefix}
         </div>
       </div>
     </div>
     <div className="col-span-6 col-start-6 lg:mt-32">
       <PrismicRichText field={slice.primary.title} />
-      <div className="mt-20 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pLGRegular">
+      <div className="mt-20 font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pLGRegular">
         {slice.primary.descriptionFirstPart}
-        <div className="mt-8 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pLGRegular">
+        <div className="mt-8 font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pLGRegular">
           {slice.primary.descriptionSecondPart}
         </div>
       </div>

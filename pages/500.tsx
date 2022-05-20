@@ -20,17 +20,17 @@ const Custom500: FC<IServerError> = ({ data, settings }) => (
         <div className="grid-starts-1 text-white-100 grid grid-cols-1 gap-16 md:grid-cols-12 md:gap-8">
           <div className="pt-56 md:col-span-12">
             <div className="mb-6 flex items-center justify-center xl:mb-12">
-              <p className="font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
+              <p className="font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
                 {data.introPrefix}
               </p>
             </div>
             <div className="flex items-center justify-center">
-              <p className="font-ABCWhyteEdu_Heavy text-[8.125rem] font-bold leading-[123.5px] tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-[15rem] md:leading-[228px]">
+              <p className="font-ABCWhyteEdu-Heavy text-[8.125rem] font-bold leading-[123.5px] tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-[15rem] md:leading-[228px]">
                 {data.introTitle}
               </p>
             </div>
             <div className="mb-12 mt-6 flex items-center justify-center text-center xl:mb-20">
-              <p className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-semibold text-neutral-100 dark:text-neutral-0 sm:text-pMDSemiBold">
+              <p className="font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-100 dark:text-neutral-0 sm:text-pMDSemiBold">
                 {data.introDescription}
               </p>
             </div>

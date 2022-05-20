@@ -22,7 +22,7 @@ const introComponents: JSXMapSerializer = {
   paragraph: ({ children, key, ...props }) => (
     <p
       key={key}
-      className="inline font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 sm:text-pLGRegular md:text-pLGRegular"
+      className="inline font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 sm:text-pLGRegular md:text-pLGRegular"
       {...props}
     >
       {children}
@@ -66,7 +66,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
         </div>
         <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid ">
           <div className="col-span-6 col-start-1 mx-auto">
-            <div className="max-w-[35rem] font-ABCWhyteEdu_Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-65 sm:text-pLGRegular md:text-pLGRegular">
+            <div className="max-w-[35rem] font-ABCWhyteEdu-Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-65 sm:text-pLGRegular md:text-pLGRegular">
               <PrismicRichText
                 field={data.introDescription}
                 components={introComponents}
@@ -84,7 +84,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                 <>
                   <div
                     key={index}
-                    className="mt-20 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100"
+                    className="mt-20 font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100"
                   >
                     {moreThingsTitle}
                   </div>
@@ -98,7 +98,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
               )
             )}
             <div>
-              <div className="mt-20 mb-6 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
+              <div className="mt-20 mb-6 font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
                 {data.mygoToolsTitle}
               </div>
               {data.moreTools.map(
@@ -112,7 +112,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                   index
                 ) => (
                   <div key={index}>
-                    <div className="font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGRegular md:text-pLGRegular">
+                    <div className="font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGRegular md:text-pLGRegular">
                       {moreToolsAbout}
                     </div>
                     <div className="mt-8 mb-12 flex items-center">
@@ -128,10 +128,10 @@ const About: FC<IAbout> = ({ data, settings }) => (
                         />
 
                         <div className="ml-8">
-                          <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-pLGSemiBold">
+                          <div className="font-ABCWhyteEdu-Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-pLGSemiBold">
                             {moreToolsTitle}
                           </div>
-                          <div className="font-codeRegular mt-2 font-FiraCode_Regular text-[1rem] text-neutral-100 dark:text-neutral-15 md:text-codeMDRegular ">
+                          <div className="font-codeRegular mt-2 font-FiraCode-Regular text-[1rem] text-neutral-100 dark:text-neutral-15 md:text-codeMDRegular ">
                             {moreToolsDescription}
                           </div>
                         </div>
@@ -155,10 +155,10 @@ const About: FC<IAbout> = ({ data, settings }) => (
                     quality={100}
                   />
                 </div>
-                <div className="mt-8 mb-2 flex items-center justify-center font-ABCWhyteEdu_Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+                <div className="mt-8 mb-2 flex items-center justify-center font-ABCWhyteEdu-Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
                   {data.profileName}
                 </div>
-                <div className="flex items-center justify-center font-ABCWhyteEdu_Regular text-pSMRegular font-normal text-neutral-100 dark:text-neutral-15">
+                <div className="flex items-center justify-center font-ABCWhyteEdu-Regular text-pSMRegular font-normal text-neutral-100 dark:text-neutral-15">
                   {data.profileLocation}
                 </div>
                 <div className="mb-8 mt-8">
@@ -187,7 +187,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                               className="dark:brightness-0 dark:invert-[1]"
                             />
 
-                            <div className="ml-4 flex text-center font-ABCWhyteEdu_Regular text-pSMRegular font-normal text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
+                            <div className="ml-4 flex text-center font-ABCWhyteEdu-Regular text-pSMRegular font-normal text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
                               {profileSocialsCategory}
                             </div>
                           </div>

@@ -16,7 +16,7 @@ const Callout: FC<
 > = ({ slice }) => (
   <>
     <div className="col-span-3 col-start-1">
-      <div className="mt-20 mb-6 font-FiraCode_SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100 lg:mt-32">
+      <div className="mt-20 mb-6 font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100 lg:mt-32">
         {slice.primary.prefix}
       </div>
     </div>

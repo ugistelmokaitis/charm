@@ -22,10 +22,10 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
         <div className="grid-starts-1 text-white-100 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
           <div className="col-span-6">
             <PrismicRichText field={data.introTitle} />
-            <div className="mt-20 mb-20 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGRegular xl:mt-28 xl:mb-28">
+            <div className="mt-20 mb-20 font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGRegular xl:mt-28 xl:mb-28">
               {data.introDescription}
             </div>
-            <div className="font-codeRegular font-FiraCode_Regular text-codeMDRegular text-primary-100 dark:text-blue-100">
+            <div className="font-codeRegular font-FiraCode-Regular text-codeMDRegular text-primary-100 dark:text-blue-100">
               {data.extensionsTitle}
             </div>
             {data.extentions.map(
@@ -33,11 +33,11 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
                 <>
                   <div
                     key={index}
-                    className="mt-6 mb-4 font-ABCWhyteEdu_Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold"
+                    className="mt-6 mb-4 font-ABCWhyteEdu-Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold"
                   >
                     {extentionTitle}
                   </div>
-                  <div className="pb-6 font-ABCWhyteEdu_Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 sm:text-pMDRegular">
+                  <div className="pb-6 font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 sm:text-pMDRegular">
                     {extentionDescription}
                   </div>
                 </>
@@ -46,10 +46,10 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
           </div>
           <div className="col-span-4 col-start-10 max-w-[20rem] pt-14 md:relative md:col-start-9 lg:pt-0 xl:col-span-3 xl:col-start-10 xl:max-w-full">
             <div className="top-[6.5625rem] rounded-[1.25rem] border-[0.03125rem] border-neutral-30 bg-primary-5 py-8 px-8 dark:border-neutral-15 dark:bg-neutral-80 md:sticky">
-              <div className="flex items-center justify-center font-ABCWhyteEdu_Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold">
+              <div className="flex items-center justify-center font-ABCWhyteEdu-Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold">
                 {data.socialTitle}
               </div>
-              <div className="flex items-center justify-center pt-2 pb-8 font-ABCWhyteEdu_Regular text-pSMRegular font-normal text-neutral-50 dark:text-neutral-15">
+              <div className="flex items-center justify-center pt-2 pb-8 font-ABCWhyteEdu-Regular text-pSMRegular font-normal text-neutral-50 dark:text-neutral-15">
                 {data.socialDescription}
               </div>
               <Divider />
@@ -72,7 +72,7 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
                             className="dark:brightness-0 dark:invert-[1]"
                           />
 
-                          <div className="flex pl-4 font-ABCWhyteEdu_Regular text-pSMRegular font-normal text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
+                          <div className="flex pl-4 font-ABCWhyteEdu-Regular text-pSMRegular font-normal text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
                             {socialProfileTitle}
                           </div>
                         </div>
