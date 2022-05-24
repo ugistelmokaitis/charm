@@ -17,7 +17,11 @@ type ICaseStudy = {
 };
 
 const CaseStudy: FC<ICaseStudy> = ({ data, settings }) => (
-  <Layout title="" description="" settings={settings}>
+  <Layout
+    title={data.titleTag}
+    description={data.metaDescription}
+    settings={settings}
+  >
     <div className="bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100 lg:flex">
       <Container>
         <div className="bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100 lg:flex">

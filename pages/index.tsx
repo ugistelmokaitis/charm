@@ -42,7 +42,11 @@ const Home: FC<IHome> = ({ data, settings }) => {
   const windowSize = useWindowSize();
   const diff = (scrollY - (scrollPos - windowSize.height / 2)) / 2;
   return (
-    <Layout title="" description="" settings={settings}>
+    <Layout
+      title={data.titleTag}
+      description={data.metaDescription}
+      settings={settings}
+    >
       <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
         <Container>
           <div>

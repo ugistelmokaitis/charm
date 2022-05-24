@@ -53,7 +53,11 @@ const introComponents: JSXMapSerializer = {
 };
 
 const About: FC<IAbout> = ({ data, settings }) => (
-  <Layout title="" description="" settings={settings}>
+  <Layout
+    title={data.titleTag}
+    description={data.metaDescription}
+    settings={settings}
+  >
     <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100 lg:grid-cols-12">
       <Container>
         <div className="text-white-100 grid-cols-1 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">

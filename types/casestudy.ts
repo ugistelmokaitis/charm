@@ -10,6 +10,8 @@ import type {
 export type CaseStudyProps = PrismicDocumentWithUID<{
   workpagePrefix: KeyTextField;
   workpageTitle: KeyTextField;
+  titleTag: KeyTextField;
+  metaDescription: KeyTextField;
   workpageDescriptionBold: KeyTextField;
   workpageDescriptionRegular: KeyTextField;
   contentPrefix: KeyTextField;
