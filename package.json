@@ -33,6 +33,7 @@
     "nodemailer": "^6.7.4",
     "postcss-import": "^14.1.0",
     "postcss-preset-env": "^7.4.3",
+    "prismic-cli": "^4.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-hot-toast": "^2.2.0",
