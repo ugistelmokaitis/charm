@@ -125,3 +125,8 @@
   left: 0;
   opacity: 0.5;
 }
+
+/* composited typing animation */
+.will-change-transform {
+  will-change: transform;
+}

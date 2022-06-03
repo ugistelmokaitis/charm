@@ -56,14 +56,20 @@ const Home: FC<IHome> = ({ data, settings }) => {
                 child1={data.badgeButtonPrefix}
                 child2={data.badgeButtonLabel}
               />
-              <div className="mx-auto items-center pt-12 font-ABCWhyteEdu-Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl">
+              <h1 className="mx-auto mt-12 items-center font-ABCWhyteEdu-Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl ">
                 {data.heroGreetingTitle}
-              </div>
-              <div className="mx-auto mt-4 items-center pb-12 font-ABCWhyteEdu-Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl">
-                {data.heroNameTitle}
-              </div>
-              <div className="mx-auto max-w-[39rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50 dark:text-neutral-15 sm:text-pMDSemiBold">
-                {data.heroDescription}
+              </h1>
+              <div className="group mx-auto items-center">
+                <h1 className="font-ABCWhyteEdu-Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl">
+                  <span className="inline-flex h-[100px] animate-type overflow-x-hidden whitespace-nowrap pt-2 text-neutral-0 will-change-transform">
+                    {data.heroNameTitle}
+                  </span>
+                  <span className="ml-1 -mb-2 box-border inline-block h-10 w-1 animate-blink bg-neutral-50 will-change-transform sm:h-14 md:-mb-4 md:h-[69px]" />
+                </h1>
+
+                <p className="mx-auto mt-12 max-w-[39rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50 dark:text-neutral-15 sm:text-pMDSemiBold">
+                  {data.heroDescription}
+                </p>
               </div>
             </div>
           </div>
@@ -92,7 +98,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
                           : 'bg-neutral-0 dark:bg-neutral-100'
                       }`}
                     >
-                      <div className="flex  items-center px-8">
+                      <div className="flex items-center px-8 ">
                         <Image
                           src={companyLogo.url ?? ''}
                           alt={companyLogo.alt ?? ''}
@@ -103,12 +109,12 @@ const Home: FC<IHome> = ({ data, settings }) => {
                           className="dark:brightness-0 dark:invert-[1]"
                         />
                         <div className="ml-8 py-8">
-                          <div className="font-ABCWhyteEdu-Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100  dark:text-neutral-0 sm:text-pLGSemiBold">
+                          <h4 className="font-ABCWhyteEdu-Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100  dark:text-neutral-0 sm:text-pLGSemiBold">
                             {companyName}
-                          </div>
-                          <div className="font-codeRegular mt-2 font-FiraCode-Regular text-codeMDRegular text-neutral-50 dark:text-neutral-15">
+                          </h4>
+                          <p className="font-codeRegular mt-2 font-FiraCode-Regular text-codeMDRegular text-neutral-50 dark:text-neutral-15">
                             {companyRole}
-                          </div>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -116,9 +122,9 @@ const Home: FC<IHome> = ({ data, settings }) => {
                 )}
               </div>
               <div className="col-span-6 col-start-7 mt-12">
-                <div className="pb-4 font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
+                <p className="pb-4 font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
                   {data.company[activeExperience].companyYear}
-                </div>
+                </p>
                 <div className="inline-block">
                   <span className="font-ABCWhyteEdu-Medium text-pMDSemiBold font-semibold text-neutral-100 dark:text-neutral-0 sm:text-5xl">
                     {data.company[activeExperience].companyResponsibilities}
