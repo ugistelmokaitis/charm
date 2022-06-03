@@ -8,6 +8,8 @@ import type {
 } from '@prismicio/types';
 
 export type ExtensionsProps = PrismicDocumentWithUID<{
+  titleTag: KeyTextField;
+  metaDescription: KeyTextField;
   introTitle: RichTextField;
   introDescription: KeyTextField;
   extensionsTitle: KeyTextField;
