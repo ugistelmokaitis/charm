@@ -12,6 +12,7 @@ module.exports = {
       animation: {
         type: 'type 1.8s ease-out .8s 1 normal both',
         blink: 'blink 2s linear infinite',
+        arrow: 'cubic-bezier(.17,.67,.83,.67)',
       },
       keyframes: {
         type: {
@@ -33,6 +34,9 @@ module.exports = {
           },
         },
       },
+      boxShadow: {
+        sm: '0rem 0.1875rem 1.875rem rgb(0, 0, 0, 0.15)'
+      }
     },
     screens: {
       '2xs': '357px',
