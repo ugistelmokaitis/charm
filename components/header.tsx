@@ -63,6 +63,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                   <div key={index} className="ml-2">
                     <Button
                       href={docResolver(headerPageLink)}
+                      aria-label="Header Page Label"
                       variant="neutral"
                       className={` ${`hidden rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80 md:flex`} ${
                         router.asPath === docResolver(headerPageLink)
@@ -89,6 +90,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                         <a
                           href={docResolver(settings.data.githubSourceLink)}
                           target="_blank"
+                          aria-label="View Github Profile"
                           rel="noopener noreferrer"
                           className="flex"
                         >
@@ -120,6 +122,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                         setTheme('light');
                       }}
                       role="button"
+                      aria-label="Appearance Light Mode"
                       tabIndex={0}
                       onClick={() => {
                         removeTheme();
@@ -148,6 +151,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                         setTheme('dark');
                       }}
                       role="button"
+                      aria-label="Appearance Dark Mode"
                       tabIndex={0}
                       onClick={() => {
                         removeTheme();
