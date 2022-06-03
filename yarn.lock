@@ -1406,6 +1406,17 @@
     "@hapi/bourne" "2.x.x"
     "@hapi/hoek" "9.x.x"
 
+"@haydenbleasel/harmony@^1.0.20":
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/@haydenbleasel/harmony/-/harmony-1.0.20.tgz#7c98b007525d699e90c61c0da96cfdac6bf0e99a"
+  integrity sha512-JQVIQdIOXP2Ltmf4yUnQsdBxIB1YpsXRnPi+sH8oF3nGptCqV/lHOv8VOP7dRrk0abkEv8W2caHblVSzAuUfpQ==
+  dependencies:
+    eslint-config-next "^12.1.6"
+    eslint-config-prettier "^8.5.0"
+    stylelint-config-idiomatic-order "^8.1.0"
+    stylelint-config-prettier "^9.0.3"
+    stylelint-config-standard "^25.0.0"
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.5.tgz#2cbaf9a89460da24b5ca6531b8bbfc23e1df50c7"
