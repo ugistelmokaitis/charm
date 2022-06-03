@@ -283,15 +283,12 @@
       "error",
       {
         "selector": "default",
-        "format": [
-          "camelCase",
-          "PascalCase",
-          "snake_case",
-          "StrictPascalCase",
-          "StrictPascalCase",
-          "UPPER_CASE",
-          "strictCamelCase"
-        ]
+        "format": ["camelCase", "PascalCase", "snake_case"]
+      },
+      {
+        "selector": "objectLiteralProperty",
+        "format": null,
+        "modifiers": ["requiresQuotes"]
       }
     ],
     "@typescript-eslint/no-base-to-string": "error",
