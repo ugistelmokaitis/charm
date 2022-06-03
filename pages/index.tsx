@@ -50,7 +50,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
       <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
         <Container>
           <div>
-            <div className="col-span-8 col-start-3 pt-32 text-center">
+            <div className="col-span-8 col-start-3 pt-56 text-center lg:pt-[14.25rem]">
               <BadgeButton
                 href={`${docResolver(data.badgeButtonLink)}`}
                 child1={data.badgeButtonPrefix}
