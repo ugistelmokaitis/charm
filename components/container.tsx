@@ -12,7 +12,7 @@ const Container: FC<IContainer> = ({
   ...props
 }: HTMLAttributes<HTMLDivElement>) => (
   <div
-    className="mx-auto max-w-screen-window items-center justify-between gap-8 px-4 md:px-5"
+    className="mx-auto max-w-screen-containerxl items-center justify-between gap-8 px-4 md:px-5"
     {...props}
   >
     {children}
