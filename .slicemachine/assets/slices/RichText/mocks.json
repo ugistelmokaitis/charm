@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "rich_text",
+    "items": [],
+    "primary": {
+      "richtext": [
+        {
+          "type": "paragraph",
+          "text": "Irure eu et dolore dolor eu incididunt in voluptate commodo.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]
