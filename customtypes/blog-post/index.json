@@ -1,0 +1,142 @@
+{
+  "id": "blog-post",
+  "label": "Blog Post",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "titleTag": {
+        "type": "Text",
+        "config": {
+          "label": "Title Tag",
+          "placeholder": ""
+        }
+      },
+      "metaDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      }
+    },
+    "Intro": {
+      "blogCateogry": {
+        "type": "Link",
+        "config": {
+          "label": "Blog Cateogry",
+          "select": "document",
+          "customtypes": [
+            "blog-category"
+          ]
+        }
+      },
+      "blogDate": {
+        "type": "Date",
+        "config": {
+          "label": "Blog Date",
+          "placeholder": ""
+        }
+      },
+      "blogTitle": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Blog Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "blogDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Blog Description",
+          "placeholder": ""
+        }
+      },
+      "blogImage": {
+        "type": "Image",
+        "config": {
+          "label": "Blog Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "author": {
+        "type": "Group",
+        "config": {
+          "label": "Author",
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name",
+                "placeholder": ""
+              }
+            },
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "role": {
+              "type": "Text",
+              "config": {
+                "label": "Role",
+                "placeholder": ""
+              }
+            },
+            "instagramUsername": {
+              "type": "Text",
+              "config": {
+                "label": "Instagram Username",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "Content": {
+      "slices2": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "geometry": {
+              "type": "SharedSlice"
+            },
+            "code_block": {
+              "type": "SharedSlice"
+            },
+            "rich_text": {
+              "type": "SharedSlice"
+            },
+            "title_text": {
+              "type": "SharedSlice"
+            },
+            "media_player": {
+              "type": "SharedSlice"
+            },
+            "regular_image": {
+              "type": "SharedSlice"
+            },
+            "twitter": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}
