@@ -89,7 +89,17 @@
     "privacy": {},
     "terms": {},
     "notfound": {},
-    "servererror": {}
+    "servererror": {},
+    "blog": {},
+    "blog-post": {
+      "blogTitle": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
+    "blog-category": {}
   },
   "slices": {
     "Content": {
@@ -141,6 +151,102 @@
             }
           }
         }
+      }
+    },
+    "Geometry": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Text": {
+      "default": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "TitleText": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "MediaPlayer": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Blockquote": {
+      "default": {
+        "primary": {
+          "content": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "KeyText": {
+      "default": {
+        "primary": {
+          "keytext": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "RichText": {
+      "default": {
+        "primary": {
+          "richtext": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "CodeBlock": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Twitter": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Image": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "RegularImage": {
+      "default": {
+        "primary": {}
       }
     }
   }

@@ -1,0 +1,61 @@
+{
+  "id": "849d297c-fda8-4937-98cc-0278816c30da",
+  "uid": "earum-facilis-consequatur",
+  "type": "blog-post",
+  "data": {
+    "titleTag": "iterate intuitive action-items",
+    "metaDescription": "synthesize world-class functionalities",
+    "blogCateogry": {
+      "link_type": "Web",
+      "url": "https://prismic.io"
+    },
+    "blogDate": "2016-02-04",
+    "blogTitle": [
+      {
+        "type": "heading1",
+        "text": "Morph proactive infomediaries",
+        "spans": []
+      }
+    ],
+    "blogDescription": "seize B2C bandwidth",
+    "blogImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+    },
+    "author": [
+      {
+        "name": "facilitate cutting-edge blockchains",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+        },
+        "role": "benchmark killer interfaces",
+        "instagramUsername": "leverage frictionless communities"
+      },
+      {
+        "name": "facilitate scalable methodologies",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
+        },
+        "role": "integrate holistic mindshare",
+        "instagramUsername": "enable bleeding-edge channels"
+      }
+    ]
+  }
+}

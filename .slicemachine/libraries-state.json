@@ -184,6 +184,79 @@
         },
         "screenshotPaths": {}
       },
+      "code_block": {
+        "library": "slices",
+        "id": "code_block",
+        "name": "CodeBlock",
+        "description": "CodeBlock",
+        "model": {
+          "id": "code_block",
+          "type": "SharedSlice",
+          "name": "CodeBlock",
+          "description": "CodeBlock",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "CodeBlock",
+              "primary": {
+                "language": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Language",
+                    "placeholder": ""
+                  }
+                },
+                "icon": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Icon",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "content": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Content",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "code_block",
+            "items": [],
+            "primary": {
+              "language": "streamline leading-edge e-business",
+              "icon": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88?w=900&h=500&fit=crop"
+              },
+              "content": "incentivize impactful web-readiness"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "tsx"
+        },
+        "screenshotPaths": {}
+      },
       "content": {
         "library": "slices",
         "id": "content",
@@ -521,6 +594,68 @@
         },
         "screenshotPaths": {}
       },
+      "media_player": {
+        "library": "slices",
+        "id": "media_player",
+        "name": "MediaPlayer",
+        "description": "MediaPlayer",
+        "model": {
+          "id": "media_player",
+          "type": "SharedSlice",
+          "name": "MediaPlayer",
+          "description": "MediaPlayer",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "MediaPlayer",
+              "primary": {
+                "video": {
+                  "type": "Embed",
+                  "config": {
+                    "label": "Video",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "media_player",
+            "items": [],
+            "primary": {
+              "video": {
+                "title": "Data Modelling — Create your Custom Types and Slices",
+                "author_name": "Prismic",
+                "author_url": "https://www.youtube.com/channel/UCJq6AEgtWeZt7ziQ-fLKOeA",
+                "type": "video",
+                "height": 113,
+                "width": 200,
+                "version": "1.0",
+                "provider_name": "YouTube",
+                "provider_url": "https://www.youtube.com/",
+                "thumbnail_height": 360,
+                "thumbnail_width": 480,
+                "thumbnail_url": "https://i.ytimg.com/vi/c-ATzcy6VkI/hqdefault.jpg",
+                "html": "<iframe width=\"200\" height=\"113\" src=\"https://www.youtube.com/embed/c-ATzcy6VkI?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "tsx"
+        },
+        "screenshotPaths": {}
+      },
       "quote": {
         "library": "slices",
         "id": "quote",
@@ -568,6 +703,239 @@
                   "spans": []
                 }
               ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "tsx"
+        },
+        "screenshotPaths": {}
+      },
+      "regular_image": {
+        "library": "slices",
+        "id": "regular_image",
+        "name": "RegularImage",
+        "description": "RegularImage",
+        "model": {
+          "id": "regular_image",
+          "type": "SharedSlice",
+          "name": "RegularImage",
+          "description": "RegularImage",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "RegularImage",
+              "primary": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "regular_image",
+            "items": [],
+            "primary": {
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": "Placeholder image",
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+              }
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "tsx"
+        },
+        "screenshotPaths": {}
+      },
+      "rich_text": {
+        "library": "slices",
+        "id": "rich_text",
+        "name": "RichText",
+        "description": "RichText",
+        "model": {
+          "id": "rich_text",
+          "type": "SharedSlice",
+          "name": "RichText",
+          "description": "RichText",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "RichText",
+              "primary": {
+                "richtext": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Richtext",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "rich_text",
+            "items": [],
+            "primary": {
+              "richtext": [
+                {
+                  "type": "paragraph",
+                  "text": "Irure eu et dolore dolor eu incididunt in voluptate commodo.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "tsx"
+        },
+        "screenshotPaths": {}
+      },
+      "title_text": {
+        "library": "slices",
+        "id": "title_text",
+        "name": "TitleText",
+        "description": "TitleText",
+        "model": {
+          "id": "title_text",
+          "type": "SharedSlice",
+          "name": "TitleText",
+          "description": "TitleText",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "TitleText",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading3,heading4,heading5"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "title_text",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading3",
+                  "text": "Grow holistic architectures",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Officia ex pariatur deserunt dolor laboris laboris commodo in esse pariatur. Consequat aute dolore eu commodo ullamco ea et dolore consequat tempor. Sint fugiat anim nisi reprehenderit.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "tsx"
+        },
+        "screenshotPaths": {}
+      },
+      "twitter": {
+        "library": "slices",
+        "id": "twitter",
+        "name": "Twitter",
+        "description": "Twitter",
+        "model": {
+          "id": "twitter",
+          "type": "SharedSlice",
+          "name": "Twitter",
+          "description": "Twitter",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Twitter",
+              "primary": {
+                "tweetId": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Tweet Id",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "twitter",
+            "items": [],
+            "primary": {
+              "tweetId": "aggregate robust paradigms"
             }
           }
         },
