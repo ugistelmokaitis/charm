@@ -12,3 +12,7 @@ export type BlogProps = PrismicDocumentWithUID<{
   metaDescription: KeyTextField;
   introTitle: RichTextField;
 }>;
+
+export type BlogCategoryProps = PrismicDocumentWithUID<{
+  category: KeyTextField;
+}>;
