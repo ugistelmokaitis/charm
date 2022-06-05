@@ -11,16 +11,10 @@ const MediaPlayer: FC<
     };
   }>
 > = ({ slice }) => (
-  <div className="grid-cols-1 items-center gap-12 md:grid-cols-12 md:gap-6 lg:grid">
-    <div className="col-span-12 col-start-1 mt-20 sm:mt-28">
+  <div className="col-span-10 col-start-2 text-left">
+    <div className="mt-[2.875rem] lg:mt-10">
       {slice.primary.video.embed_url && (
-        <Video
-          data={slice.primary.video}
-          loop
-          playsinline
-          controls={false}
-          muted
-        />
+        <Video data={slice.primary.video} muted controls />
       )}
     </div>
   </div>
