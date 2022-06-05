@@ -10,8 +10,7 @@ const BlogButton: FC<IBlogButton> = ({ LeftIcon, text, ...props }) => (
   <button
     aria-label="Button"
     type="button"
-    className="dark:hover-border-30 flex
-    w-full items-center whitespace-nowrap rounded-lg border-2 border-neutral-30 p-3 px-3 py-3 text-center hover:border-neutral-80"
+    className="dark:hover-border-30 flex w-full items-center whitespace-nowrap rounded-lg border-2 border-neutral-30 p-3 px-3 py-3 text-center hover:border-neutral-80"
     {...props}
   >
     {Boolean(LeftIcon) && (
