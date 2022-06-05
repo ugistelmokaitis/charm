@@ -46,7 +46,8 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
       '2xl': '1536px',
-      'window': '1288px'
+      'containerlg': '1140px',
+      'containerxl': '1288px',
     },
     colors: {
       transparent: 'transparent',
@@ -166,5 +167,51 @@ module.exports = {
       'FiraCode-Regular': ['FiraCode-Regular'],
     },
   },
+  extend: {
+    typography: (theme) => ({
+      DEFAULT: {
+        css: [
+          {
+            maxWidth: 'none',
+            pre: {
+              fontSize: theme('fontSize.sm'),
+              margin: 0,
+              padding: theme('padding.5'),
+              overflow: 'auto',
+              borderRadius: theme('borderRadius.sm'),
+              backgroundColor: theme('colors.gray.900'),
+            },
+            code: {
+              borderRadius: theme('borderRadius.sm'),
+              color: theme('colors.gray.600'),
+              backgroundColor: theme('colors.gray.50'),
+            },
+            'code::before': {
+              content: '',
+            },
+            'code::after': {
+              content: '',
+            },
+            a: {
+              color: theme('colors.gray.600'),
+              textDecoration: 'none',
+              '&:hover': {
+                color: theme('colors.gray.700'),
+              },
+            },
+          },
+        ],
+      },
+      dark: {
+        css: [
+          {
+            pre: {
+              backgroundColor: theme('colors.gray.800'),
+            },
+          },
+        ],
+      },
+    }),
+  },
   plugins: [],
-}
+};
