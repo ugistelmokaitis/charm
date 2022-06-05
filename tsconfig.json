@@ -22,7 +22,8 @@
     "**/*.tsx",
     "slices/Content/index.js",
     "slices/Carousel/carousel.js",
-    "components/tooltip.js"
+    "components/tooltip.js",
+    "slices/index.js"
   ],
   "exclude": ["node_modules"]
 }
