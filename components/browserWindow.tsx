@@ -18,7 +18,7 @@ const BrowserWindow: FC<IBrowseWindow> = ({ child1, child2 }) => (
             <div className="mx-auto">
               <div className="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg border-[1px] border-neutral-80 bg-[#0B0B0B]/80 px-5">
                 <div className="-mb-[1.7px] -ml-2 border-t-[1px] border-yellow-100/60">
-                  <div className="item flex h-[2.7375rem] items-center justify-center border-r border-neutral-65 pr-[0.375rem]">
+                  <div className="item flex h-[2.6563rem] items-center justify-center border-r border-neutral-65/90 pr-[0.375rem]">
                     <TypescriptLogo className="h-4 w-4 text-neutral-50" />
                     <span className="font-codeRegular pl-2 font-FiraCode-Regular text-[0.875rem] leading-[1.25rem]  text-neutral-30">
                       {child1}
@@ -56,7 +56,7 @@ const BrowserWindow: FC<IBrowseWindow> = ({ child1, child2 }) => (
               <div className="mx-auto">
                 <div className="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg border-[1px] border-neutral-15 bg-primary-50 px-5">
                   <div className="-mb-[1.7px] -ml-2 border-t-[1px] border-primary-75">
-                    <div className="flex h-[2.7375rem] items-center justify-center border-r border-neutral-30/30 pr-[0.375rem]">
+                    <div className="flex h-[2.6563rem] items-center justify-center border-r border-neutral-30/30 pr-[0.375rem]">
                       <TypescriptLogo className="h-4 w-4 text-neutral-65" />
                       <span className="font-codeRegular  pl-2 font-FiraCode-Regular text-[0.875rem] leading-[1.25rem] text-neutral-65">
                         {child1}
