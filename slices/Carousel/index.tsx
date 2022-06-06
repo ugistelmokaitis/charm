@@ -24,40 +24,45 @@ const Carousel: FC<
 
   return (
     <div className="container col-start-1 mt-20 self-center justify-self-center md:col-span-12">
-      <div className="embla" ref={emblaRef}>
-        <div className="embla__container">
-          {slice.items.map((carouselImage, index) => (
-            <div className="embla__slide" key={index}>
-              <Image
-                src={carouselImage.carouselImage.url ?? ''}
-                alt={carouselImage.carouselImage.alt ?? ''}
-                width={1480}
-                height={650}
-                layout="responsive"
-                quality={100}
-              />
+      <div ref={emblaRef}>
+        <div className="flex gap-8 ">
+          {slice.items.map(({ carouselImage }, index) => (
+            <div
+              key={index}
+              className="relative flex w-full max-w-[400px] flex-shrink-0 flex-grow-0 flex-col overflow-hidden"
+            >
+              <div className="flex flex-col overflow-hidden transition-all">
+                <Image
+                  src={carouselImage.url ?? ''}
+                  alt={carouselImage.alt ?? ''}
+                  width={400}
+                  height={400}
+                  layout="fixed"
+                  quality={100}
+                />
+              </div>
             </div>
           ))}
         </div>
-      </div>
-      <div className="flex gap-8 pt-6">
-        <div
-          className="rounded-full border border-neutral-30 bg-neutral-0 p-3 transition-all hover:bg-neutral-15 dark:border-neutral-50 dark:bg-neutral-100 dark:hover:bg-neutral-80 lg:p-[1.3125rem]"
-          onClick={() => emblaApi?.scrollPrev()}
-          onKeyDown={() => emblaApi?.scrollPrev()}
-          role="button"
-          tabIndex={0}
-        >
-          <ArrowLeft className="text-neutral-100 dark:text-neutral-0" />
-        </div>
-        <div
-          className="rounded-full border border-neutral-30 bg-neutral-0 p-3 transition-all hover:bg-neutral-15 dark:border-neutral-50 dark:bg-neutral-100 dark:hover:bg-neutral-80 lg:p-[1.3125rem]"
-          onClick={() => emblaApi?.scrollNext()}
-          onKeyDown={() => emblaApi?.scrollNext()}
-          role="button"
-          tabIndex={0}
-        >
-          <ArrowRight className="text-neutral-100 dark:text-neutral-0" />
+        <div className="flex gap-8 pt-6">
+          <div
+            className="rounded-full border border-neutral-30 bg-neutral-0 p-3 transition-all hover:bg-neutral-15 dark:border-neutral-50 dark:bg-neutral-100 dark:hover:bg-neutral-80 lg:p-[1.3125rem]"
+            onClick={() => emblaApi?.scrollPrev()}
+            onKeyDown={() => emblaApi?.scrollPrev()}
+            role="button"
+            tabIndex={0}
+          >
+            <ArrowLeft className="text-neutral-100 dark:text-neutral-0" />
+          </div>
+          <div
+            className="rounded-full border border-neutral-30 bg-neutral-0 p-3 transition-all hover:bg-neutral-15 dark:border-neutral-50 dark:bg-neutral-100 dark:hover:bg-neutral-80 lg:p-[1.3125rem]"
+            onClick={() => emblaApi?.scrollNext()}
+            onKeyDown={() => emblaApi?.scrollNext()}
+            role="button"
+            tabIndex={0}
+          >
+            <ArrowRight className="text-neutral-100 dark:text-neutral-0" />
+          </div>
         </div>
       </div>
     </div>
