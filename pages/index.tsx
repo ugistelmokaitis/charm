@@ -61,10 +61,10 @@ const Home: FC<IHome> = ({ data, settings }) => {
               </h1>
               <div className="group mx-auto items-center">
                 <h1 className="font-ABCWhyteEdu-Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl">
-                  <span className="inline-flex h-[100px] animate-type overflow-x-hidden whitespace-nowrap pt-2 text-neutral-0 will-change-transform">
+                  <span className="inline-flex h-[100px] animate-type overflow-x-hidden whitespace-nowrap pt-2 text-neutral-100 will-change-transform dark:text-neutral-0">
                     {data.heroNameTitle}
                   </span>
-                  <span className="ml-1 -mb-2 box-border inline-block h-10 w-1 animate-blink bg-neutral-50 will-change-transform sm:h-14 md:-mb-4 md:h-[69px]" />
+                  <span className="ml-1 -mb-2 box-border inline-block h-10 w-1 animate-blink bg-primary-50 will-change-transform dark:bg-neutral-50 sm:h-14 md:-mb-4 md:h-[69px]" />
                 </h1>
 
                 <p className="mx-auto mt-12 max-w-[39rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50 dark:text-neutral-15 sm:text-pMDSemiBold">
