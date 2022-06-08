@@ -4,7 +4,6 @@ import type {
   RichTextField,
   ImageField,
   GroupField,
-  DateField,
   SliceZone,
   FilledLinkToDocumentField,
 } from '@prismicio/types';
