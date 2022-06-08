@@ -7,7 +7,7 @@ const richTextComponents: JSXMapSerializer = {
   paragraph: ({ children, key, ...props }) => (
     <p
       key={key}
-      className="font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGRegular"
+      className="ABCWhyteEdu-Book text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
       {...props}
     >
       {children}
@@ -16,7 +16,7 @@ const richTextComponents: JSXMapSerializer = {
   strong: ({ children, key }) => (
     <strong
       key={key}
-      className="font-ABCWhyteEdu-Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold "
+      className="ABCWhyteEdu-Medium text-pm3 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm2"
     >
       {children}
     </strong>
@@ -33,7 +33,7 @@ const richTextComponents: JSXMapSerializer = {
   ),
   hyperlink: ({ children, node, key }) => (
     <PrismicLink key={key} href={docResolver(node.data)}>
-      <span className="inline font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] underline hover:text-neutral-50 dark:hover:text-neutral-30 md:text-pLGRegular ">
+      <span className="ABCWhyteEdu-Medium inline text-pm3 font-medium underline hover:text-neutral-65 dark:hover:text-neutral-30 sm:text-pm2">
         {children}
       </span>
     </PrismicLink>
@@ -41,7 +41,7 @@ const richTextComponents: JSXMapSerializer = {
   heading1: ({ children, key }) => (
     <h1
       key={key}
-      className="font-ABCWhyteEdu-Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-2xl md:text-1xl"
+      className="ABCWhyteEdu-Medium text-3xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-2xl lg:text-1xl"
     >
       {children}
     </h1>
@@ -49,7 +49,7 @@ const richTextComponents: JSXMapSerializer = {
   heading2: ({ children, key }) => (
     <h2
       key={key}
-      className="font-ABCWhyteEdu-Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-2xl"
+      className="ABCWhyteEdu-Medium text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-3xl lg:text-2xl"
     >
       {children}
     </h2>
@@ -57,7 +57,7 @@ const richTextComponents: JSXMapSerializer = {
   heading3: ({ children, key }) => (
     <h3
       key={key}
-      className="md:3xl font-ABCWhyteEdu-Heavy text-5xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-4xl"
+      className="ABCWhyteEdu-Medium text-5xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-4xl lg:text-3xl"
     >
       {children}
     </h3>
@@ -65,18 +65,42 @@ const richTextComponents: JSXMapSerializer = {
   heading4: ({ children, key }) => (
     <h4
       key={key}
-      className="font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold md:text-4xl"
+      className="ABCWhyteEdu-Medium text-pm1 font-medium tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-5xl lg:text-4xl"
     >
       {children}
     </h4>
   ),
-  heading5: ({ children, key }) => (
-    <h5
+  list: ({ children, key }) => (
+    <ul
       key={key}
-      className="font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold md:text-5xl"
+      className="ABCWhyteEdu-Book mb-4 list-inside list-disc pl-0 text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
     >
       {children}
-    </h5>
+    </ul>
+  ),
+  oList: ({ children, key }) => (
+    <ul
+      key={key}
+      className="ABCWhyteEdu-Book mb-4 list-inside list-decimal pl-0 text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
+    >
+      {children}
+    </ul>
+  ),
+  listItem: ({ children, key }) => (
+    <li
+      key={key}
+      className="ABCWhyteEdu-Book pl-8 -indent-[1.4rem] text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2 "
+    >
+      {children}
+    </li>
+  ),
+  oListItem: ({ children, key }) => (
+    <li
+      key={key}
+      className="ABCWhyteEdu-Book pl-8 -indent-[1.4rem] text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
+    >
+      {children}
+    </li>
   ),
 };
 

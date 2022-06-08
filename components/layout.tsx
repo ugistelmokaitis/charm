@@ -77,10 +77,11 @@ const Layout: FC<LayoutProps> = ({
           docResolver(socialMediaLink)
         )}
       />
-
-      <Header settings={settings} />
-      {children}
-      <Footer settings={settings} />
+      <div className="selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
+        <Header settings={settings} />
+        {children}
+        <Footer settings={settings} />
+      </div>
     </>
   );
 };

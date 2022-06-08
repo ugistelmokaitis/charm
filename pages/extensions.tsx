@@ -1,5 +1,6 @@
 import type { GetStaticProps } from 'next';
 import type { FC } from 'react';
+import { Fragment } from 'react';
 import { PrismicLink, PrismicRichText } from '@prismicio/react';
 import Image from 'next/image';
 import Layout from '../components/layout';
@@ -21,76 +22,71 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
     description={data.metaDescription}
     settings={settings}
   >
-    <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
-      <Container>
-        <div className="grid-starts-1 text-white-100 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
-          <div className="col-span-6">
-            <PrismicRichText field={data.introTitle} />
-            <div className="mt-20 mb-20 font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGRegular xl:mt-28 xl:mb-28">
-              {data.introDescription}
-            </div>
-            <div className="font-codeRegular font-FiraCode-Regular text-codeMDRegular text-primary-100 dark:text-blue-100">
-              {data.extensionsTitle}
-            </div>
-            {data.extentions.map(
-              ({ extentionDescription, extentionTitle }, index) => (
-                <>
-                  <div
-                    key={index}
-                    className="mt-6 mb-4 font-ABCWhyteEdu-Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold"
-                  >
-                    {extentionTitle}
-                  </div>
-                  <div className="pb-6 font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 sm:text-pMDRegular">
-                    {extentionDescription}
-                  </div>
-                </>
+    <Container>
+      <div className="grid-starts-1 text-white-100 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
+        <div className="col-span-6">
+          <PrismicRichText field={data.introTitle} />
+          <p className="ABCWhyteEdu-Book mt-20 mb-20 text-pm3  font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2 xl:mt-28 xl:mb-28">
+            {data.introDescription}
+          </p>
+          <h2 className="font-FiraCode_SemiBold text-cs2 font-semibold text-primary-100 dark:text-blue-100">
+            {data.extensionsTitle}
+          </h2>
+          {data.extentions.map(
+            ({ extentionDescription, extentionTitle }, index) => (
+              <Fragment key={index}>
+                <h3 className="ABCWhyteEdu-Medium mt-6 mb-4 text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                  {extentionTitle}
+                </h3>
+                <p className="ABCWhyteEdu-Book pb-6 text-pm3 font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
+                  {extentionDescription}
+                </p>
+              </Fragment>
+            )
+          )}
+        </div>
+        <div className="col-span-4 col-start-10 max-w-[20rem] pt-14 md:relative md:col-start-9 lg:pt-0 xl:col-span-3 xl:col-start-10 xl:max-w-full">
+          <div className="top-[6.5625rem] rounded-[1.25rem] border-[0.03125rem] border-neutral-30 bg-primary-5 py-8 px-8 dark:border-neutral-15 dark:bg-neutral-80 md:sticky">
+            <h2 className="ABCWhyteEdu-Medium flex items-center justify-center text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+              {data.socialTitle}
+            </h2>
+            <p className="ABCWhyteEdu-Medium flex items-center justify-center pt-2 pb-8 font-[350] text-neutral-50 dark:text-neutral-15">
+              {data.socialDescription}
+            </p>
+            <Divider />
+            {data.socialProfile.map(
+              (
+                { socialProfileIcon, socialProfileLink, socialProfileTitle },
+                index
+              ) => (
+                <div key={index} className="pt-8">
+                  <PrismicLink field={socialProfileLink}>
+                    <div className="flex items-center justify-between text-neutral-100 hover:animate-pulse hover:text-neutral-50 dark:text-neutral-0 dark:hover:text-neutral-30">
+                      <div className="flex">
+                        <Image
+                          src={socialProfileIcon.url ?? ''}
+                          alt={socialProfileIcon.alt ?? ''}
+                          width={24}
+                          height={24}
+                          layout="fixed"
+                          quality={100}
+                          className="dark:brightness-0 dark:invert-[1]"
+                        />
+
+                        <p className="ABCWhyteEdu-Medium flex pl-4 font-[350] text-neutral-100 hover:text-neutral-50 dark:text-neutral-0">
+                          {socialProfileTitle}
+                        </p>
+                      </div>
+                      <SocialLinkIcon />
+                    </div>
+                  </PrismicLink>
+                </div>
               )
             )}
           </div>
-          <div className="col-span-4 col-start-10 max-w-[20rem] pt-14 md:relative md:col-start-9 lg:pt-0 xl:col-span-3 xl:col-start-10 xl:max-w-full">
-            <div className="top-[6.5625rem] rounded-[1.25rem] border-[0.03125rem] border-neutral-30 bg-primary-5 py-8 px-8 dark:border-neutral-15 dark:bg-neutral-80 md:sticky">
-              <div className="flex items-center justify-center font-ABCWhyteEdu-Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold">
-                {data.socialTitle}
-              </div>
-              <div className="flex items-center justify-center pt-2 pb-8 font-ABCWhyteEdu-Regular text-pSMRegular font-normal text-neutral-50 dark:text-neutral-15">
-                {data.socialDescription}
-              </div>
-              <Divider />
-              {data.socialProfile.map(
-                (
-                  { socialProfileIcon, socialProfileLink, socialProfileTitle },
-                  index
-                ) => (
-                  <div key={index} className="pt-8">
-                    <PrismicLink field={socialProfileLink}>
-                      <div className="flex items-center justify-between text-neutral-100 hover:animate-pulse hover:text-neutral-50 dark:text-neutral-0 dark:hover:text-neutral-30">
-                        <div className="flex">
-                          <Image
-                            src={socialProfileIcon.url ?? ''}
-                            alt={socialProfileIcon.alt ?? ''}
-                            width={24}
-                            height={24}
-                            layout="fixed"
-                            quality={100}
-                            className="dark:brightness-0 dark:invert-[1]"
-                          />
-
-                          <div className="flex pl-4 font-ABCWhyteEdu-Regular text-pSMRegular font-normal text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
-                            {socialProfileTitle}
-                          </div>
-                        </div>
-                        <SocialLinkIcon />
-                      </div>
-                    </PrismicLink>
-                  </div>
-                )
-              )}
-            </div>
-          </div>
         </div>
-      </Container>
-    </div>
+      </div>
+    </Container>
   </Layout>
 );
 

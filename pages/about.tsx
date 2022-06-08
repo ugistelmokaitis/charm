@@ -4,13 +4,13 @@ import { PrismicLink, PrismicRichText } from '@prismicio/react';
 import type { JSXMapSerializer } from '@prismicio/react';
 import Image from 'next/image';
 import Layout from '../components/layout';
-import { docResolver, getPage } from '../utils/prismic';
 import type { AboutProps } from '../types/about';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
 import richTextComponents from '../components/richTextComponents';
 import SocialLinkIcon from '../public/icons/sociallinkicon.svg';
 import Divider from '../components/divider';
+import { getPage } from '../utils/prismic';
 
 type IAbout = {
   data: AboutProps['data'];
@@ -22,21 +22,11 @@ const introComponents: JSXMapSerializer = {
   paragraph: ({ children, key, ...props }) => (
     <p
       key={key}
-      className="inline font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 sm:text-pLGRegular md:text-pLGRegular"
+      className="ABCWhyteEdu-Book inline text-pm3 font-[350] text-neutral-100  dark:text-neutral-0 sm:text-pm2"
       {...props}
     >
       {children}
     </p>
-  ),
-  hyperlink: ({ children, key, node }) => (
-    <PrismicLink key={key} href={docResolver(node.data)}>
-      <div
-        key={key}
-        className="inline text-neutral-100 underline hover:text-neutral-50 dark:text-neutral-0 dark:hover:text-neutral-30"
-      >
-        {children}
-      </div>
-    </PrismicLink>
   ),
   image: ({ key, node }) => (
     <span className="inline-flex translate-y-1 dark:brightness-0 dark:invert-[1]">
@@ -58,155 +48,153 @@ const About: FC<IAbout> = ({ data, settings }) => (
     description={data.metaDescription}
     settings={settings}
   >
-    <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100 lg:grid-cols-12">
-      <Container>
-        <div className="text-white-100 grid-cols-1 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
-          <div className="col-span-1 mb-12 md:text-left lg:col-span-9">
+    <Container>
+      <div className="text-white-100 grid-cols-1 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
+        <div className="col-span-1 mb-12 md:text-left lg:col-span-9">
+          <PrismicRichText
+            field={data.introTitle}
+            components={introComponents}
+          />
+        </div>
+      </div>
+      <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid ">
+        <div className="col-span-6 col-start-1 mx-auto">
+          <div className="font-ABCWhyteEdu-Regular text-pLGRegular sm:text-pLGRegular md:text-pLGRegular max-w-[35rem] font-normal tracking-[0.02em] text-neutral-65">
             <PrismicRichText
-              field={data.introTitle}
+              field={data.introDescription}
               components={introComponents}
             />
           </div>
-        </div>
-        <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid ">
-          <div className="col-span-6 col-start-1 mx-auto">
-            <div className="max-w-[35rem] font-ABCWhyteEdu-Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-65 sm:text-pLGRegular md:text-pLGRegular">
-              <PrismicRichText
-                field={data.introDescription}
-                components={introComponents}
-              />
-            </div>
 
-            <div className="mb-20 mt-20">
-              <PrismicRichText
-                field={data.introParagprah}
-                components={introComponents}
-              />
-            </div>
-            {data.moreThings.map(
-              ({ moreThingsDescription, moreThingsTitle }, index) => (
-                <>
-                  <div
-                    key={index}
-                    className="mt-20 font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100"
-                  >
-                    {moreThingsTitle}
+          <div className="mb-20 mt-20">
+            <PrismicRichText
+              field={data.introParagprah}
+              components={introComponents}
+            />
+          </div>
+          {data.moreThings.map(
+            ({ moreThingsDescription, moreThingsTitle }, index) => (
+              <>
+                <h2
+                  key={index}
+                  className="font-FiraCode_SemiBold mt-20 text-cs2 font-semibold text-primary-100 dark:text-blue-100"
+                >
+                  {moreThingsTitle}
+                </h2>
+                <div className="pt-6">
+                  <PrismicRichText
+                    field={moreThingsDescription}
+                    components={introComponents}
+                  />
+                </div>
+              </>
+            )
+          )}
+          <div>
+            <h2 className="font-FiraCode_SemiBold mt-20 mb-6 text-cs2 font-semibold text-primary-100 dark:text-blue-100">
+              {data.mygoToolsTitle}
+            </h2>
+            {data.moreTools.map(
+              (
+                {
+                  moreToolsTitle,
+                  moreToolsDescription,
+                  moreToolsAbout,
+                  moreToolsImage,
+                },
+                index
+              ) => (
+                <div key={index}>
+                  <p className=" ABCWhyteEdu-Book text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2">
+                    {moreToolsAbout}
+                  </p>
+                  <div className="mt-8 mb-12 flex items-center">
+                    <div className="flex rounded-[0.5rem] border-[0.03125rem] border-neutral-50 bg-primary-5 py-8 px-8  dark:bg-neutral-80">
+                      <Image
+                        src={moreToolsImage.url ?? ''}
+                        alt={moreToolsImage.alt ?? ''}
+                        width={52}
+                        height={52}
+                        layout="fixed"
+                        quality={100}
+                        className="dark:brightness-0 dark:invert-[1]"
+                      />
+
+                      <div className="ml-8">
+                        <h3 className="ABCWhyteEdu-Medium text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                          {moreToolsTitle}
+                        </h3>
+                        <p className="font-codeRegular font-FiraCode_Regular mt-2 text-cs2 font-normal text-neutral-100 dark:text-neutral-15 ">
+                          {moreToolsDescription}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="pt-6">
-                    <PrismicRichText
-                      field={moreThingsDescription}
-                      components={introComponents}
-                    />
-                  </div>
-                </>
+                </div>
               )
             )}
+          </div>
+        </div>
+        <div className="col-span-4 max-w-[20rem] pt-20 md:relative md:col-start-9 lg:pt-0  xl:col-span-3 xl:col-start-10 xl:max-w-full">
+          <div className="top-[6.5625rem] rounded-[1.25rem] border-[0.03125rem] border-neutral-30 bg-primary-5 py-8 px-8 dark:border-neutral-15 dark:bg-neutral-80 md:sticky">
             <div>
-              <div className="mt-20 mb-6 font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
-                {data.mygoToolsTitle}
+              <div className="flex justify-center">
+                <Image
+                  src={data.profileImage.url ?? ''}
+                  alt={data.profileImage.alt ?? ''}
+                  width={144}
+                  height={144}
+                  layout="fixed"
+                  quality={100}
+                />
               </div>
-              {data.moreTools.map(
+              <h4 className="ABCWhyteEdu-Medium mt-8 mb-2 flex items-center justify-center text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                {data.profileName}
+              </h4>
+              <p className="ABCWhyteEdu-Medium flex items-center justify-center font-[350] text-neutral-100 dark:text-neutral-15">
+                {data.profileLocation}
+              </p>
+              <div className="mb-8 mt-8">
+                <Divider />
+              </div>
+              {data.profileSocials.map(
                 (
                   {
-                    moreToolsTitle,
-                    moreToolsDescription,
-                    moreToolsAbout,
-                    moreToolsImage,
+                    profileSocialsCategory,
+                    profileSocialsCategoryLink,
+                    profileSocialsIcon,
                   },
                   index
                 ) => (
-                  <div key={index}>
-                    <div className="font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGRegular md:text-pLGRegular">
-                      {moreToolsAbout}
-                    </div>
-                    <div className="mt-8 mb-12 flex items-center">
-                      <div className="flex rounded-[0.5rem] border-[0.03125rem] border-neutral-50 bg-primary-5 py-8 px-8  dark:bg-neutral-80">
-                        <Image
-                          src={moreToolsImage.url ?? ''}
-                          alt={moreToolsImage.alt ?? ''}
-                          width={52}
-                          height={52}
-                          layout="fixed"
-                          quality={100}
-                          className="dark:brightness-0 dark:invert-[1]"
-                        />
+                  <div key={index} className="mt-4">
+                    <PrismicLink field={profileSocialsCategoryLink}>
+                      <div className="flex items-center justify-between text-center text-neutral-100 hover:animate-pulse hover:text-neutral-50 dark:text-neutral-0 dark:hover:text-neutral-30">
+                        <div className="flex items-center pr-4">
+                          <Image
+                            src={profileSocialsIcon.url ?? ''}
+                            alt={profileSocialsIcon.alt ?? ''}
+                            width={24}
+                            height={24}
+                            layout="fixed"
+                            quality={100}
+                            className="dark:brightness-0 dark:invert-[1]"
+                          />
 
-                        <div className="ml-8">
-                          <div className="font-ABCWhyteEdu-Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-pLGSemiBold">
-                            {moreToolsTitle}
-                          </div>
-                          <div className="font-codeRegular mt-2 font-FiraCode-Regular text-[1rem] text-neutral-100 dark:text-neutral-15 md:text-codeMDRegular ">
-                            {moreToolsDescription}
-                          </div>
+                          <p className="ABCWhyteEdu-Medium ml-4 flex text-center font-[350] text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
+                            {profileSocialsCategory}
+                          </p>
                         </div>
+                        <SocialLinkIcon />
                       </div>
-                    </div>
+                    </PrismicLink>
                   </div>
                 )
               )}
             </div>
           </div>
-          <div className="col-span-4 max-w-[20rem] pt-20 md:relative md:col-start-9 lg:pt-0  xl:col-span-3 xl:col-start-10 xl:max-w-full">
-            <div className="top-[6.5625rem] rounded-[1.25rem] border-[0.03125rem] border-neutral-30 bg-primary-5 py-8 px-8 dark:border-neutral-15 dark:bg-neutral-80 md:sticky">
-              <div>
-                <div className="flex justify-center">
-                  <Image
-                    src={data.profileImage.url ?? ''}
-                    alt={data.profileImage.alt ?? ''}
-                    width={144}
-                    height={144}
-                    layout="fixed"
-                    quality={100}
-                  />
-                </div>
-                <div className="mt-8 mb-2 flex items-center justify-center font-ABCWhyteEdu-Medium text-pLGSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
-                  {data.profileName}
-                </div>
-                <div className="flex items-center justify-center font-ABCWhyteEdu-Regular text-pSMRegular font-normal text-neutral-100 dark:text-neutral-15">
-                  {data.profileLocation}
-                </div>
-                <div className="mb-8 mt-8">
-                  <Divider />
-                </div>
-                {data.profileSocials.map(
-                  (
-                    {
-                      profileSocialsCategory,
-                      profileSocialsCategoryLink,
-                      profileSocialsIcon,
-                    },
-                    index
-                  ) => (
-                    <div key={index} className="mt-4">
-                      <PrismicLink field={profileSocialsCategoryLink}>
-                        <div className="flex items-center justify-between text-center text-neutral-100 hover:animate-pulse hover:text-neutral-50 dark:text-neutral-0 dark:hover:text-neutral-30">
-                          <div className="flex items-center pr-4">
-                            <Image
-                              src={profileSocialsIcon.url ?? ''}
-                              alt={profileSocialsIcon.alt ?? ''}
-                              width={24}
-                              height={24}
-                              layout="fixed"
-                              quality={100}
-                              className="dark:brightness-0 dark:invert-[1]"
-                            />
-
-                            <div className="ml-4 flex text-center font-ABCWhyteEdu-Regular text-pSMRegular font-normal text-neutral-100  hover:text-neutral-50 dark:text-neutral-0">
-                              {profileSocialsCategory}
-                            </div>
-                          </div>
-                          <SocialLinkIcon />
-                        </div>
-                      </PrismicLink>
-                    </div>
-                  )
-                )}
-              </div>
-            </div>
-          </div>
         </div>
-      </Container>
-    </div>
+      </div>
+    </Container>
   </Layout>
 );
 

@@ -20,7 +20,7 @@ const introComponents: JSXMapSerializer = {
   paragraph: ({ children, key, ...props }) => (
     <p
       key={key}
-      className="inline font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-15 md:text-pLGRegular"
+      className="ABCWhyteEdu-Book inline text-pm3 font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2"
       {...props}
     >
       {children}
@@ -34,156 +34,151 @@ const Gear: FC<IGear> = ({ data, settings }) => (
     description={data.metaDescription}
     settings={settings}
   >
-    <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
-      <Container>
-        <div className="grid-starts-1 text-white-100 pt-32 md:grid-cols-12 md:gap-8 lg:grid">
-          <div className=" col-span-6">
-            <PrismicRichText field={data.introTitle} />
-            <div className="mb-28 mt-28">
-              <div className="font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100  dark:text-neutral-15 md:text-pLGRegular">
-                {data.introDescription}
-              </div>
-            </div>
+    <Container>
+      <div className="grid-starts-1 text-white-100 pt-32 md:grid-cols-12 md:gap-8 lg:grid">
+        <div className="col-span-7">
+          <PrismicRichText field={data.introTitle} />
+          <div className="mb-20 mt-20">
+            <p className="ABCWhyteEdu-Book text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2">
+              {data.introDescription}
+            </p>
           </div>
         </div>
-        <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
-          <div className="col-span-3">
-            <div className="font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
-              {data.deviceTitle}
-            </div>
-            <div className="tracking-[0.02em]text-neutral-100 pt-6 pb-20 font-ABCWhyteEdu-Regular text-pSMRegular font-normal dark:text-neutral-15">
-              {data.deviceDescription}
-            </div>
-          </div>
+      </div>
+      <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
+        <div className="col-span-3">
+          <h2 className="font-FiraCode_SemiBold text-cs2 font-semibold text-primary-100 dark:text-blue-100">
+            {data.deviceTitle}
+          </h2>
+          <p className="ABCWhyteEdu-Book pt-6 pb-20 text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:pb-12 sm:text-pm2">
+            {data.deviceDescription}
+          </p>
         </div>
-        <div className="col-span-10 grid-cols-12 gap-16 lg:grid">
-          <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
-            {data.devices.map(({ deviceDetails, deviceImage }, index) => (
-              <div key={index} className="flex-1">
-                <Image
-                  src={deviceImage.url ?? ''}
-                  alt={deviceImage.alt ?? ''}
-                  width={80}
-                  height={80}
-                  layout="fixed"
-                  quality={100}
-                  className="dark:brightness-0 dark:invert-[1]"
-                />
-                <div className="pt-8 font-ABCWhyteEdu-Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15 md:text-pMDSemiBold">
-                  {deviceDetails}
-                </div>
-              </div>
-            ))}
-          </div>
+      </div>
+      <div className="col-span-10 grid-cols-12 gap-16 lg:grid">
+        <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
+          {data.devices.map(({ deviceDetails, deviceImage }, index) => (
+            <div key={index} className="flex-1">
+              <Image
+                src={deviceImage.url ?? ''}
+                alt={deviceImage.alt ?? ''}
+                width={80}
+                height={80}
+                layout="fixed"
+                quality={100}
+                className="dark:brightness-0 dark:invert-[1]"
+              />
+              <p className="ABCWhyteEdu-Medium pt-8 font-medium text-neutral-100 dark:text-neutral-15">
+                {deviceDetails}
+              </p>
+            </div>
+          ))}
         </div>
+      </div>
 
-        <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
-          <div className="col-span-4">
-            <div className="font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
-              {data.setupTitle}
-            </div>
-            <div className="pt-6 pb-20 font-ABCWhyteEdu-Regular text-pSMRegular font-normal text-neutral-100 dark:text-neutral-15 sm:text-pLGRegular">
-              {data.setupDescription}
-            </div>
-          </div>
+      <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
+        <div className="col-span-4">
+          <h2 className="text-codeMDSemiBold font-FiraCode-SemiBold font-semibold text-primary-100 dark:text-blue-100">
+            {data.setupTitle}
+          </h2>
+          <p className="ABCWhyteEdu-Book pt-6 pb-20 text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2">
+            {data.setupDescription}
+          </p>
         </div>
-        <div className="col-span-10 grid-cols-12 gap-16 lg:grid">
-          <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
-            {data.setup.map(({ setupDetails, setupImage }, index) => (
+      </div>
+      <div className="col-span-10 grid-cols-12 gap-16 lg:grid">
+        <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
+          {data.setup.map(({ setupDetails, setupImage }, index) => (
+            <div key={index} className="flex-1">
+              <Image
+                src={setupImage.url ?? ''}
+                alt={setupImage.alt ?? ''}
+                width={80}
+                height={80}
+                layout="fixed"
+                quality={100}
+                className="dark:brightness-0 dark:invert-[1]"
+              />
+              <p className="font-ABCWhyteEdu-Regular text-pSMRegular sm:text-pLGRegular pt-6 pb-20 font-normal text-neutral-100 dark:text-neutral-15">
+                {setupDetails}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
+        <div className="col-span-4">
+          <h2 className="text-codeMDSemiBold font-FiraCode-SemiBold font-semibold text-primary-100 dark:text-blue-100">
+            {data.peripheralTitle}
+          </h2>
+          <p className="ABCWhyteEdu-Book pt-6 pb-20 text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2">
+            {data.peripheralDescription}
+          </p>
+        </div>
+      </div>
+      <div className="col-span-10 gap-16 md:grid-cols-12 lg:grid">
+        <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
+          {data.peripherals.map(
+            ({ peripheralDetails, peripheralImage }, index) => (
               <div key={index} className="flex-1">
                 <Image
-                  src={setupImage.url ?? ''}
-                  alt={setupImage.alt ?? ''}
+                  src={peripheralImage.url ?? ''}
+                  alt={peripheralImage.alt ?? ''}
                   width={80}
                   height={80}
                   layout="fixed"
                   quality={100}
                   className="dark:brightness-0 dark:invert-[1]"
                 />
-                <div className="pt-8 font-ABCWhyteEdu-Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15 md:text-pMDSemiBold">
-                  {setupDetails}
-                </div>
+                <p className="font-ABCWhyteEdu-Regular text-pSMRegular sm:text-pLGRegular pt-6 pb-20 font-normal text-neutral-100 dark:text-neutral-15">
+                  {peripheralDetails}
+                </p>
               </div>
-            ))}
-          </div>
+            )
+          )}
         </div>
-        <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
-          <div className="col-span-4">
-            <div className="font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
-              {data.peripheralTitle}
-            </div>
-            <div className="pt-6 pb-20 font-ABCWhyteEdu-Regular text-pSMRegular font-normal text-neutral-100 dark:text-neutral-15 sm:text-pLGRegular">
-              {data.peripheralDescription}
-            </div>
+      </div>
+      <div className="gap-16 md:grid-cols-12 lg:grid">
+        <div className="col-span-6 col-start-1">
+          <h2 className="font-FiraCode_SemiBold text-cs2 font-semibold text-primary-100 dark:text-blue-100">
+            {data.softwareTitle}
+          </h2>
+          <div className="dark:text-white-100 ABCWhyteEdu-Book pb-20  text-pm3 font-[350]  text-neutral-100 sm:text-pm2">
+            {data.softwareTitleDescription}
           </div>
-        </div>
-        <div className="col-span-10 gap-16 md:grid-cols-12 lg:grid">
-          <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
-            {data.peripherals.map(
-              ({ peripheralDetails, peripheralImage }, index) => (
-                <div key={index} className="flex-1">
-                  <Image
-                    src={peripheralImage.url ?? ''}
-                    alt={peripheralImage.alt ?? ''}
-                    width={80}
-                    height={80}
-                    layout="fixed"
-                    quality={100}
-                    className="dark:brightness-0 dark:invert-[1]"
-                  />
-                  <div className="pt-8 font-ABCWhyteEdu-Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15 md:text-pMDSemiBold">
-                    {peripheralDetails}
+          <div>
+            {data.software.map(
+              ({ softwareTitle, softwareDescription, softwareIcon }, index) => (
+                <div key={index}>
+                  <div className="pb-12">
+                    <div className="flex">
+                      <Image
+                        src={softwareIcon.url ?? ''}
+                        alt={softwareIcon.alt ?? ''}
+                        width={24}
+                        height={24}
+                        layout="fixed"
+                        quality={100}
+                        className="dark:brightness-0 dark:invert-[1]"
+                      />
+                      <h3 className="font-FiraCode_SemiBold pl-2 text-cs2 font-semibold text-neutral-100 dark:text-neutral-0">
+                        {softwareTitle}
+                      </h3>
+                    </div>
+                    <div className="ABCWhyteEdu-Book pt-4 text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2">
+                      <PrismicRichText
+                        field={softwareDescription}
+                        components={introComponents}
+                      />
+                    </div>
                   </div>
                 </div>
               )
             )}
           </div>
         </div>
-        <div className="gap-16 md:grid-cols-12 lg:grid">
-          <div className="col-span-8 col-start-1">
-            <div className="font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
-              {data.softwareTitle}
-            </div>
-            <div className="font-charmSemiBold text-white-100 pb-20 text-pMDSemiBold font-semibold ">
-              {data.softwareTitleDescription}
-            </div>
-            <div>
-              {data.software.map(
-                (
-                  { softwareTitle, softwareDescription, softwareIcon },
-                  index
-                ) => (
-                  <div key={index}>
-                    <div className="pb-12">
-                      <div className="flex">
-                        <Image
-                          src={softwareIcon.url ?? ''}
-                          alt={softwareIcon.alt ?? ''}
-                          width={24}
-                          height={24}
-                          layout="fixed"
-                          quality={100}
-                          className="dark:brightness-0 dark:invert-[1]"
-                        />
-                        <div className="pl-2 font-ABCWhyteEdu-Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-pLGSemiBold">
-                          {softwareTitle}
-                        </div>
-                      </div>
-                      <div className="pt-4 font-ABCWhyteEdu-Regular text-pLGRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
-                        <PrismicRichText
-                          field={softwareDescription}
-                          components={introComponents}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                )
-              )}
-            </div>
-          </div>
-        </div>
-      </Container>
-    </div>
+      </div>
+    </Container>
   </Layout>
 );
 

@@ -10,7 +10,7 @@ const introComponents: JSXMapSerializer = {
   paragraph: ({ children, key, ...props }) => (
     <p
       key={key}
-      className="font-ABCWhyteEdu_Medium text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="ABCWhyteEdu-Book text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
       {...props}
     >
       {children}
@@ -19,14 +19,14 @@ const introComponents: JSXMapSerializer = {
   strong: ({ children, key }) => (
     <strong
       key={key}
-      className="font-ABCWhyteEdu_Medium text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="ABCWhyteEdu-Medium text-pm3 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm2"
     >
       {children}
     </strong>
   ),
   hyperlink: ({ children, node, key }) => (
     <PrismicLink key={key} href={docResolver(node.data)}>
-      <span className="inline font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] underline hover:text-neutral-50 dark:hover:text-neutral-80 md:text-pLGRegular ">
+      <span className="ABCWhyteEdu-Book inline text-pm3 font-[350] underline hover:text-neutral-50 dark:hover:text-neutral-80 sm:text-pm2">
         {children}
       </span>
     </PrismicLink>
@@ -34,7 +34,7 @@ const introComponents: JSXMapSerializer = {
   list: ({ children, key }) => (
     <ul
       key={key}
-      className="font-ABCWhyteEdu_Medium mb-4 list-inside list-disc pl-0 text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="font-ABCWhyteEdu_Medium text-pMDRegular mb-4 list-inside list-disc pl-0 font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
     >
       {children}
     </ul>
@@ -42,7 +42,7 @@ const introComponents: JSXMapSerializer = {
   oList: ({ children, key }) => (
     <ul
       key={key}
-      className="font-ABCWhyteEdu_Medium mb-4 list-inside list-decimal pl-0 text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="font-ABCWhyteEdu_Medium text-pMDRegular mb-4 list-inside list-decimal pl-0 font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
     >
       {children}
     </ul>
@@ -50,7 +50,7 @@ const introComponents: JSXMapSerializer = {
   listItem: ({ children, key }) => (
     <li
       key={key}
-      className="font-ABCWhyteEdu_Medium pl-8 -indent-[1.4rem] text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="font-ABCWhyteEdu_Medium text-pMDRegular pl-8 -indent-[1.4rem] font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
     >
       {children}
     </li>
@@ -58,7 +58,7 @@ const introComponents: JSXMapSerializer = {
   oListItem: ({ children, key }) => (
     <li
       key={key}
-      className="font-ABCWhyteEdu_Medium pl-8 -indent-[1.4rem] text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="font-ABCWhyteEdu_Medium text-pMDRegular pl-8 -indent-[1.4rem] font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
     >
       {children}
     </li>

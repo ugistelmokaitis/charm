@@ -9,13 +9,10 @@ import type {
 
 export type CaseStudyProps = PrismicDocumentWithUID<{
   workpagePrefix: KeyTextField;
-  workpageTitle: KeyTextField;
+  companyName: KeyTextField;
   titleTag: KeyTextField;
   metaDescription: KeyTextField;
-  workpageDescriptionBold: KeyTextField;
-  workpageDescriptionRegular: KeyTextField;
-  contentPrefix: KeyTextField;
-  contentTitle: RichTextField;
+  aboutCompany: KeyTextField;
   contentImage: ImageField;
   slices2: SliceZone;
   content: ContentProps;

@@ -19,7 +19,7 @@ const introComponents: JSXMapSerializer = {
   paragraph: ({ children, key, ...props }) => (
     <p
       key={key}
-      className="inline font-ABCWhyteEdu-Regular text-pSMRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15 sm:text-pLGRegular"
+      className="ABCWhyteEdu-Book inline text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2"
       {...props}
     >
       {children}
@@ -39,17 +39,17 @@ const Privacy: FC<IPrivacy> = ({ data, settings }) => (
           <div className="col-span-4 pt-56 md:col-span-9 lg:col-span-7">
             <PrismicRichText field={data.introTitle} />
             <div className="mb-12 mt-12">
-              <p className="font-ABCWhyteEdu-Medium text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15 sm:text-pMDSemiBold">
+              <p className="text-pSMSemiBold sm:text-pMDSemiBold font-ABCWhyteEdu-Medium font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
                 {data.introDescription}
               </p>
             </div>
             <div className="mb-2 mt-2">
-              <p className="font-codeRegular font-FiraCode-Regular text-codeMDRegular text-neutral-100 dark:text-neutral-0">
+              <p className="font-codeRegular text-codeMDRegular font-FiraCode-Regular text-neutral-100 dark:text-neutral-0">
                 {data.IntroDateTitle}
               </p>
             </div>
             <div className="mb-20">
-              <p className="font-codeRegular font-FiraCode-Regular text-codeMDRegular text-neutral-100 dark:text-neutral-0">
+              <p className="font-codeRegular text-codeMDRegular font-FiraCode-Regular text-neutral-100 dark:text-neutral-0">
                 {data.introLastUpdate}
               </p>
             </div>

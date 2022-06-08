@@ -9,7 +9,7 @@ const introComponents: JSXMapSerializer = {
   paragraph: ({ children, key, ...props }) => (
     <p
       key={key}
-      className="font-ABCWhyteEdu_Medium text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="ABCWhyteEdu-Book text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
       {...props}
     >
       {children}
@@ -26,7 +26,7 @@ const introComponents: JSXMapSerializer = {
   list: ({ children, key }) => (
     <ul
       key={key}
-      className="font-ABCWhyteEdu_Medium mb-4 list-inside list-disc pl-0 text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="ABCWhyteEdu-Book mb-4 list-inside list-disc pl-0 text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
     >
       {children}
     </ul>
@@ -34,7 +34,7 @@ const introComponents: JSXMapSerializer = {
   oList: ({ children, key }) => (
     <ul
       key={key}
-      className="font-ABCWhyteEdu_Medium mb-4 list-inside list-decimal pl-0 text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="ABCWhyteEdu-Book mb-4 list-inside list-decimal pl-0 text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
     >
       {children}
     </ul>
@@ -42,7 +42,7 @@ const introComponents: JSXMapSerializer = {
   listItem: ({ children, key }) => (
     <li
       key={key}
-      className="font-ABCWhyteEdu_Medium pl-8 -indent-[1.4rem] text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="ABCWhyteEdu-Book pl-8 -indent-[1.4rem] text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
     >
       {children}
     </li>
@@ -50,7 +50,7 @@ const introComponents: JSXMapSerializer = {
   oListItem: ({ children, key }) => (
     <li
       key={key}
-      className="font-ABCWhyteEdu_Medium pl-8 -indent-[1.4rem] text-pMDRegular font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0"
+      className="ABCWhyteEdu-Book pl-8 -indent-[1.4rem] text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
     >
       {children}
     </li>

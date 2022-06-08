@@ -24,7 +24,7 @@ const sliderComponents: JSXMapSerializer = {
   heading3: ({ children, key }) => (
     <h3
       key={key}
-      className="whitespace-nowrap font-ABCWhyteEdu-Heavy text-5xl font-extrabold text-neutral-30 sm:text-3xl"
+      className="ABCWhyteEdu-Medium whitespace-nowrap text-4xl font-bold tracking-[0.02em] text-neutral-65 dark:text-neutral-30 sm:text-3xl lg:text-2xl"
     >
       {children}
     </h3>
@@ -47,109 +47,107 @@ const Home: FC<IHome> = ({ data, settings }) => {
       description={data.metaDescription}
       settings={settings}
     >
-      <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
-        <Container>
-          <div>
-            <div className="col-span-8 col-start-3 pt-56 text-center lg:pt-[14.25rem]">
-              <BadgeButton
-                href={`${docResolver(data.badgeButtonLink)}`}
-                child1={data.badgeButtonPrefix}
-                child2={data.badgeButtonLabel}
-              />
-              <h1 className="mx-auto mt-12 items-center font-ABCWhyteEdu-Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl ">
-                {data.heroGreetingTitle}
+      <Container>
+        <div>
+          <div className="col-span-8 col-start-3 pt-[152px] text-center lg:pt-52">
+            <BadgeButton
+              href={`${docResolver(data.badgeButtonLink)}`}
+              child1={data.badgeButtonPrefix}
+              child2={data.badgeButtonLabel}
+            />
+            <h1 className="ABCWhyteEdu-Bold mx-auto mt-12 items-center text-2xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-1xl lg:text-xl">
+              {data.heroGreetingTitle}
+            </h1>
+            <div className="group mx-auto items-center">
+              <h1 className="ABCWhyteEdu-Bold text-2xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-1xl lg:text-xl">
+                <span className="inline-flex h-[100px] animate-type overflow-x-hidden whitespace-nowrap pt-2 text-neutral-100 will-change-transform dark:text-neutral-0 lg:h-[118px]">
+                  {data.heroNameTitle}
+                </span>
+                <span className="ml-1 -mb-2 box-border inline-block h-14 w-1 animate-blink bg-primary-50 will-change-transform dark:bg-neutral-50 sm:h-16 md:-mb-4 md:h-[80px] lg:h-[115px]" />
               </h1>
-              <div className="group mx-auto items-center">
-                <h1 className="font-ABCWhyteEdu-Heavy text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0  sm:text-2xl md:text-1xl">
-                  <span className="inline-flex h-[100px] animate-type overflow-x-hidden whitespace-nowrap pt-2 text-neutral-100 will-change-transform dark:text-neutral-0">
-                    {data.heroNameTitle}
-                  </span>
-                  <span className="ml-1 -mb-2 box-border inline-block h-10 w-1 animate-blink bg-primary-50 will-change-transform dark:bg-neutral-50 sm:h-14 md:-mb-4 md:h-[69px]" />
-                </h1>
 
-                <p className="mx-auto mt-12 max-w-[39rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50 dark:text-neutral-15 sm:text-pMDSemiBold">
-                  {data.heroDescription}
-                </p>
-              </div>
+              <p className="ABCWhyteEdu-Book mx-auto mt-12 max-w-[39rem] text-pm3 font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
+                {data.heroDescription}
+              </p>
             </div>
           </div>
+        </div>
 
-          <BrowserWindow
-            child1={data.editorWindowTabTitle}
-            child2={data.editorWindowContent}
-          />
-          <div className="mt-52">
-            <PrismicRichText field={data.experienceTitle} />
-          </div>
-          <div className="mt-12 lg:mt-28 lg:grid ">
-            <div className="gap-8 md:grid-cols-12 lg:grid lg:pt-20">
-              <div className="col-span-4 col-start-1 block">
-                {data.company.map(
-                  ({ companyRole, companyName, companyLogo }, index) => (
-                    <div
-                      key={index}
-                      onClick={() => setActiveExperience(index)}
-                      onKeyDown={() => setActiveExperience(index)}
-                      role="button"
-                      tabIndex={0}
-                      className={` ${
-                        activeExperience === index
-                          ? 'rounded-lg bg-primary-25 dark:bg-neutral-80'
-                          : 'bg-neutral-0 dark:bg-neutral-100'
-                      }`}
-                    >
-                      <div className="flex items-center px-8 ">
-                        <Image
-                          src={companyLogo.url ?? ''}
-                          alt={companyLogo.alt ?? ''}
-                          width={62}
-                          height={62}
-                          layout="fixed"
-                          quality={100}
-                          className="dark:brightness-0 dark:invert-[1]"
-                        />
-                        <div className="ml-8 py-8">
-                          <h4 className="font-ABCWhyteEdu-Medium text-pMDSemiBold font-normal tracking-[0.02em] text-neutral-100  dark:text-neutral-0 sm:text-pLGSemiBold">
-                            {companyName}
-                          </h4>
-                          <p className="font-codeRegular mt-2 font-FiraCode-Regular text-codeMDRegular text-neutral-50 dark:text-neutral-15">
-                            {companyRole}
-                          </p>
-                        </div>
+        <BrowserWindow
+          child1={data.editorWindowTabTitle}
+          child2={data.editorWindowContent}
+        />
+        <div className="mt-[3.875rem] lg:mt-[5.875rem]">
+          <PrismicRichText field={data.experienceTitle} />
+        </div>
+        <div className="mt-12 lg:mt-28 lg:grid ">
+          <div className="gap-8 md:grid-cols-12 lg:grid lg:pt-20">
+            <div className="col-span-5 col-start-1 block">
+              {data.company.map(
+                ({ companyRole, companyName, companyLogo }, index) => (
+                  <div
+                    key={index}
+                    onClick={() => setActiveExperience(index)}
+                    onKeyDown={() => setActiveExperience(index)}
+                    role="button"
+                    tabIndex={0}
+                    className={` ${
+                      activeExperience === index
+                        ? 'rounded-lg bg-primary-25 dark:bg-neutral-80'
+                        : 'bg-neutral-0 dark:bg-neutral-100'
+                    }`}
+                  >
+                    <div className="flex items-center px-8 ">
+                      <Image
+                        src={companyLogo.url ?? ''}
+                        alt={companyLogo.alt ?? ''}
+                        width={62}
+                        height={62}
+                        layout="fixed"
+                        quality={100}
+                        className="dark:brightness-0 dark:invert-[1]"
+                      />
+                      <div className="ml-8 py-6">
+                        <h2 className=" ABCWhyteEdu-Medium text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                          {companyName}
+                        </h2>
+                        <p className="font-codeRegular font-FiraCode_Regular mt-2 text-cs2 font-normal text-neutral-65 dark:text-neutral-15">
+                          {companyRole}
+                        </p>
                       </div>
                     </div>
-                  )
-                )}
-              </div>
-              <div className="col-span-6 col-start-7 mt-12">
-                <p className="pb-4 font-FiraCode-SemiBold text-codeMDSemiBold font-semibold text-primary-100 dark:text-blue-100">
-                  {data.company[activeExperience].companyYear}
-                </p>
-                <div className="inline-block">
-                  <span className="font-ABCWhyteEdu-Medium text-pMDSemiBold font-semibold text-neutral-100 dark:text-neutral-0 sm:text-5xl">
-                    {data.company[activeExperience].companyResponsibilities}
+                  </div>
+                )
+              )}
+            </div>
+            <div className="col-span-6 col-start-7 mt-12">
+              <p className="font-FiraCode_SemiBold pb-4 text-cs2 font-semibold text-primary-100 dark:text-blue-100">
+                {data.company[activeExperience].companyYear}
+              </p>
+              <div className="inline-block">
+                <span className="ABCWhyteEdu-Book text-pm3  font-[350] text-neutral-100  dark:text-neutral-0 sm:text-pm2">
+                  {data.company[activeExperience].companyResponsibilities}
 
-                    <span className="ml-2 font-ABCWhyteEdu-Medium text-pMDSemiBold font-semibold text-neutral-30 dark:text-neutral-30 sm:text-5xl">
-                      {data.company[activeExperience].companyTools}
-                    </span>
+                  <span className="text-pMDSemiBold ABCWhyteEdu-Book ml-2 text-pm3  font-[350] text-neutral-65  dark:text-neutral-30 sm:text-pm2">
+                    {data.company[activeExperience].companyTools}
                   </span>
-                </div>
+                </span>
               </div>
             </div>
           </div>
-        </Container>
-      </div>
+        </div>
+      </Container>
 
       <div
         className="block overflow-hidden bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100"
         ref={slider}
       >
-        <div className="mx-auto mt-28 flex max-w-[35rem] items-center justify-center pb-28 text-center lg:mt-52">
+        <div className="mx-auto mt-28 flex max-w-[35rem] items-center justify-center pb-12 text-center lg:mt-36 lg:pb-20">
           <PrismicRichText field={data.skillsTitle} />
         </div>
         <div className="flex max-w-full flex-row items-stretch overflow-x-auto md:flex-col md:overflow-x-visible">
           <div
-            className="flex text-neutral-30"
+            className="flex whitespace-nowrap text-neutral-30"
             style={{
               transform:
                 windowSize.width < 768

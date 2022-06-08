@@ -28,31 +28,17 @@
       }
     },
     "Work Page": {
-      "workpagePrefix": {
+      "companyName": {
         "type": "Text",
         "config": {
-          "label": "Workpage Prefix",
+          "label": "Company Name",
           "placeholder": ""
         }
       },
-      "workpageTitle": {
+      "aboutCompany": {
         "type": "Text",
         "config": {
-          "label": "Workpage Title",
-          "placeholder": ""
-        }
-      },
-      "workpageDescriptionBold": {
-        "type": "Text",
-        "config": {
-          "label": "Workpage Description Bold",
-          "placeholder": ""
-        }
-      },
-      "workpageDescriptionRegular": {
-        "type": "Text",
-        "config": {
-          "label": "Workpage Description Regular",
+          "label": "About Company",
           "placeholder": ""
         }
       }

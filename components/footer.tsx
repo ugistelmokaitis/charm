@@ -16,7 +16,7 @@ const Footer: FC<ISettings> = ({ settings }) => {
   const router = useRouter();
 
   return (
-    <div className="bg-neutral-0 pt-52 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100 ">
+    <div className="bg-neutral-0 pt-[6rem] dark:bg-neutral-100 lg:pt-40 ">
       <Container>
         <Divider />
 
@@ -28,9 +28,9 @@ const Footer: FC<ISettings> = ({ settings }) => {
                   <Button
                     href={docResolver(pageLink)}
                     variant="neutral"
-                    className={` ${`grid grid-cols-1 rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50 hover:bg-primary-25  dark:text-neutral-30  dark:hover:bg-neutral-80 xl:flex`} ${
+                    className={` ${`ABCWhyteEdu-Medium grid grid-cols-1 rounded-md py-[0.75rem] px-[0.75rem] font-[350] text-neutral-65 hover:bg-primary-25  dark:text-neutral-30  dark:hover:bg-neutral-80 xl:flex`} ${
                       router.asPath === docResolver(pageLink)
-                        ? `text-[#111827]  dark:text-[#FFFFFF]`
+                        ? `font-medium  text-[#111827] dark:text-[#FFFFFF]`
                         : ''
                     }`}
                   >
@@ -70,7 +70,7 @@ const Footer: FC<ISettings> = ({ settings }) => {
               )
             )}
           </div>
-          <div className="font-charmRegular mt-6 text-pSMRegular font-normal text-neutral-30 dark:text-neutral-15 xl:mt-0">
+          <div className="ABCWhyteEdu-Medium mt-6 font-[350] text-neutral-65  dark:text-neutral-15 xl:mt-0">
             {settings.data.siteCredit}
           </div>
         </div>

@@ -35,7 +35,7 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
             <a
               key={category.data.category}
               href={`/blog/tag/${category.uid}`}
-              className="font-ABCWhyteEdu_Medium p-4 text-pSMSemiBold font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-pLGSemiBold"
+              className="ABCWhyteEdu-Medium p-4 text-pm3 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm2"
             >
               {category.data.category}
             </a>
@@ -44,7 +44,7 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
       </Container>
       <div>
         <Container>
-          <div className="grid grid-cols-1 gap-y-12 gap-x-4 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-4 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-8">
             {blogposts.map((blogpost, index) => (
               <div
                 key={index}
@@ -63,9 +63,10 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
                         priority
                       />
                     </div>
-                    <div className="mt-8">
+                    <div className="mt-8 flex">
+                      {/* <p>{blogpost.blogCateogry}</p> */}
                       <p>{blogpost.data.blogDate}</p>
-                      <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-pLGSemiBold">
+                      <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold md:text-pLGSemiBold font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
                         {asText(blogpost.data.blogTitle)}
                       </div>
                     </div>

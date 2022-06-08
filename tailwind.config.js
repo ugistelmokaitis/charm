@@ -110,108 +110,61 @@ module.exports = {
     },
     fontSize: {
       xl: ['6rem', {
-        lineHeight: '5.7rem',
+        lineHeight: '6.6rem',
       }],
-      '1xl': ['4.5rem', {
-        lineHeight: '4.95rem',
+      '1xl': ['4rem', {
+        lineHeight: '5.2rem',
       }],
-      '2xl': ['4rem', {
-        lineHeight: '4.4rem',
-      }],
-      '3xl': ['3rem', {
+      '2xl': ['3rem', {
         lineHeight: '3.9rem',
       }],
-      '4xl': ['2.25rem', {
-        lineHeight: '2.475rem',
+      '3xl': ['2.25rem', {
+        lineHeight: '2.95rem',
+      }],
+      '4xl': ['2rem', {
+        lineHeight: '3rem',
       }],
       '5xl': ['1.75rem', {
-        lineHeight: '2.1rem',
+        lineHeight: '2.625rem',
       }],
-      pLGSemiBold: ['1.5rem', {
-        lineHeight: '1.8rem',
+      pm1: ['1.5rem', {
+        lineHeight: '2.25rem',
       }],
-      pLGRegular: ['1.5rem', {
-        lineHeight: '2.1rem',
+      p1: ['1.5rem', {
+        lineHeight: '2.25rem',
       }],
-      pMDSemiBold: ['1.25rem', {
-        lineHeight: '1.5rem',
+      pm2: ['1.25rem', {
+        lineHeight: '1.875',
       }],
-      pMDRegular: ['1.25rem', {
-        lineHeight: '1.75rem',
+      p2: ['1.25rem', {
+        lineHeight: '1.875',
       }],
-      pSMSemiBold: ['1rem', {
-        lineHeight: '1.2rem',
+      pm3: ['1rem', {
+        lineHeight: '1.5',
       }],
-      pSMRegular: ['1rem', {
-        lineHeight: '1.2rem',
+      p3: ['1rem', {
+        lineHeight: '1.5',
       }],
-      codeLGSemiBold: ['1.5rem', {
+      cs1: ['1.5rem', {
         lineHeight: '1.65rem',
       }],
-      codeLGRegular: ['1.5rem', {
+      c1: ['1.5rem', {
         lineHeight: '1.95rem',
       }],
-      codeMDSemiBold: ['1.125rem', {
+      cs2: ['1.125rem', {
         lineHeight: '1.2375rem',
       }],
-      codeMDRegular: ['1.125rem', {
+      cs2: ['1.125rem', {
         lineHeight: '1.4625rem',
       }],
     },
     fontFamily: {
-      'ABCWhyteEdu-Heavy': ['ABCWhyteEdu-Heavy'],
       'ABCWhyteEdu-Bold': ['ABCWhyteEdu-Bold'],
       'ABCWhyteEdu-Medium': ['ABCWhyteEdu-Medium'],
-      'ABCWhyteEdu-Regular': ['ABCWhyteEdu-Regular'],
+      'ABCWhyteEdu-Book': ['ABCWhyteEdu-Book'],
       'FiraCode-SemiBold': ['FiraCode-SemiBold'],
       'FiraCode-Regular': ['FiraCode-Regular'],
     },
-  },
-  extend: {
-    typography: (theme) => ({
-      DEFAULT: {
-        css: [
-          {
-            maxWidth: 'none',
-            pre: {
-              fontSize: theme('fontSize.sm'),
-              margin: 0,
-              padding: theme('padding.5'),
-              overflow: 'auto',
-              borderRadius: theme('borderRadius.sm'),
-              backgroundColor: theme('colors.gray.900'),
-            },
-            code: {
-              borderRadius: theme('borderRadius.sm'),
-              color: theme('colors.gray.600'),
-              backgroundColor: theme('colors.gray.50'),
-            },
-            'code::before': {
-              content: '',
-            },
-            'code::after': {
-              content: '',
-            },
-            a: {
-              color: theme('colors.gray.600'),
-              textDecoration: 'none',
-              '&:hover': {
-                color: theme('colors.gray.700'),
-              },
-            },
-          },
-        ],
-      },
-      dark: {
-        css: [
-          {
-            pre: {
-              backgroundColor: theme('colors.gray.800'),
-            },
-          },
-        ],
-      },
-    }),
   },
   plugins: [],
 };

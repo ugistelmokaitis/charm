@@ -42,167 +42,163 @@ const Header: FC<ISettings> = ({ settings }) => {
   }, [theme]);
 
   return (
-    <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
-      <div className="fixed top-0 left-0 right-0 z-50 border-b border-neutral-15/95 bg-neutral-0/80 py-3 backdrop-blur-md dark:border-neutral-80/95 dark:bg-neutral-100/80  md:py-5">
-        <Container>
-          <div className="flex items-center justify-between ">
-            <PrismicLink field={settings.data.headerHeroLink}>
-              <Image
-                src={settings.data.headerHeroLogo.url ?? ''}
-                alt={settings.data.headerHeroLogo.alt ?? ''}
-                width={196}
-                height={32}
-                layout="fixed"
-                quality={100}
-                className="dark:brightness-0 dark:invert-[1]"
-              />
-            </PrismicLink>
-            <div className="flex items-center justify-center ">
-              {settings.data.headerSiteMap.map(
-                ({ headerPageLabel, headerPageLink }, index) => (
-                  <div key={index} className="ml-2">
-                    <Button
-                      href={docResolver(headerPageLink)}
-                      aria-label="Header Page Label"
-                      variant="neutral"
-                      className={` ${`hidden rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80 md:flex`} ${
-                        router.asPath === docResolver(headerPageLink)
-                          ? `text-[#111827]  dark:text-[#FFFFFF]`
-                          : ''
-                      }`}
+    <div className="fixed top-0 left-0 right-0 z-50 border-b border-neutral-15/95 bg-neutral-0/80 py-3 backdrop-blur-md dark:border-neutral-80/95 dark:bg-neutral-100/80  md:py-5">
+      <Container>
+        <div className="flex items-center justify-between ">
+          <PrismicLink field={settings.data.headerHeroLink}>
+            <Image
+              src={settings.data.headerHeroLogo.url ?? ''}
+              alt={settings.data.headerHeroLogo.alt ?? ''}
+              width={196}
+              height={32}
+              layout="fixed"
+              quality={100}
+              className="dark:brightness-0 dark:invert-[1]"
+            />
+          </PrismicLink>
+          <div className="flex items-center justify-center ">
+            {settings.data.headerSiteMap.map(
+              ({ headerPageLabel, headerPageLink }, index) => (
+                <div key={index} className="ml-2">
+                  <Button
+                    href={docResolver(headerPageLink)}
+                    aria-label="Header Page Label"
+                    variant="neutral"
+                    className={` ${`ABCWhyteEdu-Medium hidden rounded-md py-[0.75rem] px-[0.75rem] font-[350] text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80 md:flex`} ${
+                      router.asPath === docResolver(headerPageLink)
+                        ? `font-medium  text-[#111827] dark:text-[#FFFFFF]`
+                        : ''
+                    }`}
+                  >
+                    {headerPageLabel}
+                  </Button>
+                </div>
+              )
+            )}
+            <div className="inline-flex pr-[0.25rem]">
+              <Tippy
+                content="View Github Profile"
+                className="font-codeRegular text-codeMDRegular font-FiraCode-Regular text-neutral-100"
+              >
+                <div className="hidden rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 xs:flex md:ml-12 lg:mr-4">
+                  <div>
+                    <Link
+                      passHref
+                      href={docResolver(settings.data.githubSourceLink)}
                     >
-                      {headerPageLabel}
-                    </Button>
-                  </div>
-                )
-              )}
-              <div className="inline-flex pr-[0.25rem]">
-                <Tippy
-                  content="View Github Profile"
-                  className="font-codeRegular font-FiraCode-Regular text-codeMDRegular text-neutral-100"
-                >
-                  <div className="hidden rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 xs:flex md:ml-12 lg:mr-4">
-                    <div>
-                      <Link
-                        passHref
+                      <a
                         href={docResolver(settings.data.githubSourceLink)}
+                        target="_blank"
+                        aria-label="View Github Profile"
+                        rel="noopener noreferrer"
+                        className="flex"
                       >
-                        <a
-                          href={docResolver(settings.data.githubSourceLink)}
-                          target="_blank"
-                          aria-label="View Github Profile"
-                          rel="noopener noreferrer"
-                          className="flex"
-                        >
-                          <Image
-                            src={settings.data.githubSourceIcon.url ?? ''}
-                            alt={settings.data.githubSourceIcon.alt ?? ''}
-                            width={24}
-                            height={24}
-                            layout="fixed"
-                            quality={100}
-                            className="dark:brightness-0 dark:invert-[1]"
-                          />
-                        </a>
-                      </Link>
-                    </div>
+                        <Image
+                          src={settings.data.githubSourceIcon.url ?? ''}
+                          alt={settings.data.githubSourceIcon.alt ?? ''}
+                          width={24}
+                          height={24}
+                          layout="fixed"
+                          quality={100}
+                          className="dark:brightness-0 dark:invert-[1]"
+                        />
+                      </a>
+                    </Link>
+                  </div>
+                </div>
+              </Tippy>
+
+              <div className="hidden justify-evenly rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 2xs:flex ">
+                <Tippy
+                  content="Appearance Light Mode"
+                  className="font-codeRegular text-codeMDRegular mt-[0.4375rem] font-FiraCode-Regular text-neutral-100"
+                >
+                  <div
+                    className="hidden dark:flex"
+                    key="light"
+                    onKeyDown={() => {
+                      removeTheme();
+                      setTheme('light');
+                    }}
+                    role="button"
+                    aria-label="Appearance Light Mode"
+                    tabIndex={0}
+                    onClick={() => {
+                      removeTheme();
+                      setTheme('light');
+                    }}
+                  >
+                    <Image
+                      src={settings.data.lightModeIcon.url ?? ''}
+                      alt={settings.data.lightModeIcon.alt ?? ''}
+                      width={24}
+                      height={24}
+                      layout="fixed"
+                      quality={100}
+                    />
                   </div>
                 </Tippy>
 
-                <div className="hidden justify-evenly rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 2xs:flex ">
-                  <Tippy
-                    content="Appearance Light Mode"
-                    className="font-codeRegular mt-[0.4375rem] font-FiraCode-Regular text-codeMDRegular text-neutral-100"
+                <Tippy
+                  content="Appearance Dark Mode"
+                  className="font-codeRegular text-codeMDRegular mt-[0.4375rem] font-FiraCode-Regular text-neutral-100 "
+                >
+                  <div
+                    className="flex dark:hidden"
+                    onKeyDown={() => {
+                      removeTheme();
+                      setTheme('dark');
+                    }}
+                    role="button"
+                    aria-label="Appearance Dark Mode"
+                    tabIndex={0}
+                    onClick={() => {
+                      removeTheme();
+                      setTheme('dark');
+                    }}
                   >
-                    <div
-                      className="hidden dark:flex"
-                      key="light"
-                      onKeyDown={() => {
-                        removeTheme();
-                        setTheme('light');
-                      }}
-                      role="button"
-                      aria-label="Appearance Light Mode"
-                      tabIndex={0}
-                      onClick={() => {
-                        removeTheme();
-                        setTheme('light');
-                      }}
-                    >
-                      <Image
-                        src={settings.data.lightModeIcon.url ?? ''}
-                        alt={settings.data.lightModeIcon.alt ?? ''}
-                        width={24}
-                        height={24}
-                        layout="fixed"
-                        quality={100}
-                      />
-                    </div>
-                  </Tippy>
-
-                  <Tippy
-                    content="Appearance Dark Mode"
-                    className="font-codeRegular mt-[0.4375rem] font-FiraCode-Regular text-codeMDRegular text-neutral-100 "
-                  >
-                    <div
-                      className="flex dark:hidden"
-                      onKeyDown={() => {
-                        removeTheme();
-                        setTheme('dark');
-                      }}
-                      role="button"
-                      aria-label="Appearance Dark Mode"
-                      tabIndex={0}
-                      onClick={() => {
-                        removeTheme();
-                        setTheme('dark');
-                      }}
-                    >
-                      <Image
-                        src={settings.data.darkModeIcon.url ?? ''}
-                        alt={settings.data.darkModeIcon.alt ?? ''}
-                        width={24}
-                        height={24}
-                        layout="fixed"
-                        quality={100}
-                      />
-                    </div>
-                  </Tippy>
-                </div>
-
-                <div className="ml-12 hidden lg:flex">
-                  <Button
-                    href={`${docResolver(
-                      settings.data.headerPrimaryButtonLink
-                    )}`}
-                    variant="primary"
-                  >
-                    {settings.data.headerPrimaryButtonLabel}
-                    <ArrowIcon className="ml-2" />
-                  </Button>
-                </div>
+                    <Image
+                      src={settings.data.darkModeIcon.url ?? ''}
+                      alt={settings.data.darkModeIcon.alt ?? ''}
+                      width={24}
+                      height={24}
+                      layout="fixed"
+                      quality={100}
+                    />
+                  </div>
+                </Tippy>
               </div>
 
-              <div className="ml-4 flex dark:hidden lg:hidden">
-                <Hamburger
-                  toggled={isOpen}
-                  toggle={setOpen}
-                  label="Show menu"
-                  color="black "
-                />
-              </div>
-              <div className="ml-4 hidden dark:flex dark:lg:hidden">
-                <Hamburger
-                  toggled={isOpen}
-                  toggle={setOpen}
-                  label="Show menu"
-                  color="white"
-                />
+              <div className="ml-12 hidden lg:flex">
+                <Button
+                  href={`${docResolver(settings.data.headerPrimaryButtonLink)}`}
+                  variant="primary"
+                >
+                  {settings.data.headerPrimaryButtonLabel}
+                  <ArrowIcon className="ml-2" />
+                </Button>
               </div>
             </div>
+
+            <div className="ml-4 flex dark:hidden lg:hidden">
+              <Hamburger
+                toggled={isOpen}
+                toggle={setOpen}
+                label="Show menu"
+                color="black "
+              />
+            </div>
+            <div className="ml-4 hidden dark:flex dark:lg:hidden">
+              <Hamburger
+                toggled={isOpen}
+                toggle={setOpen}
+                label="Show menu"
+                color="white"
+              />
+            </div>
           </div>
-        </Container>
-      </div>
+        </div>
+      </Container>
       {isOpen ? (
         <Container>
           <div className="pointer-events-auto absolute left-0 top-[4.5625rem] z-[59] flex w-full select-auto flex-col gap-3  border-b border-neutral-15/95 bg-neutral-0/80 opacity-100 backdrop-blur-md transition-all dark:border-neutral-80/95 dark:bg-neutral-100/80 lg:hidden">
@@ -214,9 +210,9 @@ const Header: FC<ISettings> = ({ settings }) => {
                       <Button
                         href={docResolver(pageLink)}
                         variant="neutral"
-                        className={` ${`grid grid-cols-2 rounded-md py-[0.75rem] px-[0.75rem] font-ABCWhyteEdu-Medium text-pSMSemiBold font-semibold text-neutral-50  hover:bg-primary-25  dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
+                        className={` ${`ABCWhyteEdu-Medium grid grid-cols-2 rounded-md py-[0.75rem] px-[0.75rem] font-[350] text-neutral-50 hover:bg-primary-25  dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
                           router.asPath === docResolver(pageLink)
-                            ? `text-[#111827]  dark:text-[#FFFFFF]`
+                            ? `font-medium text-[#111827] dark:text-[#FFFFFF]`
                             : ''
                         }`}
                       >
@@ -255,7 +251,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                     )
                   )}
                 </div>
-                <div className="font-charmRegular mt-5 text-pSMRegular font-normal text-neutral-30 dark:text-neutral-15 xl:mt-0">
+                <div className="ABCWhyteEdu-Medium mt-5 font-[350] text-neutral-50 dark:text-neutral-15 xl:mt-0">
                   {settings.data.siteCredit}
                 </div>
               </div>
