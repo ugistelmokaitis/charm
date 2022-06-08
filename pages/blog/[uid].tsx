@@ -184,7 +184,7 @@ const Blogpost: FC<IBlogpost> = ({ data, settings, blogposts, uid }) => {
                       />
                     </div>
                     <div className="mt-8">
-                      <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 md:text-pLGSemiBold">
+                      <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold md:text-pLGSemiBold font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
                         {asText(post.data.blogTitle)}
                       </div>
                     </div>

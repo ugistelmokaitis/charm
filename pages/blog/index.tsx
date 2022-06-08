@@ -3,6 +3,7 @@ import type { FC } from 'react';
 import { PrismicLink, PrismicRichText } from '@prismicio/react';
 import Image from 'next/image';
 import { asText } from '@prismicio/helpers';
+import { format, parse } from 'date-fns';
 import Layout from '../../components/layout';
 import { getPage, getPages } from '../../utils/prismic';
 import type { BlogProps, BlogCategoryProps } from '../../types/blog';
@@ -31,11 +32,17 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
           </div>
         </div>
         <div className="mb-20">
+          <PrismicLink
+            href="/blog"
+            className="ABCWhyteEdu-Medium rounded-md p-4 py-[0.75rem] px-[0.75rem] text-pm3 font-medium text-neutral-100 hover:bg-primary-25 dark:text-neutral-0 dark:hover:bg-neutral-80 sm:text-pm2"
+          >
+            All Topics
+          </PrismicLink>
           {blogcategories.map((category) => (
             <a
               key={category.data.category}
               href={`/blog/tag/${category.uid}`}
-              className="ABCWhyteEdu-Medium p-4 text-pm3 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm2"
+              className="ABCWhyteEdu-Medium ABCWhyteEdu-Medium rounded-md py-[0.75rem] px-[0.75rem] text-pm3 font-normal text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80 sm:text-pm2"
             >
               {category.data.category}
             </a>
@@ -65,7 +72,19 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
                     </div>
                     <div className="mt-8 flex">
                       {/* <p>{blogpost.blogCateogry}</p> */}
-                      <p>{blogpost.data.blogDate}</p>
+                      <p className="pr-2 text-neutral-100 dark:text-neutral-0">
+                        {format(
+                          parse(
+                            blogpost.data.blogDate,
+                            'yyyy-MM-dd',
+                            new Date()
+                          ),
+                          'MMMM dd, yyyy'
+                        )}
+                      </p>
+                      <p className="pr-2 text-neutral-100 dark:text-neutral-0">
+                        {blogpost.data.blogCateogry.uid}
+                      </p>
                       <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold md:text-pLGSemiBold font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
                         {asText(blogpost.data.blogTitle)}
                       </div>

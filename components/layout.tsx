@@ -48,7 +48,7 @@ const Layout: FC<LayoutProps> = ({
   return (
     <>
       <NextSeo
-        titleTemplate={`${name} — %s`}
+        titleTemplate={`%s — ${name}`}
         title={title ?? ''}
         description={description ?? ''}
         canonical={url}
