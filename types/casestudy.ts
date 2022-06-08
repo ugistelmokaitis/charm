@@ -16,6 +16,8 @@ export type CaseStudyProps = PrismicDocumentWithUID<{
   contentImage: ImageField;
   slices2: SliceZone;
   content: ContentProps;
+  contentPrefix: KeyTextField;
+  contentTitle: RichTextField;
 }>;
 
 type ContentProps = GroupField<{
