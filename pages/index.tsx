@@ -5,6 +5,7 @@ import type { JSXMapSerializer } from '@prismicio/react';
 import { PrismicRichText } from '@prismicio/react';
 import { useWindowScroll, useWindowSize } from 'react-use';
 import Image from 'next/image';
+import { asText } from '@prismicio/helpers';
 import Layout from '../components/layout';
 import { docResolver, getPage } from '../utils/prismic';
 import type { HomeProps } from '../types/home';
@@ -60,9 +61,9 @@ const Home: FC<IHome> = ({ data, settings }) => {
             </h1>
             <div className="group mx-auto items-center">
               <h1 className="ABCWhyteEdu-Bold text-2xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-1xl lg:text-xl">
-                <span className="inline-flex h-[100px] animate-type overflow-x-hidden whitespace-nowrap pt-2 text-neutral-100 will-change-transform dark:text-neutral-0 lg:h-[118px]">
+                <h1 className="inline-flex h-[100px] animate-type overflow-x-hidden whitespace-nowrap pt-2 text-neutral-100 will-change-transform dark:text-neutral-0 lg:h-[118px]">
                   {data.heroNameTitle}
-                </span>
+                </h1>
                 <span className="ml-1 -mb-2 box-border inline-block h-14 w-1 animate-blink bg-primary-50 will-change-transform dark:bg-neutral-50 sm:h-16 md:-mb-4 md:h-[80px] lg:h-[115px]" />
               </h1>
 
@@ -78,7 +79,9 @@ const Home: FC<IHome> = ({ data, settings }) => {
           child2={data.editorWindowContent}
         />
         <div className="mt-[3.875rem] lg:mt-[5.875rem]">
-          <PrismicRichText field={data.experienceTitle} />
+          <h2 className=" ABCWhyteEdu-Medium text-3xl font-bold tracking-[0.02em] text-neutral-0 dark:text-neutral-0 sm:text-2xl lg:text-1xl">
+            {asText(data.experienceTitle)}
+          </h2>
         </div>
         <div className="mt-12 lg:mt-28 lg:grid ">
           <div className="gap-8 md:grid-cols-12 lg:grid lg:pt-20">
@@ -108,9 +111,9 @@ const Home: FC<IHome> = ({ data, settings }) => {
                         className="dark:brightness-0 dark:invert-[1]"
                       />
                       <div className="ml-8 py-6">
-                        <h2 className=" ABCWhyteEdu-Medium text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                        <h3 className=" ABCWhyteEdu-Medium text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
                           {companyName}
-                        </h2>
+                        </h3>
                         <p className="font-codeRegular font-FiraCode_Regular mt-2 text-cs2 font-normal text-neutral-65 dark:text-neutral-15">
                           {companyRole}
                         </p>
@@ -143,7 +146,9 @@ const Home: FC<IHome> = ({ data, settings }) => {
         ref={slider}
       >
         <div className="mx-auto mt-28 flex max-w-[35rem] items-center justify-center pb-12 text-center lg:mt-36 lg:pb-20">
-          <PrismicRichText field={data.skillsTitle} />
+          <h2 className=" ABCWhyteEdu-Medium text-3xl font-bold tracking-[0.02em] text-neutral-0 dark:text-neutral-0 sm:text-2xl lg:text-1xl">
+            {asText(data.skillsTitle)}
+          </h2>
         </div>
         <div className="flex max-w-full flex-row items-stretch overflow-x-auto md:flex-col md:overflow-x-visible">
           <div

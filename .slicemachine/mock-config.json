@@ -7,12 +7,18 @@
     "home": {
       "skillsTitle": {
         "config": {
-          "patternType": "PARAGRAPH",
+          "patternType": "HEADING",
           "blocks": 1
         }
       },
       "skills": {},
-      "company": {}
+      "company": {},
+      "experienceTitle": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
     },
     "experience": {
       "company": {}
@@ -36,7 +42,7 @@
       },
       "introTitle": {
         "config": {
-          "patternType": "PARAGRAPH",
+          "patternType": "HEADING",
           "blocks": 1
         }
       }
