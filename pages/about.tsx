@@ -1,5 +1,6 @@
 import type { GetStaticProps } from 'next';
 import type { FC } from 'react';
+import { Fragment } from 'react';
 import { PrismicLink, PrismicRichText } from '@prismicio/react';
 import type { JSXMapSerializer } from '@prismicio/react';
 import Image from 'next/image';
@@ -50,7 +51,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
   >
     <Container>
       <div className="text-white-100 grid-cols-1 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
-        <div className="col-span-1 mb-12 md:text-left lg:col-span-9">
+        <div className="col-span-1 mb-12 md:mb-28 md:text-left lg:col-span-9">
           <PrismicRichText
             field={data.introTitle}
             components={introComponents}
@@ -74,11 +75,8 @@ const About: FC<IAbout> = ({ data, settings }) => (
           </div>
           {data.moreThings.map(
             ({ moreThingsDescription, moreThingsTitle }, index) => (
-              <>
-                <h2
-                  key={index}
-                  className="font-FiraCode_SemiBold mt-20 text-cs2 font-semibold text-primary-100 dark:text-blue-100"
-                >
+              <Fragment key={index}>
+                <h2 className="font-FiraCode_SemiBold mt-20 text-cs2 font-semibold text-primary-100 dark:text-blue-100">
                   {moreThingsTitle}
                 </h2>
                 <div className="pt-6">
@@ -87,7 +85,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                     components={introComponents}
                   />
                 </div>
-              </>
+              </Fragment>
             )
           )}
           <div>
