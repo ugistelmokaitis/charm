@@ -73,7 +73,7 @@ const richTextComponents: JSXMapSerializer = {
   list: ({ children, key }) => (
     <ul
       key={key}
-      className="ABCWhyteEdu-Book mb-4 list-inside list-disc pl-0 text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
+      className="ABCWhyteEdu-Book list-inside list-disc pl-0 text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
     >
       {children}
     </ul>
@@ -81,7 +81,7 @@ const richTextComponents: JSXMapSerializer = {
   oList: ({ children, key }) => (
     <ul
       key={key}
-      className="ABCWhyteEdu-Book mb-4 list-inside list-decimal pl-0 text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
+      className="ABCWhyteEdu-Book list-inside list-decimal pl-0 text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2"
     >
       {children}
     </ul>
