@@ -91,7 +91,15 @@
         }
       }
     },
-    "casestudy": {},
+    "casestudy": {
+      "contentTitle": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "author": {}
+    },
     "privacy": {},
     "terms": {},
     "notfound": {},
@@ -112,6 +120,12 @@
       "default": {
         "primary": {
           "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "content": {
             "config": {
               "patternType": "PARAGRAPH",
               "blocks": 1
@@ -152,7 +166,7 @@
         "primary": {
           "title": {
             "config": {
-              "patternType": "PARAGRAPH",
+              "patternType": "HEADING",
               "blocks": 1
             }
           }
@@ -251,6 +265,16 @@
       }
     },
     "RegularImage": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Button": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "SecondaryButton": {
       "default": {
         "primary": {}
       }

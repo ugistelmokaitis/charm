@@ -1,0 +1,34 @@
+{
+  "id": "secondary_button",
+  "type": "SharedSlice",
+  "name": "SecondaryButton",
+  "description": "SecondaryButton",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SecondaryButton",
+      "primary": {
+        "secondaryButtonLink": {
+          "type": "Link",
+          "config": {
+            "label": "Secondary Button Link",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "secondaryButtonLabel": {
+          "type": "Text",
+          "config": {
+            "label": "Secondary Button Label",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

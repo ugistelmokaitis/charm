@@ -1,20 +1,21 @@
 {
-  "id": "5aff6b0c-7e2b-4ac2-bce3-f0d54cfc3f5b",
-  "uid": "officiis-aut-dolores",
+  "id": "a26ac525-b3e6-4c5a-8922-4393bf4eea2e",
+  "uid": "voluptate-illum-perferendis",
   "type": "casestudy",
   "data": {
-    "titleTag": "deploy real-time channels",
-    "metaDescription": "facilitate viral content",
-    "companyName": "revolutionize impactful web-readiness",
-    "aboutCompany": "facilitate real-time functionalities",
-    "contentPrefix": "expedite scalable web services",
+    "titleTag": "grow cross-platform technologies",
+    "metaDescription": "reintermediate world-class web-readiness",
+    "companyName": "deploy clicks-and-mortar blockchains",
+    "aboutCompany": "matrix strategic deliverables",
     "contentTitle": [
       {
-        "type": "paragraph",
-        "text": "Amet sit elit non cillum officia minim elit elit est aliquip veniam. Dolor laborum eiusmod laboris.",
+        "type": "heading1",
+        "text": "Deliver efficient channels",
         "spans": []
       }
     ],
+    "date": "2017-05-02",
+    "role": "utilize magnetic infomediaries",
     "contentImage": {
       "dimensions": {
         "width": 900,
@@ -22,7 +23,65 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?w=900&h=500&fit=crop"
-    }
+      "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+    },
+    "author": [
+      {
+        "name": "transform end-to-end architectures",
+        "twitterUsername": "leverage sexy ROI",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+        },
+        "country": "matrix clicks-and-mortar content"
+      },
+      {
+        "name": "mesh revolutionary architectures",
+        "twitterUsername": "engage web-enabled content",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a?w=900&h=500&fit=crop"
+        },
+        "country": "reintermediate out-of-the-box models"
+      },
+      {
+        "name": "monetize impactful markets",
+        "twitterUsername": "facilitate clicks-and-mortar networks",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118?w=900&h=500&fit=crop"
+        },
+        "country": "engage cross-platform infrastructures"
+      }
+    ],
+    "technology": [
+      {
+        "title": "syndicate transparent e-commerce"
+      },
+      {
+        "title": "cultivate revolutionary solutions"
+      },
+      {
+        "title": "empower dot-com mindshare"
+      },
+      {
+        "title": "e-enable 24/7 deliverables"
+      }
+    ]
   }
 }

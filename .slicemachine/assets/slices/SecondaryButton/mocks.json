@@ -1,0 +1,15 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "secondary_button",
+    "items": [],
+    "primary": {
+      "secondaryButtonLink": {
+        "link_type": "Web",
+        "url": "http://google.com"
+      },
+      "secondaryButtonLabel": "strategize one-to-one e-tailers"
+    }
+  }
+]

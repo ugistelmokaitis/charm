@@ -275,49 +275,22 @@
               "version": "sktwi1xtmkfgx8626",
               "description": "Content",
               "primary": {
-                "prefix": {
-                  "type": "Text",
-                  "config": {
-                    "label": "Prefix",
-                    "placeholder": ""
-                  }
-                },
                 "title": {
                   "type": "StructuredText",
                   "config": {
                     "label": "Title",
                     "placeholder": "This is where it all begins...",
                     "allowTargetBlank": true,
-                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                    "single": "heading3"
                   }
                 },
-                "descriptionFirstPart": {
-                  "type": "Text",
+                "content": {
+                  "type": "StructuredText",
                   "config": {
-                    "label": "Description First Part",
-                    "placeholder": ""
-                  }
-                },
-                "descriptionSecondPart": {
-                  "type": "Text",
-                  "config": {
-                    "label": "Description Second Part",
-                    "placeholder": ""
-                  }
-                },
-                "primaryButtonLabel": {
-                  "type": "Text",
-                  "config": {
-                    "label": "Primary Button Label",
-                    "placeholder": ""
-                  }
-                },
-                "primaryButtonLink": {
-                  "type": "Link",
-                  "config": {
-                    "label": "Primary Button Link",
+                    "label": "Content",
                     "placeholder": "",
-                    "select": null
+                    "allowTargetBlank": true,
+                    "multi": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
                   }
                 }
               },
@@ -333,21 +306,20 @@
             "slice_type": "content",
             "items": [],
             "primary": {
-              "prefix": "generate user-centric niches",
               "title": [
                 {
-                  "type": "paragraph",
-                  "text": "Elit ad laboris consequat sunt veniam ex ea enim.",
+                  "type": "heading3",
+                  "text": "Facilitate value-added niches",
                   "spans": []
                 }
               ],
-              "descriptionFirstPart": "expedite compelling e-business",
-              "descriptionSecondPart": "implement compelling synergies",
-              "primaryButtonLabel": "matrix vertical ROI",
-              "primaryButtonLink": {
-                "link_type": "Web",
-                "url": "https://prismic.io"
-              }
+              "content": [
+                {
+                  "type": "paragraph",
+                  "text": "Laborum eiusmod non culpa reprehenderit laboris occaecat ea amet. Id deserunt id veniam.",
+                  "spans": []
+                }
+              ]
             }
           }
         },
@@ -680,7 +652,7 @@
                     "label": "Title",
                     "placeholder": "This is where it all begins...",
                     "allowTargetBlank": true,
-                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                    "single": "heading3"
                   }
                 }
               },
@@ -698,8 +670,8 @@
             "primary": {
               "title": [
                 {
-                  "type": "paragraph",
-                  "text": "Nulla incididunt ut veniam velit commodo reprehenderit labore do cillum amet in adipisicing. Laborum occaecat ut nulla minim et reprehenderit consectetur qui exercitation est reprehenderit laboris velit. Laboris tempor excepteur ut adipisicing proident irure pariatur.",
+                  "type": "heading3",
+                  "text": "Iterate world-class relationships",
                   "spans": []
                 }
               ]
@@ -816,6 +788,66 @@
                   "spans": []
                 }
               ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "tsx"
+        },
+        "screenshotPaths": {}
+      },
+      "secondary_button": {
+        "library": "slices",
+        "id": "secondary_button",
+        "name": "SecondaryButton",
+        "description": "SecondaryButton",
+        "model": {
+          "id": "secondary_button",
+          "type": "SharedSlice",
+          "name": "SecondaryButton",
+          "description": "SecondaryButton",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SecondaryButton",
+              "primary": {
+                "secondaryButtonLink": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Secondary Button Link",
+                    "placeholder": "",
+                    "select": null
+                  }
+                },
+                "secondaryButtonLabel": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Secondary Button Label",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "secondary_button",
+            "items": [],
+            "primary": {
+              "secondaryButtonLink": {
+                "link_type": "Web",
+                "url": "http://google.com"
+              },
+              "secondaryButtonLabel": "strategize one-to-one e-tailers"
             }
           }
         },
