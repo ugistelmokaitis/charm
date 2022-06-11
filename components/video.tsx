@@ -27,7 +27,6 @@ const Video: FC<VideoProps> = ({ data, ...props }) => {
         url={data.embed_url}
         loop
         controls={false}
-        control={false}
         muted
         playsinline
         playing
