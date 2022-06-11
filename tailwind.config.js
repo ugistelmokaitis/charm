@@ -40,10 +40,13 @@ module.exports = {
     },
     screens: {
       '2xs': '357px',
+      '1xs': '408px',
       xs: '457px',
       sm: '640px',
       md: '768px',
+      lmd: '822px',
       lg: '1024px',
+      xlg: '1060px',
       xl: '1280px',
       '2xl': '1536px',
       'containerlg': '1140px',
