@@ -1,18 +1,18 @@
 import type { EmbedField } from '@prismicio/types';
 import dynamic from 'next/dynamic';
 import type { FC } from 'react';
-import type { YouTubePlayerProps } from 'react-player/youtube';
+import type { VimeoPlayerProps } from 'react-player/vimeo';
 
 type VideoProps = {
   data: EmbedField;
-} & YouTubePlayerProps;
+} & VimeoPlayerProps;
 
 const Video: FC<VideoProps> = ({ data, ...props }) => {
   const ReactPlayer = dynamic(
     async () =>
       import(
-        /* webpackChunkName: "react-player/youtube" */
-        'react-player/youtube'
+        /* webpackChunkName: "react-player/vimeo" */
+        'react-player/vimeo'
       )
   );
 
@@ -27,6 +27,7 @@ const Video: FC<VideoProps> = ({ data, ...props }) => {
         url={data.embed_url}
         loop
         controls={false}
+        control={false}
         muted
         playsinline
         playing
