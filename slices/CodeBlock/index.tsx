@@ -1,7 +1,6 @@
 import type { FC } from 'react';
 import type { SliceComponentProps } from '@prismicio/react';
 import type { KeyTextField, ImageField } from '@prismicio/types';
-import { asText } from '@prismicio/helpers';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { hybrid, xcode } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import Image from 'next/image';
@@ -20,8 +19,8 @@ const CodeBlock: FC<
     <div className="text-left">
       <div className="hidden dark:flex">
         <div className="container">
-          <div className="grid-starts-1 mt-[2.875rem] gap-16 md:grid-cols-12 lg:mt-10 lg:grid">
-            <div className="col-span-10 col-start-2 my-12">
+          <div className="grid-starts-1 gap-16 md:grid-cols-12 lg:grid">
+            <div className="col-span-8 col-start-3 mt-8 sm:mt-28 lg:mt-16">
               <div className="mx-auto">
                 <div className="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg border-[1px] border-neutral-80 bg-[#0B0B0B]/80 px-5">
                   <div className="-mb-[1.7px] -ml-2 border-t-[1px] border-yellow-100/60">
@@ -66,8 +65,8 @@ const CodeBlock: FC<
       <div>
         <div className="flex dark:hidden">
           <div className="container">
-            <div className="grid-starts-1 mt-[2.875rem] grid-cols-12 gap-16 lg:mt-10 lg:grid">
-              <div className="col-span-10 col-start-2 my-12">
+            <div className="grid-starts-1 grid-cols-12 gap-16  lg:grid">
+              <div className="col-span-8 col-start-3 mt-8 sm:mt-28 lg:mt-16">
                 <div className="mx-auto">
                   <div className="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg border-[1px] border-neutral-15 bg-primary-50 px-5">
                     <div className="-mb-[1.7px] -ml-2 border-t-[1px] border-primary-75">
