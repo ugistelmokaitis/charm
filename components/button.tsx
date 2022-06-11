@@ -5,7 +5,7 @@ import type { PrismicDocument, LinkField } from '@prismicio/types';
 import { PrismicLink } from '@prismicio/react';
 
 type ButtonInnerProps = {
-  variant?: 'primary' | 'secondary' | 'neutral';
+  variant?: 'primary' | 'secondary' | 'neutral' | 'casestudy';
   className?: string;
   icon?: FC<SVGAttributes<SVGElement>>;
 } & HTMLProps<HTMLButtonElement>;
@@ -30,6 +30,8 @@ const ButtonInner: FC<ButtonInnerProps> = ({
       secondary:
         'rounded py-[0.7188rem] px-[1.8175rem] outline outline-[0.0625rem] hover:bg-primary-25 outline-neutral-65 active:outline-[0.125rem] active:outline-primary-200 disabled:bg-primary-5 disabled:text-neutral-30 disabled:hover:outline-none dark:bg-neutral-100 dark:hover:bg-neutral-65 dark:text-neutral-0 dark:disabled:bg-neutral-80 dark:disabled:text-neutral-50 dark:disabled:hover:outline-none dark:active:outline-neutral-15 dark:active:bg-neutral-65',
       neutral: 'text-neutral-50 dark:text-neutral-30',
+      casestudy:
+        'className="ABCWhyteEdu-Bold text-2xl font-medium tracking-[0.02em] text-neutral-65 underline decoration-2 underline-offset-[12px] hover:decoration-[0.25rem] active:text-neutral-0 dark:text-neutral-0 md:text-2xl hover:text-neutral-65 dark:hover:text-neutral-30',
     },
   };
 
