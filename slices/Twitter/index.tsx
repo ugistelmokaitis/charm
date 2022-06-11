@@ -10,8 +10,8 @@ const Twitter: FC<
     };
   }>
 > = ({ slice }) => (
-  <div className="col-span-5 col-start-3">
-    <div className="mt-[2.875rem] lg:mt-10">
+  <div className="col-span-4 col-start-5">
+    <div className="mt-8 sm:mt-28 lg:mt-16">
       <TwitterTweetEmbed tweetId={slice.primary.tweetId} />
     </div>
   </div>
