@@ -69,6 +69,15 @@
           "thumbnails": []
         }
       },
+      "slices1": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
+      }
+    },
+    "Blog Post Content": {
       "author": {
         "type": "Group",
         "config": {
@@ -89,13 +98,6 @@
                 "thumbnails": []
               }
             },
-            "role": {
-              "type": "Text",
-              "config": {
-                "label": "Role",
-                "placeholder": ""
-              }
-            },
             "instagramUsername": {
               "type": "Text",
               "config": {
@@ -105,33 +107,35 @@
             }
           }
         }
-      }
-    },
-    "Content": {
+      },
+      "country": {
+        "type": "Text",
+        "config": {
+          "label": "Country",
+          "placeholder": ""
+        }
+      },
       "slices2": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "geometry": {
+            "content": {
               "type": "SharedSlice"
             },
-            "code_block": {
-              "type": "SharedSlice"
-            },
-            "rich_text": {
-              "type": "SharedSlice"
-            },
-            "title_text": {
+            "fullwidthimage": {
               "type": "SharedSlice"
             },
             "media_player": {
               "type": "SharedSlice"
             },
-            "regular_image": {
+            "quote": {
               "type": "SharedSlice"
             },
             "twitter": {
+              "type": "SharedSlice"
+            },
+            "code_block": {
               "type": "SharedSlice"
             }
           }

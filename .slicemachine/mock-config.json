@@ -104,14 +104,28 @@
     "terms": {},
     "notfound": {},
     "servererror": {},
-    "blog": {},
+    "blog": {
+      "introTitle": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "casestudyTitle": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
     "blog-post": {
       "blogTitle": {
         "config": {
           "patternType": "HEADING",
           "blocks": 1
         }
-      }
+      },
+      "author": {}
     },
     "blog-category": {}
   },

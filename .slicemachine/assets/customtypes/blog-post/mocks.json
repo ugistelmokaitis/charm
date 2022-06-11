@@ -1,23 +1,23 @@
 {
-  "id": "849d297c-fda8-4937-98cc-0278816c30da",
-  "uid": "earum-facilis-consequatur",
+  "id": "9e3641cd-3714-44de-9553-1563bd385c5c",
+  "uid": "occaecati-sit-officia",
   "type": "blog-post",
   "data": {
-    "titleTag": "iterate intuitive action-items",
-    "metaDescription": "synthesize world-class functionalities",
+    "titleTag": "revolutionize real-time content",
+    "metaDescription": "maximize transparent deliverables",
     "blogCateogry": {
       "link_type": "Web",
-      "url": "https://prismic.io"
+      "url": "http://google.com"
     },
-    "blogDate": "2016-02-04",
+    "blogDate": "2017-04-29",
     "blogTitle": [
       {
         "type": "heading1",
-        "text": "Morph proactive infomediaries",
+        "text": "Utilize turn-key models",
         "spans": []
       }
     ],
-    "blogDescription": "seize B2C bandwidth",
+    "blogDescription": "enable ubiquitous platforms",
     "blogImage": {
       "dimensions": {
         "width": 900,
@@ -25,11 +25,12 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
     },
+    "country": "mesh one-to-one users",
     "author": [
       {
-        "name": "facilitate cutting-edge blockchains",
+        "name": "maximize innovative communities",
         "image": {
           "dimensions": {
             "width": 900,
@@ -37,13 +38,12 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
         },
-        "role": "benchmark killer interfaces",
-        "instagramUsername": "leverage frictionless communities"
+        "instagramUsername": "incentivize one-to-one eyeballs"
       },
       {
-        "name": "facilitate scalable methodologies",
+        "name": "reintermediate granular applications",
         "image": {
           "dimensions": {
             "width": 900,
@@ -51,10 +51,48 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
         },
-        "role": "integrate holistic mindshare",
-        "instagramUsername": "enable bleeding-edge channels"
+        "instagramUsername": "grow intuitive deliverables"
+      },
+      {
+        "name": "target revolutionary e-tailers",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+        },
+        "instagramUsername": "streamline out-of-the-box deliverables"
+      },
+      {
+        "name": "optimize sexy synergies",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+        },
+        "instagramUsername": "transition cutting-edge channels"
+      },
+      {
+        "name": "morph leading-edge bandwidth",
+        "image": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+        },
+        "instagramUsername": "visualize magnetic portals"
       }
     ]
   }
