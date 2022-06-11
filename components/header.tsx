@@ -78,7 +78,7 @@ const Header: FC<ISettings> = ({ settings }) => {
             <div className="inline-flex pr-[0.25rem]">
               <Tippy
                 content="View Github Profile"
-                className="font-codeRegular text-codeMDRegular font-FiraCode-Regular text-neutral-100"
+                className="text-cr1 font-FiraCode-Regular font-normal text-neutral-100"
               >
                 <div className="hidden rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 xs:flex md:ml-12 lg:mr-4">
                   <div>
@@ -111,7 +111,7 @@ const Header: FC<ISettings> = ({ settings }) => {
               <div className="hidden justify-evenly rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 2xs:flex ">
                 <Tippy
                   content="Appearance Light Mode"
-                  className="font-codeRegular text-codeMDRegular mt-[0.4375rem] font-FiraCode-Regular text-neutral-100"
+                  className="text-cr1 mt-[12px] font-FiraCode-Regular font-normal  text-neutral-100"
                 >
                   <div
                     className="hidden dark:flex"
@@ -141,7 +141,7 @@ const Header: FC<ISettings> = ({ settings }) => {
 
                 <Tippy
                   content="Appearance Dark Mode"
-                  className="font-codeRegular text-codeMDRegular mt-[0.4375rem] font-FiraCode-Regular text-neutral-100 "
+                  className="text-cr1 mt-[12px] font-FiraCode-Regular  font-normal text-neutral-100 "
                 >
                   <div
                     className="flex dark:hidden"
