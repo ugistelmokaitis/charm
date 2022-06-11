@@ -5,21 +5,20 @@
     "slice_type": "content",
     "items": [],
     "primary": {
-      "prefix": "generate user-centric niches",
       "title": [
         {
-          "type": "paragraph",
-          "text": "Elit ad laboris consequat sunt veniam ex ea enim.",
+          "type": "heading3",
+          "text": "Facilitate value-added niches",
           "spans": []
         }
       ],
-      "descriptionFirstPart": "expedite compelling e-business",
-      "descriptionSecondPart": "implement compelling synergies",
-      "primaryButtonLabel": "matrix vertical ROI",
-      "primaryButtonLink": {
-        "link_type": "Web",
-        "url": "https://prismic.io"
-      }
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Laborum eiusmod non culpa reprehenderit laboris occaecat ea amet. Id deserunt id veniam.",
+          "spans": []
+        }
+      ]
     }
   }
 ]

@@ -11,49 +11,22 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "Content",
       "primary": {
-        "prefix": {
-          "type": "Text",
-          "config": {
-            "label": "Prefix",
-            "placeholder": ""
-          }
-        },
         "title": {
           "type": "StructuredText",
           "config": {
             "label": "Title",
             "placeholder": "This is where it all begins...",
             "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "single": "heading3"
           }
         },
-        "descriptionFirstPart": {
-          "type": "Text",
+        "content": {
+          "type": "StructuredText",
           "config": {
-            "label": "Description First Part",
-            "placeholder": ""
-          }
-        },
-        "descriptionSecondPart": {
-          "type": "Text",
-          "config": {
-            "label": "Description Second Part",
-            "placeholder": ""
-          }
-        },
-        "primaryButtonLabel": {
-          "type": "Text",
-          "config": {
-            "label": "Primary Button Label",
-            "placeholder": ""
-          }
-        },
-        "primaryButtonLink": {
-          "type": "Link",
-          "config": {
-            "label": "Primary Button Link",
+            "label": "Content",
             "placeholder": "",
-            "select": null
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,strong,em,hyperlink,embed,list-item,o-list-item,rtl"
           }
         }
       },
