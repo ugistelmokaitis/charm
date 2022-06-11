@@ -16,8 +16,11 @@ export type CaseStudyProps = PrismicDocumentWithUID<{
   contentImage: ImageField;
   slices2: SliceZone;
   content: ContentProps;
-  contentPrefix: KeyTextField;
   contentTitle: RichTextField;
+  author: authorProps;
+  date: string;
+  technology: technologyProps;
+  role: KeyTextField;
 }>;
 
 type ContentProps = GroupField<{
@@ -26,4 +29,15 @@ type ContentProps = GroupField<{
   description: KeyTextField;
   primaryButtonLabel: KeyTextField;
   primaryButtonLink: KeyTextField;
+}>;
+
+type authorProps = GroupField<{
+  name: KeyTextField;
+  image: ImageField;
+  twitterUsername: string;
+  country: KeyTextField;
+}>;
+
+type technologyProps = GroupField<{
+  title: KeyTextField;
 }>;

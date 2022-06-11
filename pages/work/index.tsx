@@ -38,22 +38,22 @@ const Work: FC<IWork> = ({ data, settings, casestudies }) => (
             >
               <div className="lg:pt-4">
                 <PrismicLink document={casestudy}>
-                  <div className="overflow-hidden rounded-t-lg rounded-b-lg">
+                  <div className="overflow-hidden rounded-t-xl rounded-b-xl">
                     <Image
                       src={casestudy.data.contentImage.url ?? ''}
                       alt={casestudy.data.contentImage.alt ?? ''}
-                      width={515}
-                      height={242}
+                      width={576}
+                      height={360}
                       layout="responsive"
                       quality={100}
                       priority
                     />
                   </div>
-                  <h2 className="ABCWhyteEdu-Medium mt-8 flex items-center align-middle text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                  <h2 className="ABCWhyteEdu-Medium mt-6 flex items-center align-middle text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
                     {casestudy.data.companyName}
                   </h2>
                   <div className="mt-4 flex items-center">
-                    <p className=" ABCWhyteEdu-Book text-pm3  font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
+                    <p className=" ABCWhyteEdu-Book mt-4 text-pm3 font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
                       {casestudy.data.aboutCompany}
                     </p>
                   </div>

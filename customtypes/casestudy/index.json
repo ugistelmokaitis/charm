@@ -44,20 +44,79 @@
       }
     },
     "Case Study Content": {
-      "contentPrefix": {
-        "type": "Text",
-        "config": {
-          "label": "Content Prefix",
-          "placeholder": ""
-        }
-      },
       "contentTitle": {
         "type": "StructuredText",
         "config": {
           "label": "Content Title",
           "placeholder": "",
           "allowTargetBlank": true,
-          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          "single": "heading1"
+        }
+      },
+      "author": {
+        "type": "Group",
+        "config": {
+          "label": "Author",
+          "fields": {
+            "name": {
+              "type": "Text",
+              "config": {
+                "label": "Name",
+                "placeholder": ""
+              }
+            },
+            "twitterUsername": {
+              "type": "Text",
+              "config": {
+                "label": "Twitter Username",
+                "placeholder": ""
+              }
+            },
+            "image": {
+              "type": "Image",
+              "config": {
+                "label": "Image",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "country": {
+              "type": "Text",
+              "config": {
+                "label": "Country",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "date": {
+        "type": "Date",
+        "config": {
+          "label": "Date",
+          "placeholder": ""
+        }
+      },
+      "role": {
+        "type": "Text",
+        "config": {
+          "label": "Role",
+          "placeholder": ""
+        }
+      },
+      "technology": {
+        "type": "Group",
+        "config": {
+          "label": "Technology",
+          "fields": {
+            "title": {
+              "type": "Text",
+              "config": {
+                "label": "Title",
+                "placeholder": ""
+              }
+            }
+          }
         }
       },
       "contentImage": {
@@ -73,9 +132,6 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
-            "callout": {
-              "type": "SharedSlice"
-            },
             "content": {
               "type": "SharedSlice"
             },
@@ -88,10 +144,13 @@
             "carousel": {
               "type": "SharedSlice"
             },
-            "keywords": {
+            "quote": {
               "type": "SharedSlice"
             },
-            "quote": {
+            "media_player": {
+              "type": "SharedSlice"
+            },
+            "secondary_button": {
               "type": "SharedSlice"
             }
           }

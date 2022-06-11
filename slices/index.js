@@ -11,6 +11,7 @@ import MediaPlayer from './MediaPlayer';
 import Quote from './Quote';
 import RegularImage from './RegularImage';
 import RichText from './RichText';
+import SecondaryButton from './SecondaryButton';
 import TitleText from './TitleText';
 import Twitter from './Twitter';
 
@@ -26,6 +27,7 @@ export {
 	Quote,
 	RegularImage,
 	RichText,
+	SecondaryButton,
 	TitleText,
 	Twitter,
 };
@@ -42,6 +44,7 @@ export const components = {
 	quote: Quote,
 	regular_image: RegularImage,
 	rich_text: RichText,
+	secondary_button: SecondaryButton,
 	title_text: TitleText,
 	twitter: Twitter,
 };
