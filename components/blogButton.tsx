@@ -10,7 +10,7 @@ const BlogButton: FC<IBlogButton> = ({ LeftIcon, text, ...props }) => (
   <button
     aria-label="Button"
     type="button"
-    className="dark:hover-border-30 flex w-full items-center whitespace-nowrap rounded-lg border-2 border-neutral-30 p-3 px-3 py-3 text-center hover:border-neutral-80"
+    className="flex w-full items-center whitespace-nowrap rounded-lg border-2 border-neutral-15 p-5 px-3 py-[0.625rem] text-center hover:border-primary-25 hover:bg-primary-25 dark:hover:border-neutral-65 dark:hover:bg-neutral-65"
     {...props}
   >
     {Boolean(LeftIcon) && (
@@ -21,7 +21,9 @@ const BlogButton: FC<IBlogButton> = ({ LeftIcon, text, ...props }) => (
     )}
     {Boolean(text) && (
       <div className="pl-2">
-        <div className="">{text}</div>
+        <div className="ABCWhyteEdu-Medium  font-[350] text-neutral-100 dark:text-neutral-0">
+          {text}
+        </div>
       </div>
     )}
   </button>
