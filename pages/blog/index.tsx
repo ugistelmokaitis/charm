@@ -31,7 +31,7 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
             <PrismicRichText field={data.introTitle} />
           </div>
         </div>
-        <div className="mb-20">
+        <div className="mb-12">
           <PrismicLink
             href="/blog"
             className="ABCWhyteEdu-Medium rounded-md p-4 py-[0.75rem] px-[0.75rem] text-pm3 font-medium text-neutral-100 hover:bg-primary-25 dark:text-neutral-0 dark:hover:bg-neutral-80 sm:text-pm2"
@@ -71,8 +71,7 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
                       />
                     </div>
                     <div className="mt-8 flex">
-                      {/* <p>{blogpost.blogCateogry}</p> */}
-                      <p className="pr-2 text-neutral-100 dark:text-neutral-0">
+                      <p className="ABCWhyteEdu-Medium font-medium text-primary-100 dark:text-blue-100">
                         {format(
                           parse(
                             blogpost.data.blogDate,
@@ -81,16 +80,19 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
                           ),
                           'MMMM dd, yyyy'
                         )}
+                        <span className="pl-3 pr-3"> | </span>
                       </p>
-                      <p className="pr-2 text-neutral-100 dark:text-neutral-0">
+                      <p className="ABCWhyteEdu-Medium font-medium text-primary-100 dark:text-blue-100">
                         {blogpost.data.blogCateogry.uid}
                       </p>
-                      <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold md:text-pLGSemiBold font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+                    </div>
+                    <div>
+                      <div className="ABCWhyteEdu-Medium mt-4 text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
                         {asText(blogpost.data.blogTitle)}
                       </div>
                     </div>
                     <div className="mt-4 flex items-center">
-                      <p className="font-ABCWhyteEdu_Medium text-pMDRegular font-normal tracking-[0.02em] text-neutral-80 dark:text-neutral-15">
+                      <p className="ABCWhyteEdu-Book text-pm3  font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
                         {blogpost.data.blogDescription}
                       </p>
                     </div>

@@ -8,6 +8,7 @@ export type BlogProps = PrismicDocumentWithUID<{
   titleTag: KeyTextField;
   metaDescription: KeyTextField;
   introTitle: RichTextField;
+  casestudyTitle: RichTextField;
 }>;
 
 export type BlogCategoryProps = PrismicDocumentWithUID<{

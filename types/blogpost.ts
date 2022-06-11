@@ -9,6 +9,7 @@ import type {
 } from '@prismicio/types';
 
 export type BlogpostProps = PrismicDocumentWithUID<{
+  uid: string;
   titleTag: KeyTextField;
   metaDescription: KeyTextField;
   blogTitle: RichTextField;
@@ -17,12 +18,12 @@ export type BlogpostProps = PrismicDocumentWithUID<{
   blogImage: ImageField;
   blogCateogry: FilledLinkToDocumentField;
   author: AuthorProps;
+  country: KeyTextField;
   slices2: SliceZone;
 }>;
 
 type AuthorProps = GroupField<{
   name: KeyTextField;
   image: ImageField;
-  role: KeyTextField;
   instagramUsername: string;
 }>;
