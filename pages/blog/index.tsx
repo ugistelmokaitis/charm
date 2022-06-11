@@ -87,9 +87,9 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
                       </p>
                     </div>
                     <div>
-                      <div className="ABCWhyteEdu-Medium mt-4 text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                      <h2 className="ABCWhyteEdu-Medium mt-4 text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
                         {asText(blogpost.data.blogTitle)}
-                      </div>
+                      </h2>
                     </div>
                     <div className="mt-4 flex items-center">
                       <p className="ABCWhyteEdu-Book text-pm3  font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
