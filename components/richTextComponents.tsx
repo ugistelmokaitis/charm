@@ -33,7 +33,7 @@ const richTextComponents: JSXMapSerializer = {
   ),
   hyperlink: ({ children, node, key }) => (
     <PrismicLink key={key} href={docResolver(node.data)}>
-      <span className="ABCWhyteEdu-Medium inline text-pm3 font-medium underline decoration-1 underline-offset-[5px] hover:text-neutral-65 hover:decoration-[1.5px] dark:hover:text-neutral-30 sm:text-pm2">
+      <span className="ABCWhyteEdu-Medium inline text-pm3 font-medium underline decoration-1 underline-offset-[5px] hover:text-neutral-65 hover:decoration-[0.0938rem] dark:hover:text-neutral-30 sm:text-pm2">
         {children}
       </span>
     </PrismicLink>
