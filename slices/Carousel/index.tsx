@@ -23,22 +23,23 @@ const Carousel: FC<
   });
 
   return (
-    <div className="container col-start-1 mt-20 self-center justify-self-center md:col-span-12">
+    <div className="container mt-8 self-center justify-self-center sm:mt-28 md:col-span-12 md:col-start-1 lg:mt-16">
       <div ref={emblaRef}>
         <div className="flex gap-8 ">
           {slice.items.map(({ carouselImage }, index) => (
             <div
               key={index}
-              className="relative flex w-full max-w-[400px] flex-shrink-0 flex-grow-0 flex-col overflow-hidden"
+              className="relative flex w-full max-w-[510px] flex-shrink-0 flex-grow-0 flex-col "
             >
               <div className="flex flex-col overflow-hidden transition-all">
                 <Image
                   src={carouselImage.url ?? ''}
                   alt={carouselImage.alt ?? ''}
-                  width={400}
-                  height={400}
+                  width={510}
+                  height={344}
                   layout="fixed"
                   quality={100}
+                  priority
                 />
               </div>
             </div>
