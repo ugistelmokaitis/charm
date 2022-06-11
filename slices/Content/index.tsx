@@ -15,7 +15,9 @@ const Content: FC<
   <div className="col-span-8 col-start-3">
     <div className="col-span-6 col-start-2 mt-8 sm:mt-28 lg:mt-16">
       <PrismicRichText field={slice.primary.title} />
-      <PrismicRichText field={slice.primary.content} />
+      <div className="mt-8">
+        <PrismicRichText field={slice.primary.content} />
+      </div>
     </div>
   </div>
 );
