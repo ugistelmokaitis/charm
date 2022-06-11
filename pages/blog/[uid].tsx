@@ -213,13 +213,25 @@ const Blogpost: FC<IBlogpost> = ({
                       priority
                     />
                   </div>
-                  <div className="mt-8">
-                    <div className="font-ABCWhyteEdu_Medium text-pSMSemiBold md:text-pLGSemiBold font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0">
+                  <div className="mt-8 flex">
+                    <p className="font-FiraCode-SemiBold text-[1rem] font-semibold text-primary-100 dark:text-blue-100">
+                      {format(
+                        parse(post.data.blogDate, 'yyyy-MM-dd', new Date()),
+                        'MMMM dd, yyyy'
+                      )}
+                      <span className="pl-3 pr-3">|</span>
+                    </p>
+                    <p className="font-FiraCode-SemiBold text-[1rem] font-semibold text-primary-100 dark:text-blue-100">
+                      {post.data.blogCateogry.uid}
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="ABCWhyteEdu-Medium mt-4 text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
                       {asText(post.data.blogTitle)}
-                    </div>
+                    </h2>
                   </div>
                   <div className="mt-4 flex items-center">
-                    <p className="font-ABCWhyteEdu_Medium text-pMDRegular font-normal tracking-[0.02em] text-neutral-80 dark:text-neutral-15">
+                    <p className="ABCWhyteEdu-Book text-pm3  font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
                       {post.data.blogDescription}
                     </p>
                   </div>

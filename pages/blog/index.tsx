@@ -71,7 +71,7 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
                       />
                     </div>
                     <div className="mt-8 flex">
-                      <p className="ABCWhyteEdu-Medium font-medium text-primary-100 dark:text-blue-100">
+                      <p className="font-FiraCode-SemiBold text-[1rem] font-semibold text-primary-100 dark:text-blue-100">
                         {format(
                           parse(
                             blogpost.data.blogDate,
@@ -80,9 +80,9 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
                           ),
                           'MMMM dd, yyyy'
                         )}
-                        <span className="pl-3 pr-3"> | </span>
+                        <span className="pl-3 pr-3">|</span>
                       </p>
-                      <p className="ABCWhyteEdu-Medium font-medium text-primary-100 dark:text-blue-100">
+                      <p className="font-FiraCode-SemiBold text-[1rem] font-semibold text-primary-100 dark:text-blue-100">
                         {blogpost.data.blogCateogry.uid}
                       </p>
                     </div>
