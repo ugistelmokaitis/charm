@@ -35,7 +35,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
     settings={settings}
   >
     <Container>
-      <div className="grid-starts-1 text-white-100 pt-32 md:grid-cols-12 md:gap-8 lg:grid">
+      <div className="grid-starts-1 text-white-100 mt-32 md:grid-cols-12 md:gap-8 lg:grid">
         <div className="col-span-7">
           <PrismicRichText field={data.introTitle} />
           <div className="mb-20 mt-20">
@@ -47,16 +47,16 @@ const Gear: FC<IGear> = ({ data, settings }) => (
       </div>
       <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
         <div className="col-span-3">
-          <h2 className="font-FiraCode_SemiBold text-cs2 font-semibold text-primary-100 dark:text-blue-100">
+          <h2 className="font-FiraCode-SemiBold text-cs2 font-semibold text-primary-100 dark:text-blue-100">
             {data.deviceTitle}
           </h2>
-          <p className="ABCWhyteEdu-Book pt-6 pb-20 text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:pb-12 sm:text-pm2">
+          <p className="ABCWhyteEdu-Book mt-6 mb-20 text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:mb-20 sm:text-pm2">
             {data.deviceDescription}
           </p>
         </div>
       </div>
       <div className="col-span-10 grid-cols-12 gap-16 lg:grid">
-        <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
+        <div className="col-span-10 mb-20 flex flex-col gap-8 md:flex-row">
           {data.devices.map(({ deviceDetails, deviceImage }, index) => (
             <div key={index} className="flex-1">
               <Image
@@ -68,7 +68,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                 quality={100}
                 className="dark:brightness-0 dark:invert-[1]"
               />
-              <p className="ABCWhyteEdu-Medium pt-8 font-medium text-neutral-100 dark:text-neutral-15">
+              <p className=" ABCWhyteEdu-Medium mt-8 text-pm3 font-medium text-neutral-100 dark:text-neutral-15">
                 {deviceDetails}
               </p>
             </div>
@@ -78,16 +78,16 @@ const Gear: FC<IGear> = ({ data, settings }) => (
 
       <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
         <div className="col-span-4">
-          <h2 className="text-codeMDSemiBold font-FiraCode-SemiBold font-semibold text-primary-100 dark:text-blue-100">
+          <h2 className="font-FiraCode-SemiBold text-cs2 font-semibold text-primary-100 dark:text-blue-100">
             {data.setupTitle}
           </h2>
-          <p className="ABCWhyteEdu-Book pt-6 pb-20 text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2">
+          <p className="ABCWhyteEdu-Book mt-6  mb-20 text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2">
             {data.setupDescription}
           </p>
         </div>
       </div>
       <div className="col-span-10 grid-cols-12 gap-16 lg:grid">
-        <div className="col-span-10 mb-28 flex flex-col gap-8 md:flex-row">
+        <div className="col-span-10 mb-20 flex flex-col gap-8 md:flex-row">
           {data.setup.map(({ setupDetails, setupImage }, index) => (
             <div key={index} className="flex-1">
               <Image
@@ -99,7 +99,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                 quality={100}
                 className="dark:brightness-0 dark:invert-[1]"
               />
-              <p className="font-ABCWhyteEdu-Regular text-pSMRegular sm:text-pLGRegular pt-6 pb-20 font-normal text-neutral-100 dark:text-neutral-15">
+              <p className="ABCWhyteEdu-Medium mt-6 mb-20 text-p3 font-medium text-neutral-100 dark:text-neutral-15">
                 {setupDetails}
               </p>
             </div>
@@ -108,10 +108,10 @@ const Gear: FC<IGear> = ({ data, settings }) => (
       </div>
       <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid">
         <div className="col-span-4">
-          <h2 className="text-codeMDSemiBold font-FiraCode-SemiBold font-semibold text-primary-100 dark:text-blue-100">
+          <h2 className="font-FiraCode-SemiBold text-cs2 font-semibold text-primary-100 dark:text-blue-100">
             {data.peripheralTitle}
           </h2>
-          <p className="ABCWhyteEdu-Book pt-6 pb-20 text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2">
+          <p className="ABCWhyteEdu-Book mt-6 mb-20 text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2">
             {data.peripheralDescription}
           </p>
         </div>
@@ -130,7 +130,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                   quality={100}
                   className="dark:brightness-0 dark:invert-[1]"
                 />
-                <p className="font-ABCWhyteEdu-Regular text-pSMRegular sm:text-pLGRegular pt-6 pb-20 font-normal text-neutral-100 dark:text-neutral-15">
+                <p className="ABCWhyteEdu-Medium mt-6 mb-20 text-p3 font-medium text-neutral-100 dark:text-neutral-15">
                   {peripheralDetails}
                 </p>
               </div>
@@ -140,18 +140,18 @@ const Gear: FC<IGear> = ({ data, settings }) => (
       </div>
       <div className="gap-16 md:grid-cols-12 lg:grid">
         <div className="col-span-6 col-start-1">
-          <h2 className="font-FiraCode_SemiBold text-cs2 font-semibold text-primary-100 dark:text-blue-100">
+          <h2 className="font-FiraCode-SemiBold text-cs2 font-semibold text-primary-100 dark:text-blue-100">
             {data.softwareTitle}
           </h2>
-          <div className="dark:text-white-100 ABCWhyteEdu-Book pb-20  text-pm3 font-[350]  text-neutral-100 sm:text-pm2">
-            {data.softwareTitleDescription}
+          <div className="ABCWhyteEdu-Book mt-6 mb-8 text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2">
+            {data.softwareDescription}
           </div>
           <div>
             {data.software.map(
               ({ softwareTitle, softwareDescription, softwareIcon }, index) => (
                 <div key={index}>
-                  <div className="pb-12">
-                    <div className="flex">
+                  <div className="mt-12">
+                    <div className="flex items-center">
                       <Image
                         src={softwareIcon.url ?? ''}
                         alt={softwareIcon.alt ?? ''}
@@ -161,11 +161,11 @@ const Gear: FC<IGear> = ({ data, settings }) => (
                         quality={100}
                         className="dark:brightness-0 dark:invert-[1]"
                       />
-                      <h3 className="font-FiraCode_SemiBold pl-2 text-cs2 font-semibold text-neutral-100 dark:text-neutral-0">
+                      <h3 className="ABCWhyteEdu-Medium  pl-2 text-pm2 font-medium text-neutral-100 dark:text-neutral-0">
                         {softwareTitle}
                       </h3>
                     </div>
-                    <div className="ABCWhyteEdu-Book pt-4 text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2">
+                    <div className="ABCWhyteEdu-Book mt-4 text-pm3  font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2">
                       <PrismicRichText
                         field={softwareDescription}
                         components={introComponents}

@@ -22,7 +22,7 @@ export type GearProps = PrismicDocumentWithUID<{
   peripheralDescription: KeyTextField;
   software: SoftwareProps;
   softwareTitle: KeyTextField;
-  softwareTitleDescription: KeyTextField;
+  softwareDescription: KeyTextField;
 }>;
 
 type SetupProps = GroupField<{
