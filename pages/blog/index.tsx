@@ -24,14 +24,14 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
     description={data.metaDescription}
     settings={settings}
   >
-    <div className="block bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
+    <div className="block bg-neutral-0 dark:bg-neutral-100">
       <Container>
-        <div className="grid-starts-1 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
+        <div className="grid-starts-1 gap-5 pt-[8.5rem] md:grid-cols-12 lg:pt-44">
           <div className="col-span-4 mb-20 lg:mb-28">
             <PrismicRichText field={data.introTitle} />
           </div>
         </div>
-        <div className="mb-12">
+        <div className="grid grid-cols-2 pb-12 sm:flex sm:grid-cols-none">
           <PrismicLink
             href="/blog"
             className="ABCWhyteEdu-Medium rounded-md p-4 py-[0.75rem] px-[0.75rem] text-pm3 font-medium text-neutral-100 hover:bg-primary-25 dark:text-neutral-0 dark:hover:bg-neutral-80 sm:text-pm2"
@@ -51,20 +51,20 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
       </Container>
       <div>
         <Container>
-          <div className="grid grid-cols-1 gap-x-4 sm:grid-cols-2 sm:gap-x-4 sm:gap-y-8">
-            {blogposts.map((blogpost, index) => (
-              <div
-                key={index}
-                className="group rounded-lg p-4 hover:bg-neutral-0 hover:shadow-sm dark:hover:bg-neutral-80"
-              >
-                <div className="lg:pt-4">
+          <div className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-y-12 sm:gap-x-4 ">
+            {[...blogposts, ...blogposts, ...blogposts].map(
+              (blogpost, index) => (
+                <div
+                  key={index}
+                  className="group rounded-lg p-4 hover:bg-neutral-0 hover:shadow-sm dark:hover:bg-neutral-80"
+                >
                   <PrismicLink document={blogpost}>
                     <div className="overflow-hidden rounded-t-lg rounded-b-lg">
                       <Image
                         src={blogpost.data.blogImage.url ?? ''}
                         alt={blogpost.data.blogImage.alt ?? ''}
-                        width={515}
-                        height={242}
+                        width={576}
+                        height={360}
                         layout="responsive"
                         quality={100}
                         priority
@@ -80,7 +80,9 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
                           ),
                           'MMMM dd, yyyy'
                         )}
-                        <span className="pl-3 pr-3">|</span>
+                        <span className="pr-[0.0625rem] pl-[0.0625rem] sm:pr-1 sm:pl-1 md:pr-3 md:pl-3">
+                          |
+                        </span>
                       </p>
                       <p className="font-FiraCode-SemiBold text-[1rem] font-semibold text-primary-100 dark:text-blue-100">
                         {blogpost.data.blogCateogry.uid}
@@ -91,15 +93,15 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
                         {asText(blogpost.data.blogTitle)}
                       </h2>
                     </div>
-                    <div className="mt-4 flex items-center">
+                    <div className="mt-2 flex items-center">
                       <p className="ABCWhyteEdu-Book text-pm3  font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
                         {blogpost.data.blogDescription}
                       </p>
                     </div>
                   </PrismicLink>
                 </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
         </Container>
       </div>

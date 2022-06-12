@@ -71,7 +71,7 @@ const Blogpost: FC<IBlogpost> = ({
     >
       <div className="overflow-hidden bg-neutral-0 dark:bg-neutral-100">
         <Container>
-          <div className="gap-8 pt-[10.875rem] sm:gap-12 md:grid-cols-12 lg:grid lg:pt-56">
+          <div className="gap-8 pt-[8.5rem] sm:gap-12 md:grid-cols-12 lg:grid lg:pt-44">
             <div className="col-span-12 flex items-center justify-center md:text-center">
               <PrismicRichText field={data.blogTitle} />
             </div>

@@ -30,7 +30,7 @@ const Work: FC<IWork> = ({ data, settings, casestudies }) => (
     </Container>
     <div>
       <Container>
-        <div className="grid grid-cols-1 gap-y-12 gap-x-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-y-8 gap-x-4 sm:grid-cols-2 sm:gap-y-12">
           {casestudies.map((casestudy, index) => (
             <div
               key={index}
