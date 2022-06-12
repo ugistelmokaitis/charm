@@ -30,13 +30,13 @@ const introComponents: JSXMapSerializer = {
     </p>
   ),
   image: ({ key, node }) => (
-    <span className="inline-flex translate-y-1 dark:brightness-0 dark:invert-[1]">
+    <span className="inline-flex translate-y-1 pl-1 dark:brightness-0 dark:invert-[1]">
       <Image
         key={key}
         src={node.url}
         alt={node.alt ?? ''}
-        width={24}
-        height={24}
+        width={20}
+        height={20}
         quality={100}
       />
     </span>
@@ -50,7 +50,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
     settings={settings}
   >
     <Container>
-      <div className="text-white-100 grid-cols-1 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
+      <div className="grid-cols-1 gap-16 pt-[8.5rem] md:grid-cols-12 md:gap-8 lg:grid lg:pt-44">
         <div className="col-span-1 mb-12 md:mb-28 md:text-left lg:col-span-9">
           <PrismicRichText
             field={data.introTitle}
@@ -58,7 +58,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
           />
         </div>
       </div>
-      <div className="text-white-100 grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid ">
+      <div className="grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid ">
         <div className="col-span-6 col-start-1 mx-auto">
           <div className="font-ABCWhyteEdu-Regular text-pLGRegular sm:text-pLGRegular md:text-pLGRegular max-w-[35rem] font-normal tracking-[0.02em] text-neutral-65">
             <PrismicRichText
@@ -107,7 +107,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                     {moreToolsAbout}
                   </p>
                   <div className="mt-8 mb-12 flex items-center">
-                    <div className="flex rounded-[0.5rem] border-[0.03125rem] border-neutral-50 bg-primary-5 py-8 px-8  dark:bg-neutral-80">
+                    <div className="flex rounded-[0.5rem] border-[0.03125rem] border-neutral-15 bg-primary-5 py-8 px-8 dark:border-neutral-50  dark:bg-neutral-80">
                       <Image
                         src={moreToolsImage.url ?? ''}
                         alt={moreToolsImage.alt ?? ''}
@@ -122,7 +122,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                         <h3 className="ABCWhyteEdu-Medium text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
                           {moreToolsTitle}
                         </h3>
-                        <p className="font-codeRegular font-FiraCode_Regular mt-2 text-cs2 font-normal text-neutral-100 dark:text-neutral-15 ">
+                        <p className="font-codeRegular font-FiraCode_Regular mt-1 text-cs2 font-normal text-neutral-65 dark:text-neutral-15">
                           {moreToolsDescription}
                         </p>
                       </div>
@@ -134,7 +134,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
           </div>
         </div>
         <div className="col-span-4 max-w-[20rem] pt-20 md:relative md:col-start-9 lg:pt-0  xl:col-span-3 xl:col-start-10 xl:max-w-full">
-          <div className="top-[6.5625rem] rounded-[1.25rem] border-[0.03125rem] border-neutral-30 bg-primary-5 py-8 px-8 dark:border-neutral-15 dark:bg-neutral-80 md:sticky">
+          <div className="top-[6.5625rem] rounded-[1.25rem] border-[0.03125rem] border-neutral-15 bg-primary-5 py-8 px-8 dark:border-neutral-50 dark:bg-neutral-80 md:sticky">
             <div>
               <div className="flex justify-center">
                 <Image
@@ -149,7 +149,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
               <h4 className="ABCWhyteEdu-Medium mt-8 mb-2 flex items-center justify-center text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
                 {data.profileName}
               </h4>
-              <p className="ABCWhyteEdu-Medium flex items-center justify-center font-[350] text-neutral-100 dark:text-neutral-15">
+              <p className="ABCWhyteEdu-Medium flex items-center justify-center font-[350] text-neutral-65 dark:text-neutral-15">
                 {data.profileLocation}
               </p>
               <div className="mb-8 mt-8">
@@ -171,8 +171,8 @@ const About: FC<IAbout> = ({ data, settings }) => (
                           <Image
                             src={profileSocialsIcon.url ?? ''}
                             alt={profileSocialsIcon.alt ?? ''}
-                            width={24}
-                            height={24}
+                            width={20}
+                            height={20}
                             layout="fixed"
                             quality={100}
                             className="dark:brightness-0 dark:invert-[1]"
