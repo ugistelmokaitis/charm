@@ -4,17 +4,31 @@ import { useState } from 'react';
 import { PrismicRichText } from '@prismicio/react';
 import toast from 'react-hot-toast';
 import Image from 'next/image';
+import type { JSXMapSerializer } from '@prismicio/react';
 import Layout from '../components/layout';
 import { getPage } from '../utils/prismic';
 import type { ContactProps } from '../types/contact';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
 import IconAddFile from '../public/icons/iconaddfile.svg';
+import richTextComponents from '../components/richTextComponents';
 import type { NodemailerResponse } from './api/nodemailer';
 
 type IContact = {
   data: ContactProps['data'];
   settings: SettingsProps;
+};
+
+const introComponents: JSXMapSerializer = {
+  ...richTextComponents,
+  heading2: ({ children, key }) => (
+    <h2
+      key={key}
+      className=" ABCWhyteEdu-Medium text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-3xl lg:text-2xl"
+    >
+      {children}
+    </h2>
+  ),
 };
 
 const emailRegex =
@@ -122,10 +136,10 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                 </div>
                 <div className="ml-3 flex-1">
-                  <p className="font-ABCWhyteEdu-Regular sm:text-pLGRegular text-[14px] font-normal text-neutral-0">
+                  <p className="ABCWhyteEdu-Book text-[0.875rem] font-[350] text-neutral-0">
                     {data.profileFullName}
                   </p>
-                  <p className="font-ABCWhyteEdu-Regular sm:text-pLGRegular mt-1 text-[16px] font-normal text-neutral-15">
+                  <p className="ABCWhyteEdu-Book mt-1 text-[1rem] font-[350] text-neutral-15">
                     Hi {capitalize(name.split(' ')[0])}, thank you for getting
                     in contact with me! ✨
                   </p>
@@ -175,7 +189,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="name"
                     name="name"
                     id="name"
-                    className="font-codeRegular text-codeMDRegular peer block w-full  appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="peer block w-full  appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="on"
@@ -183,7 +197,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="name"
-                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform  text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="absolute top-1   -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal  text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     What&apos;s your full name? *
                   </label>
@@ -196,7 +210,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="email"
                     name="email"
                     id="email"
-                    className="font-codeRegular text-codeMDRegular peer block w-full  appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="peer block w-full  appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="on"
@@ -204,7 +218,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="email"
-                    className="absolute top-1 -z-10 flex origin-[0] translate-y-6 scale-75 transform text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="absolute top-1   -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal  text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     Your fancy email *
                   </label>
@@ -217,14 +231,14 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="company"
                     name="company"
                     id="company"
-                    className="font-codeRegular text-codeMDRegular peer block w-full  appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="peer block w-full appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-cs2 font-normal text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     autoComplete="on"
                     maxLength={50}
                   />
                   <label
                     htmlFor="company"
-                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className=" absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     Company
                   </label>
@@ -237,7 +251,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="website"
                     name="website"
                     id="website"
-                    className="font-codeRegular text-codeMDRegular peer block w-full  appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="peer block w-full appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-cs2 font-normal text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="on"
@@ -245,15 +259,18 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="website"
-                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     Website *
                   </label>
                 </div>
 
                 <div className="col-span-1 mb-20 pt-28 md:col-span-8 md:text-left xl:col-span-7">
-                  <PrismicRichText field={data.sharedIdeaTitle} />
-                  <div className="font-ABCWhyteEdu-Regular text-pSMRegular sm:text-pLGRegular md:text-pLGRegular pt-4 font-normal tracking-[0.02em] text-neutral-65 dark:text-neutral-30">
+                  <PrismicRichText
+                    field={data.sharedIdeaTitle}
+                    components={introComponents}
+                  />
+                  <div className=" ABCWhyteEdu-Book pt-4 text-pm3 font-[350] text-neutral-65 dark:text-neutral-30 sm:text-pm2">
                     {data.sharedIdeaSubtitle}
                   </div>
                 </div>
@@ -264,7 +281,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="message"
                     name="message"
                     id="message"
-                    className="font-codeRegular text-codeMDRegular peer block w-full  appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 font-FiraCode-Regular text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="peer block w-full appearance-none border-0 border-b-[0.0938rem]  bg-transparent py-2.5 px-0 font-FiraCode-Regular text-cs2 font-normal text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="off"
@@ -272,20 +289,20 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="message"
-                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     Write a Message *
                   </label>
                 </div>
                 <div className="mb-28 mt-6 flex">
                   <label
-                    className="flex text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30 dark:hover:animate-pulse dark:hover:text-neutral-15"
+                    className="ABCWhyteEdu-Medium flex text-p3 font-medium text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30 dark:hover:animate-pulse dark:hover:text-neutral-15"
                     htmlFor="files"
                   >
-                    <div className="pr-2">
+                    <div className="flex items-center justify-center pr-2">
                       <IconAddFile />
                     </div>
-                    <div className="text-pSMSemiBold font-ABCWhyteEdu-Medium font-semibold text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30  dark:hover:animate-pulse dark:hover:text-neutral-15">
+                    <div className="ABCWhyteEdu-Medium text-p3 font-medium text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30  dark:hover:animate-pulse dark:hover:text-neutral-15">
                       {files.length
                         ? files.map((file) => file.name).join(', ')
                         : 'Add attachment'}
@@ -307,7 +324,9 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   className="flex items-center justify-center rounded bg-primary-100 py-[0.7188rem] px-[1.8175rem] text-neutral-0 outline-none outline-[0.0625rem] active:outline-[0.125rem] active:outline-primary-50 disabled:bg-primary-25 disabled:text-neutral-30 disabled:hover:outline-none"
                   type="submit"
                 >
-                  <div className="">{loading ? 'Message Sent' : 'Submit'}</div>
+                  <div className="">
+                    {loading ? 'Message Sent' : 'Send message'}
+                  </div>
                 </button>
               </form>
             </div>

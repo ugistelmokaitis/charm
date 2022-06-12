@@ -83,16 +83,22 @@ const handler: NextApiHandler<NodemailerResponse> = async (req, res) => {
       to: process.env.NEXT_PUBLIC_EMAIL_ADDRESS,
       from: process.env.NEXT_PUBLIC_EMAIL_ADDRESS,
       replyTo: getStringFromField(fields.email),
-      subject: `Enquiry from (${getStringFromField(
-        fields.name
-      )}) website: (${getStringFromField(fields.website)})`,
+      subject: `Enquiry from (${getStringFromField(fields.name)}) website: (${
+        getStringFromField(fields.website) || 'N/A'
+      })`,
       text: getStringFromField(fields.message),
       html: `
 
-                <p><b>Name:</b> ${getStringFromField(fields.name)}</p>
-                <p><b>Email:</b> ${getStringFromField(fields.email)}</p>
-                <p><b>Website:</b> ${getStringFromField(fields.website)}</p>
-                <p><b>Company:</b> ${getStringFromField(fields.company)}</p>
+                <p><b>Name:</b> ${getStringFromField(fields.name) || 'N/A'}</p>
+                <p><b>Email:</b> ${
+                  getStringFromField(fields.email) || 'N/A'
+                }</p>
+                <p><b>Website:</b> ${
+                  getStringFromField(fields.website) || 'N/A'
+                }</p>
+                <p><b>Company:</b> ${
+                  getStringFromField(fields.company) || 'N/A'
+                }</p>
                 <p><b>Message:</b> ${getStringFromField(fields.message).replace(
                   /(?:\r\n|\r|\n)/gu,
                   '<br>'

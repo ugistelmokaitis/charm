@@ -50,13 +50,13 @@
     "contact": {
       "introTitle": {
         "config": {
-          "patternType": "PARAGRAPH",
+          "patternType": "HEADING",
           "blocks": 1
         }
       },
       "sharedIdeaTitle": {
         "config": {
-          "patternType": "PARAGRAPH",
+          "patternType": "HEADING",
           "blocks": 1
         }
       }
