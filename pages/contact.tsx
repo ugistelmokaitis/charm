@@ -172,15 +172,15 @@ const Contact: FC<IContact> = ({ settings, data }) => {
       description={data.metaDescription}
       settings={settings}
     >
-      <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
+      <div className="flex">
         <Container>
-          <div className="grid-starts-4 gap-16 md:grid-cols-12">
-            <div className="max-w-xl pt-56 sm:col-span-12 md:col-span-12 lg:col-start-4">
+          <div className="grid-starts-4 gap-5 md:grid-cols-12">
+            <div className="max-w-xl pt-[8.5rem] sm:col-span-12 md:col-span-12 lg:col-start-4 lg:pt-44">
               <PrismicRichText field={data.introTitle} />
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-16 pt-32 text-neutral-65 dark:text-neutral-30 md:grid-cols-8 md:gap-8">
-            <div className="md:col-span-7">
+          <div className="grid grid-cols-1 gap-5 pt-20 text-neutral-65 dark:text-neutral-30 md:grid-cols-8">
+            <div className="md:col-span-8">
               <form onSubmit={sendEmail}>
                 <div className="group relative z-0  w-full pb-12">
                   <input
@@ -189,7 +189,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="name"
                     name="name"
                     id="name"
-                    className="peer block w-full  appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="peer block w-full appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="on"
@@ -197,7 +197,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="name"
-                    className="absolute top-1   -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal  text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal  text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     What&apos;s your full name? *
                   </label>
@@ -210,7 +210,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     type="email"
                     name="email"
                     id="email"
-                    className="peer block w-full  appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
+                    className="peer block w-full appearance-none border-0 border-b-[0.0938rem] bg-transparent py-2.5 px-0 text-neutral-100 focus:outline-none focus:ring-0 dark:text-neutral-30"
                     placeholder=" "
                     required
                     autoComplete="on"
@@ -218,7 +218,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="email"
-                    className="absolute top-1   -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal  text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal  text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     Your fancy email *
                   </label>
@@ -238,7 +238,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="company"
-                    className=" absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     Company
                   </label>
@@ -265,12 +265,12 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   </label>
                 </div>
 
-                <div className="col-span-1 mb-20 pt-28 md:col-span-8 md:text-left xl:col-span-7">
+                <div className="col-span-1 mb-12 pt-20 md:col-span-8 md:text-left xl:col-span-7">
                   <PrismicRichText
                     field={data.sharedIdeaTitle}
                     components={introComponents}
                   />
-                  <div className=" ABCWhyteEdu-Book pt-4 text-pm3 font-[350] text-neutral-65 dark:text-neutral-30 sm:text-pm2">
+                  <div className="ABCWhyteEdu-Book pt-4 text-pm3 font-[350] text-neutral-65 dark:text-neutral-30 sm:text-pm2">
                     {data.sharedIdeaSubtitle}
                   </div>
                 </div>
@@ -294,7 +294,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     Write a Message *
                   </label>
                 </div>
-                <div className="mb-28 mt-6 flex">
+                <div className="mb-20 mt-6 flex">
                   <label
                     className="ABCWhyteEdu-Medium flex text-p3 font-medium text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30 dark:hover:animate-pulse dark:hover:text-neutral-15"
                     htmlFor="files"
@@ -321,7 +321,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                 <div />
                 <button
                   disabled={loading || !name || !email || !website || !message}
-                  className="flex items-center justify-center rounded bg-primary-100 py-[0.7188rem] px-[1.8175rem] text-neutral-0 outline-none outline-[0.0625rem] active:outline-[0.125rem] active:outline-primary-50 disabled:bg-primary-25 disabled:text-neutral-30 disabled:hover:outline-none"
+                  className="flex select-none items-center justify-center rounded bg-primary-100 py-[0.7188rem] px-[1.8175rem] text-neutral-0 outline-none outline-[0.0625rem] active:outline-[0.125rem] active:outline-primary-50 disabled:bg-primary-25 disabled:text-neutral-30 disabled:hover:outline-none"
                   type="submit"
                 >
                   <div className="">

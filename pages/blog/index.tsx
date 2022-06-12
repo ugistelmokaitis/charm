@@ -52,56 +52,50 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
       <div>
         <Container>
           <div className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2 sm:gap-y-12 sm:gap-x-4 ">
-            {[...blogposts, ...blogposts, ...blogposts].map(
-              (blogpost, index) => (
-                <div
-                  key={index}
-                  className="group rounded-lg p-4 hover:bg-neutral-0 hover:shadow-sm dark:hover:bg-neutral-80"
-                >
-                  <PrismicLink document={blogpost}>
-                    <div className="overflow-hidden rounded-t-lg rounded-b-lg">
-                      <Image
-                        src={blogpost.data.blogImage.url ?? ''}
-                        alt={blogpost.data.blogImage.alt ?? ''}
-                        width={576}
-                        height={360}
-                        layout="responsive"
-                        quality={100}
-                        priority
-                      />
-                    </div>
-                    <div className="mt-8 flex">
-                      <p className="font-FiraCode-SemiBold text-[1rem] font-semibold text-primary-100 dark:text-blue-100">
-                        {format(
-                          parse(
-                            blogpost.data.blogDate,
-                            'yyyy-MM-dd',
-                            new Date()
-                          ),
-                          'MMMM dd, yyyy'
-                        )}
-                        <span className="pr-[0.0625rem] pl-[0.0625rem] sm:pr-1 sm:pl-1 md:pr-3 md:pl-3">
-                          |
-                        </span>
-                      </p>
-                      <p className="font-FiraCode-SemiBold text-[1rem] font-semibold text-primary-100 dark:text-blue-100">
-                        {blogpost.data.blogCateogry.uid}
-                      </p>
-                    </div>
-                    <div>
-                      <h2 className="ABCWhyteEdu-Medium mt-4 text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
-                        {asText(blogpost.data.blogTitle)}
-                      </h2>
-                    </div>
-                    <div className="mt-2 flex items-center">
-                      <p className="ABCWhyteEdu-Book text-pm3  font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
-                        {blogpost.data.blogDescription}
-                      </p>
-                    </div>
-                  </PrismicLink>
-                </div>
-              )
-            )}
+            {blogposts.map((blogpost, index) => (
+              <div
+                key={index}
+                className="group rounded-lg p-4 hover:bg-neutral-0 hover:shadow-sm dark:hover:bg-neutral-80"
+              >
+                <PrismicLink document={blogpost}>
+                  <div className="overflow-hidden rounded-t-lg rounded-b-lg">
+                    <Image
+                      src={blogpost.data.blogImage.url ?? ''}
+                      alt={blogpost.data.blogImage.alt ?? ''}
+                      width={576}
+                      height={360}
+                      layout="responsive"
+                      quality={100}
+                      priority
+                    />
+                  </div>
+                  <div className="mt-8 flex">
+                    <p className="font-FiraCode-SemiBold text-[1rem] font-semibold text-primary-100 dark:text-blue-100">
+                      {format(
+                        parse(blogpost.data.blogDate, 'yyyy-MM-dd', new Date()),
+                        'MMMM dd, yyyy'
+                      )}
+                      <span className="pr-[0.0625rem] pl-[0.0625rem] sm:pr-1 sm:pl-1 md:pr-3 md:pl-3">
+                        |
+                      </span>
+                    </p>
+                    <p className="font-FiraCode-SemiBold text-[1rem] font-semibold text-primary-100 dark:text-blue-100">
+                      {blogpost.data.blogCateogry.uid}
+                    </p>
+                  </div>
+                  <div>
+                    <h2 className="ABCWhyteEdu-Medium mt-4 text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                      {asText(blogpost.data.blogTitle)}
+                    </h2>
+                  </div>
+                  <div className="mt-2 flex items-center">
+                    <p className="ABCWhyteEdu-Book text-pm3  font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
+                      {blogpost.data.blogDescription}
+                    </p>
+                  </div>
+                </PrismicLink>
+              </div>
+            ))}
           </div>
         </Container>
       </div>
