@@ -24,21 +24,21 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
   >
     <Container>
       <div className="grid-starts-1 text-white-100 gap-16 pt-56 md:grid-cols-12 md:gap-8 lg:grid">
-        <div className="col-span-6">
+        <div className="col-span-7">
           <PrismicRichText field={data.introTitle} />
-          <p className="ABCWhyteEdu-Book mt-20 mb-20 text-pm3  font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2 xl:mt-28 xl:mb-28">
+          <p className=" ABCWhyteEdu-Book mt-20 mb-20 text-pm3 font-[350] text-neutral-100 dark:text-neutral-0 sm:text-pm2">
             {data.introDescription}
           </p>
-          <h2 className="font-FiraCode_SemiBold text-cs2 font-semibold text-primary-100 dark:text-blue-100">
+          <h2 className="font-FiraCode-SemiBold text-cs2 font-semibold text-primary-100 dark:text-blue-100">
             {data.extensionsTitle}
           </h2>
           {data.extentions.map(
             ({ extentionDescription, extentionTitle }, index) => (
               <Fragment key={index}>
-                <h3 className="ABCWhyteEdu-Medium mt-6 mb-4 text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                <h3 className="ABCWhyteEdu-Medium mt-6 text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:mt-12 sm:text-pm1 ">
                   {extentionTitle}
                 </h3>
-                <p className="ABCWhyteEdu-Book pb-6 text-pm3 font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
+                <p className="ABCWhyteEdu-Book mt-4 text-pm3 font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
                   {extentionDescription}
                 </p>
               </Fragment>
@@ -50,7 +50,7 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
             <h2 className="ABCWhyteEdu-Medium flex items-center justify-center text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
               {data.socialTitle}
             </h2>
-            <p className="ABCWhyteEdu-Medium flex items-center justify-center pt-2 pb-8 font-[350] text-neutral-50 dark:text-neutral-15">
+            <p className="ABCWhyteEdu-Medium flex items-center justify-center pt-2 pb-8 font-[350]  text-neutral-65 dark:text-neutral-15">
               {data.socialDescription}
             </p>
             <Divider />
