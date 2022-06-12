@@ -11,12 +11,12 @@ const Fullwidthimage: FC<
     };
   }>
 > = ({ slice }) => (
-  <div className="col-span-8 col-start-3 mt-8 sm:mt-28 lg:mt-16">
+  <div className="col-span-8 col-start-3 mt-[3.75rem] sm:mt-[5.75rem]">
     <Image
       src={slice.primary.image.url ?? ''}
       alt={slice.primary.image.alt ?? ''}
-      width={1248}
-      height={650}
+      width={826}
+      height={516}
       layout="responsive"
       quality={100}
       priority

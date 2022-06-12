@@ -14,7 +14,7 @@ const Masonrygrid: FC<
     };
   }>
 > = ({ slice }) => (
-  <div className="container col-span-8  col-start-3 mt-8 sm:mt-28 lg:mt-16">
+  <div className="container col-span-8 col-start-3 mt-[3.75rem] sm:mt-[5.75rem]">
     <div className="masonry sm:masonry-sm md:masonry-md">
       <div className="break-inside pb-5">
         <div className="card-zoom">

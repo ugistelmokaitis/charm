@@ -23,9 +23,9 @@ const Carousel: FC<
   });
 
   return (
-    <div className="container mt-8 self-center justify-self-center sm:mt-28 md:col-span-12 md:col-start-1 lg:mt-16">
+    <div className="container mt-[3.75rem] self-center justify-self-center sm:mt-[5.75rem] md:col-span-12 md:col-start-1">
       <div ref={emblaRef}>
-        <div className="flex gap-8 ">
+        <div className="flex gap-5 ">
           {slice.items.map(({ carouselImage }, index) => (
             <div
               key={index}
@@ -45,9 +45,9 @@ const Carousel: FC<
             </div>
           ))}
         </div>
-        <div className="flex gap-8 pt-6">
+        <div className="flex gap-5 pt-6">
           <div
-            className="rounded-full border border-neutral-30 bg-neutral-0 p-3 transition-all hover:bg-neutral-15 dark:border-neutral-50 dark:bg-neutral-100 dark:hover:bg-neutral-80 lg:p-[1.3125rem]"
+            className="rounded-full border border-neutral-15 bg-neutral-0 p-3 transition-all hover:bg-primary-25 dark:border-neutral-30 dark:bg-neutral-100 dark:hover:bg-neutral-80 lg:p-[1.3125rem]"
             onClick={() => emblaApi?.scrollPrev()}
             onKeyDown={() => emblaApi?.scrollPrev()}
             role="button"
@@ -56,7 +56,7 @@ const Carousel: FC<
             <ArrowLeft className="text-neutral-100 dark:text-neutral-0" />
           </div>
           <div
-            className="rounded-full border border-neutral-30 bg-neutral-0 p-3 transition-all hover:bg-neutral-15 dark:border-neutral-50 dark:bg-neutral-100 dark:hover:bg-neutral-80 lg:p-[1.3125rem]"
+            className="rounded-full border border-neutral-15 bg-neutral-0 p-3 transition-all hover:bg-primary-25  dark:border-neutral-30 dark:bg-neutral-100 dark:hover:bg-neutral-80 lg:p-[1.3125rem]"
             onClick={() => emblaApi?.scrollNext()}
             onKeyDown={() => emblaApi?.scrollNext()}
             role="button"

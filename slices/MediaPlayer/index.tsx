@@ -11,7 +11,7 @@ const MediaPlayer: FC<
     };
   }>
 > = ({ slice }) => (
-  <div className="col-span-8 col-start-3 mt-8 text-left sm:mt-28 lg:mt-16">
+  <div className="col-span-8 col-start-3 mt-[3.75rem] text-left sm:mt-[5.75rem]">
     <div>
       {slice.primary.video.embed_url && (
         <Video data={slice.primary.video} muted controls />

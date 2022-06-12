@@ -22,8 +22,8 @@ const Work: FC<IWork> = ({ data, settings, casestudies }) => (
     settings={settings}
   >
     <Container>
-      <div className="grid-starts-1 gap-8 pt-[10.875rem] sm:gap-12 md:grid-cols-12 lg:grid lg:pt-56">
-        <div className="col-span-4 mb-20 lg:mb-28">
+      <div className="grid-starts-1 gap-5 pt-[8.5rem]  md:grid-cols-12 lg:grid lg:pt-44">
+        <div className="col-span-4 mb-20">
           <PrismicRichText field={data.introTitle} />
         </div>
       </div>
@@ -36,29 +36,27 @@ const Work: FC<IWork> = ({ data, settings, casestudies }) => (
               key={index}
               className="group rounded-lg p-4 hover:bg-neutral-0 hover:shadow-sm dark:hover:bg-neutral-80"
             >
-              <div className="lg:pt-4">
-                <PrismicLink document={casestudy}>
-                  <div className="overflow-hidden rounded-t-xl rounded-b-xl">
-                    <Image
-                      src={casestudy.data.contentImage.url ?? ''}
-                      alt={casestudy.data.contentImage.alt ?? ''}
-                      width={576}
-                      height={360}
-                      layout="responsive"
-                      quality={100}
-                      priority
-                    />
-                  </div>
-                  <h2 className="ABCWhyteEdu-Medium mt-6 flex items-center align-middle text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
-                    {casestudy.data.companyName}
-                  </h2>
-                  <div className="mt-4 flex items-center">
-                    <p className=" ABCWhyteEdu-Book mt-4 text-pm3 font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
-                      {casestudy.data.aboutCompany}
-                    </p>
-                  </div>
-                </PrismicLink>
-              </div>
+              <PrismicLink document={casestudy}>
+                <div className="overflow-hidden rounded-t-xl rounded-b-xl">
+                  <Image
+                    src={casestudy.data.contentImage.url ?? ''}
+                    alt={casestudy.data.contentImage.alt ?? ''}
+                    width={576}
+                    height={360}
+                    layout="responsive"
+                    quality={100}
+                    priority
+                  />
+                </div>
+                <h2 className="ABCWhyteEdu-Medium mt-6 flex items-center align-middle text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                  {casestudy.data.companyName}
+                </h2>
+                <div className="mt-2 flex items-center">
+                  <p className=" ABCWhyteEdu-Book text-pm3 font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
+                    {casestudy.data.aboutCompany}
+                  </p>
+                </div>
+              </PrismicLink>
             </div>
           ))}
         </div>

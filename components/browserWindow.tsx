@@ -13,7 +13,7 @@ const BrowserWindow: FC<IBrowseWindow> = ({ child1, child2 }) => (
   <>
     <div className="hidden dark:flex">
       <div className="container dark:drop-shadow-[0px_-10px_200px_rgba(119,197,227,0.50)]">
-        <div className="mt-8 gap-16 md:grid-cols-12 lg:grid">
+        <div className="mt-8 gap-5 md:grid-cols-12 lg:grid">
           <div className="my-12 lg:col-span-10 lg:col-start-2">
             <div className="mx-auto">
               <div className="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg border-[1px] border-neutral-80 bg-[#0B0B0B]/80 px-5">
@@ -37,7 +37,7 @@ const BrowserWindow: FC<IBrowseWindow> = ({ child1, child2 }) => (
                 customStyle={{
                   paddingTop: '3rem',
                   paddingBottom: '3rem',
-                  paddingLeft: '3rem',
+                  paddingLeft: '1rem',
                   paddingRight: '3rem',
                 }}
               >
@@ -51,7 +51,7 @@ const BrowserWindow: FC<IBrowseWindow> = ({ child1, child2 }) => (
     <div>
       <div className="flex dark:hidden">
         <div className="container drop-shadow-[0px_-10px_200px_rgba(17,24,39,0.25)]">
-          <div className="grid-starts-1 mt-8 grid-cols-12 gap-16 lg:grid">
+          <div className="grid-starts-1 mt-8 grid-cols-12 gap-5 lg:grid">
             <div className="col-span-10 col-start-2 my-12">
               <div className="mx-auto">
                 <div className="flex h-11 w-full items-center justify-start space-x-1.5 rounded-t-lg border-[1px] border-neutral-15 bg-primary-50 px-5">
@@ -75,7 +75,7 @@ const BrowserWindow: FC<IBrowseWindow> = ({ child1, child2 }) => (
                   customStyle={{
                     paddingTop: '3rem',
                     paddingBottom: '3rem',
-                    paddingLeft: '3rem',
+                    paddingLeft: '1rem',
                     paddingRight: '3rem',
                   }}
                 >

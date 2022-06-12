@@ -26,7 +26,7 @@ const Content: FC<
   }>
 > = ({ slice }) => (
   <div className="col-span-8 col-start-3">
-    <div className="col-span-6 col-start-2 mt-8 sm:mt-28 lg:mt-16">
+    <div className="col-span-6 col-start-2 mt-[3.75rem] sm:mt-[5.75rem]">
       <PrismicRichText
         field={slice.primary.title}
         components={introComponents}

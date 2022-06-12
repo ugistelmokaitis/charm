@@ -14,7 +14,7 @@ const SecondaryButton: FC<
     };
   }>
 > = ({ slice }) => (
-  <div className="col-span-4 col-start-3 mt-8 sm:mt-20 lg:mt-8">
+  <div className="col-span-4 col-start-3 mt-[3.75rem]">
     <Button
       href={`${docResolver(slice.primary.secondaryButtonLink)}`}
       variant="secondary"

@@ -49,7 +49,7 @@ const richTextComponents: JSXMapSerializer = {
   heading2: ({ children, key }) => (
     <h2
       key={key}
-      className="ABCWhyteEdu-Medium text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-3xl lg:text-2xl"
+      className="ABCWhyteEdu-Medium text-4xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-2xl lg:text-2xl"
     >
       {children}
     </h2>

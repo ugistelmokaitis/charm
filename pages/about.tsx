@@ -50,7 +50,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
     settings={settings}
   >
     <Container>
-      <div className="grid-cols-1 gap-16 pt-[8.5rem] md:grid-cols-12 md:gap-8 lg:grid lg:pt-44">
+      <div className="grid-cols-1 gap-5 pt-[8.5rem] md:grid-cols-12 lg:grid lg:pt-44">
         <div className="col-span-1 mb-12 md:mb-28 md:text-left lg:col-span-9">
           <PrismicRichText
             field={data.introTitle}
@@ -58,7 +58,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
           />
         </div>
       </div>
-      <div className="grid-cols-1 gap-16 md:grid-cols-12 md:gap-8 lg:grid ">
+      <div className="grid-cols-1 gap-5 md:grid-cols-12 lg:grid ">
         <div className="col-span-6 col-start-1 mx-auto">
           <div className="font-ABCWhyteEdu-Regular text-pLGRegular sm:text-pLGRegular md:text-pLGRegular max-w-[35rem] font-normal tracking-[0.02em] text-neutral-65">
             <PrismicRichText
