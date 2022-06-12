@@ -50,24 +50,24 @@ const Home: FC<IHome> = ({ data, settings }) => {
     >
       <Container>
         <div>
-          <div className="col-span-8 col-start-3 pt-[152px] text-center lg:pt-52">
+          <div className="col-span-8 col-start-3 pt-[8.5rem] text-center lg:pt-44">
             <BadgeButton
               href={`${docResolver(data.badgeButtonLink)}`}
               child1={data.badgeButtonPrefix}
               child2={data.badgeButtonLabel}
             />
-            <h1 className="ABCWhyteEdu-Bold mx-auto mt-12 items-center text-2xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-1xl lg:text-xl">
+            <h1 className="ABCWhyteEdu-Bold mx-auto mt-6 items-center text-3xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 1xs:text-2xl sm:text-1xl lg:text-xl">
               {data.heroGreetingTitle}
             </h1>
             <div className="group mx-auto items-center">
-              <h1 className="ABCWhyteEdu-Bold text-2xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-1xl lg:text-xl">
-                <h1 className="inline-flex h-[100px] animate-type overflow-x-hidden whitespace-nowrap pt-2 text-neutral-100 will-change-transform dark:text-neutral-0 lg:h-[118px]">
+              <h1 className="ABCWhyteEdu-Bold text-3xl font-bold text-neutral-100 dark:text-neutral-0 1xs:text-2xl xs:tracking-[0.02em] sm:text-1xl lg:text-xl">
+                <h1 className="inline-flex animate-type overflow-x-hidden whitespace-nowrap pt-2 text-neutral-100 will-change-transform dark:text-neutral-0 1xs:h-[100px] lg:h-[118px]">
                   {data.heroNameTitle}
                 </h1>
-                <span className="ml-1 -mb-2 box-border inline-block h-14 w-1 animate-blink bg-primary-50 will-change-transform dark:bg-neutral-50 sm:h-16 md:-mb-4 md:h-[80px] lg:h-[115px]" />
+                <span className="ml-1 -mb-2 inline-block w-1 bg-primary-50 will-change-transform dark:bg-neutral-50 xs:box-border xs:h-14 xs:animate-blink sm:h-16 md:-mb-4 md:h-[80px] lg:h-[115px]" />
               </h1>
 
-              <p className="ABCWhyteEdu-Book mx-auto mt-12 max-w-[39rem] text-pm3 font-[350] text-neutral-65 dark:text-neutral-15 sm:text-pm2">
+              <p className="ABCWhyteEdu-Book mx-auto mt-6  max-w-[39rem] text-pm3 font-[350] text-neutral-65 dark:text-neutral-15 1xs:mt-0 sm:mt-8 sm:text-pm2">
                 {data.heroDescription}
               </p>
             </div>
@@ -78,13 +78,13 @@ const Home: FC<IHome> = ({ data, settings }) => {
           child1={data.editorWindowTabTitle}
           child2={data.editorWindowContent}
         />
-        <div className="mt-[3.875rem] lg:mt-[5.875rem]">
-          <h2 className=" ABCWhyteEdu-Medium text-3xl font-bold tracking-[0.02em] text-neutral-0 dark:text-neutral-0 sm:text-2xl lg:text-1xl">
+        <div className="mt-8 sm:mt-28">
+          <h2 className="ABCWhyteEdu-Medium text-3xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-2xl lg:text-1xl">
             {asText(data.experienceTitle)}
           </h2>
         </div>
-        <div className="mt-12 lg:mt-28 lg:grid ">
-          <div className="gap-8 md:grid-cols-12 lg:grid lg:pt-20">
+        <div className="lg:grid ">
+          <div className="mt-12 gap-8 sm:mt-20 md:grid-cols-12 lg:grid">
             <div className="col-span-5 col-start-1 block">
               {data.company.map(
                 ({ companyRole, companyName, companyLogo }, index) => (
@@ -111,7 +111,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
                         className="dark:brightness-0 dark:invert-[1]"
                       />
                       <div className="ml-8 py-6">
-                        <h3 className=" ABCWhyteEdu-Medium text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                        <h3 className="ABCWhyteEdu-Medium text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
                           {companyName}
                         </h3>
                         <p className="font-codeRegular font-FiraCode_Regular mt-2 text-cs2 font-normal text-neutral-65 dark:text-neutral-15">
@@ -123,7 +123,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
                 )
               )}
             </div>
-            <div className="col-span-6 col-start-7 mt-12">
+            <div className="col-span-6 col-start-7 mt-12 lg:mt-0">
               <p className="font-FiraCode_SemiBold pb-4 text-cs2 font-semibold text-primary-100 dark:text-blue-100">
                 {data.company[activeExperience].companyYear}
               </p>
@@ -139,17 +139,17 @@ const Home: FC<IHome> = ({ data, settings }) => {
             </div>
           </div>
         </div>
+        <div className="mx-auto mt-20 flex max-w-[35rem] items-center justify-center pb-12 text-center sm:mt-28 lg:mt-36 lg:pb-20">
+          <h2 className="ABCWhyteEdu-Medium text-3xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 sm:text-2xl lg:text-1xl">
+            {asText(data.skillsTitle)}
+          </h2>
+        </div>
       </Container>
 
       <div
         className="block overflow-hidden bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100"
         ref={slider}
       >
-        <div className="mx-auto mt-28 flex max-w-[35rem] items-center justify-center pb-12 text-center lg:mt-36 lg:pb-20">
-          <h2 className=" ABCWhyteEdu-Medium text-3xl font-bold tracking-[0.02em] text-neutral-0 dark:text-neutral-0 sm:text-2xl lg:text-1xl">
-            {asText(data.skillsTitle)}
-          </h2>
-        </div>
         <div className="flex max-w-full flex-row items-stretch overflow-x-auto md:flex-col md:overflow-x-visible">
           <div
             className="flex whitespace-nowrap text-neutral-30"
@@ -172,7 +172,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
               transform:
                 windowSize.width < 768
                   ? ''
-                  : `translateX(${-diff - windowSize.width / 20}px)`,
+                  : `translateX(${-diff - windowSize.width / 6}px)`,
             }}
           >
             {secondHalf.map(({ skill }, index) => (
