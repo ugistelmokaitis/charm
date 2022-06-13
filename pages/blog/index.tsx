@@ -27,7 +27,7 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => (
     <div className="block bg-neutral-0 dark:bg-neutral-100">
       <Container>
         <div className="grid-starts-1 gap-5 pt-[8.5rem] md:grid-cols-12 lg:pt-44">
-          <div className="col-span-4 mb-20 lg:mb-28">
+          <div className="col-span-4 mb-12 lg:mb-28">
             <PrismicRichText field={data.introTitle} />
           </div>
         </div>

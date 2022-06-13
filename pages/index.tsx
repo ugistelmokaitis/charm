@@ -111,7 +111,7 @@ const Home: FC<IHome> = ({ data, settings }) => {
                         className="dark:brightness-0 dark:invert-[1]"
                       />
                       <div className="ml-8 py-6">
-                        <h3 className="ABCWhyteEdu-Medium text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1">
+                        <h3 className="ABCWhyteEdu-Medium text-pm2 font-medium text-neutral-100 dark:text-neutral-0 sm:text-pm1 ">
                           {companyName}
                         </h3>
                         <p className="font-codeRegular font-FiraCode_Regular mt-2 text-cs2 font-normal text-neutral-65 dark:text-neutral-15">
@@ -145,7 +145,6 @@ const Home: FC<IHome> = ({ data, settings }) => {
           </h2>
         </div>
       </Container>
-
       <div
         className="block overflow-hidden bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100"
         ref={slider}

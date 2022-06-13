@@ -22,7 +22,7 @@ const Work: FC<IWork> = ({ data, settings, casestudies }) => (
     settings={settings}
   >
     <Container>
-      <div className="grid-starts-1 gap-5 pt-[8.5rem]  md:grid-cols-12 lg:grid lg:pt-44">
+      <div className="grid-starts-1 gap-5 pt-[8.5rem] md:grid-cols-12 lg:grid lg:pt-44">
         <div className="col-span-4 mb-20">
           <PrismicRichText field={data.introTitle} />
         </div>
