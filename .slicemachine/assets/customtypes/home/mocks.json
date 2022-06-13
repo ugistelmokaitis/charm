@@ -1,25 +1,25 @@
 {
-  "id": "565b244e-177d-4827-9894-15a35300c816",
-  "uid": "sunt-sint-blanditiis",
+  "id": "10aec4bb-e240-4904-90ff-81e06c00e31e",
+  "uid": "voluptatum-quo-culpa",
   "type": "home",
   "data": {
-    "titleTag": "reinvent one-to-one blockchains",
-    "metaDescription": "incentivize sexy methodologies",
-    "heroGreetingTitle": "redefine turn-key e-tailers",
-    "heroNameTitle": "evolve enterprise e-services",
-    "heroDescription": "matrix user-centric models",
-    "badgeButtonPrefix": "harness open-source functionalities",
-    "badgeButtonLabel": "mesh bricks-and-clicks web-readiness",
+    "titleTag": "disintermediate magnetic networks",
+    "metaDescription": "transform virtual blockchains",
+    "heroGreetingTitle": "synergize frictionless synergies",
+    "heroNameTitle": "aggregate vertical markets",
+    "heroDescription": "deploy bleeding-edge infomediaries",
+    "badgeButtonPrefix": "generate open-source web services",
+    "badgeButtonLabel": "monetize best-of-breed vortals",
     "badgeButtonLink": {
       "link_type": "Web",
       "url": "https://slicemachine.dev"
     },
-    "editorWindowTabTitle": "disintermediate efficient infrastructures",
-    "editorWindowContent": "deliver virtual bandwidth",
+    "editorWindowTabTitle": "drive 24/7 supply-chains",
+    "editorWindowContent": "strategize real-time bandwidth",
     "skillsTitle": [
       {
         "type": "heading1",
-        "text": "Matrix vertical deliverables",
+        "text": "Evolve rich schemas",
         "spans": []
       }
     ],
@@ -27,8 +27,8 @@
       {
         "skill": [
           {
-            "type": "paragraph",
-            "text": "Ipsum excepteur fugiat do excepteur. Eu ipsum proident aute eiusmod. Excepteur sunt excepteur amet voluptate proident do magna amet consectetur aute magna.",
+            "type": "heading3",
+            "text": "Productize e-business action-items",
             "spans": []
           }
         ]
@@ -36,8 +36,26 @@
       {
         "skill": [
           {
-            "type": "paragraph",
-            "text": "Ea amet exercitation laboris laborum cupidatat eu aute eiusmod duis adipisicing laboris mollit. Sit sint cillum ex irure officia irure commodo fugiat duis voluptate nisi duis.",
+            "type": "heading3",
+            "text": "Engineer visionary synergies",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "skill": [
+          {
+            "type": "heading3",
+            "text": "Engineer sexy mindshare",
+            "spans": []
+          }
+        ]
+      },
+      {
+        "skill": [
+          {
+            "type": "heading3",
+            "text": "Synthesize bleeding-edge synergies",
             "spans": []
           }
         ]
@@ -46,7 +64,7 @@
     "experienceTitle": [
       {
         "type": "heading1",
-        "text": "Incentivize compelling bandwidth",
+        "text": "Syndicate magnetic models",
         "spans": []
       }
     ],
@@ -59,13 +77,13 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
         },
-        "companyName": "engage sticky convergence",
-        "companyRole": "facilitate integrated partnerships",
-        "companyYear": "transition out-of-the-box interfaces",
-        "companyResponsibilities": "deploy integrated interfaces",
-        "companyTools": "envisioneer holistic blockchains"
+        "companyName": "productize B2C networks",
+        "companyRole": "benchmark leading-edge schemas",
+        "companyYear": "transform cutting-edge platforms",
+        "companyResponsibilities": "incentivize rich web-readiness",
+        "companyTools": "incubate out-of-the-box vortals"
       },
       {
         "companyLogo": {
@@ -75,13 +93,13 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
         },
-        "companyName": "repurpose compelling e-business",
-        "companyRole": "strategize granular paradigms",
-        "companyYear": "engineer robust supply-chains",
-        "companyResponsibilities": "unleash seamless blockchains",
-        "companyTools": "transition extensible paradigms"
+        "companyName": "generate dot-com portals",
+        "companyRole": "architect clicks-and-mortar web-readiness",
+        "companyYear": "redefine value-added ROI",
+        "companyResponsibilities": "grow efficient networks",
+        "companyTools": "empower world-class systems"
       }
     ]
   }

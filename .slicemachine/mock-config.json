@@ -14,7 +14,14 @@
           "blocks": 1
         }
       },
-      "skills": {},
+      "skills": {
+        "skill": {
+          "config": {
+            "patternType": "HEADING",
+            "blocks": 1
+          }
+        }
+      },
       "company": {},
       "experienceTitle": {
         "config": {
