@@ -17,9 +17,10 @@ type ICaseStudy = {
   settings: SettingsProps;
   data: CaseStudyProps['data'];
   slices2: SliceZoneProps['slices'];
+  nextArticle: string | null;
 };
 
-const CaseStudy: FC<ICaseStudy> = ({ data, settings }) => (
+const CaseStudy: FC<ICaseStudy> = ({ data, settings, nextArticle, uid }) => (
   <Layout
     title={data.titleTag}
     description={data.metaDescription}
@@ -128,11 +129,24 @@ const CaseStudy: FC<ICaseStudy> = ({ data, settings }) => (
       </Container>
     </div>
     <Container>
-      <div className="col-span-12  mt-20 flex justify-center sm:mt-28">
-        <Button href="" variant="casestudy">
-          Next case study
-        </Button>
-      </div>
+      {nextArticle && nextArticle !== uid && (
+        <div className="mt-[5rem] flex items-center justify-center">
+          <div className="col-span-12  mt-20 flex justify-center sm:mt-28">
+            <Button href={`/work/${nextArticle}`} variant="casestudy">
+              Next case study
+            </Button>
+          </div>
+        </div>
+      )}
+      {!nextArticle && (
+        <div className="mt-[5rem] flex items-center justify-center">
+          <div className="col-span-12  mt-20 flex justify-center sm:mt-28">
+            <Button href="/work" variant="casestudy">
+              More case studies
+            </Button>
+          </div>
+        </div>
+      )}
     </Container>
   </Layout>
 );
@@ -143,11 +157,19 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     'casestudy'
   )) as CaseStudyProps;
   const settings = (await getPage('settings')) as SettingsProps;
+  const caseStudies = await getPages('casestudy');
+
+  const currentIndex = caseStudies.findIndex(({ uid }) => uid === params?.uid);
+  const nextArticle =
+    currentIndex === caseStudies.length - 1
+      ? null
+      : caseStudies[currentIndex + 1].uid;
 
   return {
     props: {
       data,
       settings,
+      nextArticle,
     },
   };
 };
