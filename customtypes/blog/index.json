@@ -11,6 +11,20 @@
           "label": "Uid",
           "placeholder": ""
         }
+      },
+      "titleTag": {
+        "type": "Text",
+        "config": {
+          "label": "Title Tag",
+          "placeholder": ""
+        }
+      },
+      "metaDescription": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
       }
     },
     "Intro": {

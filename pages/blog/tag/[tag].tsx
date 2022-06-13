@@ -28,7 +28,9 @@ const Blog: FC<IBlog> = ({ data, settings, blogposts, blogcategories }) => {
   return (
     <Layout
       title={`${capitalizeFirstLetter(router.query.tag as string)} | Blog Page`}
-      description={data.metaDescription}
+      description={`${capitalizeFirstLetter(
+        router.query.tag as string
+      )} | Read my most recent blog articles on how to make your website better. I have something for everyone, from coding advice to methods for improving website performance.`}
       settings={settings}
     >
       <div className="block bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
