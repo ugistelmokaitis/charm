@@ -69,7 +69,7 @@ const CaseStudy: FC<ICaseStudy> = ({ data, settings, nextArticle, uid }) => (
             )}
           </div>
           <div className="col-span-12 flex justify-start lmd:justify-center">
-            <div className="block items-center sm:gap-8 md:pt-7 lmd:flex lmd:items-baseline">
+            <div className="block items-center sm:gap-8 md:pt-7 lmd:items-center lg:flex lg:items-baseline">
               <div className="sm:flex sm:items-baseline sm:gap-8">
                 <div className="mt-12 flex items-center lg:mt-0">
                   <p className="ABCWhyteEdu-Medium pr-2 font-medium text-neutral-100 dark:text-neutral-0">
@@ -102,7 +102,7 @@ const CaseStudy: FC<ICaseStudy> = ({ data, settings, nextArticle, uid }) => (
                   {data.technology.map(({ title }, index) => (
                     <div key={index}>
                       <div className="rounded-[2.25rem] bg-primary-25 px-4 py-1 dark:bg-neutral-65 dark:text-neutral-15">
-                        <p className="ABCWhyteEdu-Medium  text-[14px] font-[350] leading-[20px] text-neutral-65 dark:bg-neutral-65 dark:text-neutral-15">
+                        <p className="ABCWhyteEdu-Medium  text-[14px] font-[350] leading-[20px] text-neutral-65 dark:bg-neutral-65 dark:text-neutral-0">
                           {title}
                         </p>
                       </div>
