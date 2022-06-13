@@ -72,7 +72,7 @@
 /* Image Card Zoom on Hover Css */
 
 .card-zoom {
-  @apply relative  mb-6 flex h-[325px] w-full items-center justify-center overflow-hidden rounded-xl lg:mb-0 2xl:h-[403px];
+  @apply relative  mb-6 flex h-[325px] w-full items-center justify-center overflow-hidden rounded-xl lg:mb-0 lg:h-[480px];
 }
 .card-zoom-image {
   @apply absolute h-full w-full transform bg-cover bg-center transition-all duration-500 ease-in-out;
