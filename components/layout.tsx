@@ -73,8 +73,8 @@ const Layout: FC<LayoutProps> = ({
         name={name}
         type="Organization"
         url={process.env.NEXT_PUBLIC_SITE_URL ?? ''}
-        sameAs={settings.data.footerSocialMedia.map(({ socialMediaLink }) =>
-          docResolver(socialMediaLink)
+        sameAs={settings.data.footerSocialMedia.map(({ link }) =>
+          docResolver(link)
         )}
       />
       <div className="selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
