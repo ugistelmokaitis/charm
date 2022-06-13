@@ -60,12 +60,12 @@ const Home: FC<IHome> = ({ data, settings }) => {
               {data.heroGreetingTitle}
             </h1>
             <div className="group mx-auto items-center">
-              <h1 className="ABCWhyteEdu-Bold text-3xl font-bold text-neutral-100 dark:text-neutral-0 1xs:text-2xl xs:tracking-[0.02em] sm:text-1xl lg:text-xl">
+              <div className="ABCWhyteEdu-Bold text-3xl font-bold text-neutral-100 dark:text-neutral-0 1xs:text-2xl xs:tracking-[0.02em] sm:text-1xl lg:text-xl">
                 <h1 className="inline-flex animate-type overflow-x-hidden whitespace-nowrap pt-2 text-neutral-100 will-change-transform dark:text-neutral-0 1xs:h-[100px] lg:h-[118px]">
                   {data.heroNameTitle}
                 </h1>
                 <span className="ml-1 -mb-2 inline-block w-1 bg-primary-50 will-change-transform dark:bg-neutral-50 xs:box-border xs:h-14 xs:animate-blink sm:h-16 md:-mb-4 md:h-[80px] lg:h-[115px]" />
-              </h1>
+              </div>
 
               <p className="ABCWhyteEdu-Book mx-auto mt-6  max-w-[39rem] text-pm3 font-[350] text-neutral-65 dark:text-neutral-15 1xs:mt-0 sm:mt-8 sm:text-pm2">
                 {data.heroDescription}
