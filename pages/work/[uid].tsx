@@ -18,6 +18,7 @@ type ICaseStudy = {
   data: CaseStudyProps['data'];
   slices2: SliceZoneProps['slices'];
   nextArticle: string | null;
+  uid: string;
 };
 
 const CaseStudy: FC<ICaseStudy> = ({ data, settings, nextArticle, uid }) => (
@@ -142,7 +143,7 @@ const CaseStudy: FC<ICaseStudy> = ({ data, settings, nextArticle, uid }) => (
         <div className="mt-[5rem] flex items-center justify-center">
           <div className="col-span-12  mt-20 flex justify-center sm:mt-28">
             <Button href="/work" variant="casestudy">
-              More case studies
+              back to work page
             </Button>
           </div>
         </div>
