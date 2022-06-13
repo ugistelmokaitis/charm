@@ -1,6 +1,6 @@
 {
-  "id": "ddaed9d1-4fae-4c81-b8e9-d952575d0318",
-  "uid": "odio-error-commodi",
+  "id": "f81c6e85-9191-4bb2-a9a4-454fd22d5a62",
+  "uid": "molestiae-sed-at",
   "type": "settings",
   "data": {
     "headerHeroLogo": {
@@ -10,11 +10,11 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
     },
     "headerHeroLink": {
       "link_type": "Web",
-      "url": "http://google.com"
+      "url": "https://slicemachine.dev"
     },
     "githubSourceIcon": {
       "dimensions": {
@@ -23,7 +23,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=900&h=500&fit=crop"
     },
     "githubSourceLink": {
       "link_type": "Web",
@@ -36,7 +36,7 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=900&h=500&fit=crop"
     },
     "darkModeIcon": {
       "dimensions": {
@@ -45,118 +45,253 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
     },
-    "headerPrimaryButtonLabel": "synthesize virtual e-markets",
+    "headerPrimaryButtonLabel": "evolve out-of-the-box web services",
     "headerPrimaryButtonLink": {
       "link_type": "Web",
-      "url": "http://twitter.com"
+      "url": "http://google.com"
     },
     "headerSiteMap": [
       {
-        "headerPageLabel": "recontextualize revolutionary content",
-        "headerPageLink": {
+        "label": "revolutionize e-business experiences",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "label": "redefine B2C e-markets",
+        "link": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         }
       },
       {
-        "headerPageLabel": "architect customized applications",
-        "headerPageLink": {
+        "label": "e-enable user-centric technologies",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "label": "innovate collaborative bandwidth",
+        "link": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         }
       },
       {
-        "headerPageLabel": "maximize integrated blockchains",
-        "headerPageLink": {
+        "label": "seize revolutionary architectures",
+        "link": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
         }
       }
     ],
-    "siteCredit": "implement one-to-one methodologies",
+    "siteCredit": "deploy out-of-the-box e-services",
     "footerSitemap": [
       {
-        "pageLabel": "orchestrate cutting-edge applications",
-        "pageLink": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      },
-      {
-        "pageLabel": "enable back-end communities",
-        "pageLink": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "pageLabel": "expedite viral vortals",
-        "pageLink": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "pageLabel": "scale frictionless schemas",
-        "pageLink": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "pageLabel": "exploit virtual infrastructures",
-        "pageLink": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      }
-    ],
-    "footerSocialMedia": [
-      {
-        "socialMediaIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa?w=900&h=500&fit=crop"
-        },
-        "socialMediaLink": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "socialMediaIcon": {
-          "dimensions": {
-            "width": 900,
-            "height": 500
-          },
-          "alt": "Placeholder image",
-          "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
-        },
-        "socialMediaLink": {
+        "label": "mesh frictionless e-commerce",
+        "link": {
           "link_type": "Web",
           "url": "http://twitter.com"
         }
       },
       {
-        "socialMediaIcon": {
+        "label": "syndicate transparent systems",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "label": "grow cross-media mindshare",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "label": "redefine web-enabled experiences",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "label": "transition bleeding-edge infrastructures",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      }
+    ],
+    "footerSocialMedia": [
+      {
+        "icon": {
           "dimensions": {
             "width": 900,
             "height": 500
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=500&fit=crop"
         },
-        "socialMediaLink": {
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ],
+    "footerBottomRightSitemap": [
+      {
+        "label": "syndicate mission-critical schemas",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "label": "incubate scalable supply-chains",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "label": "incubate customized e-commerce",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "label": "cultivate cross-media networks",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "label": "utilize real-time bandwidth",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ],
+    "hamburgerMenu": [
+      {
+        "link": {
           "link_type": "Web",
           "url": "https://slicemachine.dev"
+        },
+        "label": "facilitate real-time content"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        },
+        "label": "streamline e-business users"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "label": "mesh vertical infrastructures"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        },
+        "label": "enable user-centric vortals"
+      },
+      {
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        },
+        "label": "matrix dot-com niches"
+      }
+    ],
+    "hamburgerSocialMedia": [
+      {
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db?w=900&h=500&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "icon": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
+        },
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
         }
       }
     ]

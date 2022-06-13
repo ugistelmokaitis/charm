@@ -2,6 +2,7 @@ import type {
   KeyTextField,
   PrismicDocumentWithUID,
   RichTextField,
+  SliceZone,
 } from '@prismicio/types';
 
 export type PrivacyProps = PrismicDocumentWithUID<{
@@ -12,4 +13,5 @@ export type PrivacyProps = PrismicDocumentWithUID<{
   IntroDateTitle: KeyTextField;
   introLastUpdate: KeyTextField;
   contentDescription: RichTextField;
+  slices2: SliceZone;
 }>;

@@ -1,30 +1,18 @@
 import type { GetStaticProps } from 'next';
 import type { FC } from 'react';
-import { PrismicRichText } from '@prismicio/react';
-import type { JSXMapSerializer } from '@prismicio/react';
+import { PrismicRichText, SliceZone } from '@prismicio/react';
+import type { SliceZoneProps, SliceZoneComponents } from '@prismicio/react';
 import Layout from '../components/layout';
 import { getPage } from '../utils/prismic';
 import type { PrivacyProps } from '../types/privacy';
 import type { SettingsProps } from '../types/settings';
 import Container from '../components/container';
-import richTextComponents from '../components/richTextComponents';
+import { components } from '../slices';
 
 type IPrivacy = {
   data: PrivacyProps['data'];
   settings: SettingsProps;
-};
-
-const introComponents: JSXMapSerializer = {
-  ...richTextComponents,
-  paragraph: ({ children, key, ...props }) => (
-    <p
-      key={key}
-      className="ABCWhyteEdu-Book inline text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2"
-      {...props}
-    >
-      {children}
-    </p>
-  ),
+  slices2: SliceZoneProps['slices'];
 };
 
 const Privacy: FC<IPrivacy> = ({ data, settings }) => (
@@ -33,32 +21,30 @@ const Privacy: FC<IPrivacy> = ({ data, settings }) => (
     description={data.metaDescription}
     settings={settings}
   >
-    <div className="flex bg-neutral-0 selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100 lg:grid-cols-12">
+    <div className="flex lg:grid-cols-12">
       <Container>
-        <div className=" text-white-100 grid-cols-1 gap-16 md:grid md:grid-cols-12 md:gap-8">
-          <div className="col-span-4 pt-56 md:col-span-9 lg:col-span-7">
+        <div className=" text-white-100 grid-cols-1 gap-5 md:grid md:grid-cols-12 md:gap-8">
+          <div className="pt-[8.5rem] sm:col-span-8 sm:col-start-3 lg:pt-44">
             <PrismicRichText field={data.introTitle} />
             <div className="mb-12 mt-12">
-              <p className="text-pSMSemiBold sm:text-pMDSemiBold font-ABCWhyteEdu-Medium font-normal tracking-[0.02em] text-neutral-100 dark:text-neutral-15">
+              <p className="ABCWhyteEdu-Book text-pm3 font-[350] text-neutral-100 dark:text-neutral-15 sm:text-pm2">
                 {data.introDescription}
               </p>
             </div>
             <div className="mb-2 mt-2">
-              <p className="font-codeRegular text-codeMDRegular font-FiraCode-Regular text-neutral-100 dark:text-neutral-0">
+              <p className="font-FiraCode-Regular text-cs2 font-normal text-neutral-100 dark:text-neutral-0">
                 {data.IntroDateTitle}
               </p>
             </div>
             <div className="mb-20">
-              <p className="font-codeRegular text-codeMDRegular font-FiraCode-Regular text-neutral-100 dark:text-neutral-0">
+              <p className="font-FiraCode-Regular text-cs2 font-normal text-neutral-100 dark:text-neutral-0">
                 {data.introLastUpdate}
               </p>
             </div>
-            <div className="text-neutral-15">
-              <PrismicRichText
-                field={data.contentDescription}
-                components={introComponents}
-              />
-            </div>
+            <SliceZone
+              slices={data.slices2}
+              components={components as unknown as SliceZoneComponents}
+            />
           </div>
         </div>
       </Container>

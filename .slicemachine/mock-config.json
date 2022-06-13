@@ -2,7 +2,10 @@
   "_cts": {
     "settings": {
       "headerSiteMap": {},
-      "footerSitemap": {}
+      "footerSitemap": {},
+      "hamburgerMenu": {},
+      "footerSocialMedia": {},
+      "footerBottomRightSitemap": {}
     },
     "home": {
       "skillsTitle": {
@@ -100,7 +103,14 @@
       },
       "author": {}
     },
-    "privacy": {},
+    "privacy": {
+      "introTitle": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      }
+    },
     "terms": {},
     "notfound": {},
     "servererror": {},
@@ -291,6 +301,30 @@
     "SecondaryButton": {
       "default": {
         "primary": {}
+      }
+    },
+    "Legal": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          },
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "subtitle": {
+            "config": {
+              "patternType": "HEADING",
+              "blocks": 1
+            }
+          }
+        }
       }
     }
   }
