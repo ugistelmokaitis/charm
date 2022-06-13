@@ -129,7 +129,7 @@ const Blogpost: FC<IBlogpost> = ({
                       </p>
 
                       <div className="rounded-[2.25rem] bg-primary-25 px-4 py-1 dark:bg-neutral-65 dark:text-neutral-15">
-                        <p className="ABCWhyteEdu-Medium  text-[14px] font-[350] leading-[20px] text-neutral-65 dark:bg-neutral-65 dark:text-neutral-15">
+                        <p className="ABCWhyteEdu-Medium  text-[14px] font-[350] leading-[20px] text-neutral-65 dark:bg-neutral-65 dark:text-neutral-0">
                           {blogCategoryCapitalized}
                         </p>
                       </div>
