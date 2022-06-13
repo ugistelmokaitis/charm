@@ -19,19 +19,37 @@ export type SettingsProps = PrismicDocumentWithUID<{
   headerSiteMap: HeaderNavigation;
   footerSitemap: FooterNavigation;
   footerSocialMedia: footerSocialMediaProps;
+  hamburgerMenu: HamburgerMenuProps;
+  hamburgerSocialMedia: HamburgerSocialMediaProps;
+  footerBottomRightSitemap: footerBottomRightSitemapProps;
 }>;
 
 type FooterNavigation = GroupField<{
-  pageLabel: KeyTextField;
-  pageLink: LinkField;
+  label: KeyTextField;
+  link: LinkField;
 }>;
 
 type footerSocialMediaProps = GroupField<{
-  socialMediaIcon: ImageField;
-  socialMediaLink: LinkField;
+  icon: ImageField;
+  link: LinkField;
 }>;
 
 type HeaderNavigation = GroupField<{
-  headerPageLabel: KeyTextField;
-  headerPageLink: LinkField;
+  label: KeyTextField;
+  link: LinkField;
+}>;
+
+type HamburgerMenuProps = GroupField<{
+  label: KeyTextField;
+  link: LinkField;
+}>;
+
+type HamburgerSocialMediaProps = GroupField<{
+  icon: ImageField;
+  link: LinkField;
+}>;
+
+type footerBottomRightSitemapProps = GroupField<{
+  label: KeyTextField;
+  link: LinkField;
 }>;

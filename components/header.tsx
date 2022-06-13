@@ -42,7 +42,7 @@ const Header: FC<ISettings> = ({ settings }) => {
   }, [theme]);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 border-b border-neutral-15/95 bg-neutral-0/80 py-3 backdrop-blur-md dark:border-neutral-80/95 dark:bg-neutral-100/80  md:py-5">
+    <div className="fixed top-0 left-0 right-0 z-50 border-b border-neutral-15/95 bg-neutral-0/80 py-3 backdrop-blur-md firefox:bg-neutral-0 dark:border-neutral-80/95 dark:bg-neutral-100/80 dark:firefox:bg-neutral-100 md:py-5">
       <Container>
         <div className="flex items-center justify-between ">
           <PrismicLink field={settings.data.headerHeroLink}>
@@ -57,24 +57,22 @@ const Header: FC<ISettings> = ({ settings }) => {
             />
           </PrismicLink>
           <div className="flex items-center justify-center ">
-            {settings.data.headerSiteMap.map(
-              ({ headerPageLabel, headerPageLink }, index) => (
-                <div key={index} className="ml-2">
-                  <Button
-                    href={docResolver(headerPageLink)}
-                    aria-label="Header Page Label"
-                    variant="neutral"
-                    className={` ${`ABCWhyteEdu-Medium hidden rounded-md py-[0.75rem] px-[0.75rem] font-[350] text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80 md:flex`} ${
-                      router.asPath === docResolver(headerPageLink)
-                        ? `font-medium  text-[#111827] dark:text-[#FFFFFF]`
-                        : ''
-                    }`}
-                  >
-                    {headerPageLabel}
-                  </Button>
-                </div>
-              )
-            )}
+            {settings.data.headerSiteMap.map(({ label, link }, index) => (
+              <div key={index} className="ml-2">
+                <Button
+                  href={docResolver(link)}
+                  aria-label="Header Page Label"
+                  variant="neutral"
+                  className={` ${`ABCWhyteEdu-Medium hidden rounded-md py-[0.75rem] px-[0.75rem] font-[350] text-neutral-50 hover:bg-primary-25 dark:text-neutral-30 dark:hover:bg-neutral-80 md:flex`} ${
+                    router.asPath === docResolver(link)
+                      ? `font-medium  text-[#111827] dark:text-[#FFFFFF]`
+                      : ''
+                  }`}
+                >
+                  {label}
+                </Button>
+              </div>
+            ))}
             <div className="inline-flex pr-[0.25rem]">
               <Tippy
                 content="View Github Profile"
@@ -201,35 +199,33 @@ const Header: FC<ISettings> = ({ settings }) => {
       </Container>
       {isOpen ? (
         <Container>
-          <div className="pointer-events-auto absolute left-0 top-[4.5625rem] z-[59] flex w-full select-auto flex-col gap-3  border-b border-neutral-15/95 bg-neutral-0/80 opacity-100 backdrop-blur-md transition-all dark:border-neutral-80/95 dark:bg-neutral-100/80 lg:hidden">
+          <div className="pointer-events-auto absolute left-0 top-[4.5625rem] z-[59] flex w-full select-auto flex-col gap-3  border-b border-neutral-15/95 bg-neutral-0 transition-all dark:border-neutral-80/95 dark:bg-neutral-100 lg:hidden">
             <div className="container mx-auto  px-6 pb-64">
               <div className="mt-6">
-                {settings.data.footerSitemap.map(
-                  ({ pageLabel, pageLink }, index) => (
-                    <div key={index}>
-                      <Button
-                        href={docResolver(pageLink)}
-                        variant="neutral"
-                        className={` ${`ABCWhyteEdu-Medium grid grid-cols-2 rounded-md py-[0.75rem] px-[0.75rem] font-[350] text-neutral-50 hover:bg-primary-25  dark:text-neutral-30 dark:hover:bg-neutral-80`} ${
-                          router.asPath === docResolver(pageLink)
-                            ? `font-medium text-[#111827] dark:text-[#FFFFFF]`
-                            : ''
-                        }`}
-                      >
-                        {pageLabel}
-                      </Button>
-                    </div>
-                  )
-                )}
+                {settings.data.hamburgerMenu.map(({ label, link }, index) => (
+                  <div key={index}>
+                    <Button
+                      href={docResolver(link)}
+                      variant="neutral"
+                      className={` ${`ABCWhyteEdu-Book grid  grid-cols-2 rounded-md py-[0.75rem] px-[0.75rem] text-[20px] font-[350] leading-[29px] text-neutral-50 hover:bg-primary-25 dark:text-neutral-30  dark:hover:bg-neutral-80`} ${
+                        router.asPath === docResolver(link)
+                          ? `font-medium text-[#111827] dark:text-[#FFFFFF]`
+                          : ''
+                      }`}
+                    >
+                      {label}
+                    </Button>
+                  </div>
+                ))}
 
-                <div className="mt-5 inline-flex gap-2">
-                  {settings.data.footerSocialMedia.map(
-                    ({ socialMediaIcon, socialMediaLink }, index) => (
+                <div className="mt-10 inline-flex gap-4">
+                  {settings.data.hamburgerSocialMedia.map(
+                    ({ icon, link }, index) => (
                       <div
                         key={index}
                         className="gap-6 rounded-md py-[5px] px-[5px] hover:animate-pulse hover:bg-primary-25 dark:hover:bg-neutral-80 xs:py-[7px] xs:px-[7px]"
                       >
-                        <Link passHref href={`${docResolver(socialMediaLink)}`}>
+                        <Link passHref href={`${docResolver(link)}`}>
                           <a
                             href={docResolver(settings.data.githubSourceLink)}
                             target="_blank"
@@ -237,8 +233,8 @@ const Header: FC<ISettings> = ({ settings }) => {
                             className="flex"
                           >
                             <Image
-                              src={socialMediaIcon.url ?? ''}
-                              alt={socialMediaIcon.alt ?? ''}
+                              src={icon.url ?? ''}
+                              alt={icon.alt ?? ''}
                               width={24}
                               height={24}
                               layout="fixed"
@@ -251,7 +247,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                     )
                   )}
                 </div>
-                <div className="ABCWhyteEdu-Medium mt-5 font-[350] text-neutral-50 dark:text-neutral-15 xl:mt-0">
+                <div className="ABCWhyteEdu-Medium mt-5 text-[14px] font-[350] text-neutral-50 dark:text-neutral-30 xl:mt-0">
                   {settings.data.siteCredit}
                 </div>
               </div>

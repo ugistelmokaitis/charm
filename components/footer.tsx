@@ -18,37 +18,33 @@ const Footer: FC<ISettings> = ({ settings }) => {
   return (
     <div className="bg-neutral-0 pt-[6rem] dark:bg-neutral-100 lg:pt-40 ">
       <Container>
-        <Divider />
-
-        <div className="items-center justify-between pt-6 pb-12 xl:flex">
-          <div className="mt-6 mb-6 grid grid-cols-3 xl:flex">
-            {settings.data.footerSitemap.map(
-              ({ pageLabel, pageLink }, index) => (
-                <div key={index} className="xl:m-1  xl:gap-8">
+        <div className="block">
+          <div className="items-center justify-between pb-8 lg:flex">
+            <div className="grid grid-cols-2 1xs:grid-cols-3 sm:grid-cols-4 lg:flex lg:items-center lg:justify-center">
+              {settings.data.footerSitemap.map(({ label, link }, index) => (
+                <div key={index} className="xl:gap-8">
                   <Button
-                    href={docResolver(pageLink)}
+                    href={docResolver(link)}
                     variant="neutral"
                     className={` ${`ABCWhyteEdu-Medium grid grid-cols-1 rounded-md py-[0.75rem] px-[0.75rem] font-[350] text-neutral-65 hover:bg-primary-25  dark:text-neutral-30  dark:hover:bg-neutral-80 xl:flex`} ${
-                      router.asPath === docResolver(pageLink)
+                      router.asPath === docResolver(link)
                         ? `font-medium  text-[#111827] dark:text-[#FFFFFF]`
                         : ''
                     }`}
                   >
-                    {pageLabel}
+                    {label}
                   </Button>
                 </div>
-              )
-            )}
-          </div>
+              ))}
+            </div>
 
-          <div className="inline-flex gap-2">
-            {settings.data.footerSocialMedia.map(
-              ({ socialMediaIcon, socialMediaLink }, index) => (
+            <div className="flex items-center justify-start gap-4 pt-8 lg:pt-0">
+              {settings.data.footerSocialMedia.map(({ icon, link }, index) => (
                 <div
                   key={index}
                   className="gap-6 rounded-md py-[5px] px-[5px] hover:animate-pulse hover:bg-primary-25 dark:hover:bg-neutral-80 xs:py-[7px] xs:px-[7px]"
                 >
-                  <Link passHref href={`${docResolver(socialMediaLink)}`}>
+                  <Link passHref href={`${docResolver(link)}`}>
                     <a
                       href={docResolver(settings.data.githubSourceLink)}
                       target="_blank"
@@ -56,8 +52,8 @@ const Footer: FC<ISettings> = ({ settings }) => {
                       className="flex"
                     >
                       <Image
-                        src={socialMediaIcon.url ?? ''}
-                        alt={socialMediaIcon.alt ?? ''}
+                        src={icon.url ?? ''}
+                        alt={icon.alt ?? ''}
                         width={24}
                         height={24}
                         layout="fixed"
@@ -67,11 +63,33 @@ const Footer: FC<ISettings> = ({ settings }) => {
                     </a>
                   </Link>
                 </div>
-              )
-            )}
+              ))}
+            </div>
           </div>
-          <div className="ABCWhyteEdu-Medium mt-6 font-[350] text-neutral-65  dark:text-neutral-15 xl:mt-0">
-            {settings.data.siteCredit}
+          <Divider />
+          <div className="mt-8 items-center justify-between pb-12 lg:flex">
+            <div className="ABCWhyteEdu-Medium font-[350] text-neutral-65  dark:text-neutral-30 xl:mt-0">
+              {settings.data.siteCredit}
+            </div>
+            <div className="flex items-center pt-6 lg:pt-0">
+              {settings.data.footerBottomRightSitemap.map(
+                ({ label, link }, index) => (
+                  <div key={index} className="pr-4 xl:gap-8">
+                    <Button
+                      href={docResolver(link)}
+                      variant="neutral"
+                      className={` ${`ABCWhyteEdu-Medium grid grid-cols-1 rounded-md py-[0.75rem] px-[0.75rem] font-[350] text-neutral-65 hover:bg-primary-25  dark:text-neutral-30  dark:hover:bg-neutral-80 xl:flex`} ${
+                        router.asPath === docResolver(link)
+                          ? `font-medium  text-[#111827] dark:text-[#FFFFFF]`
+                          : ''
+                      }`}
+                    >
+                      {label}
+                    </Button>
+                  </div>
+                )
+              )}
+            </div>
           </div>
         </div>
       </Container>

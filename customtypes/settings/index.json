@@ -66,21 +66,20 @@
         "config": {
           "label": "Header Site Map",
           "fields": {
-            "headerPageLabel": {
+            "label": {
               "type": "Text",
               "config": {
-                "label": "Header Page Label",
+                "label": "Label",
                 "placeholder": ""
               }
             },
-            "headerPageLink": {
+            "link": {
+              "type": "Link",
               "config": {
-                "label": "Header Page Link",
+                "label": "Link",
                 "placeholder": "",
-                "allowTargetBlank": false,
                 "select": null
-              },
-              "type": "Link"
+              }
             }
           }
         },
@@ -103,32 +102,24 @@
       }
     },
     "Footer": {
-      "siteCredit": {
-        "type": "Text",
-        "config": {
-          "label": "Site Credit",
-          "placeholder": ""
-        }
-      },
       "footerSitemap": {
         "config": {
           "label": "Footer Sitemap",
           "fields": {
-            "pageLabel": {
+            "label": {
               "type": "Text",
               "config": {
-                "label": "Page Label",
+                "label": "Label",
                 "placeholder": ""
               }
             },
-            "pageLink": {
+            "link": {
+              "type": "Link",
               "config": {
-                "label": "Page Link",
+                "label": "Link",
                 "placeholder": "",
-                "allowTargetBlank": false,
                 "select": null
-              },
-              "type": "Link"
+              }
             }
           }
         },
@@ -138,18 +129,18 @@
         "config": {
           "label": "Footer Social Media",
           "fields": {
-            "socialMediaIcon": {
+            "icon": {
+              "type": "Image",
               "config": {
-                "label": "Social Media Icon",
+                "label": "Icon",
                 "constraint": {},
                 "thumbnails": []
-              },
-              "type": "Image"
+              }
             },
-            "socialMediaLink": {
+            "link": {
               "type": "Link",
               "config": {
-                "label": "Social Media Link",
+                "label": "Link",
                 "placeholder": "",
                 "select": null
               }
@@ -157,6 +148,92 @@
           }
         },
         "type": "Group"
+      },
+      "siteCredit": {
+        "type": "Text",
+        "config": {
+          "label": "Site Credit",
+          "placeholder": ""
+        }
+      },
+      "footerBottomRightSitemap": {
+        "type": "Group",
+        "config": {
+          "label": "Footer Bottom Right Sitemap",
+          "fields": {
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    },
+    "Hamburger": {
+      "hamburgerMenu": {
+        "type": "Group",
+        "config": {
+          "label": "Hamburger Menu",
+          "fields": {
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "label": {
+              "type": "Text",
+              "config": {
+                "label": "Label",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      },
+      "hamburgerSocialMedia": {
+        "type": "Group",
+        "config": {
+          "label": "Hamburger Social Media",
+          "fields": {
+            "icon": {
+              "type": "Image",
+              "config": {
+                "label": "Icon",
+                "constraint": {},
+                "thumbnails": []
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "slices3": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {}
+        }
       }
     }
   }
