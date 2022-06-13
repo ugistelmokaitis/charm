@@ -143,7 +143,7 @@ const CaseStudy: FC<ICaseStudy> = ({ data, settings, nextArticle, uid }) => (
         <div className="mt-[5rem] flex items-center justify-center">
           <div className="col-span-12  mt-20 flex justify-center sm:mt-28">
             <Button href="/work" variant="casestudy">
-              back to work page
+              Back to work page
             </Button>
           </div>
         </div>
