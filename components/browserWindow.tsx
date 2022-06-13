@@ -1,7 +1,10 @@
 import type { FC } from 'react';
 import type React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { hybrid, xcode } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import {
+  hybrid,
+  a11yLight,
+} from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import TypescriptLogo from '../public/icons/typescriptlogo.svg';
 
 type IBrowseWindow = {
@@ -70,7 +73,7 @@ const BrowserWindow: FC<IBrowseWindow> = ({ child1, child2 }) => (
                   wrapLines
                   language="typescript"
                   showLineNumbers
-                  style={xcode}
+                  style={a11yLight}
                   className="rounded-b-lg border-[0.0625rem] border-neutral-15/60"
                   customStyle={{
                     paddingTop: '3rem',

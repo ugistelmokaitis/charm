@@ -2,7 +2,10 @@ import type { FC } from 'react';
 import type { SliceComponentProps } from '@prismicio/react';
 import type { KeyTextField, ImageField } from '@prismicio/types';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { hybrid, xcode } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import {
+  hybrid,
+  a11yLight,
+} from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import Image from 'next/image';
 
 const CodeBlock: FC<
@@ -51,7 +54,7 @@ const CodeBlock: FC<
                   customStyle={{
                     paddingTop: '2rem',
                     paddingBottom: '2rem',
-                    paddingLeft: '2rem',
+                    paddingLeft: '1rem',
                     paddingRight: '2rem',
                   }}
                 >
@@ -92,12 +95,12 @@ const CodeBlock: FC<
                     wrapLines
                     language="typescript"
                     showLineNumbers
-                    style={xcode}
+                    style={a11yLight}
                     className="rounded-b-lg border-[0.0625rem] border-neutral-15/60"
                     customStyle={{
                       paddingTop: '2rem',
                       paddingBottom: '2rem',
-                      paddingLeft: '2rem',
+                      paddingLeft: '1rem',
                       paddingRight: '2rem',
                     }}
                   >
