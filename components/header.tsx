@@ -183,7 +183,8 @@ const Header: FC<ISettings> = ({ settings }) => {
                 toggled={isOpen}
                 toggle={setOpen}
                 label="Show menu"
-                color="black "
+                color="#111287"
+                size={30}
               />
             </div>
             <div className="ml-4 hidden dark:flex dark:lg:hidden">
@@ -191,7 +192,8 @@ const Header: FC<ISettings> = ({ settings }) => {
                 toggled={isOpen}
                 toggle={setOpen}
                 label="Show menu"
-                color="white"
+                color="#FFFFFF"
+                size={30}
               />
             </div>
           </div>
@@ -199,7 +201,7 @@ const Header: FC<ISettings> = ({ settings }) => {
       </Container>
       {isOpen ? (
         <Container>
-          <div className="firefox:bg-neutral-0dark:firefox:bg-neutral-100 pointer-events-auto absolute left-0 top-[4.5625rem] z-[59] flex w-full select-auto flex-col  gap-3 border-b border-neutral-15/95 bg-neutral-0 transition-all dark:border-neutral-80/95 dark:bg-neutral-100 lg:hidden">
+          <div className="pointer-events-auto absolute left-0 top-[4.5625rem] z-[59] flex w-full select-auto flex-col gap-3  border-b border-neutral-15/95 bg-neutral-0 transition-all firefox:bg-neutral-0 dark:border-neutral-80/95 dark:bg-neutral-100 lg:hidden">
             <div className="container mx-auto  px-6 pb-64">
               <div className="mt-6">
                 {settings.data.hamburgerMenu.map(({ label, link }, index) => (
