@@ -19,6 +19,7 @@ const Fullwidthimage: FC<
       height={516}
       layout="responsive"
       quality={100}
+      className="rounded-xl"
       priority
     />
   </div>
