@@ -197,7 +197,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="name"
-                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal  text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="pointer-events-none absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal  text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     What&apos;s your full name? *
                   </label>
@@ -218,7 +218,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="email"
-                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal  text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="pointer-events-none absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal  text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     Your fancy email *
                   </label>
@@ -238,7 +238,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="company"
-                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="pointer-events-none absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     Company
                   </label>
@@ -259,7 +259,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="website"
-                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="pointer-events-none absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     Website *
                   </label>
@@ -289,7 +289,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   />
                   <label
                     htmlFor="message"
-                    className="absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
+                    className="pointer-events-none absolute top-1 -z-10 flex origin-[0] -translate-y-6 scale-75 transform font-FiraCode-Regular text-cs2 font-normal text-neutral-65 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-primary-100 dark:text-neutral-30 dark:peer-focus:text-blue-100"
                   >
                     Write a Message *
                   </label>
@@ -302,7 +302,7 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                     <div className="flex items-center justify-center pr-2">
                       <IconAddFile />
                     </div>
-                    <div className="ABCWhyteEdu-Medium text-p3 font-medium text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30  dark:hover:animate-pulse dark:hover:text-neutral-15">
+                    <div className="ABCWhyteEdu-Medium cursor-pointer text-p3 font-medium text-neutral-100 hover:animate-pulse hover:text-neutral-100 dark:text-neutral-30  dark:hover:animate-pulse dark:hover:text-neutral-15">
                       {files.length
                         ? files.map((file) => file.name).join(', ')
                         : 'Add attachment'}
