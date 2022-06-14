@@ -1,74 +1,88 @@
 .tippy-box[data-animation='fade'][data-state='hidden'] {
   opacity: 0;
 }
+
 [data-tippy-root] {
   max-width: calc(100vw - 10px);
 }
+
 .tippy-box {
   position: relative;
-  @apply bg-primary-25  dark:bg-neutral-80;
-  @apply text-neutral-100 dark:text-neutral-0;
   border-radius: 0.25rem;
   font-size: 0.875rem;
   line-height: 1.4;
-  white-space: normal;
   outline: 0;
   transition-property: transform, visibility, opacity;
+  white-space: normal;
+  @apply bg-primary-25  dark:bg-neutral-80;
+  @apply text-neutral-100 dark:text-neutral-0;
 }
+
 .tippy-box[data-placement^='top'] > .tippy-arrow {
   bottom: 0;
 }
-.tippy-box[data-placement^='top'] > .tippy-arrow:before {
+
+.tippy-box[data-placement^='top'] > .tippy-arrow::before {
   bottom: -0.4375rem;
   left: 0;
   border-width: 0.5rem 0.5rem 0;
   border-top-color: initial;
   transform-origin: center top;
 }
+
 .tippy-box[data-placement^='bottom'] > .tippy-arrow {
   top: 0;
 }
-.tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+
+.tippy-box[data-placement^='bottom'] > .tippy-arrow::before {
   top: -0.4375rem;
   left: 0;
   border-width: 0 0.5rem 0.5rem;
   border-bottom-color: initial;
   transform-origin: center bottom;
 }
+
 .tippy-box[data-placement^='left'] > .tippy-arrow {
   right: 0;
 }
-.tippy-box[data-placement^='left'] > .tippy-arrow:before {
+
+.tippy-box[data-placement^='left'] > .tippy-arrow::before {
+  right: -7px;
   border-width: 0.5rem 0 0.5rem 0.5rem;
   border-left-color: initial;
-  right: -7px;
   transform-origin: center left;
 }
+
 .tippy-box[data-placement^='right'] > .tippy-arrow {
   left: 0;
 }
-.tippy-box[data-placement^='right'] > .tippy-arrow:before {
+
+.tippy-box[data-placement^='right'] > .tippy-arrow::before {
   left: -7px;
   border-width: 0.5rem 0.5rem 0.5rem 0;
   border-right-color: initial;
   transform-origin: center right;
 }
+
 .tippy-box[data-inertia][data-state='visible'] {
   transition-timing-function: cubic-bezier(0.54, 1.5, 0.38, 1.11);
 }
+
 .tippy-arrow {
   width: 1rem;
   height: 1rem;
   @apply text-[#E1EAFF] dark:text-[#2b323b];
 }
-.tippy-arrow:before {
-  content: '';
+
+.tippy-arrow::before {
   position: absolute;
-  border-color: transparent;
   border-style: solid;
+  border-color: transparent;
+  content: '';
 }
+
 .tippy-content {
   position: relative;
-  padding: 0.3125rem 0.5625rem;
   z-index: 1;
+  padding: 0.3125rem 0.5625rem;
 }

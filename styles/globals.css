@@ -3,48 +3,48 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'ABCWhyteEdu-Bold';
+  font-display: swap;
+  font-family: ABCWhyteEdu-Bold;
+  font-style: normal;
+  font-weight: 700;
   src: url('/fonts/ABCWhyteEdu-Bold.woff') format('woff'),
     url('/fonts/ABCWhyteEdu-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: 'ABCWhyteEdu-Medium';
+  font-display: swap;
+  font-family: ABCWhyteEdu-Medium;
+  font-style: normal;
+  font-weight: 500;
   src: url('/fonts/ABCWhyteEdu-Medium.woff') format('woff'),
     url('/fonts/ABCWhyteEdu-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: 'ABCWhyteEdu-Book';
+  font-display: swap;
+  font-family: ABCWhyteEdu-Book;
+  font-style: normal;
+  font-weight: 350;
   src: url('/fonts/ABCWhyteEdu-Book.woff') format('woff'),
     url('/fonts/ABCWhyteEdu-Book.woff2') format('woff2');
-  font-weight: 350;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: 'FiraCode-SemiBold';
+  font-display: swap;
+  font-family: FiraCode-SemiBold;
+  font-style: normal;
+  font-weight: 600;
   src: url('/fonts/FiraCode-SemiBold.woff') format('woff'),
     url('/fonts/FiraCode-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: 'FiraCode-Regular';
+  font-display: swap;
+  font-family: FiraCode-Regular;
+  font-style: normal;
+  font-weight: 400;
   src: url('/fonts/FiraCode-Regular.woff') format('woff'),
     url('/fonts/FiraCode-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
 }
 
 /* Masonry slice component Css - Carousel */
@@ -52,17 +52,20 @@
 @layer utilities {
   @variants responsive {
     .masonry {
-      column-gap: 2em;
       column-count: 1;
+      column-gap: 2em;
     }
+
     .masonry-sm {
-      column-gap: 2em;
       column-count: 1;
-    }
-    .masonry-md {
       column-gap: 2em;
-      column-count: 2;
     }
+
+    .masonry-md {
+      column-count: 2;
+      column-gap: 2em;
+    }
+
     .break-inside {
       break-inside: avoid;
     }
@@ -74,6 +77,7 @@
 .card-zoom {
   @apply relative  mb-6 flex h-[325px] w-full items-center justify-center overflow-hidden rounded-xl lg:mb-0 lg:h-[480px];
 }
+
 .card-zoom-image {
   @apply absolute h-full w-full transform bg-cover bg-center transition-all duration-500 ease-in-out;
 }
@@ -81,19 +85,9 @@
 .card-zoom:hover .card-zoom-image {
   @apply scale-110;
 }
+
 .card-zoom:hover {
   @apply scale-100;
-}
-
-.embla {
-  overflow: hidden;
-}
-.embla__container {
-  display: flex;
-}
-.embla__slide {
-  position: relative;
-  flex: 0 0 100%;
 }
 
 .language-typescript {
@@ -103,12 +97,12 @@
 .language-typescript > span {
   min-height: 1.5rem;
   padding-left: 3rem;
-  font-family: 'FiraCode-Regular';
-  font-style: normal;
-  font-size: 1.125rem;
-  line-height: 1.4625rem;
-  font-weight: 400;
   font-display: swap;
+  font-family: FiraCode-Regular, monospace;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4625rem;
 
   @apply flex md:block !important;
 }
