@@ -35,7 +35,7 @@ const Gear: FC<IGear> = ({ data, settings }) => (
     settings={settings}
   >
     <Container>
-      <div className="grid-starts-1 text-white-100 mt-32 md:grid-cols-12 md:gap-8 lg:grid">
+      <div className="grid-starts-1 text-white-100 pt-32 md:grid-cols-12 md:gap-8 lg:grid">
         <div className="col-span-7">
           <PrismicRichText field={data.introTitle} />
           <div className="mb-20 mt-20">
