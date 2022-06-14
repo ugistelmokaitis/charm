@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 // eslint-disable-next-line @typescript-eslint/naming-convention
-export const GA_TRACKING_ID = 'G-VF2R9D1VZ8';
+export const GA_TRACKING_ID = 'G-3Z326F0WL8';
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url: URL) => {
