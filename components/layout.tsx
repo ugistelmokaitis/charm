@@ -77,7 +77,7 @@ const Layout: FC<LayoutProps> = ({
           docResolver(link)
         )}
       />
-      <div className="selection:bg-primary-50 selection:text-neutral-100 dark:bg-neutral-100">
+      <div className="selection:bg-primary-50 selection:text-neutral-100">
         <Header settings={settings} />
         {children}
         <Footer settings={settings} />
