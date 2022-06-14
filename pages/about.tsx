@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import { PrismicLink, PrismicRichText } from '@prismicio/react';
 import type { JSXMapSerializer } from '@prismicio/react';
 import Image from 'next/image';
+import { useAudio } from 'react-use';
 import Layout from '../components/layout';
 import type { AboutProps } from '../types/about';
 import type { SettingsProps } from '../types/settings';
@@ -11,11 +12,40 @@ import Container from '../components/container';
 import richTextComponents from '../components/richTextComponents';
 import SocialLinkIcon from '../public/icons/sociallinkicon.svg';
 import Divider from '../components/divider';
-import { getPage } from '../utils/prismic';
+import { docResolver, getPage } from '../utils/prismic';
 
 type IAbout = {
   data: AboutProps['data'];
   settings: SettingsProps;
+};
+
+const AudioClick: FC<{ url: string }> = ({ url, children }) => {
+  const [audio, , controls] = useAudio({
+    src: url,
+    autoPlay: false,
+  });
+
+  const playAudio = () => {
+    controls.pause();
+    controls.seek(0);
+    // eslint-disable-next-line no-console
+    controls.play()?.catch(console.log);
+  };
+
+  return (
+    <>
+      {audio}
+      <span
+        onClick={playAudio}
+        onKeyDown={playAudio}
+        tabIndex={0}
+        role="button"
+        className="ABCWhyteEdu-Medium inline text-pm3 font-medium underline decoration-1 underline-offset-[5px] hover:text-neutral-65 hover:decoration-[0.0938rem] dark:hover:text-neutral-30 sm:text-pm2"
+      >
+        {children}
+      </span>
+    </>
+  );
 };
 
 const introComponents: JSXMapSerializer = {
@@ -41,6 +71,19 @@ const introComponents: JSXMapSerializer = {
       />
     </span>
   ),
+  hyperlink: ({ children, key, node, ...props }) => {
+    if (node.data.url?.endsWith('.m4a')) {
+      return <AudioClick url={node.data.url}>{children}</AudioClick>;
+    }
+
+    return (
+      <PrismicLink key={key} href={docResolver(node.data)} {...props}>
+        <span className="ABCWhyteEdu-Medium inline text-pm3 font-medium underline decoration-1 underline-offset-[5px] hover:text-neutral-65 hover:decoration-[0.0938rem] dark:hover:text-neutral-30 sm:text-pm2">
+          {children}
+        </span>
+      </PrismicLink>
+    );
+  },
 };
 
 const About: FC<IAbout> = ({ data, settings }) => (
