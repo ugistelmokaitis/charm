@@ -72,7 +72,7 @@ const introComponents: JSXMapSerializer = {
     </span>
   ),
   hyperlink: ({ children, key, node, ...props }) => {
-    if (node.data.url?.endsWith('.m4a')) {
+    if (node.data.url?.endsWith('.mp3')) {
       return <AudioClick url={node.data.url}>{children}</AudioClick>;
     }
 
