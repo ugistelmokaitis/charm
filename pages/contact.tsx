@@ -324,9 +324,17 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                   className="flex select-none items-center justify-center rounded bg-primary-100 py-[0.7188rem] px-[1.8175rem] text-neutral-0 outline-none outline-[0.0625rem] active:outline-[0.125rem] active:outline-primary-50 disabled:bg-primary-25 disabled:text-neutral-30 disabled:hover:outline-none"
                   type="submit"
                 >
-                  <div className="">
-                    {loading ? 'Message Sent' : 'Send message'}
-                  </div>
+                  {loading ? (
+                    <div className="cursor-progress">
+                      <div className="text-primary-100 dark:cursor-progress dark:text-neutral-30">
+                        Message Sent
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="text-primary-100 dark:text-neutral-30">
+                      Send Message
+                    </div>
+                  )}
                 </button>
               </form>
             </div>
