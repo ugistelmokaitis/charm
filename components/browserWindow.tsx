@@ -2,7 +2,7 @@ import type { FC } from 'react';
 import type React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {
-  hybrid,
+  tomorrowNight,
   a11yLight,
 } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import TypescriptLogo from '../public/icons/typescriptlogo.svg';
@@ -34,7 +34,7 @@ const BrowserWindow: FC<IBrowseWindow> = ({ child1, child2 }) => (
                 wrapLongLines
                 wrapLines
                 showLineNumbers
-                style={hybrid}
+                style={tomorrowNight}
                 language="typescript"
                 className="rounded-b-lg border-[0.0625rem] border-neutral-80/60"
                 customStyle={{

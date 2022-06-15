@@ -3,7 +3,7 @@ import type { SliceComponentProps } from '@prismicio/react';
 import type { KeyTextField, ImageField } from '@prismicio/types';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {
-  hybrid,
+  tomorrowNight,
   a11yLight,
 } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import Image from 'next/image';
@@ -48,7 +48,7 @@ const CodeBlock: FC<
                   wrapLongLines
                   wrapLines
                   showLineNumbers
-                  style={hybrid}
+                  style={tomorrowNight}
                   language="typescript"
                   className="rounded-b-lg border-[0.0625rem] border-neutral-80/60"
                   customStyle={{
