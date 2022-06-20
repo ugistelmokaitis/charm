@@ -118,7 +118,7 @@ const Blogpost: FC<IBlogpost> = ({
                     <p className="ABCWhyteEdu-Medium font-[350] text-neutral-65 dark:text-neutral-15">
                       {format(
                         parse(data.blogDate, 'yyyy-MM-dd', new Date()),
-                        'MMMM, yyyy'
+                        'MMMM dd, yyyy'
                       )}
                     </p>
                   </div>
