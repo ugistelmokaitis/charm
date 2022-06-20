@@ -321,17 +321,17 @@ const Contact: FC<IContact> = ({ settings, data }) => {
                 <div />
                 <button
                   disabled={loading || !name || !email || !website || !message}
-                  className="flex select-none items-center justify-center rounded bg-primary-100 py-[0.7188rem] px-[1.8175rem] text-neutral-0 outline-none outline-[0.0625rem] active:outline-[0.125rem] active:outline-primary-50 disabled:bg-primary-25 disabled:text-neutral-30 disabled:hover:outline-none"
+                  className="flex select-none items-center justify-center rounded bg-primary-100 py-[0.7188rem] px-[1.8175rem] text-neutral-0 outline-none outline-[0.0625rem] active:outline-[0.125rem] active:outline-primary-50 disabled:bg-primary-50 disabled:text-neutral-0 disabled:hover:outline-none"
                   type="submit"
                 >
                   {loading ? (
                     <div className="cursor-progress">
-                      <div className="text-primary-100 dark:cursor-progress dark:text-neutral-30">
+                      <div className="text-neutral-0 dark:cursor-progress dark:text-neutral-0">
                         Message Sent
                       </div>
                     </div>
                   ) : (
-                    <div className="text-primary-100 dark:text-neutral-30">
+                    <div className="text-neutral-0 dark:text-neutral-0">
                       Send Message
                     </div>
                   )}

@@ -26,7 +26,7 @@ const ButtonInner: FC<ButtonInnerProps> = ({
   const classes = {
     variant: {
       primary:
-        'rounded-[0.25rem] py-[0.7188rem] px-[1.8175rem] bg-primary-100 text-neutral-0 border-[0.0625rem] active:border-[0.125rem] disabled:bg-primary-5 disabled:text-neutral-30 disabled:hover:border-none active:border-primary-50 border-none hover:bg-primary-200',
+        'rounded-[0.25rem] py-[0.7188rem] px-[1.8175rem] bg-primary-100 text-neutral-0 border-[0.0625rem] active:border-[0.125rem] disabled:bg-primary-50 disabled:text-neutral-0 disabled:hover:border-none active:border-primary-50 border-none hover:bg-primary-200',
       secondary:
         'rounded-[0.25rem] py-[0.7188rem] px-[1.8175rem] border-[0.0625rem] hover:bg-primary-25 border-neutral-65 active:border-[0.125rem] active:border-primary-200 disabled:bg-primary-5 disabled:text-neutral-30 disabled:hover:border-none dark:bg-neutral-100 dark:hover:bg-neutral-65 dark:text-neutral-0 dark:disabled:bg-neutral-80 dark:disabled:text-neutral-50 dark:disabled:hover:border-none dark:active:border-neutral-15 dark:active:bg-neutral-65',
       neutral: 'text-neutral-65 dark:text-neutral-30',
