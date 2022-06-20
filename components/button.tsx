@@ -31,7 +31,7 @@ const ButtonInner: FC<ButtonInnerProps> = ({
         'rounded-[0.25rem] py-[0.7188rem] px-[1.8175rem] border-[0.0625rem] hover:bg-primary-25 border-neutral-65 active:border-[0.125rem] active:border-primary-200 disabled:bg-primary-5 disabled:text-neutral-30 disabled:hover:border-none dark:bg-neutral-100 dark:hover:bg-neutral-65 dark:text-neutral-0 dark:disabled:bg-neutral-80 dark:disabled:text-neutral-50 dark:disabled:hover:border-none dark:active:border-neutral-15 dark:active:bg-neutral-65',
       neutral: 'text-neutral-65 dark:text-neutral-30',
       casestudy:
-        'className="ABCWhyteEdu-Bold text-4xl sm:text-3xl md:text-2xl font-medium tracking-[0.02em] text-neutral-65 underline decoration-2 underline-offset-[12px] hover:decoration-[0.25rem] active:text-neutral-0 dark:text-neutral-0 md:text-2xl hover:text-neutral-65 dark:hover:text-neutral-30',
+        'className="ABCWhyteEdu-Bold text-4xl sm:text-3xl md:text-2xl font-medium tracking-[0.02em] text-neutral-100 underline decoration-2 underline-offset-[0.75rem] hover:decoration-[0.25rem] active:text-neutral-0 dark:text-neutral-0 md:text-2xl hover:text-neutral-65 dark:hover:text-neutral-30',
     },
   };
 
