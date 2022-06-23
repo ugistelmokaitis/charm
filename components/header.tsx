@@ -74,23 +74,23 @@ const Header: FC<ISettings> = ({ settings }) => {
               </div>
             ))}
             <div className="inline-flex pr-[0.25rem]">
-              <Tippy
-                content="View Github Profile"
-                className="text-cr1 font-FiraCode-Regular font-normal text-neutral-100"
-              >
-                <div className="hidden rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 xs:flex md:ml-12 lg:mr-4">
-                  <div>
-                    <Link
-                      passHref
-                      href={docResolver(settings.data.githubSourceLink)}
+              <div>
+                <Link
+                  passHref
+                  href={docResolver(settings.data.githubSourceLink)}
+                >
+                  <a
+                    href={docResolver(settings.data.githubSourceLink)}
+                    target="_blank"
+                    aria-label="View Github Profile"
+                    rel="noopener noreferrer"
+                    className="flex"
+                  >
+                    <Tippy
+                      content="View Github Profile"
+                      className="text-cr1 font-FiraCode-Regular font-normal text-neutral-100"
                     >
-                      <a
-                        href={docResolver(settings.data.githubSourceLink)}
-                        target="_blank"
-                        aria-label="View Github Profile"
-                        rel="noopener noreferrer"
-                        className="flex"
-                      >
+                      <div className="hidden select-none rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 xs:flex md:ml-12 lg:mr-4">
                         <Image
                           src={settings.data.githubSourceIcon.url ?? ''}
                           alt={settings.data.githubSourceIcon.alt ?? ''}
@@ -100,19 +100,19 @@ const Header: FC<ISettings> = ({ settings }) => {
                           quality={100}
                           className="dark:brightness-0 dark:invert-[1]"
                         />
-                      </a>
-                    </Link>
-                  </div>
-                </div>
-              </Tippy>
+                      </div>
+                    </Tippy>
+                  </a>
+                </Link>
+              </div>
 
-              <div className="hidden justify-evenly rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 2xs:flex ">
+              <div className="hidden dark:flex">
                 <Tippy
                   content="Appearance Light Mode"
-                  className="text-cr1 mt-[12px] font-FiraCode-Regular font-normal  text-neutral-100"
+                  className="text-cr1 font-FiraCode-Regular font-normal text-neutral-100"
                 >
                   <div
-                    className="hidden dark:flex"
+                    className="justify-evenly rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 2xs:flex"
                     key="light"
                     onKeyDown={() => {
                       removeTheme();
@@ -136,13 +136,15 @@ const Header: FC<ISettings> = ({ settings }) => {
                     />
                   </div>
                 </Tippy>
+              </div>
 
+              <div className="flex dark:hidden">
                 <Tippy
                   content="Appearance Dark Mode"
-                  className="text-cr1 mt-[12px] font-FiraCode-Regular  font-normal text-neutral-100 "
+                  className="text-cr1 font-FiraCode-Regular font-normal  text-neutral-100"
                 >
                   <div
-                    className="flex dark:hidden"
+                    className="justify-evenly rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 2xs:flex "
                     onKeyDown={() => {
                       removeTheme();
                       setTheme('dark');
