@@ -159,9 +159,6 @@ module.exports = {
       cs2: ['1.125rem', {
         lineHeight: '1.2375rem',
       }],
-      cs2: ['1.125rem', {
-        lineHeight: '1.4625rem',
-      }],
     },
     fontFamily: {
       'ABCWhyteEdu-Bold': ['ABCWhyteEdu-Bold'],
