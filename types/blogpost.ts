@@ -17,6 +17,7 @@ export type BlogpostProps = PrismicDocumentWithUID<{
   blogDate: string;
   blogImage: ImageField;
   blogCateogry: FilledLinkToDocumentField;
+  coverImage: ImageField;
   author: AuthorProps;
   country: KeyTextField;
   slices2: SliceZone;

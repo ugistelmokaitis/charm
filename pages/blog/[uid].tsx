@@ -12,6 +12,7 @@ import {
   LinkedinShareButton,
 } from 'react-share';
 import { useRouter } from 'next/router';
+import type { ImageField } from '@prismicio/types';
 import Layout from '../../components/layout';
 import { getPage, getPages } from '../../utils/prismic';
 import { components } from '../../slices';
@@ -68,6 +69,7 @@ const Blogpost: FC<IBlogpost> = ({
       title={data.titleTag}
       description={data.metaDescription}
       settings={settings}
+      image={data.coverImage}
     >
       <div className="overflow-hidden bg-neutral-0 dark:bg-neutral-100">
         <Container>

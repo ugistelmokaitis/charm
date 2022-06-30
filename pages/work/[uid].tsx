@@ -26,6 +26,7 @@ const CaseStudy: FC<ICaseStudy> = ({ data, settings, nextArticle, uid }) => (
     title={data.titleTag}
     description={data.metaDescription}
     settings={settings}
+    image={data.contentImage}
   >
     <div className="overflow-hidden bg-neutral-0 dark:bg-neutral-100">
       <Container>

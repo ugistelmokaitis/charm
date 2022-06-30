@@ -27,7 +27,7 @@ const Layout: FC<LayoutProps> = ({
 }) => {
   const { asPath } = useRouter();
   const url = `${process.env.NEXT_PUBLIC_SITE_URL ?? ''}${asPath}`;
-  const images = [
+  let images = [
     {
       url: `${process.env.NEXT_PUBLIC_SITE_URL ?? ''}/cover.png`,
       width: 1200,
@@ -37,12 +37,14 @@ const Layout: FC<LayoutProps> = ({
   ];
 
   if (image?.url) {
-    images.unshift({
-      url: image.url,
-      width: image.dimensions.width,
-      height: image.dimensions.height,
-      alt: name,
-    });
+    images = [
+      {
+        url: image.url,
+        width: image.dimensions.width,
+        height: image.dimensions.height,
+        alt: name,
+      },
+    ];
   }
 
   return (
