@@ -50,7 +50,7 @@
 /* Masonry slice component Css - Carousel */
 
 @layer utilities {
-  @variants responsive {
+  @layer responsive {
     .masonry {
       column-count: 1;
       column-gap: 2em;
