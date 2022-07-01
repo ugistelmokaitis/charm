@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "postbuild": "next-sitemap",
     "slicemachine": "start-slicemachine",
-    "upgrade": "npx npm-check-updates -u -x react,react-dom,@types/react,@types/react-dom  && yarn install"
+    "upgrade": "npx npm-check-updates -u -x react,react-dom,@types/react && yarn install"
   },
   "dependencies": {
     "@floating-ui/react-dom-interactions": "^0.6.5",
