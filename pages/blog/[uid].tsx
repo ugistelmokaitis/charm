@@ -17,7 +17,7 @@ import { getPage, getPages } from '../../utils/prismic';
 import { components } from '../../slices';
 import type { SettingsProps } from '../../types/settings';
 import type { BlogpostProps } from '../../types/blogpost';
-import { siteUrl } from '../../next-sitemap';
+import { siteUrl } from '../../next-sitemap.config';
 import BlogButton from '../../components/blogButton';
 import TwitterSvgIcon from '../../public/icons/twitter.svg';
 import FacebookSvgIcon from '../../public/icons/facebook.svg';
@@ -48,7 +48,10 @@ const Blogpost: FC<IBlogpost> = ({
   const blogCategoryCapitalized = capitalize(data.blogCateogry.uid ?? '');
 
   const router = useRouter();
-  const shareUrl = new URL(router.asPath, siteUrl as string | undefined).href;
+  const shareUrl = new URL(
+    router.asPath,
+    siteUrl as unknown as string | URL | undefined
+  ).href;
   const copyToClipboard = () => {
     const el = document.createElement('textarea');
     el.value = shareUrl;
