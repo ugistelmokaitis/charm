@@ -12,7 +12,6 @@ import {
   LinkedinShareButton,
 } from 'react-share';
 import { useRouter } from 'next/router';
-import type { ImageField } from '@prismicio/types';
 import Layout from '../../components/layout';
 import { getPage, getPages } from '../../utils/prismic';
 import { components } from '../../slices';
