@@ -88,7 +88,7 @@ const Header: FC<ISettings> = ({ settings }) => {
                   >
                     <Tippy
                       content="View Github Profile"
-                      className="text-cr1 font-FiraCode-Regular font-normal text-neutral-100"
+                      className="text-cr1 font-FiraCode-Regular font-normal text-neutral-100 dark:text-neutral-0"
                     >
                       <div className="hidden select-none rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 xs:flex md:ml-12 lg:mr-4">
                         <Image
@@ -109,7 +109,7 @@ const Header: FC<ISettings> = ({ settings }) => {
               <div className="hidden dark:flex">
                 <Tippy
                   content="Appearance Light Mode"
-                  className="text-cr1 font-FiraCode-Regular font-normal text-neutral-100"
+                  className="text-cr1 font-FiraCode-Regular font-normal text-neutral-0"
                 >
                   <div
                     className="justify-evenly rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 2xs:flex"
@@ -141,10 +141,10 @@ const Header: FC<ISettings> = ({ settings }) => {
               <div className="flex dark:hidden">
                 <Tippy
                   content="Appearance Dark Mode"
-                  className="text-cr1 font-FiraCode-Regular font-normal  text-neutral-100"
+                  className="text-cr1 font-FiraCode-Regular font-normal text-neutral-100"
                 >
                   <div
-                    className="justify-evenly rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 2xs:flex "
+                    className="justify-evenly rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 2xs:flex"
                     onKeyDown={() => {
                       removeTheme();
                       setTheme('dark');
