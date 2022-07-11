@@ -34,7 +34,7 @@
     "next-secure-headers": "^2.2.0",
     "next-seo": "^5.4.0",
     "next-sitemap": "^3.1.7",
-    "nodemailer": "^6.7.5",
+    "nodemailer": "^6.7.7",
     "postcss-import": "^14.1.0",
     "postcss-preset-env": "^7.7.1",
     "prismic-cli": "^4.2.3",
