@@ -59,7 +59,7 @@
     }
   },
   "devDependencies": {
-    "@haydenbleasel/harmony": "^1.0.23",
+    "@haydenbleasel/harmony": "^1.0.26",
     "@next/eslint-plugin-next": "^12.1.6",
     "@types/formidable": "^2.0.5",
     "@types/gtag.js": "^0.0.10",

@@ -1411,10 +1411,10 @@
     "@hapi/bourne" "2.x.x"
     "@hapi/hoek" "9.x.x"
 
-"@haydenbleasel/harmony@^1.0.23":
-  version "1.0.25"
-  resolved "https://registry.yarnpkg.com/@haydenbleasel/harmony/-/harmony-1.0.25.tgz#5e9ac0f761b9f5f9ebcf12e96be0a75952df19cc"
-  integrity sha512-mWmYTpGvbi7cT33WLMj1MenbYCaa9T+iuE4gtNtmf87IwGXKZ1pupyzuw3cs4Y1i8fuqGspFnj6ROtHrTf0I/A==
+"@haydenbleasel/harmony@^1.0.26":
+  version "1.0.26"
+  resolved "https://registry.yarnpkg.com/@haydenbleasel/harmony/-/harmony-1.0.26.tgz#10f7760592d51ba8968633896b1a0be5c0a65661"
+  integrity sha512-XEdt7z9FhYxjAtl10sy/W9JdpOhdXo0QO6XrF9qhddgjAZCJHDHr3do2rusDhs1oR8DwvNF4LPS7XbsBTRKFbg==
   dependencies:
     eslint-config-prettier "^8.5.0"
     stylelint-config-idiomatic-order "^8.1.0"
