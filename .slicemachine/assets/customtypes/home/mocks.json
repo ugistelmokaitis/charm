@@ -1,25 +1,25 @@
 {
-  "id": "10aec4bb-e240-4904-90ff-81e06c00e31e",
-  "uid": "voluptatum-quo-culpa",
+  "id": "0f106771-493d-476c-9c07-d17cfa29e837",
+  "uid": "ex-quo-eos",
   "type": "home",
   "data": {
-    "titleTag": "disintermediate magnetic networks",
-    "metaDescription": "transform virtual blockchains",
-    "heroGreetingTitle": "synergize frictionless synergies",
-    "heroNameTitle": "aggregate vertical markets",
-    "heroDescription": "deploy bleeding-edge infomediaries",
-    "badgeButtonPrefix": "generate open-source web services",
-    "badgeButtonLabel": "monetize best-of-breed vortals",
+    "titleTag": "reinvent robust e-business",
+    "metaDescription": "enable e-business eyeballs",
+    "heroGreetingTitle": "redefine wireless mindshare",
+    "heroNameTitle": "morph seamless infrastructures",
+    "heroDescription": "brand one-to-one solutions",
+    "badgeButtonPrefix": "benchmark user-centric eyeballs",
+    "badgeButtonLabel": "morph integrated functionalities",
     "badgeButtonLink": {
       "link_type": "Web",
-      "url": "https://slicemachine.dev"
+      "url": "http://twitter.com"
     },
-    "editorWindowTabTitle": "drive 24/7 supply-chains",
-    "editorWindowContent": "strategize real-time bandwidth",
+    "editorWindowTabTitle": "visualize viral applications",
+    "editorWindowContent": "empower cross-media action-items",
     "skillsTitle": [
       {
         "type": "heading1",
-        "text": "Evolve rich schemas",
+        "text": "Embrace dot-com interfaces",
         "spans": []
       }
     ],
@@ -28,7 +28,7 @@
         "skill": [
           {
             "type": "heading3",
-            "text": "Productize e-business action-items",
+            "text": "Architect web-enabled e-business",
             "spans": []
           }
         ]
@@ -37,7 +37,7 @@
         "skill": [
           {
             "type": "heading3",
-            "text": "Engineer visionary synergies",
+            "text": "Harness ubiquitous synergies",
             "spans": []
           }
         ]
@@ -46,7 +46,7 @@
         "skill": [
           {
             "type": "heading3",
-            "text": "Engineer sexy mindshare",
+            "text": "Deliver bleeding-edge infomediaries",
             "spans": []
           }
         ]
@@ -55,7 +55,7 @@
         "skill": [
           {
             "type": "heading3",
-            "text": "Synthesize bleeding-edge synergies",
+            "text": "Streamline vertical ROI",
             "spans": []
           }
         ]
@@ -64,7 +64,7 @@
     "experienceTitle": [
       {
         "type": "heading1",
-        "text": "Syndicate magnetic models",
+        "text": "Streamline sexy relationships",
         "spans": []
       }
     ],
@@ -77,13 +77,29 @@
           },
           "alt": "Placeholder image",
           "copyright": null,
-          "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+          "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c?w=900&h=500&fit=crop"
         },
-        "companyName": "productize B2C networks",
-        "companyRole": "benchmark leading-edge schemas",
-        "companyYear": "transform cutting-edge platforms",
-        "companyResponsibilities": "incentivize rich web-readiness",
-        "companyTools": "incubate out-of-the-box vortals"
+        "companyName": "morph bleeding-edge users",
+        "companyRole": "productize plug-and-play e-commerce",
+        "companyYear": "innovate proactive deliverables",
+        "companyResponsibilities": "innovate revolutionary deliverables",
+        "companyTools": "harness out-of-the-box channels"
+      },
+      {
+        "companyLogo": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=900&h=500&fit=crop"
+        },
+        "companyName": "grow out-of-the-box synergies",
+        "companyRole": "incentivize scalable partnerships",
+        "companyYear": "seize back-end mindshare",
+        "companyResponsibilities": "syndicate value-added partnerships",
+        "companyTools": "integrate bricks-and-clicks deliverables"
       },
       {
         "companyLogo": {
@@ -95,12 +111,14 @@
           "copyright": null,
           "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8?w=900&h=500&fit=crop"
         },
-        "companyName": "generate dot-com portals",
-        "companyRole": "architect clicks-and-mortar web-readiness",
-        "companyYear": "redefine value-added ROI",
-        "companyResponsibilities": "grow efficient networks",
-        "companyTools": "empower world-class systems"
+        "companyName": "whiteboard distributed e-markets",
+        "companyRole": "exploit open-source infrastructures",
+        "companyYear": "streamline dot-com functionalities",
+        "companyResponsibilities": "evolve cross-platform systems",
+        "companyTools": "extend global web-readiness"
       }
-    ]
+    ],
+    "customActivityEmoji": "aggregate viral infrastructures",
+    "customActivityTitle": "aggregate cutting-edge relationships"
   }
 }

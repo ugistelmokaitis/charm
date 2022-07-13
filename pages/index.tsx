@@ -14,6 +14,7 @@ import Container from '../components/container';
 import BadgeButton from '../components/badgeButton';
 import BrowserWindow from '../components/browserWindow';
 import richTextComponents from '../components/richTextComponents';
+import Activity from '../components/activity';
 
 type IHome = {
   data: HomeProps['data'];
@@ -51,10 +52,9 @@ const Home: FC<IHome> = ({ data, settings }) => {
       <Container>
         <div>
           <div className="col-span-8 col-start-3 pt-[8.5rem] text-center lg:pt-44">
-            <BadgeButton
-              href={`${docResolver(data.badgeButtonLink)}`}
-              child1={data.badgeButtonPrefix}
-              child2={data.badgeButtonLabel}
+            <Activity
+              customEmoji={data.customActivityEmoji}
+              customTitle={data.customActivityTitle}
             />
             <h1 className="ABCWhyteEdu-Bold mx-auto mt-6 items-center text-3xl font-bold tracking-[0.02em] text-neutral-100 dark:text-neutral-0 1xs:text-2xl sm:text-1xl lg:text-xl">
               {data.heroGreetingTitle}

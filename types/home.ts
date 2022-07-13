@@ -20,6 +20,8 @@ export type HomeProps = PrismicDocumentWithUID<{
   badgeButtonPrefix: KeyTextField;
   badgeButtonLabel: KeyTextField;
   badgeButtonLink: LinkField;
+  customActivityEmoji: KeyTextField;
+  customActivityTitle: KeyTextField;
   company: companyProps;
   skills: skillsProps;
 }>;

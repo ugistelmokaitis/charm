@@ -175,6 +175,22 @@
           }
         }
       }
+    },
+    "Activity": {
+      "customActivityEmoji": {
+        "type": "Text",
+        "config": {
+          "label": "Custom Activity Emoji",
+          "placeholder": ""
+        }
+      },
+      "customActivityTitle": {
+        "type": "Text",
+        "config": {
+          "label": "Custom Activity Title",
+          "placeholder": ""
+        }
+      }
     }
   }
 }
