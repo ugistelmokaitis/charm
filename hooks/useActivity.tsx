@@ -1,18 +1,64 @@
 import { useEffect, useState } from 'react';
+import useSWR from 'swr';
 
 type ActivityResponse = {
   emoji: string;
   status: string;
-  source?: string;
+};
+
+type GitHubResponse = {
+  active: boolean;
+};
+
+type VercelResponse = {
+  active: boolean;
+};
+
+type TwitterResponse = {
+  active: boolean;
+};
+
+const fetcher = async <ResponseType,>(url: string): Promise<ResponseType> => {
+  const response = await fetch(url);
+  const data = (await response.json()) as ResponseType;
+
+  return data;
 };
 
 const useActivity = (): ActivityResponse => {
+  const github = useSWR<GitHubResponse>('/api/github-events', fetcher);
+  const vercel = useSWR<VercelResponse>('/api/vercel', fetcher);
+  const twitter = useSWR<TwitterResponse>('/api/twitter', fetcher);
   const [status, setStatus] = useState<ActivityResponse>({
     emoji: '🤔',
     status: 'Not sure',
   });
 
   useEffect(() => {
+    if (!twitter.error && twitter.data?.active) {
+      setStatus({
+        emoji: '📱',
+        status: `tweeting on Twitter`,
+      });
+      return;
+    }
+
+    if (!github.error && github.data?.active) {
+      setStatus({
+        emoji: '👨‍💻',
+        status: 'coding on Github',
+      });
+      return;
+    }
+
+    if (!vercel.error && vercel.data?.active) {
+      setStatus({
+        emoji: '🚧',
+        status: 'deploying code on Vercel',
+      });
+      return;
+    }
+
     const date = new Date().toLocaleTimeString('en-US', {
       timeZone: 'Australia/Sydney',
       hour12: false,
@@ -60,7 +106,7 @@ const useActivity = (): ActivityResponse => {
     if (time >= 780 && time <= 810) {
       setStatus({
         emoji: '🥗',
-        status: 'having a lunch',
+        status: 'having lunch',
       });
       return;
     }
@@ -76,7 +122,7 @@ const useActivity = (): ActivityResponse => {
     if (time >= 1110 && time <= 1169) {
       setStatus({
         emoji: '🍔',
-        status: 'having a dinner',
+        status: 'having dinner',
       });
       return;
     }
@@ -101,7 +147,14 @@ const useActivity = (): ActivityResponse => {
       emoji: '💻',
       status: 'working',
     });
-  }, []);
+  }, [
+    github.data?.active,
+    github.error,
+    twitter.data?.active,
+    twitter.error,
+    vercel.data?.active,
+    vercel.error,
+  ]);
 
   return status;
 };
