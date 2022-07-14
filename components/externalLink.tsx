@@ -10,6 +10,7 @@ const excludedLinks = [
   'twitter.com',
   'instagram.com',
   'linkedin.com',
+  'spotify.com',
   'ugistelmokaitis.com',
   'discord.com',
 ];
