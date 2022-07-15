@@ -13,10 +13,12 @@ import richTextComponents from '../components/richTextComponents';
 import SocialLinkIcon from '../public/icons/sociallinkicon.svg';
 import Divider from '../components/divider';
 import { docResolver, getPage } from '../utils/prismic';
+import { getLocation } from '../utils/twitter';
 
 type IAbout = {
   data: AboutProps['data'];
   settings: SettingsProps;
+  location: string | null;
 };
 
 const AudioClick: FC<{ url: string }> = ({ url, children }) => {
@@ -86,7 +88,7 @@ const introComponents: JSXMapSerializer = {
   },
 };
 
-const About: FC<IAbout> = ({ data, settings }) => (
+const About: FC<IAbout> = ({ data, settings, location }) => (
   <Layout
     title={data.titleTag}
     description={data.metaDescription}
@@ -193,7 +195,7 @@ const About: FC<IAbout> = ({ data, settings }) => (
                 {data.profileName}
               </h4>
               <p className="ABCWhyteEdu-Medium flex items-center justify-center font-[350] text-neutral-65 dark:text-neutral-15">
-                {data.profileLocation}
+                {location ? ` ${location}` : 'Sydney, Australia'}
               </p>
               <div className="mb-8 mt-8">
                 <Divider />
@@ -242,11 +244,13 @@ const About: FC<IAbout> = ({ data, settings }) => (
 export const getStaticProps: GetStaticProps = async () => {
   const { data } = (await getPage('about')) as AboutProps;
   const settings = (await getPage('settings')) as SettingsProps;
+  const location = await getLocation();
 
   return {
     props: {
       data,
       settings,
+      location,
     },
   };
 };

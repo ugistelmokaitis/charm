@@ -142,13 +142,6 @@
           "placeholder": ""
         }
       },
-      "profileLocation": {
-        "type": "Text",
-        "config": {
-          "label": "Profile Location",
-          "placeholder": ""
-        }
-      },
       "profileSocials": {
         "type": "Group",
         "config": {

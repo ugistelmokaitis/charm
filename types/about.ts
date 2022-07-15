@@ -19,7 +19,6 @@ export type AboutProps = PrismicDocumentWithUID<{
   profileImage: ImageField;
   profileName: KeyTextField;
   profileSocialsArrowLinkIcon: ImageField;
-  profileLocation: KeyTextField;
   profileSocials: profileSocialsProps;
 }>;
 
