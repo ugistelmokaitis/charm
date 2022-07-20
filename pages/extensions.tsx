@@ -73,7 +73,7 @@ const Extensions: FC<IExtensions> = ({ data, settings }) => (
                           className="dark:brightness-0 dark:invert-[1]"
                         />
 
-                        <p className="ABCWhyteEdu-Medium flex pl-4 font-[350] text-neutral-100 hover:text-neutral-50 dark:text-neutral-0">
+                        <p className="ABCWhyteEdu-Medium flex pl-4 pr-4 font-[350] text-neutral-100 hover:text-neutral-50 dark:text-neutral-0">
                           {socialProfileTitle}
                         </p>
                       </div>
