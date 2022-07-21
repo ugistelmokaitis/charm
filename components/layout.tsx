@@ -60,7 +60,7 @@ const Layout: FC<LayoutProps> = ({
           description: description ?? '',
           images,
           site_name: name,
-          type: '| Software Developer',
+          type: '| Software Engineer',
           profile: {
             username,
           },
