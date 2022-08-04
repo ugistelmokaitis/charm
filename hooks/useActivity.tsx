@@ -6,21 +6,9 @@ type ActivityResponse = {
   status: string;
 };
 
-/*
- * type GitHubResponse = {
- *   active: boolean;
- * };
- */
-
 type VercelResponse = {
   active: boolean;
 };
-
-/*
- * type TwitterResponse = {
- *   active: boolean;
- * };
- */
 
 const fetcher = async <ResponseType,>(url: string): Promise<ResponseType> => {
   const response = await fetch(url);
@@ -30,35 +18,13 @@ const fetcher = async <ResponseType,>(url: string): Promise<ResponseType> => {
 };
 
 const useActivity = (): ActivityResponse => {
-  // const github = useSWR<GitHubResponse>('/api/github-events', fetcher);
   const vercel = useSWR<VercelResponse>('/api/vercel', fetcher);
-  // const twitter = useSWR<TwitterResponse>('/api/twitter', fetcher);
   const [status, setStatus] = useState<ActivityResponse>({
     emoji: '🤔',
     status: 'Not sure',
   });
 
   useEffect(() => {
-    /*
-     * if (!twitter.error && twitter.data?.active) {
-     *   setStatus({
-     *     emoji: '📱',
-     *     status: `tweeting on Twitter`,
-     *   });
-     *   return;
-     * }
-     */
-
-    /*
-     * if (!github.error && github.data?.active) {
-     *   setStatus({
-     *     emoji: '👨‍💻',
-     *     status: 'coding on Github',
-     *   });
-     *   return;
-     * }
-     */
-
     if (!vercel.error && vercel.data?.active) {
       setStatus({
         emoji: '🚧',
@@ -155,16 +121,7 @@ const useActivity = (): ActivityResponse => {
       emoji: '💻',
       status: 'working',
     });
-  }, [
-    /*
-     * github.data?.active,
-     * github.error,
-     * twitter.data?.active,
-     * twitter.error,
-     */
-    vercel.data?.active,
-    vercel.error,
-  ]);
+  }, [vercel.data?.active, vercel.error]);
 
   return status;
 };
