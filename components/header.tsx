@@ -82,12 +82,12 @@ const Header: FC<ISettings> = ({ settings }) => {
                   <a
                     href={docResolver(settings.data.githubSourceLink)}
                     target="_blank"
-                    aria-label="View Github Profile"
+                    aria-label="View Source Code"
                     rel="noopener noreferrer"
                     className="flex"
                   >
                     <Tippy
-                      content="View Github Profile"
+                      content="View Source Code"
                       className="text-cr1 font-FiraCode-Regular font-normal text-neutral-100 dark:text-neutral-0"
                     >
                       <div className="hidden select-none rounded-md py-[0.75rem] px-[0.75rem] hover:bg-primary-25 dark:hover:bg-neutral-80 xs:flex md:ml-12 lg:mr-4">
