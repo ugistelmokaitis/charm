@@ -1,5 +1,6 @@
 import type { GetStaticProps } from 'next';
-import type { FC } from 'react';
+import type { FC, ReactNode } from 'react';
+import type React from 'react';
 import { Fragment } from 'react';
 import { PrismicLink, PrismicRichText } from '@prismicio/react';
 import type { JSXMapSerializer } from '@prismicio/react';
@@ -21,7 +22,10 @@ type IAbout = {
   location: string | null;
 };
 
-const AudioClick: FC<{ url: string }> = ({ url, children }) => {
+const AudioClick: FC<{ url: string; children: ReactNode }> = ({
+  url,
+  children,
+}) => {
   const [audio, , controls] = useAudio({
     src: url,
     autoPlay: false,

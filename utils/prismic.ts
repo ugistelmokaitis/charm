@@ -1,4 +1,5 @@
 import { createClient } from '@prismicio/client';
+import type { FetchLike } from '@prismicio/client';
 import type {
   PrismicDocumentWithUID,
   FilledLinkToWebField,
@@ -36,7 +37,7 @@ export const docResolver = (link: LinkField): string => {
 export const client = createClient(
   process.env.NEXT_PUBLIC_PRISMIC_ENDPOINT ?? 'loading',
   {
-    fetch,
+    fetch: fetch as FetchLike,
     accessToken: process.env.NEXT_PUBLIC_PRISMIC_ACCESS_TOKEN,
   }
 );
