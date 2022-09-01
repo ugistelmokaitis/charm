@@ -25,7 +25,7 @@
     "@tippyjs/react": "^4.2.6",
     "chrome-aws-lambda": "^10.1.0",
     "date-fns": "^2.29.2",
-    "embla-carousel-react": "^7.0.1",
+    "embla-carousel-react": "^7.0.2",
     "eslint-config-prettier": "^8.5.0",
     "formidable": "^2.0.1",
     "hamburger-react": "^2.5.0",
