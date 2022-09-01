@@ -65,7 +65,7 @@
     "@haydenbleasel/harmony": "^1.0.26",
     "@next/eslint-plugin-next": "^12.2.5",
     "@types/formidable": "^2.0.5",
-    "@types/gtag.js": "^0.0.10",
+    "@types/gtag.js": "^0.0.11",
     "@types/node": "^18.7.13",
     "@types/nodemailer": "^6.4.5",
     "@types/react": "^18.0.17",
