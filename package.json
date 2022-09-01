@@ -39,7 +39,7 @@
     "postcss-import": "^14.1.0",
     "postcss-preset-env": "^7.8.0",
     "prismic-cli": "^4.2.3",
-    "puppeteer-core": "^16.2.0",
+    "puppeteer-core": "^17.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.3.0",
