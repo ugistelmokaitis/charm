@@ -36,7 +36,7 @@
     "next-seo": "^5.5.0",
     "next-sitemap": "^3.1.21",
     "nodemailer": "^6.7.8",
-    "postcss-import": "^14.1.0",
+    "postcss-import": "^15.0.0",
     "postcss-preset-env": "^7.8.0",
     "prismic-cli": "^4.2.3",
     "puppeteer-core": "^16.2.0",
