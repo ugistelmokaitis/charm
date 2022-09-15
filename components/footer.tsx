@@ -12,6 +12,8 @@ type ISettings = {
   settings: SettingsProps;
 };
 
+const today = new Date();
+
 const Footer: FC<ISettings> = ({ settings }) => {
   const router = useRouter();
 
@@ -69,7 +71,7 @@ const Footer: FC<ISettings> = ({ settings }) => {
           <Divider />
           <div className="mt-8 items-center justify-between pb-12 lg:flex">
             <div className="ABCWhyteEdu-Medium font-[350] text-neutral-65  dark:text-neutral-30 xl:mt-0">
-              {settings.data.siteCredit}
+              © {today.getFullYear()} {settings.data.siteCredit}
             </div>
             <div className="flex items-center pt-6 lg:pt-0">
               {settings.data.footerBottomRightSitemap.map(
