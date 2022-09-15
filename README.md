@@ -13,7 +13,7 @@
 1. Clone this repository
 
    ```sh
-   gh repo fork repository --clone=true
+   git clone https://github.com/ugistelmokaitis/charm.git
    ```
 
 2. Change directories
