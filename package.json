@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@floating-ui/react-dom-interactions": "^0.9.3",
-    "@next/bundle-analyzer": "^12.3.0",
+    "@next/bundle-analyzer": "^12.3.1",
     "@prismicio/client": "^6.7.1",
     "@prismicio/helpers": "^2.3.3",
     "@prismicio/next": "^0.1.5",
