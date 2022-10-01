@@ -12,7 +12,7 @@
     "upgrade": "npx npm-check-updates -u -x react,react-dom,@types/react && yarn install"
   },
   "dependencies": {
-    "@floating-ui/react-dom-interactions": "^0.9.3",
+    "@floating-ui/react-dom-interactions": "^0.10.1",
     "@next/bundle-analyzer": "^12.3.0",
     "@prismicio/client": "^6.7.1",
     "@prismicio/helpers": "^2.3.3",
