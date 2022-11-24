@@ -86,7 +86,7 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 5. Gear - pages/gear
 6. Extensions - pages/extensions
 7. Contact - pages/contact
-8. Pirvacy - pages/privacy
+8. Privacy - pages/privacy
 9. Terms - pages/terms
 10. Server error - pages/500.tsx
 11. NotFound - pages/404.tsx
