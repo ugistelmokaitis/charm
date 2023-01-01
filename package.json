@@ -74,7 +74,7 @@
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"prettier": "^2.7.1",
 		"prettier-plugin-tailwindcss": "^0.1.13",
-		"slice-machine-ui": "^0.5.1",
+		"slice-machine-ui": "^0.6.0",
 		"stylelint": "^14.14.0",
 		"stylelint-prettier": "^2.0.0",
 		"typescript": "^4.8.4"
