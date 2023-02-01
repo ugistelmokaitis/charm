@@ -20,7 +20,7 @@
 		"@prismicio/react": "^2.5.0",
 		"@prismicio/slice-simulator-react": "^0.2.2",
 		"@react-hookz/web": "^16.0.1",
-		"@sentry/nextjs": "^7.17.3",
+		"@sentry/nextjs": "^7.34.0",
 		"@svgr/webpack": "^6.5.1",
 		"@tippyjs/react": "^4.2.6",
 		"chrome-aws-lambda": "^10.1.0",
